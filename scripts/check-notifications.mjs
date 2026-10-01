@@ -1,0 +1,12 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+import ts from 'typescript';
+const code=ts.transpileModule(readFileSync('lib/enquiry-notification.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext}}).outputText;
+const {notifyEnquiry}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+let calls=0;const mock=async(url,init)=>{calls++;assert.equal(url.protocol,'https:');assert.equal(init.headers.Authorization,'Bearer test-only');assert.equal(init.headers['Idempotency-Key'],'PB-TEST');assert.equal(JSON.parse(init.body).event,'enquiry.created');return new Response('',{status:200})};
+assert.equal(await notifyEnquiry({reference:'PB-TEST'},{},mock),'disabled');assert.equal(calls,0);
+assert.equal(await notifyEnquiry({reference:'PB-TEST'},{url:'http://example.invalid',token:'test-only'},mock),'failed');assert.equal(calls,0);
+assert.equal(await notifyEnquiry({reference:'PB-TEST'},{url:'https://example.invalid',token:'test-only'},mock),'delivered');assert.equal(calls,1);
+assert.equal(await notifyEnquiry({reference:'PB-TEST'},{url:'https://example.invalid',token:'test-only'},async()=>new Response('',{status:500})),'failed');
+assert.equal(await notifyEnquiry({reference:'PB-TEST'},{url:'https://example.invalid',token:'test-only'},async()=>{throw new Error('offline')}),'failed');
+console.log('PASS notification configuration, payload, idempotency header, failure handling; no external requests.');

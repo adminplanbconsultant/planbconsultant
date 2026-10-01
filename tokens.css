@@ -1,0 +1,49 @@
+:root {
+  --color-paper: oklch(95.8% 0.012 92);
+  --color-paper-2: oklch(92.5% 0.018 96);
+  --color-ink: oklch(35% 0.086 147);
+  --color-ink-2: oklch(44% 0.064 145);
+  --color-rule: oklch(79% 0.025 116);
+  --color-rule-2: oklch(86% 0.018 112);
+  --color-muted: oklch(49% 0.028 139);
+  --color-accent: oklch(75% 0.129 89);
+  --color-accent-ink: oklch(28% 0.065 146);
+  --color-focus: oklch(58% 0.145 82);
+  --color-error: oklch(48% 0.18 28);
+  --color-success: oklch(45% 0.11 148);
+
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Manrope", Tahoma, Arial, sans-serif;
+  --font-arabic: Tahoma, Arial, sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+  --text-display: clamp(3rem, 5.3vw, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hairline: 1px solid var(--color-rule);
+  --radius-card: 0.625rem;
+  --radius-input: 0.25rem;
+  --radius-pill: 999px;
+}

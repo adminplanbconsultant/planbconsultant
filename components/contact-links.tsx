@@ -1,0 +1,12 @@
+import {Mail,Phone} from 'lucide-react';
+import {business,type Locale} from '@/lib/content';
+const socialProfiles=[
+ {name:'LinkedIn',href:'',path:'M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2zM7.93 18.75H4.98V9.2h2.95v9.55zM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.39-.74 1.36-1.52 2.79-1.52 2.99 0 3.58 1.97 3.58 4.53v5.24z'},
+ {name:'Instagram',href:'',path:''},
+ {name:'Facebook',href:'',path:'M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.972h-1.513c-1.491 0-1.956.931-1.956 1.887v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z'}
+];
+export function ContactLinks({locale}:{locale:Locale}){
+ const demo=locale==='ar'?'تجريبي':'Demo';
+ return <div className="contact-link-list">{[{value:business.email||'info@planb.example',real:business.email,prefix:'mailto:',Icon:Mail},{value:business.phone||'+965 0000 0000',real:business.phone,prefix:'tel:',Icon:Phone}].map(({value,real,prefix,Icon})=>{const body=<><Icon size={16}/><bdi dir="ltr">{value}</bdi>{!real&&<small className="demo-label">{demo}</small>}</>;return real?<a key={prefix} href={prefix+real}>{body}</a>:<span key={prefix} title={locale==='ar'?'بيانات تجريبية — سيتم إضافة بيانات التواصل الفعلية':'Demo details — real contact details will be added'}>{body}</span>})}</div>
+}
+export function SocialLinks({locale}:{locale:Locale}){return <div className="social-links"><span className="social-label">{locale==='ar'?'تابعنا :':'Follow us :'}</span><div className="social-icons">{socialProfiles.map(s=>{const icon=<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">{s.name==='Instagram'?<g fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></g>:<path d={s.path} fill="currentColor"/>}</svg>;return s.href?<a className="social-icon" key={s.name} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.name}>{icon}</a>:<span className="social-placeholder" key={s.name} tabIndex={0} role="img" aria-label={s.name+(locale==='ar'?' — قريباً':' — coming soon')}>{icon}<span className="social-tooltip">{s.name} · {locale==='ar'?'قريباً':'Coming soon'}</span></span>})}</div></div>}

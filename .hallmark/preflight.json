@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-01",
+  "framework": "Next.js 16 App Router with React 19 and Tailwind 4",
+  "fonts": "Existing editorial serif plus Manrope/Arabic fallbacks",
+  "palette": "Forest green, metallic gold, ceramic white",
+  "motion": "CSS-only, motion-cut",
+  "spacing": "Existing responsive scale, extended with 4pt semantic tokens"
+}
