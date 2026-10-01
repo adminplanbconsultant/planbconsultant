@@ -1,0 +1,744 @@
+[
+  {
+    "locale": "en",
+    "width": 360,
+    "overflow": false,
+    "hero": {
+      "x": 17,
+      "y": 152,
+      "width": 326,
+      "height": 947.453125,
+      "right": 343,
+      "bottom": 1099.453125
+    },
+    "headline": {
+      "x": 17,
+      "y": 212,
+      "width": 326,
+      "height": 133.453125,
+      "right": 343,
+      "bottom": 345.453125
+    },
+    "font": "43.2px",
+    "headerBottom": 152,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Explore opportunities",
+        "href": "/en/programmes",
+        "x": 17,
+        "y": 477.453125,
+        "width": 218.75,
+        "height": 50,
+        "right": 235.75,
+        "bottom": 527.453125
+      },
+      {
+        "text": "Free consultation",
+        "href": "/en/consultation",
+        "x": 17,
+        "y": 541.453125,
+        "width": 148.15625,
+        "height": 44,
+        "right": 165.15625,
+        "bottom": 585.453125
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "overflow": false,
+    "hero": {
+      "x": 17,
+      "y": 152,
+      "width": 356,
+      "height": 930.5625,
+      "right": 373,
+      "bottom": 1082.5625
+    },
+    "headline": {
+      "x": 17,
+      "y": 212,
+      "width": 356,
+      "height": 144.5625,
+      "right": 373,
+      "bottom": 356.5625
+    },
+    "font": "46.8px",
+    "headerBottom": 152,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Explore opportunities",
+        "href": "/en/programmes",
+        "x": 17,
+        "y": 460.5625,
+        "width": 218.75,
+        "height": 50,
+        "right": 235.75,
+        "bottom": 510.5625
+      },
+      {
+        "text": "Free consultation",
+        "href": "/en/consultation",
+        "x": 17,
+        "y": 524.5625,
+        "width": 148.15625,
+        "height": 44,
+        "right": 165.15625,
+        "bottom": 568.5625
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "overflow": false,
+    "hero": {
+      "x": 32,
+      "y": 150,
+      "width": 689,
+      "height": 639.1875,
+      "right": 721,
+      "bottom": 789.1875
+    },
+    "headline": {
+      "x": 32,
+      "y": 237.1875,
+      "width": 369.4375,
+      "height": 221.5,
+      "right": 401.4375,
+      "bottom": 458.6875
+    },
+    "font": "53.76px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Explore opportunities",
+        "href": "/en/programmes",
+        "x": 32,
+        "y": 601.1875,
+        "width": 234.75,
+        "height": 58,
+        "right": 266.75,
+        "bottom": 659.1875
+      },
+      {
+        "text": "Free consultation",
+        "href": "/en/consultation",
+        "x": 32,
+        "y": 681.1875,
+        "width": 154.15625,
+        "height": 44,
+        "right": 186.15625,
+        "bottom": 725.1875
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 1024,
+    "overflow": false,
+    "hero": {
+      "x": 32,
+      "y": 150,
+      "width": 945,
+      "height": 700,
+      "right": 977,
+      "bottom": 850
+    },
+    "headline": {
+      "x": 32,
+      "y": 342.765625,
+      "width": 496.109375,
+      "height": 160.640625,
+      "right": 528.109375,
+      "bottom": 503.40625
+    },
+    "font": "52px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Explore opportunities",
+        "href": "/en/programmes",
+        "x": 32,
+        "y": 614.40625,
+        "width": 234.75,
+        "height": 58,
+        "right": 266.75,
+        "bottom": 672.40625
+      },
+      {
+        "text": "Free consultation",
+        "href": "/en/consultation",
+        "x": 288.75,
+        "y": 621.40625,
+        "width": 154.15625,
+        "height": 44,
+        "right": 442.90625,
+        "bottom": 665.40625
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "overflow": false,
+    "hero": {
+      "x": 48,
+      "y": 150,
+      "width": 1169,
+      "height": 700,
+      "right": 1217,
+      "bottom": 850
+    },
+    "headline": {
+      "x": 48,
+      "y": 324.234375,
+      "width": 613.265625,
+      "height": 197.71875,
+      "right": 661.265625,
+      "bottom": 521.953125
+    },
+    "font": "64px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Explore opportunities",
+        "href": "/en/programmes",
+        "x": 48,
+        "y": 632.953125,
+        "width": 247.578125,
+        "height": 58,
+        "right": 295.578125,
+        "bottom": 690.953125
+      },
+      {
+        "text": "Free consultation",
+        "href": "/en/consultation",
+        "x": 317.578125,
+        "y": 639.953125,
+        "width": 154.15625,
+        "height": 44,
+        "right": 471.734375,
+        "bottom": 683.953125
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 1440,
+    "overflow": false,
+    "hero": {
+      "x": 92.5,
+      "y": 150,
+      "width": 1240,
+      "height": 700,
+      "right": 1332.5,
+      "bottom": 850
+    },
+    "headline": {
+      "x": 92.5,
+      "y": 311.859375,
+      "width": 647.734375,
+      "height": 222.46875,
+      "right": 740.234375,
+      "bottom": 534.328125
+    },
+    "font": "72px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Explore opportunities",
+        "href": "/en/programmes",
+        "x": 92.5,
+        "y": 645.328125,
+        "width": 247.578125,
+        "height": 58,
+        "right": 340.078125,
+        "bottom": 703.328125
+      },
+      {
+        "text": "Free consultation",
+        "href": "/en/consultation",
+        "x": 362.078125,
+        "y": 652.328125,
+        "width": 154.15625,
+        "height": 44,
+        "right": 516.234375,
+        "bottom": 696.328125
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 1920,
+    "overflow": false,
+    "hero": {
+      "x": 332.5,
+      "y": 150,
+      "width": 1240,
+      "height": 700,
+      "right": 1572.5,
+      "bottom": 850
+    },
+    "headline": {
+      "x": 332.5,
+      "y": 311.859375,
+      "width": 642.34375,
+      "height": 222.46875,
+      "right": 974.84375,
+      "bottom": 534.328125
+    },
+    "font": "72px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Explore opportunities",
+        "href": "/en/programmes",
+        "x": 332.5,
+        "y": 645.328125,
+        "width": 247.578125,
+        "height": 58,
+        "right": 580.078125,
+        "bottom": 703.328125
+      },
+      {
+        "text": "Free consultation",
+        "href": "/en/consultation",
+        "x": 602.078125,
+        "y": 652.328125,
+        "width": 154.15625,
+        "height": 44,
+        "right": 756.234375,
+        "bottom": 696.328125
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 360,
+    "overflow": false,
+    "hero": {
+      "x": 17,
+      "y": 152,
+      "width": 326,
+      "height": 887.75,
+      "right": 343,
+      "bottom": 1039.75
+    },
+    "headline": {
+      "x": 17,
+      "y": 212,
+      "width": 326,
+      "height": 129.75,
+      "right": 343,
+      "bottom": 341.75
+    },
+    "font": "42px",
+    "headerBottom": 152,
+    "forms": 0,
+    "links": [
+      {
+        "text": "استكشف الفرص",
+        "href": "/ar/programmes",
+        "x": 171.703125,
+        "y": 485.75,
+        "width": 171.296875,
+        "height": 50,
+        "right": 343,
+        "bottom": 535.75
+      },
+      {
+        "text": "استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 43.875,
+        "y": 488.75,
+        "width": 117.828125,
+        "height": 44,
+        "right": 161.703125,
+        "bottom": 532.75
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 390,
+    "overflow": false,
+    "hero": {
+      "x": 17,
+      "y": 152,
+      "width": 356,
+      "height": 855.75,
+      "right": 373,
+      "bottom": 1007.75
+    },
+    "headline": {
+      "x": 17,
+      "y": 212,
+      "width": 356,
+      "height": 129.75,
+      "right": 373,
+      "bottom": 341.75
+    },
+    "font": "42px",
+    "headerBottom": 152,
+    "forms": 0,
+    "links": [
+      {
+        "text": "استكشف الفرص",
+        "href": "/ar/programmes",
+        "x": 201.703125,
+        "y": 453.75,
+        "width": 171.296875,
+        "height": 50,
+        "right": 373,
+        "bottom": 503.75
+      },
+      {
+        "text": "استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 73.875,
+        "y": 456.75,
+        "width": 117.828125,
+        "height": 44,
+        "right": 191.703125,
+        "bottom": 500.75
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 768,
+    "overflow": false,
+    "hero": {
+      "x": 32,
+      "y": 150,
+      "width": 689,
+      "height": 567.125,
+      "right": 721,
+      "bottom": 717.125
+    },
+    "headline": {
+      "x": 363.234375,
+      "y": 237.1875,
+      "width": 357.765625,
+      "height": 135.9375,
+      "right": 721,
+      "bottom": 373.125
+    },
+    "font": "44px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "استكشف الفرص",
+        "href": "/ar/programmes",
+        "x": 525.6875,
+        "y": 529.125,
+        "width": 195.3125,
+        "height": 58,
+        "right": 721,
+        "bottom": 587.125
+      },
+      {
+        "text": "استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 581.875,
+        "y": 609.125,
+        "width": 139.125,
+        "height": 44,
+        "right": 721,
+        "bottom": 653.125
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 1024,
+    "overflow": false,
+    "hero": {
+      "x": 32,
+      "y": 150,
+      "width": 945,
+      "height": 700,
+      "right": 977,
+      "bottom": 850
+    },
+    "headline": {
+      "x": 471.65625,
+      "y": 330.53125,
+      "width": 505.34375,
+      "height": 176.109375,
+      "right": 977,
+      "bottom": 506.640625
+    },
+    "font": "57px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "استكشف الفرص",
+        "href": "/ar/programmes",
+        "x": 781.6875,
+        "y": 626.640625,
+        "width": 195.3125,
+        "height": 58,
+        "right": 977,
+        "bottom": 684.640625
+      },
+      {
+        "text": "استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 620.5625,
+        "y": 633.640625,
+        "width": 139.125,
+        "height": 44,
+        "right": 759.6875,
+        "bottom": 677.640625
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 1280,
+    "overflow": false,
+    "hero": {
+      "x": 48,
+      "y": 150,
+      "width": 1169,
+      "height": 700,
+      "right": 1217,
+      "bottom": 850
+    },
+    "headline": {
+      "x": 585.890625,
+      "y": 359.890625,
+      "width": 631.109375,
+      "height": 117.40625,
+      "right": 1217,
+      "bottom": 477.296875
+    },
+    "font": "57px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "استكشف الفرص",
+        "href": "/ar/programmes",
+        "x": 1011.65625,
+        "y": 597.296875,
+        "width": 205.34375,
+        "height": 58,
+        "right": 1217,
+        "bottom": 655.296875
+      },
+      {
+        "text": "استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 850.53125,
+        "y": 604.296875,
+        "width": 139.125,
+        "height": 44,
+        "right": 989.65625,
+        "bottom": 648.296875
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 1440,
+    "overflow": false,
+    "hero": {
+      "x": 92.5,
+      "y": 150,
+      "width": 1240,
+      "height": 700,
+      "right": 1332.5,
+      "bottom": 850
+    },
+    "headline": {
+      "x": 672.5,
+      "y": 359.890625,
+      "width": 660,
+      "height": 117.40625,
+      "right": 1332.5,
+      "bottom": 477.296875
+    },
+    "font": "57px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "استكشف الفرص",
+        "href": "/ar/programmes",
+        "x": 1127.15625,
+        "y": 597.296875,
+        "width": 205.34375,
+        "height": 58,
+        "right": 1332.5,
+        "bottom": 655.296875
+      },
+      {
+        "text": "استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 966.03125,
+        "y": 604.296875,
+        "width": 139.125,
+        "height": 44,
+        "right": 1105.15625,
+        "bottom": 648.296875
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 1920,
+    "overflow": false,
+    "hero": {
+      "x": 332.5,
+      "y": 150,
+      "width": 1240,
+      "height": 700,
+      "right": 1572.5,
+      "bottom": 850
+    },
+    "headline": {
+      "x": 912.5,
+      "y": 359.890625,
+      "width": 660,
+      "height": 117.40625,
+      "right": 1572.5,
+      "bottom": 477.296875
+    },
+    "font": "57px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "استكشف الفرص",
+        "href": "/ar/programmes",
+        "x": 1367.15625,
+        "y": 597.296875,
+        "width": 205.34375,
+        "height": 58,
+        "right": 1572.5,
+        "bottom": 655.296875
+      },
+      {
+        "text": "استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 1206.03125,
+        "y": 604.296875,
+        "width": 139.125,
+        "height": 44,
+        "right": 1345.15625,
+        "bottom": 648.296875
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  }
+]

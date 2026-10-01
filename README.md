@@ -1,5 +1,11 @@
 # Plan B Consultant — Vercel edition
 
+Social sharing: English and Arabic 1200 × 630 JPEG cards are in `public/images/social/`; page metadata includes absolute Open Graph image URLs, dimensions, type, alt text and X/Twitter large-card tags. Regenerate the cards with `node scripts/prepare-social-images.mjs`. They reuse the approved original badge and brand palette. Social-platform preview verification requires the updated site/assets to be publicly deployed; no deployment was performed here.
+
+Search-visibility delivery (2 October 2026): [handover and keyword map](SEARCH-VISIBILITY-HANDOVER.md), [validation](SEARCH-VALIDATION-REPORT.md), [source ledger](SOURCE-REVIEW-LEDGER.md), and [planned authority opportunities / unsent drafts](BACKLINK-OPPORTUNITY-PLAN.md). These documents supersede earlier SEO route-count/indexing notes. Canonicals use `https://planbconsultant.com`; `lib/seo.ts` owns routes and eligibility. There are 168 localized pages, 86 eligible for production indexing. Staging remains noindex. No deployment or external submissions were made.
+
+Latest content delivery: [handover](CONTENT-COMPLETION-HANDOVER.md), [client reconciliation](CLIENT-CONTENT-CHECKLIST.md), and [desktop/mobile preview gallery](artifacts/content-completion/index.html). Contact details and server-side enquiry storage still require configuration; no production deployment was performed.
+
 A bilingual Next.js App Router website for Plan B Consultant, Kuwait. This is the standalone Vercel edition of the client-content update. The live Sites edition has matching UI/content but uses its own database.
 
 ## Run locally (Node.js 22)
@@ -85,7 +91,7 @@ See `VALIDATION.md` for the actual checks performed and the checks requiring you
 
 
 ## Optional enquiry notifications
-Set ENQUIRY_WEBHOOK_URL to a company-controlled HTTPS endpoint and ENQUIRY_WEBHOOK_TOKEN to its bearer secret. The server POSTs an enquiry.created JSON event only after saving a new enquiry. Fields: reference, name, phone, email, method, programme, destination, message, submittedAt (Unix milliseconds). The Idempotency-Key header is the enquiry reference. Configure the receiving system to authenticate the token and deduplicate this key. Never put these secrets in NEXT_PUBLIC variables.
+Set ENQUIRY_WEBHOOK_URL to a company-controlled HTTPS endpoint and ENQUIRY_WEBHOOK_TOKEN to its bearer secret. The server POSTs an enquiry.created JSON event only after saving a new enquiry. Fields: reference, name, phone, email, method, service, locale, programme, destination, message, source, submittedAt (Unix milliseconds), plus `secret` (the token, for receivers such as Google Apps Script that cannot read headers). A 3xx response counts as delivered. For the free Google Sheet + email setup see GOOGLE-SHEET-SETUP.md. The Idempotency-Key header is the enquiry reference. Configure the receiving system to authenticate the token and deduplicate this key. Never put these secrets in NEXT_PUBLIC variables.
 
 Notification failure does not discard the saved lead or report a false form failure. It writes a server error with the reference only. This integration does not include an automatic retry queue: monitor failures and reconcile saved enquiries. The endpoint, recipient workflow and delivery remain unconfigured until the client provides them. Test using a controlled submission before collecting real leads.
 
@@ -93,7 +99,7 @@ Notification failure does not discard the saved lead or report a false form fail
 Verified phone/WhatsApp, company email, office address, opening hours, genuine consultant names/photos and office photography. Configure the existing NEXT_PUBLIC contact variables; empty fields remain hidden. Do not substitute stock people or fabricated credentials.
 
 ### Header and footer contact presentation
-Utility bar and navigation remain together while scrolling. Missing email/phone display marked demo values (`info@planb.example`, `+965 0000 0000`) without live contact actions. Set the existing public email/phone configuration to replace them. Set actual social URLs in `components/contact-links.tsx` to activate LinkedIn, Instagram and Facebook; until then icons show “Coming soon” on hover/focus. Do not launch the public company site with demo contact details.
+Utility bar and navigation remain together while scrolling. Email (`info@planbconsultant.com`), phone (`+965 6614 9059`) and WhatsApp (`96566149059`) default in `lib/content.ts`; the `NEXT_PUBLIC_EMAIL/PHONE/WHATSAPP` variables override them. If a value is emptied, a marked demo placeholder is shown without live contact actions. Set actual social URLs in `components/contact-links.tsx` to activate LinkedIn, Instagram and Facebook; until then icons show “Coming soon” on hover/focus.
 
 ## October 2026 PDF-led edition
 

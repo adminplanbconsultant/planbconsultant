@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "locale": "en",
+      "splashVisible": true,
+      "splashDismissed": true,
+      "tickerMoves": true,
+      "paused": true,
+      "resumed": true,
+      "metadata": [
+        {
+          "page": "about",
+          "title": "Our approach | Plan B Consultant"
+        },
+        {
+          "page": "services/business-immigration",
+          "title": "Business immigration | Plan B Consultant"
+        },
+        {
+          "page": "services/residency-by-investment",
+          "title": "Residency through investment | Plan B Consultant"
+        }
+      ]
+    },
+    {
+      "locale": "ar",
+      "splashVisible": true,
+      "splashDismissed": true,
+      "tickerMoves": true,
+      "paused": true,
+      "resumed": true,
+      "metadata": [
+        {
+          "page": "about",
+          "title": "من نحن | Plan B Consultant"
+        },
+        {
+          "page": "services/business-immigration",
+          "title": "هجرة الأعمال | Plan B Consultant"
+        },
+        {
+          "page": "services/residency-by-investment",
+          "title": "الإقامة عن طريق الاستثمار | Plan B Consultant"
+        }
+      ]
+    }
+  ]
+}

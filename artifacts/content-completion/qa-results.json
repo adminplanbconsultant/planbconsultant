@@ -1,0 +1,1762 @@
+{
+  "results": [
+    {
+      "name": "home-en-390",
+      "width": 390,
+      "path": "/en",
+      "title": "Your next chapter starts here | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Your global ambitions. A clear plan from Kuwait.",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "Emerald Lake and mountain scenery in Canada"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "Mountain landscape in Canada"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "New York skyline and waterfront"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "Mountain scenery and Emerald Lake in Canada"
+        },
+        {
+          "src": "/images/destination-2.jpg",
+          "loaded": true,
+          "alt": "Sydney Harbour and city skyline"
+        },
+        {
+          "src": "/images/destinations/germany.jpg",
+          "loaded": true,
+          "alt": "Brandenburg Gate in Berlin"
+        },
+        {
+          "src": "/images/destinations/sweden.jpg",
+          "loaded": true,
+          "alt": "Stockholm waterfront architecture"
+        },
+        {
+          "src": "/images/destinations/portugal.jpg",
+          "loaded": true,
+          "alt": "Yellow tram on a historic Lisbon street"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "Lower Manhattan skyline from the water"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "home-en-1440",
+      "width": 1440,
+      "path": "/en",
+      "title": "Your next chapter starts here | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Your global ambitions. A clear plan from Kuwait.",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "Emerald Lake and mountain scenery in Canada"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "Mountain landscape in Canada"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "New York skyline and waterfront"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "Mountain scenery and Emerald Lake in Canada"
+        },
+        {
+          "src": "/images/destination-2.jpg",
+          "loaded": true,
+          "alt": "Sydney Harbour and city skyline"
+        },
+        {
+          "src": "/images/destinations/germany.jpg",
+          "loaded": true,
+          "alt": "Brandenburg Gate in Berlin"
+        },
+        {
+          "src": "/images/destinations/sweden.jpg",
+          "loaded": true,
+          "alt": "Stockholm waterfront architecture"
+        },
+        {
+          "src": "/images/destinations/portugal.jpg",
+          "loaded": true,
+          "alt": "Yellow tram on a historic Lisbon street"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "Lower Manhattan skyline from the water"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "about-en-390",
+      "width": 390,
+      "path": "/en/about",
+      "title": "Our approach | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Your ambition. Our starting point.",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destination-2.jpg",
+          "loaded": true,
+          "alt": "Sydney Harbour and the Opera House, Australia"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "Mountain landscape in Canada"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "New York skyline and waterfront"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "about-en-1440",
+      "width": 1440,
+      "path": "/en/about",
+      "title": "Our approach | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Your ambition. Our starting point.",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destination-2.jpg",
+          "loaded": true,
+          "alt": "Sydney Harbour and the Opera House, Australia"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "Mountain landscape in Canada"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "New York skyline and waterfront"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-skilled-immigration-en-390",
+      "width": 390,
+      "path": "/en/services/skilled-immigration",
+      "title": "Skilled immigration | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Skilled immigration",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-skilled-immigration-en-1440",
+      "width": 1440,
+      "path": "/en/services/skilled-immigration",
+      "title": "Skilled immigration | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Skilled immigration",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-work-visas-en-390",
+      "width": 390,
+      "path": "/en/services/work-visas",
+      "title": "Work visas &amp; permits | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Work visas & permits",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-work-visas-en-1440",
+      "width": 1440,
+      "path": "/en/services/work-visas",
+      "title": "Work visas &amp; permits | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Work visas & permits",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-business-immigration-en-390",
+      "width": 390,
+      "path": "/en/services/business-immigration",
+      "title": "Business immigration | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Business immigration",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-business-immigration-en-1440",
+      "width": 1440,
+      "path": "/en/services/business-immigration",
+      "title": "Business immigration | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Business immigration",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-residency-by-investment-en-390",
+      "width": 390,
+      "path": "/en/services/residency-by-investment",
+      "title": "Residency through investment | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Residency through investment",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-residency-by-investment-en-1440",
+      "width": 1440,
+      "path": "/en/services/residency-by-investment",
+      "title": "Residency through investment | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Residency through investment",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-citizenship-by-investment-en-390",
+      "width": 390,
+      "path": "/en/services/citizenship-by-investment",
+      "title": "Citizenship by investment | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Citizenship by investment",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-citizenship-by-investment-en-1440",
+      "width": 1440,
+      "path": "/en/services/citizenship-by-investment",
+      "title": "Citizenship by investment | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Citizenship by investment",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-study-abroad-en-390",
+      "width": 390,
+      "path": "/en/services/study-abroad",
+      "title": "Study visas | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Study visas",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-study-abroad-en-1440",
+      "width": 1440,
+      "path": "/en/services/study-abroad",
+      "title": "Study visas | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Study visas",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-visit-visas-en-390",
+      "width": 390,
+      "path": "/en/services/visit-visas",
+      "title": "Visit visas | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Visit visas",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-visit-visas-en-1440",
+      "width": 1440,
+      "path": "/en/services/visit-visas",
+      "title": "Visit visas | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Visit visas",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "contact-en-390",
+      "width": 390,
+      "path": "/en/contact",
+      "title": "Contact | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Let’s discuss your next step.",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "contact-en-1440",
+      "width": 1440,
+      "path": "/en/contact",
+      "title": "Contact | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "Let’s discuss your next step.",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "programmes-usa-eb5-en-390",
+      "width": 390,
+      "path": "/en/programmes/usa-eb5",
+      "title": "USA EB-5 investor programme | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "USA EB-5 investor programme",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "United States destination"
+        },
+        {
+          "src": "/images/programmes/usa-eb5-investment.png",
+          "loaded": true,
+          "alt": "Illustration of people discussing a development model"
+        },
+        {
+          "src": "/images/programmes/international-workplace.png",
+          "loaded": true,
+          "alt": "Planning a move abroad"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "programmes-usa-eb5-en-1440",
+      "width": 1440,
+      "path": "/en/programmes/usa-eb5",
+      "title": "USA EB-5 investor programme | Plan B Consultant",
+      "dir": "ltr",
+      "h1": "USA EB-5 investor programme",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "United States destination"
+        },
+        {
+          "src": "/images/programmes/usa-eb5-investment.png",
+          "loaded": true,
+          "alt": "Illustration of people discussing a development model"
+        },
+        {
+          "src": "/images/programmes/international-workplace.png",
+          "loaded": true,
+          "alt": "Planning a move abroad"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          203,
+          82,
+          137,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "home-ar-390",
+      "width": 390,
+      "path": "/ar",
+      "title": "فصلك القادم يبدأ هنا | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "طموحاتك عالمية. وخطتك تبدأ من الكويت.",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "بحيرة إميرالد والجبال في كندا"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "منظر جبلي في كندا"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "أفق نيويورك والواجهة البحرية"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "كندا"
+        },
+        {
+          "src": "/images/destination-2.jpg",
+          "loaded": true,
+          "alt": "أستراليا"
+        },
+        {
+          "src": "/images/destinations/germany.jpg",
+          "loaded": true,
+          "alt": "ألمانيا"
+        },
+        {
+          "src": "/images/destinations/sweden.jpg",
+          "loaded": true,
+          "alt": "السويد"
+        },
+        {
+          "src": "/images/destinations/portugal.jpg",
+          "loaded": true,
+          "alt": "البرتغال"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "الولايات المتحدة"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "home-ar-1440",
+      "width": 1440,
+      "path": "/ar",
+      "title": "فصلك القادم يبدأ هنا | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "طموحاتك عالمية. وخطتك تبدأ من الكويت.",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "بحيرة إميرالد والجبال في كندا"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "منظر جبلي في كندا"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "أفق نيويورك والواجهة البحرية"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "كندا"
+        },
+        {
+          "src": "/images/destination-2.jpg",
+          "loaded": true,
+          "alt": "أستراليا"
+        },
+        {
+          "src": "/images/destinations/germany.jpg",
+          "loaded": true,
+          "alt": "ألمانيا"
+        },
+        {
+          "src": "/images/destinations/sweden.jpg",
+          "loaded": true,
+          "alt": "السويد"
+        },
+        {
+          "src": "/images/destinations/portugal.jpg",
+          "loaded": true,
+          "alt": "البرتغال"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "الولايات المتحدة"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "about-ar-390",
+      "width": 390,
+      "path": "/ar/about",
+      "title": "من نحن | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "طموحك. نقطة انطلاقنا.",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destination-2.jpg",
+          "loaded": true,
+          "alt": "ميناء سيدني ودار الأوبرا في أستراليا"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "منظر جبلي في كندا"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "أفق نيويورك والواجهة البحرية"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "about-ar-1440",
+      "width": 1440,
+      "path": "/ar/about",
+      "title": "من نحن | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "طموحك. نقطة انطلاقنا.",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destination-2.jpg",
+          "loaded": true,
+          "alt": "ميناء سيدني ودار الأوبرا في أستراليا"
+        },
+        {
+          "src": "/images/destination-1.jpg",
+          "loaded": true,
+          "alt": "منظر جبلي في كندا"
+        },
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "أفق نيويورك والواجهة البحرية"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-skilled-immigration-ar-390",
+      "width": 390,
+      "path": "/ar/services/skilled-immigration",
+      "title": "هجرة الكفاءات | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "هجرة الكفاءات",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-skilled-immigration-ar-1440",
+      "width": 1440,
+      "path": "/ar/services/skilled-immigration",
+      "title": "هجرة الكفاءات | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "هجرة الكفاءات",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-work-visas-ar-390",
+      "width": 390,
+      "path": "/ar/services/work-visas",
+      "title": "تأشيرات وتصاريح العمل | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "تأشيرات وتصاريح العمل",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-work-visas-ar-1440",
+      "width": 1440,
+      "path": "/ar/services/work-visas",
+      "title": "تأشيرات وتصاريح العمل | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "تأشيرات وتصاريح العمل",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-business-immigration-ar-390",
+      "width": 390,
+      "path": "/ar/services/business-immigration",
+      "title": "هجرة الأعمال | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "هجرة الأعمال",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-business-immigration-ar-1440",
+      "width": 1440,
+      "path": "/ar/services/business-immigration",
+      "title": "هجرة الأعمال | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "هجرة الأعمال",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-residency-by-investment-ar-390",
+      "width": 390,
+      "path": "/ar/services/residency-by-investment",
+      "title": "الإقامة عن طريق الاستثمار | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "الإقامة عن طريق الاستثمار",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-residency-by-investment-ar-1440",
+      "width": 1440,
+      "path": "/ar/services/residency-by-investment",
+      "title": "الإقامة عن طريق الاستثمار | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "الإقامة عن طريق الاستثمار",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-citizenship-by-investment-ar-390",
+      "width": 390,
+      "path": "/ar/services/citizenship-by-investment",
+      "title": "الجنسية عن طريق الاستثمار | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "الجنسية عن طريق الاستثمار",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-citizenship-by-investment-ar-1440",
+      "width": 1440,
+      "path": "/ar/services/citizenship-by-investment",
+      "title": "الجنسية عن طريق الاستثمار | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "الجنسية عن طريق الاستثمار",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-study-abroad-ar-390",
+      "width": 390,
+      "path": "/ar/services/study-abroad",
+      "title": "تأشيرات الدراسة | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "تأشيرات الدراسة",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-study-abroad-ar-1440",
+      "width": 1440,
+      "path": "/ar/services/study-abroad",
+      "title": "تأشيرات الدراسة | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "تأشيرات الدراسة",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-visit-visas-ar-390",
+      "width": 390,
+      "path": "/ar/services/visit-visas",
+      "title": "تأشيرات الزيارة | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "تأشيرات الزيارة",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "services-visit-visas-ar-1440",
+      "width": 1440,
+      "path": "/ar/services/visit-visas",
+      "title": "تأشيرات الزيارة | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "تأشيرات الزيارة",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "contact-ar-390",
+      "width": 390,
+      "path": "/ar/contact",
+      "title": "تواصل معنا | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "لنناقش خطوتك التالية.",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "contact-ar-1440",
+      "width": 1440,
+      "path": "/ar/contact",
+      "title": "تواصل معنا | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "لنناقش خطوتك التالية.",
+      "overflow": false,
+      "images": [],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "programmes-usa-eb5-ar-390",
+      "width": 390,
+      "path": "/ar/programmes/usa-eb5",
+      "title": "برنامج المستثمرين الأمريكي EB-5 | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "برنامج المستثمرين الأمريكي EB-5",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "الولايات المتحدة — صورة للوجهة"
+        },
+        {
+          "src": "/images/programmes/usa-eb5-investment.png",
+          "loaded": true,
+          "alt": "مشهد توضيحي لأشخاص يناقشون نموذج تطوير"
+        },
+        {
+          "src": "/images/programmes/international-workplace.png",
+          "loaded": true,
+          "alt": "التخطيط للانتقال إلى الخارج"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    },
+    {
+      "name": "programmes-usa-eb5-ar-1440",
+      "width": 1440,
+      "path": "/ar/programmes/usa-eb5",
+      "title": "برنامج المستثمرين الأمريكي EB-5 | Plan B Consultant",
+      "dir": "rtl",
+      "h1": "برنامج المستثمرين الأمريكي EB-5",
+      "overflow": false,
+      "images": [
+        {
+          "src": "/images/destinations/usa.jpg",
+          "loaded": true,
+          "alt": "الولايات المتحدة — صورة للوجهة"
+        },
+        {
+          "src": "/images/programmes/usa-eb5-investment.png",
+          "loaded": true,
+          "alt": "مشهد توضيحي لأشخاص يناقشون نموذج تطوير"
+        },
+        {
+          "src": "/images/programmes/international-workplace.png",
+          "loaded": true,
+          "alt": "التخطيط للانتقال إلى الخارج"
+        }
+      ],
+      "heroForm": false,
+      "footer": {
+        "background": "oklch(0.35 0.086 147)",
+        "logoClip": "ellipse(48% 48%)",
+        "columns": [
+          169,
+          74,
+          123,
+          141
+        ],
+        "credit": true
+      },
+      "headerSticky": true
+    }
+  ],
+  "reduced": [
+    {
+      "locale": "en",
+      "overflow": false,
+      "animation": "none",
+      "visibleCountries": true
+    },
+    {
+      "locale": "ar",
+      "overflow": false,
+      "animation": "none",
+      "visibleCountries": true
+    }
+  ],
+  "linkResults": [
+    {
+      "link": "/en",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/study-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/about",
+      "status": 200
+    },
+    {
+      "link": "/en/contact",
+      "status": 200
+    },
+    {
+      "link": "/ar",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/canada",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/australia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/germany",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/sweden",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/portugal",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/united-states",
+      "status": 200
+    },
+    {
+      "link": "/en/services/skilled-immigration",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/canada-express-entry",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/australia-skilled-migration",
+      "status": 200
+    },
+    {
+      "link": "/en/services/work-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/australia-work-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/germany-nursing",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/germany-car-mechanics",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/sweden-work-permit",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/portugal-work-residence",
+      "status": 200
+    },
+    {
+      "link": "/en/services/business-immigration",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/canada-c11",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/usa-eb5",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/usa-e2",
+      "status": 200
+    },
+    {
+      "link": "/en/services/citizenship-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/citizenship-investment",
+      "status": 200
+    },
+    {
+      "link": "/en/services/study-abroad",
+      "status": 200
+    },
+    {
+      "link": "/en/services/visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/services/global-job-search",
+      "status": 200
+    },
+    {
+      "link": "/en/services/family-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/services/permanent-residency",
+      "status": 200
+    },
+    {
+      "link": "/en/services/ielts-preparation",
+      "status": 200
+    },
+    {
+      "link": "/en/services/settlement-support",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations",
+      "status": 200
+    },
+    {
+      "link": "/en/faqs",
+      "status": 200
+    },
+    {
+      "link": "/en/resources",
+      "status": 200
+    },
+    {
+      "link": "/en/resources/prepare-for-your-consultation",
+      "status": 200
+    },
+    {
+      "link": "/en/resources/job-search-or-work-visa",
+      "status": 200
+    },
+    {
+      "link": "/en/resources/organise-your-documents",
+      "status": 200
+    },
+    {
+      "link": "/en/services",
+      "status": 200
+    },
+    {
+      "link": "/en/privacy",
+      "status": 200
+    },
+    {
+      "link": "/en/services/residency-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/about",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/skilled-immigration",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation?service=skilled-immigration",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/work-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation?service=work-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/business-immigration",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation?service=business-immigration",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/residency-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation?service=residency-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/citizenship-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation?service=citizenship-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/study-abroad",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation?service=study-abroad",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation?service=visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/contact",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/usa-eb5",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation?programme=usa-eb5",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/study-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/canada",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/australia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/germany",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/sweden",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/portugal",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/united-states",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/canada-express-entry",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/australia-skilled-migration",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/australia-work-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/germany-nursing",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/germany-car-mechanics",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/sweden-work-permit",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/portugal-work-residence",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/canada-c11",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/usa-e2",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/citizenship-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/global-job-search",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/family-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/permanent-residency",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/ielts-preparation",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/settlement-support",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations",
+      "status": 200
+    },
+    {
+      "link": "/ar/faqs",
+      "status": 200
+    },
+    {
+      "link": "/ar/resources",
+      "status": 200
+    },
+    {
+      "link": "/ar/resources/prepare-for-your-consultation",
+      "status": 200
+    },
+    {
+      "link": "/ar/resources/job-search-or-work-visa",
+      "status": 200
+    },
+    {
+      "link": "/ar/resources/organise-your-documents",
+      "status": 200
+    },
+    {
+      "link": "/ar/services",
+      "status": 200
+    },
+    {
+      "link": "/ar/privacy",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation?service=skilled-immigration",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation?service=work-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation?service=business-immigration",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation?service=residency-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation?service=citizenship-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation?service=study-abroad",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation?service=visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation?programme=usa-eb5",
+      "status": 200
+    }
+  ],
+  "failures": [],
+  "broken": []
+}

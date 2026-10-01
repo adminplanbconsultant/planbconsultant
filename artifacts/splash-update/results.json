@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "locale": "en",
+      "width": 330,
+      "visible": true,
+      "dismissed": true,
+      "height": 257.125,
+      "src": "/images/plan-b-header-en.png",
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 420,
+      "visible": true,
+      "dismissed": true,
+      "height": 327.265625,
+      "src": "/images/plan-b-header-en.png",
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    {
+      "locale": "ar",
+      "width": 330,
+      "visible": true,
+      "dismissed": true,
+      "height": 256.4219055175781,
+      "src": "/images/plan-b-header-ar.png",
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    },
+    {
+      "locale": "ar",
+      "width": 420,
+      "visible": true,
+      "dismissed": true,
+      "height": 326.359375,
+      "src": "/images/plan-b-header-ar.png",
+      "background": "rgba(0, 0, 0, 0)",
+      "overflow": false
+    }
+  ],
+  "reduced": {
+    "visible": true,
+    "animation": "none",
+    "dismissed": true
+  }
+}

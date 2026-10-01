@@ -1,0 +1,191 @@
+﻿{
+  "pages": [
+    {
+      "route": "/en",
+      "runs": [
+        {
+          "headersMs": 10,
+          "completeMs": 12.16
+        },
+        {
+          "headersMs": 13.59,
+          "completeMs": 20.23
+        },
+        {
+          "headersMs": 8.44,
+          "completeMs": 11.85
+        },
+        {
+          "headersMs": 12.84,
+          "completeMs": 15.74
+        },
+        {
+          "headersMs": 12.81,
+          "completeMs": 19.68
+        }
+      ],
+      "medianHeadersMs": 12.81,
+      "medianCompleteMs": 15.74,
+      "htmlBytes": 125028,
+      "htmlGzipBytes": 21797,
+      "scriptRequests": 7,
+      "jsBytes": 801502,
+      "jsGzipBytes": 248843
+    },
+    {
+      "route": "/ar",
+      "runs": [
+        {
+          "headersMs": 5.99,
+          "completeMs": 7.45
+        },
+        {
+          "headersMs": 21.89,
+          "completeMs": 23.49
+        },
+        {
+          "headersMs": 13.63,
+          "completeMs": 15.1
+        },
+        {
+          "headersMs": 5.86,
+          "completeMs": 7.41
+        },
+        {
+          "headersMs": 21.81,
+          "completeMs": 23.38
+        }
+      ],
+      "medianHeadersMs": 13.63,
+      "medianCompleteMs": 15.1,
+      "htmlBytes": 131069,
+      "htmlGzipBytes": 22703,
+      "scriptRequests": 7,
+      "jsBytes": 801502,
+      "jsGzipBytes": 248843
+    },
+    {
+      "route": "/en/programmes/canada-express-entry",
+      "runs": [
+        {
+          "headersMs": 13.56,
+          "completeMs": 14.76
+        },
+        {
+          "headersMs": 13.7,
+          "completeMs": 14.77
+        },
+        {
+          "headersMs": 16.09,
+          "completeMs": 17.21
+        },
+        {
+          "headersMs": 12.61,
+          "completeMs": 13.73
+        },
+        {
+          "headersMs": 15.61,
+          "completeMs": 16.98
+        }
+      ],
+      "medianHeadersMs": 13.7,
+      "medianCompleteMs": 14.77,
+      "htmlBytes": 95244,
+      "htmlGzipBytes": 19971,
+      "scriptRequests": 7,
+      "jsBytes": 801502,
+      "jsGzipBytes": 248843
+    },
+    {
+      "route": "/ar/programmes/germany-nursing",
+      "runs": [
+        {
+          "headersMs": 3.95,
+          "completeMs": 5.1
+        },
+        {
+          "headersMs": 8.72,
+          "completeMs": 10.29
+        },
+        {
+          "headersMs": 14.28,
+          "completeMs": 15.73
+        },
+        {
+          "headersMs": 14.14,
+          "completeMs": 15.37
+        },
+        {
+          "headersMs": 13.33,
+          "completeMs": 14.46
+        }
+      ],
+      "medianHeadersMs": 13.33,
+      "medianCompleteMs": 14.46,
+      "htmlBytes": 100421,
+      "htmlGzipBytes": 21510,
+      "scriptRequests": 7,
+      "jsBytes": 801502,
+      "jsGzipBytes": 248843
+    },
+    {
+      "route": "/en/contact",
+      "runs": [
+        {
+          "headersMs": 14.33,
+          "completeMs": 15.02
+        },
+        {
+          "headersMs": 15.03,
+          "completeMs": 15.68
+        },
+        {
+          "headersMs": 13.86,
+          "completeMs": 14.57
+        },
+        {
+          "headersMs": 14.57,
+          "completeMs": 15.19
+        },
+        {
+          "headersMs": 15.54,
+          "completeMs": 16.11
+        }
+      ],
+      "medianHeadersMs": 14.57,
+      "medianCompleteMs": 15.19,
+      "htmlBytes": 48044,
+      "htmlGzipBytes": 9455,
+      "scriptRequests": 7,
+      "jsBytes": 801502,
+      "jsGzipBytes": 248843
+    }
+  ],
+  "largestImages": [
+    {
+      "path": "public\\images\\programmes\\usa-eb5-investment.png",
+      "bytes": 2351782
+    },
+    {
+      "path": "public\\images\\programmes\\international-workplace.png",
+      "bytes": 2315110
+    },
+    {
+      "path": "public\\images\\programmes\\business-advisory.png",
+      "bytes": 2267890
+    },
+    {
+      "path": "public\\images\\programmes\\automotive-workshop.png",
+      "bytes": 2181518
+    },
+    {
+      "path": "public\\images\\programmes\\canada-c11-operations.png",
+      "bytes": 2166806
+    },
+    {
+      "path": "public\\images\\programmes\\usa-e2-enterprise.png",
+      "bytes": 2156457
+    }
+  ],
+  "limitations": "HTTP and asset lab measurements only. No browser surface was available. LCP, CLS, INP, Lighthouse scores and real-user Core Web Vitals were not measured."
+}

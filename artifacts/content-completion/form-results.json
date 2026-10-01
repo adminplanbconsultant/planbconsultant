@@ -1,0 +1,195 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "locale": "en",
+      "form": "general",
+      "error": "Online enquiries are not configured yet. Please use the available contact actions.",
+      "success": false
+    },
+    {
+      "locale": "en",
+      "form": "assessment",
+      "error": "We could not save your request. Please check your details and try again.",
+      "success": false
+    },
+    {
+      "locale": "en",
+      "form": "popup",
+      "error": "Online enquiries are not configured yet. Please use the contact details shown above.",
+      "success": false
+    },
+    {
+      "locale": "ar",
+      "form": "general",
+      "error": "خدمة الاستفسارات الإلكترونية غير مهيأة بعد. استخدم وسائل التواصل المتاحة.",
+      "success": false
+    },
+    {
+      "locale": "ar",
+      "form": "assessment",
+      "error": "تعذر حفظ الطلب. راجع بياناتك وحاول مجدداً.",
+      "success": false
+    },
+    {
+      "locale": "ar",
+      "form": "popup",
+      "error": "خدمة الاستفسارات الإلكترونية غير مهيأة بعد. استخدم بيانات التواصل أعلاه.",
+      "success": false
+    }
+  ],
+  "requests": [
+    {
+      "url": "http://localhost:3108/api/enquiries",
+      "body": {
+        "id": "7daa08b6-e712-4598-a9f4-2231bd4d333c",
+        "name": "Local QA Test",
+        "email": "qa@example.invalid",
+        "phone": "+96555555555",
+        "service": "not-sure",
+        "message": "Local unconfigured-form validation only.",
+        "consent": true,
+        "website": "",
+        "programme": "not-sure",
+        "destination": "Not sure yet",
+        "age": "",
+        "education": "",
+        "profession": "",
+        "nationality": "",
+        "residence": "Kuwait",
+        "budget": "Not applicable",
+        "offer": "not-sure",
+        "method": "email",
+        "locale": "en"
+      }
+    },
+    {
+      "url": "http://localhost:3108/api/enquiries",
+      "body": {
+        "id": "19880616-080d-4f1c-89b4-efc14cde1f72",
+        "programme": "not-sure",
+        "service": "business-immigration",
+        "destination": "Not sure yet",
+        "age": "",
+        "education": "",
+        "profession": "",
+        "nationality": "",
+        "residence": "",
+        "budget": "Not applicable",
+        "name": "Local QA Test",
+        "phone": "+96555555555",
+        "email": "qa@example.invalid",
+        "message": "",
+        "website": "",
+        "consent": true,
+        "method": "whatsapp",
+        "offer": "not-sure",
+        "locale": "en"
+      }
+    },
+    {
+      "url": "http://localhost:3108/api/enquiries",
+      "body": {
+        "id": "f8c5c8c2-a934-4b59-a3fb-9215f83a01da",
+        "name": "Local QA Test",
+        "email": "qa@example.invalid",
+        "phone": "+96555555555",
+        "age": "21–32",
+        "education": "Diploma",
+        "profession": "QA",
+        "programme": "not-sure",
+        "consent": true,
+        "website": "",
+        "service": "not-sure",
+        "destination": "Not sure yet",
+        "offer": "not-sure",
+        "method": "whatsapp",
+        "message": "",
+        "nationality": "",
+        "residence": "",
+        "budget": "Not applicable",
+        "locale": "en"
+      }
+    },
+    {
+      "url": "http://localhost:3108/api/enquiries",
+      "body": {
+        "id": "636e673b-5e8b-4dad-9e03-ff33f0ee5a95",
+        "name": "Local QA Test",
+        "email": "qa@example.invalid",
+        "phone": "+96555555555",
+        "service": "not-sure",
+        "message": "Local unconfigured-form validation only.",
+        "consent": true,
+        "website": "",
+        "programme": "not-sure",
+        "destination": "Not sure yet",
+        "age": "",
+        "education": "",
+        "profession": "",
+        "nationality": "",
+        "residence": "Kuwait",
+        "budget": "Not applicable",
+        "offer": "not-sure",
+        "method": "email",
+        "locale": "ar"
+      }
+    },
+    {
+      "url": "http://localhost:3108/api/enquiries",
+      "body": {
+        "id": "16fb80db-272f-411d-a702-3dc24f886c5f",
+        "programme": "not-sure",
+        "service": "business-immigration",
+        "destination": "Not sure yet",
+        "age": "",
+        "education": "",
+        "profession": "",
+        "nationality": "",
+        "residence": "",
+        "budget": "Not applicable",
+        "name": "Local QA Test",
+        "phone": "+96555555555",
+        "email": "qa@example.invalid",
+        "message": "",
+        "website": "",
+        "consent": true,
+        "method": "whatsapp",
+        "offer": "not-sure",
+        "locale": "ar"
+      }
+    },
+    {
+      "url": "http://localhost:3108/api/enquiries",
+      "body": {
+        "id": "3bda2d0e-9ed9-443d-91cf-69b842f626df",
+        "name": "Local QA Test",
+        "email": "qa@example.invalid",
+        "phone": "+96555555555",
+        "age": "21–32",
+        "education": "Diploma",
+        "profession": "QA",
+        "programme": "not-sure",
+        "consent": true,
+        "website": "",
+        "service": "not-sure",
+        "destination": "Not sure yet",
+        "offer": "not-sure",
+        "method": "whatsapp",
+        "message": "",
+        "nationality": "",
+        "residence": "",
+        "budget": "Not applicable",
+        "locale": "ar"
+      }
+    }
+  ],
+  "responses": [
+    503,
+    503,
+    503,
+    503,
+    503,
+    503
+  ]
+}

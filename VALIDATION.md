@@ -1,5 +1,11 @@
 # Validation — 28 September 2026
 
+## Latest content phase - 1 October 2026
+
+The current Next.js/PostgreSQL project passed production build, TypeScript, 168 bilingual-route smoke checks, 44 desktop/mobile browser cases, 104 internal link targets, six bilingual form UI submissions against the unconfigured local backend, reduced-motion checks at 320px, and the existing assessment-popup regression. Production screenshots and machine-readable results are in `artifacts/content-completion/`. Manual visual coverage and remaining limits are detailed in `CONTENT-COMPLETION-HANDOVER.md`.
+
+Current submission testing confirms HTTP 503 and honest failure feedback when PostgreSQL is unconfigured. Earlier D1/Worker results below describe a different historical edition; they do not verify persistence in this deliverable. No production database or real notification delivery was tested in this phase, and nothing was deployed.
+
 ## Live Sites edition
 - Production build and TypeScript passed.
 - Local Worker runtime: 164 English/Arabic routes returned 200.

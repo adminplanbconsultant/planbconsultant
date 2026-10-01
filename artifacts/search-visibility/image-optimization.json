@@ -1,0 +1,197 @@
+[
+  {
+    "input": "public/images/hero/berlin.jpg",
+    "bytes": 251104,
+    "width": 1400,
+    "height": 933,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/berlin-480.webp",
+        "bytes": 23456
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/berlin-960.webp",
+        "bytes": 78412
+      },
+      {
+        "width": 1400,
+        "path": "public/images/optimized/berlin-1400.webp",
+        "bytes": 153804
+      }
+    ]
+  },
+  {
+    "input": "public/images/hero/sydney.jpg",
+    "bytes": 617339,
+    "width": 1400,
+    "height": 1867,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/sydney-480.webp",
+        "bytes": 63486
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/sydney-960.webp",
+        "bytes": 216414
+      },
+      {
+        "width": 1400,
+        "path": "public/images/optimized/sydney-1400.webp",
+        "bytes": 400330
+      }
+    ]
+  },
+  {
+    "input": "public/images/hero/toronto.jpg",
+    "bytes": 220343,
+    "width": 1400,
+    "height": 933,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/toronto-480.webp",
+        "bytes": 24648
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/toronto-960.webp",
+        "bytes": 96246
+      },
+      {
+        "width": 1400,
+        "path": "public/images/optimized/toronto-1400.webp",
+        "bytes": 196356
+      }
+    ]
+  },
+  {
+    "input": "public/images/programmes/automotive-workshop.png",
+    "bytes": 2181518,
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/automotive-workshop-480.webp",
+        "bytes": 33594
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/automotive-workshop-960.webp",
+        "bytes": 81630
+      }
+    ]
+  },
+  {
+    "input": "public/images/programmes/business-advisory.png",
+    "bytes": 2267890,
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/business-advisory-480.webp",
+        "bytes": 30980
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/business-advisory-960.webp",
+        "bytes": 74732
+      }
+    ]
+  },
+  {
+    "input": "public/images/programmes/canada-c11-operations.png",
+    "bytes": 2166806,
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/canada-c11-operations-480.webp",
+        "bytes": 29458
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/canada-c11-operations-960.webp",
+        "bytes": 72270
+      }
+    ]
+  },
+  {
+    "input": "public/images/programmes/germany-nursing.png",
+    "bytes": 1940580,
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/germany-nursing-480.webp",
+        "bytes": 23198
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/germany-nursing-960.webp",
+        "bytes": 55674
+      }
+    ]
+  },
+  {
+    "input": "public/images/programmes/international-workplace.png",
+    "bytes": 2315110,
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/international-workplace-480.webp",
+        "bytes": 34464
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/international-workplace-960.webp",
+        "bytes": 84144
+      }
+    ]
+  },
+  {
+    "input": "public/images/programmes/usa-e2-enterprise.png",
+    "bytes": 2156457,
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/usa-e2-enterprise-480.webp",
+        "bytes": 32772
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/usa-e2-enterprise-960.webp",
+        "bytes": 80710
+      }
+    ]
+  },
+  {
+    "input": "public/images/programmes/usa-eb5-investment.png",
+    "bytes": 2351782,
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "path": "public/images/optimized/usa-eb5-investment-480.webp",
+        "bytes": 35148
+      },
+      {
+        "width": 960,
+        "path": "public/images/optimized/usa-eb5-investment-960.webp",
+        "bytes": 89974
+      }
+    ]
+  }
+]

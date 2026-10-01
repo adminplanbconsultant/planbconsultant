@@ -1,0 +1,48 @@
+[
+  {
+    "locale": "en",
+    "original": [
+      1699,
+      926
+    ],
+    "crop": [
+      306,
+      17,
+      1393,
+      864
+    ],
+    "size": [
+      1087,
+      847
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "rgbUnchanged": true,
+    "emblemHeightInSource": 775
+  },
+  {
+    "locale": "ar",
+    "original": [
+      1699,
+      926
+    ],
+    "crop": [
+      304,
+      17,
+      1394,
+      864
+    ],
+    "size": [
+      1090,
+      847
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "rgbUnchanged": true,
+    "emblemHeightInSource": 775
+  }
+]

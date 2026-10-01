@@ -347,6 +347,10 @@ export const programmes = [
       [
         "AIMA — work residence routes",
         "https://aima.gov.pt/pt/trabalhar"
+      ],
+      [
+        "AIMA — general residence requirements",
+        "https://aima.gov.pt/pt/viver/autorizacao-de-residencia-regime-e-requisitos-gerais-art-o-77-o-n-o-1"
       ]
     ]
   },
@@ -543,8 +547,8 @@ export const programmes = [
     "country": "Multiple destinations",
     "title": "Study abroad & student visas",
     "ar": "الدراسة وتأشيرات الطلاب",
-    "intro": "Connect your education goals with a suitable course, admission preparation and the relevant student-visa process.",
-    "introAr": "اربط أهدافك التعليمية ببرنامج مناسب والتحضير للقبول وإجراءات تأشيرة الطالب.",
+    "intro": "Discuss your study plans, admission status and questions about preparing for the relevant student-visa process.",
+    "introAr": "ناقش خطط الدراسة وحالة القبول وأسئلتك حول التحضير لإجراءات تأشيرة الطالب.",
     "requirements": [
       "Confirm the institution, course, entry criteria and recognised admission offer.",
       "Prepare evidence of tuition and living funds, language ability and academic history as required.",
@@ -556,26 +560,31 @@ export const programmes = [
       "راجع متطلبات تأشيرة الطالب والتأمين وقواعد المعالين الخاصة بالوجهة."
     ],
     "benefits": [
-      "Support with organising admission and visa preparation.",
+      "Guidance on organising your study-visa questions and preparation.",
       "A clearer plan for study costs, documents and departure."
     ],
     "benefitsAr": [
-      "دعم تنظيم التحضير للقبول والتأشيرة.",
+      "إرشادات لتنظيم أسئلة تأشيرة الدراسة والتحضير لها.",
       "خطة أوضح لتكاليف الدراسة والمستندات والسفر."
     ],
     "process": [
       "Discuss your education, course interests and budget.",
-      "Review admission requirements and prepare the application.",
+      "Confirm your admission status directly with your chosen institution.",
       "After a suitable offer, prepare the student-visa application and pre-departure checklist."
     ],
     "processAr": [
       "ناقش تعليمك واهتماماتك وميزانيتك.",
-      "راجع شروط القبول وجهّز الطلب.",
+      "أكّد حالة القبول مباشرة مع المؤسسة التي اخترتها.",
       "بعد العرض المناسب جهّز طلب تأشيرة الطالب وقائمة ما قبل السفر."
     ],
     "note": "Admission, scholarships, student work rights and post-study residence are not guaranteed. They depend on the institution, destination and your individual circumstances.",
     "noteAr": "لا نضمن القبول أو المنح أو حقوق عمل الطالب أو الإقامة بعد الدراسة؛ تعتمد على المؤسسة والوجهة والظروف الفردية.",
-    "sources": []
+    "sources": [
+      [
+        "IRCC — Canada study permit eligibility (destination example)",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html"
+      ]
+    ]
   },
   {
     "slug": "visit-visas",
@@ -615,7 +624,12 @@ export const programmes = [
     ],
     "note": "A visitor visa does not automatically permit employment. Appointment availability, processing time, entry and approval remain subject to the relevant authorities.",
     "noteAr": "لا تسمح تأشيرة الزيارة تلقائياً بالعمل. يخضع توفر المواعيد والمعالجة والدخول والموافقة للجهات المختصة.",
-    "sources": []
+    "sources": [
+      [
+        "IRCC — Canada visitor eligibility (destination example)",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html"
+      ]
+    ]
   }
 ];
 export const programmeGroups = [["skilled", "Skilled immigration", "هجرة الكفاءات"], ["work", "Work permits", "تصاريح العمل"], ["business", "Business & investment", "الأعمال والاستثمار"], ["citizenship", "Citizenship by investment", "الجنسية بالاستثمار"], ["study", "Study visas", "تأشيرات الدراسة"], ["visit", "Visit visas", "تأشيرات الزيارة"]] as const;

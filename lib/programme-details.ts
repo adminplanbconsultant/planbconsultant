@@ -187,4 +187,48 @@ export const programmeDetails:Record<string,ProgrammeDetail>={
    {question:['How is E-2 different from EB-5?','كيف يختلف E-2 عن EB-5؟'],answer:['E-2 depends on treaty nationality and a substantial active investment but is temporary. EB-5 has statutory investment and job-creation thresholds and is an immigrant route to conditional permanent residence.','يعتمد E-2 على جنسية دولة المعاهدة واستثمار نشط جوهري لكنه مؤقت. أما EB-5 فله حدود قانونية للاستثمار وإنشاء الوظائف وهو مسار مهاجر إلى إقامة دائمة مشروطة.']}
   ]
  }
+ ,'visit-visas':{
+  overview:[
+   ['A visit or visitor visa is generally for a temporary stay for tourism, visiting family or friends, or short permitted business activities. The category, permitted activities, length of stay and application method depend on the destination and your nationality.','تأشيرة الزيارة مخصصة عادةً لإقامة مؤقتة بغرض السياحة أو زيارة الأقارب والأصدقاء أو أنشطة أعمال قصيرة مسموح بها. وتعتمد الفئة والأنشطة المسموحة ومدة الإقامة وطريقة التقديم على الوجهة وجنسيتك.'],
+   ['Requirements and processing differ between countries, and some nationalities may travel without a visa or need an electronic authorisation instead. Check the official rules for your destination before booking non-refundable travel.','تختلف المتطلبات والمعالجة بين الدول، وقد يسافر بعض حاملي الجنسيات دون تأشيرة أو يحتاجون إلى تصريح إلكتروني بدلاً منها. راجع القواعد الرسمية للوجهة قبل حجز رحلات غير قابلة للاسترداد.']
+  ],
+  pathways:[],
+  documents:[
+   ['Valid passport with enough remaining validity, and previous visas where relevant','جواز سفر ساري بمدة صلاحية كافية، وتأشيرات سابقة عند الاقتضاء'],
+   ['Travel plan and accommodation details, or an invitation where required','خطة السفر وتفاصيل السكن، أو دعوة عند الطلب'],
+   ['Evidence of funds, such as bank statements, to cover the trip','إثبات الأموال، مثل كشوف الحساب، لتغطية الرحلة'],
+   ['Evidence of ties to Kuwait or your home country, such as employment, study or family','إثبات الارتباط بالكويت أو ببلدك، مثل العمل أو الدراسة أو الأسرة'],
+   ['Travel or medical insurance where the destination requires it','تأمين السفر أو التأمين الطبي إن اشترطته الوجهة'],
+   ['Photographs, application forms and any biometric requirements','الصور ونماذج الطلب وأي متطلبات للبصمات']
+  ],
+  faqs:[
+   {question:['How long can I stay on a visit visa?','كم مدة الإقامة بتأشيرة الزيارة؟'],answer:['The permitted stay is set by the destination authority and shown on the visa or entry decision. It varies by country and category, so check the official terms before booking.','تحدد الجهة المختصة في الوجهة مدة الإقامة المسموحة وتظهر في التأشيرة أو قرار الدخول. وتختلف حسب الدولة والفئة، فراجع الشروط الرسمية قبل الحجز.']},
+   {question:['Can I work or study on a visitor visa?','هل يمكنني العمل أو الدراسة بتأشيرة زيارة؟'],answer:['Generally not. Visitor categories usually do not permit employment, and study may be limited to short periods. Some short business activities may be allowed; confirm the exact rules for your destination.','عموماً لا. فئات الزيارة لا تسمح عادةً بالعمل، وقد تقتصر الدراسة على فترات قصيرة. وقد تُسمح بعض أنشطة الأعمال القصيرة؛ تأكد من القواعد الدقيقة للوجهة.']},
+   {question:['Do I need an invitation letter?','هل أحتاج إلى خطاب دعوة؟'],answer:['Not always. Some destinations or purposes, such as visiting family or friends, may request an invitation or host details. The requirement depends on the destination and your circumstances.','ليس دائماً. قد تطلب بعض الوجهات أو الأغراض، مثل زيارة الأقارب أو الأصدقاء، دعوة أو بيانات المضيف. ويعتمد ذلك على الوجهة وظروفك.']},
+   {question:['Can I extend my stay?','هل يمكن تمديد الإقامة؟'],answer:['Extension rules differ widely and are not guaranteed. Where extensions exist, they usually must be requested before the permitted stay ends.','تختلف قواعد التمديد كثيراً وليست مضمونة. وحيث تتوفر، يجب عادةً طلبها قبل انتهاء مدة الإقامة المسموحة.']},
+   {question:['Does a visit visa guarantee entry?','هل تضمن تأشيرة الزيارة الدخول؟'],answer:['No. A visa lets you travel to the border; entry is decided by border officials, and every visa decision rests with the relevant authority.','لا. تتيح التأشيرة السفر إلى الحدود، ويقرر موظفو الحدود الدخول، ويعود كل قرار بشأن التأشيرة إلى الجهة المختصة.']}
+  ]
+ },
+ 'study-visas':{
+  overview:[
+   ['A student visa or study permit allows you to study at an approved institution in another country for the length of your course. Most destinations require an offer of admission before you apply.','تتيح تأشيرة الطالب أو تصريح الدراسة الدراسة في مؤسسة معتمدة في بلد آخر طوال مدة البرنامج. وتشترط معظم الوجهات الحصول على عرض قبول قبل التقديم.'],
+   ['Rules on tuition, funds, language, health insurance, work during study and bringing family differ by destination and institution. Plan the course and the visa together, and confirm admission directly with the institution.','تختلف القواعد المتعلقة بالرسوم الدراسية والأموال واللغة والتأمين الصحي والعمل أثناء الدراسة واصطحاب الأسرة حسب الوجهة والمؤسسة. خطط للبرنامج والتأشيرة معاً، وتأكد من القبول مباشرة مع المؤسسة.']
+  ],
+  pathways:[],
+  documents:[
+   ['Admission or enrolment offer from a recognised institution','عرض قبول أو تسجيل من مؤسسة معترف بها'],
+   ['Academic transcripts and certificates, with translations where required','السجلات الأكاديمية والشهادات، مع الترجمات عند الحاجة'],
+   ['Language-test results where the course or destination requires them','نتائج اختبار اللغة إن اشترطها البرنامج أو الوجهة'],
+   ['Evidence of tuition payment and living funds, such as bank statements or sponsor letters','إثبات دفع الرسوم الدراسية وتكاليف المعيشة، مثل كشوف الحساب أو خطابات الكفيل'],
+   ['Valid passport and any previous visa history','جواز سفر ساري وسجل التأشيرات السابقة'],
+   ['Health insurance, accommodation plans and, where applicable, documents for accompanying dependants','التأمين الصحي وخطط السكن، ومستندات المعالين المرافقين عند الاقتضاء']
+  ],
+  faqs:[
+   {question:['Do I need an offer of admission before applying?','هل أحتاج إلى عرض قبول قبل التقديم؟'],answer:['Usually yes. Most student-visa routes require a confirmed offer or enrolment from a recognised institution. Confirm the exact requirement for your destination.','عادةً نعم. تتطلب معظم مسارات تأشيرة الطالب عرض قبول أو تسجيل مؤكد من مؤسسة معترف بها. تأكد من المتطلب الدقيق لوجهتك.']},
+   {question:['Which language tests are accepted?','ما اختبارات اللغة المقبولة؟'],answer:['Accepted tests and minimum scores are set by the institution and the destination authority. Check both before you book a test.','تحدد المؤسسة والجهة المختصة في الوجهة الاختبارات المقبولة والدرجات الدنيا. تحقق من الاثنين قبل حجز الاختبار.']},
+   {question:['Can I work while I study?','هل يمكنني العمل أثناء الدراسة؟'],answer:['Some destinations allow limited work during study, with limits on hours and conditions. It is never guaranteed and rules change, so confirm the current rules before relying on it.','تسمح بعض الوجهات بعمل محدود أثناء الدراسة مع قيود على الساعات وشروط. وهو غير مضمون وتتغير القواعد، فتأكد من القواعد الحالية قبل الاعتماد عليه.']},
+   {question:['Can my family join me?','هل يمكن لأسرتي مرافقتي؟'],answer:['Some destinations allow spouses or children to accompany students, subject to conditions and separate applications. Rules differ by destination and level of study.','تسمح بعض الوجهات بمرافقة الزوج أو الأبناء للطلاب وفق شروط وطلبات منفصلة. وتختلف القواعد حسب الوجهة ومستوى الدراسة.']},
+   {question:['Are admission and a visa guaranteed?','هل القبول والتأشيرة مضمونان؟'],answer:['No. Admission is decided by the institution and visa decisions rest with the relevant authority. Plan with this in mind and avoid non-refundable commitments until you have an outcome.','لا. تقرر المؤسسة القبول ويعود قرار التأشيرة إلى الجهة المختصة. خطط على هذا الأساس وتجنب الالتزامات غير القابلة للاسترداد حتى تعرف النتيجة.']}
+  ]
+ }
 };

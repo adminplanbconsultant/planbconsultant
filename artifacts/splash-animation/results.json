@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "locale": "en",
+      "width": 390,
+      "loaded": true,
+      "ringAnimation": "splash-orbit-turn",
+      "overflow": false,
+      "dismissed": true
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "loaded": true,
+      "ringAnimation": "splash-orbit-turn",
+      "overflow": false,
+      "dismissed": true
+    },
+    {
+      "locale": "ar",
+      "width": 390,
+      "loaded": true,
+      "ringAnimation": "splash-orbit-turn",
+      "overflow": false,
+      "dismissed": true
+    },
+    {
+      "locale": "ar",
+      "width": 1440,
+      "loaded": true,
+      "ringAnimation": "splash-orbit-turn",
+      "overflow": false,
+      "dismissed": true
+    }
+  ],
+  "reduced": {
+    "visible": true,
+    "animation": "none",
+    "dismissed": true
+  }
+}

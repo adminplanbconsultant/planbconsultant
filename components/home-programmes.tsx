@@ -1,0 +1,10 @@
+import {ArrowUpRight,Globe2,BriefcaseBusiness,Building2,ShieldCheck,GraduationCap,Plane} from 'lucide-react';
+import {programmeGroups,programmes} from '@/lib/programmes';
+import {categoryServices} from '@/lib/service-overviews';
+import {text,type Locale} from '@/lib/content';
+
+export default function HomeProgrammes({locale:l}:{locale:Locale}){
+ const t=(en:string,ar:string)=>text(l,en,ar);
+ const descriptions=[['Explore the skilled-migration routes for Canada and Australia.','استكشف مسارات هجرة الكفاءات إلى كندا وأستراليا.'],['Understand your options for employer-linked work overseas.','تعرّف على خيارات العمل في الخارج المرتبطة بصاحب عمل.'],['Compare business and investment routes around your goals.','قارن مسارات الأعمال والاستثمار وفق أهدافك.'],['Begin with your family, mobility and citizenship objectives.','ابدأ بأهداف الأسرة والتنقل والجنسية.'],['Discuss your study plans and student-visa preparation.','ناقش خطط الدراسة والتحضير لتأشيرة الطالب.'],['Plan a holiday, family visit or short stay.','خطط لعطلة أو زيارة عائلية أو إقامة قصيرة.']];
+ return <div className="service-grid home-programme-grid">{programmeGroups.map((g,i)=>{const Icon=[Globe2,BriefcaseBusiness,Building2,ShieldCheck,GraduationCap,Plane][i];const items=programmes.filter(p=>p.group===g[0]);return <article key={g[0]} className="service-card"><div className="card-top"><Icon size={29} strokeWidth={1.35}/><span>0{i+1}</span></div><span className="route-count">{l==='ar'?`${items.length} ${items.length===1?'مسار':'مسارات'}`:`${items.length} ${items.length===1?'route':'routes'}`}</span><h3><a href={'/'+l+'/services/'+categoryServices[g[0]]}>{g[0]==='business'?t('Business immigration','هجرة الأعمال'):t(g[1],g[2])}</a></h3><p>{t(descriptions[i][0],descriptions[i][1])}</p><ul className="home-programme-links">{items.map(p=><li key={p.slug}><a href={'/'+l+'/programmes/'+p.slug}><span>{t(p.title,p.ar)}</span><ArrowUpRight size={15}/></a></li>)}</ul><a className="card-link" href={'/'+l+'/services/'+categoryServices[g[0]]}>{t('Service overview','نظرة على الخدمة')}<ArrowUpRight size={18}/></a></article>})}</div>;
+}

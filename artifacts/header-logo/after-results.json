@@ -1,0 +1,450 @@
+[
+  {
+    "locale": "en",
+    "width": 320,
+    "overflow": false,
+    "brand": {
+      "x": 12,
+      "y": 73,
+      "width": 92.390625,
+      "height": 72,
+      "right": 104.390625,
+      "bottom": 145
+    },
+    "logo": {
+      "x": 12,
+      "y": 73,
+      "width": 92.390625,
+      "height": 72,
+      "right": 104.390625,
+      "bottom": 145
+    },
+    "header": {
+      "x": 0,
+      "y": 67,
+      "width": 320,
+      "height": 85,
+      "right": 320,
+      "bottom": 152
+    },
+    "nav": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "cta": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-en.png",
+    "loaded": true
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "overflow": false,
+    "brand": {
+      "x": 12,
+      "y": 73,
+      "width": 92.390625,
+      "height": 72,
+      "right": 104.390625,
+      "bottom": 145
+    },
+    "logo": {
+      "x": 12,
+      "y": 73,
+      "width": 92.390625,
+      "height": 72,
+      "right": 104.390625,
+      "bottom": 145
+    },
+    "header": {
+      "x": 0,
+      "y": 67,
+      "width": 390,
+      "height": 85,
+      "right": 390,
+      "bottom": 152
+    },
+    "nav": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "cta": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-en.png",
+    "loaded": true
+  },
+  {
+    "locale": "en",
+    "width": 1200,
+    "overflow": false,
+    "brand": {
+      "x": 20,
+      "y": 51,
+      "width": 125.765625,
+      "height": 98,
+      "right": 145.765625,
+      "bottom": 149
+    },
+    "logo": {
+      "x": 20,
+      "y": 51,
+      "width": 125.765625,
+      "height": 98,
+      "right": 145.765625,
+      "bottom": 149
+    },
+    "header": {
+      "x": 0,
+      "y": 45,
+      "width": 1185,
+      "height": 111,
+      "right": 1185,
+      "bottom": 156
+    },
+    "nav": {
+      "x": 157.765625,
+      "y": 58,
+      "width": 791.3125,
+      "height": 84,
+      "right": 949.078125,
+      "bottom": 142
+    },
+    "cta": {
+      "x": 1002.609375,
+      "y": 78,
+      "width": 162.390625,
+      "height": 44,
+      "right": 1165,
+      "bottom": 122
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-en.png",
+    "loaded": true
+  },
+  {
+    "locale": "en",
+    "width": 1440,
+    "overflow": false,
+    "brand": {
+      "x": 20,
+      "y": 51,
+      "width": 125.765625,
+      "height": 98,
+      "right": 145.765625,
+      "bottom": 149
+    },
+    "logo": {
+      "x": 20,
+      "y": 51,
+      "width": 125.765625,
+      "height": 98,
+      "right": 145.765625,
+      "bottom": 149
+    },
+    "header": {
+      "x": 0,
+      "y": 45,
+      "width": 1425,
+      "height": 111,
+      "right": 1425,
+      "bottom": 156
+    },
+    "nav": {
+      "x": 157.765625,
+      "y": 58,
+      "width": 1031.3125,
+      "height": 84,
+      "right": 1189.078125,
+      "bottom": 142
+    },
+    "cta": {
+      "x": 1242.609375,
+      "y": 78,
+      "width": 162.390625,
+      "height": 44,
+      "right": 1405,
+      "bottom": 122
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-en.png",
+    "loaded": true
+  },
+  {
+    "locale": "ar",
+    "width": 320,
+    "overflow": false,
+    "brand": {
+      "x": 215.34375,
+      "y": 73,
+      "width": 92.65625,
+      "height": 72,
+      "right": 308,
+      "bottom": 145
+    },
+    "logo": {
+      "x": 215.34375,
+      "y": 73,
+      "width": 92.65625,
+      "height": 72,
+      "right": 308,
+      "bottom": 145
+    },
+    "header": {
+      "x": 0,
+      "y": 67,
+      "width": 320,
+      "height": 85,
+      "right": 320,
+      "bottom": 152
+    },
+    "nav": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "cta": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-ar.png",
+    "loaded": true
+  },
+  {
+    "locale": "ar",
+    "width": 390,
+    "overflow": false,
+    "brand": {
+      "x": 285.34375,
+      "y": 73,
+      "width": 92.65625,
+      "height": 72,
+      "right": 378,
+      "bottom": 145
+    },
+    "logo": {
+      "x": 285.34375,
+      "y": 73,
+      "width": 92.65625,
+      "height": 72,
+      "right": 378,
+      "bottom": 145
+    },
+    "header": {
+      "x": 0,
+      "y": 67,
+      "width": 390,
+      "height": 85,
+      "right": 390,
+      "bottom": 152
+    },
+    "nav": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "cta": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-ar.png",
+    "loaded": true
+  },
+  {
+    "locale": "ar",
+    "width": 1200,
+    "overflow": false,
+    "brand": {
+      "x": 1038.890625,
+      "y": 51,
+      "width": 126.109375,
+      "height": 98,
+      "right": 1165,
+      "bottom": 149
+    },
+    "logo": {
+      "x": 1038.890625,
+      "y": 51,
+      "width": 126.109375,
+      "height": 98,
+      "right": 1165,
+      "bottom": 149
+    },
+    "header": {
+      "x": 0,
+      "y": 45,
+      "width": 1185,
+      "height": 111,
+      "right": 1185,
+      "bottom": 156
+    },
+    "nav": {
+      "x": 227.4375,
+      "y": 58,
+      "width": 799.453125,
+      "height": 84,
+      "right": 1026.890625,
+      "bottom": 142
+    },
+    "cta": {
+      "x": 20,
+      "y": 78,
+      "width": 147.828125,
+      "height": 44,
+      "right": 167.828125,
+      "bottom": 122
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-ar.png",
+    "loaded": true
+  },
+  {
+    "locale": "ar",
+    "width": 1440,
+    "overflow": false,
+    "brand": {
+      "x": 1278.890625,
+      "y": 51,
+      "width": 126.109375,
+      "height": 98,
+      "right": 1405,
+      "bottom": 149
+    },
+    "logo": {
+      "x": 1278.890625,
+      "y": 51,
+      "width": 126.109375,
+      "height": 98,
+      "right": 1405,
+      "bottom": 149
+    },
+    "header": {
+      "x": 0,
+      "y": 45,
+      "width": 1425,
+      "height": 111,
+      "right": 1425,
+      "bottom": 156
+    },
+    "nav": {
+      "x": 227.4375,
+      "y": 58,
+      "width": 1039.453125,
+      "height": 84,
+      "right": 1266.890625,
+      "bottom": 142
+    },
+    "cta": {
+      "x": 20,
+      "y": 78,
+      "width": 147.828125,
+      "height": 44,
+      "right": 167.828125,
+      "bottom": 122
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-ar.png",
+    "loaded": true
+  }
+]

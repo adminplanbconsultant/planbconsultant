@@ -3,18 +3,106 @@
   "license_summary": "Free copyright license for commercial and noncommercial use, including modification; attribution appreciated but not required. Do not sell unmodified images or compile a competing image service.",
   "download_status": "Downloaded and bundled locally for reliable delivery.",
   "images": [
-    {"name":"london","photographer":"Val Vesa","description":"Warm golden-hour vertical Westminster, Big Ben and bridge","source":"https://unsplash.com/photos/big-ben-clock-tower-and-westminster-palace-london-QWwDuyb1VuY","image":"https://images.unsplash.com/photo-1777378194994-5145c6fb46ba?auto=format&fit=crop&w=1800&q=85"},
-    {"name":"canada","photographer":"Nathalie Lays","description":"Emerald Lake, British Columbia with mountain and forest reflections","source":"https://unsplash.com/photos/calm-lake-reflects-trees-and-cloudy-mountains-qVkEkEFmvvo","image":"https://images.unsplash.com/photo-1761199849693-143282bb91a2?auto=format&fit=crop&w=1200&q=85"},
-    {"name":"sydney","photographer":"Chris Fuller","description":"Sydney Opera House and harbour","source":"https://unsplash.com/photos/sydney-opera-house-rGroSPZon7o","image":"https://images.unsplash.com/photo-1513315911826-0d184239bc7f?auto=format&fit=crop&w=1200&q=85"},
-    {"name":"germany","photographer":"Unsplash contributor (see source listing)","description":"Brandenburg Gate, Berlin","source":"https://unsplash.com/s/photos/brandenburger-tor","image":"https://images.unsplash.com/photo-1585321962899-e956da0b7e5a"},
-    {"name":"sweden","photographer":"Unsplash contributor","description":"Stockholm waterfront architecture","source":"https://unsplash.com/photos/a-body-of-water-with-buildings-around-it-HaAVZg3b-7o","image":"https://images.unsplash.com/photo-1651923234957-b2db37563fe2"},
-    {"name":"portugal","photographer":"Vitalijs Barilo","description":"Lisbon yellow tram and historic street","source":"https://unsplash.com/photos/yellow-tram-on-a-narrow-street-with-buildings-YMuJri9Iz_U","image":"https://images.unsplash.com/photo-1682447448492-682010151fc5"},
-    {"name":"usa","photographer":"Shai Pal","description":"Lower Manhattan skyline from the water","source":"https://unsplash.com/photos/a-view-of-a-city-skyline-from-the-water-QvoZgwCiMjU","image":"https://images.unsplash.com/photo-1642266119829-724a103be644"}
+    {
+      "name": "london",
+      "photographer": "Val Vesa",
+      "description": "Warm golden-hour vertical Westminster, Big Ben and bridge",
+      "source": "https://unsplash.com/photos/big-ben-clock-tower-and-westminster-palace-london-QWwDuyb1VuY",
+      "image": "https://images.unsplash.com/photo-1777378194994-5145c6fb46ba?auto=format&fit=crop&w=1800&q=85"
+    },
+    {
+      "name": "canada",
+      "photographer": "Nathalie Lays",
+      "description": "Emerald Lake, British Columbia with mountain and forest reflections",
+      "source": "https://unsplash.com/photos/calm-lake-reflects-trees-and-cloudy-mountains-qVkEkEFmvvo",
+      "image": "https://images.unsplash.com/photo-1761199849693-143282bb91a2?auto=format&fit=crop&w=1200&q=85"
+    },
+    {
+      "name": "sydney",
+      "photographer": "Chris Fuller",
+      "description": "Sydney Opera House and harbour",
+      "source": "https://unsplash.com/photos/sydney-opera-house-rGroSPZon7o",
+      "image": "https://images.unsplash.com/photo-1513315911826-0d184239bc7f?auto=format&fit=crop&w=1200&q=85"
+    },
+    {
+      "name": "germany",
+      "photographer": "Unsplash contributor (see source listing)",
+      "description": "Brandenburg Gate, Berlin",
+      "source": "https://unsplash.com/s/photos/brandenburger-tor",
+      "image": "https://images.unsplash.com/photo-1585321962899-e956da0b7e5a"
+    },
+    {
+      "name": "sweden",
+      "photographer": "Unsplash contributor",
+      "description": "Stockholm waterfront architecture",
+      "source": "https://unsplash.com/photos/a-body-of-water-with-buildings-around-it-HaAVZg3b-7o",
+      "image": "https://images.unsplash.com/photo-1651923234957-b2db37563fe2"
+    },
+    {
+      "name": "portugal",
+      "photographer": "Vitalijs Barilo",
+      "description": "Lisbon yellow tram and historic street",
+      "source": "https://unsplash.com/photos/yellow-tram-on-a-narrow-street-with-buildings-YMuJri9Iz_U",
+      "image": "https://images.unsplash.com/photo-1682447448492-682010151fc5"
+    },
+    {
+      "name": "usa",
+      "photographer": "Shai Pal",
+      "description": "Lower Manhattan skyline from the water",
+      "source": "https://unsplash.com/photos/a-view-of-a-city-skyline-from-the-water-QvoZgwCiMjU",
+      "image": "https://images.unsplash.com/photo-1642266119829-724a103be644"
+    }
   ],
   "generated_images": [
-    {"name":"germany-nursing","file":"public/images/programmes/germany-nursing.png","creator":"OpenAI image generation","description":"Diverse nursing team in a modern German hospital corridor","usage":"Germany nursing programme"},
-    {"name":"automotive-workshop","file":"public/images/programmes/automotive-workshop.png","creator":"OpenAI image generation","description":"Skilled mechanic diagnosing a vehicle in a modern European workshop","usage":"Germany mechanics programme"},
-    {"name":"international-workplace","file":"public/images/programmes/international-workplace.png","creator":"OpenAI image generation","description":"International professionals collaborating in a contemporary European workplace","usage":"Skilled migration and work programme context"},
-    {"name":"business-advisory","file":"public/images/programmes/business-advisory.png","creator":"OpenAI image generation","description":"Entrepreneur and advisers reviewing an active business plan","usage":"Business and investor programme context"}
-  ]
+    {
+      "name": "germany-nursing",
+      "file": "public/images/programmes/germany-nursing.png",
+      "creator": "OpenAI image generation",
+      "description": "Diverse nursing team in a modern German hospital corridor",
+      "usage": "Germany nursing programme"
+    },
+    {
+      "name": "automotive-workshop",
+      "file": "public/images/programmes/automotive-workshop.png",
+      "creator": "OpenAI image generation",
+      "description": "Skilled mechanic diagnosing a vehicle in a modern European workshop",
+      "usage": "Germany mechanics programme"
+    },
+    {
+      "name": "international-workplace",
+      "file": "public/images/programmes/international-workplace.png",
+      "creator": "OpenAI image generation",
+      "description": "International professionals collaborating in a contemporary European workplace",
+      "usage": "Skilled migration and work programme context"
+    },
+    {
+      "name": "business-advisory",
+      "file": "public/images/programmes/business-advisory.png",
+      "creator": "OpenAI image generation",
+      "description": "Entrepreneur and advisers reviewing an active business plan",
+      "usage": "Business and investor programme context"
+    },
+    {
+      "name": "canada-c11-operations",
+      "file": "public/images/programmes/canada-c11-operations.png",
+      "creator": "OpenAI image generation",
+      "description": "Illustrative business scene; not actual Plan B staff, clients, premises, investment projects or completed transactions",
+      "usage": "Programme context with visible bilingual AI disclosure"
+    },
+    {
+      "name": "usa-eb5-investment",
+      "file": "public/images/programmes/usa-eb5-investment.png",
+      "creator": "OpenAI image generation",
+      "description": "Illustrative business scene; not actual Plan B staff, clients, premises, investment projects or completed transactions",
+      "usage": "Programme context with visible bilingual AI disclosure"
+    },
+    {
+      "name": "usa-e2-enterprise",
+      "file": "public/images/programmes/usa-e2-enterprise.png",
+      "creator": "OpenAI image generation",
+      "description": "Illustrative business scene; not actual Plan B staff, clients, premises, investment projects or completed transactions",
+      "usage": "Programme context with visible bilingual AI disclosure"
+    }
+  ],
+  "review": "2026-10-01: destination photographs and seven generated contextual images visually inspected. Generated scenes are illustrative and labelled on the website. Existing approved crest is retained with transparent SVG clipping in the footer."
 }

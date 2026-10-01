@@ -1,0 +1,904 @@
+﻿{
+  "phase": "after",
+  "base": "http://localhost:3100",
+  "checkedAt": "2026-10-02",
+  "pages": 168,
+  "indexable": 0,
+  "prerenderedPages": 168,
+  "generatedRoutes": [
+    "/ar",
+    "/ar/about",
+    "/ar/consultation",
+    "/ar/contact",
+    "/ar/destinations",
+    "/ar/destinations/australia",
+    "/ar/destinations/austria",
+    "/ar/destinations/brazil",
+    "/ar/destinations/bulgaria",
+    "/ar/destinations/canada",
+    "/ar/destinations/china",
+    "/ar/destinations/cyprus",
+    "/ar/destinations/czech-republic",
+    "/ar/destinations/estonia",
+    "/ar/destinations/finland",
+    "/ar/destinations/france",
+    "/ar/destinations/germany",
+    "/ar/destinations/greece",
+    "/ar/destinations/hungary",
+    "/ar/destinations/iceland",
+    "/ar/destinations/ireland",
+    "/ar/destinations/italy",
+    "/ar/destinations/japan",
+    "/ar/destinations/latvia",
+    "/ar/destinations/liechtenstein",
+    "/ar/destinations/lithuania",
+    "/ar/destinations/luxembourg",
+    "/ar/destinations/malaysia",
+    "/ar/destinations/monaco",
+    "/ar/destinations/netherlands",
+    "/ar/destinations/new-zealand",
+    "/ar/destinations/norway",
+    "/ar/destinations/poland",
+    "/ar/destinations/portugal",
+    "/ar/destinations/russia",
+    "/ar/destinations/san-marino",
+    "/ar/destinations/saudi-arabia",
+    "/ar/destinations/schengen",
+    "/ar/destinations/singapore",
+    "/ar/destinations/slovakia",
+    "/ar/destinations/slovenia",
+    "/ar/destinations/south-korea",
+    "/ar/destinations/spain",
+    "/ar/destinations/sweden",
+    "/ar/destinations/switzerland",
+    "/ar/destinations/tanzania",
+    "/ar/destinations/thailand",
+    "/ar/destinations/turkey",
+    "/ar/destinations/united-kingdom",
+    "/ar/destinations/united-states",
+    "/ar/destinations/vatican-city",
+    "/ar/faqs",
+    "/ar/privacy",
+    "/ar/programmes",
+    "/ar/programmes/australia-skilled-migration",
+    "/ar/programmes/australia-work-visas",
+    "/ar/programmes/canada-c11",
+    "/ar/programmes/canada-express-entry",
+    "/ar/programmes/citizenship-investment",
+    "/ar/programmes/germany-car-mechanics",
+    "/ar/programmes/germany-nursing",
+    "/ar/programmes/portugal-work-residence",
+    "/ar/programmes/study-visas",
+    "/ar/programmes/sweden-work-permit",
+    "/ar/programmes/usa-e2",
+    "/ar/programmes/usa-eb5",
+    "/ar/programmes/visit-visas",
+    "/ar/resources",
+    "/ar/resources/job-search-or-work-visa",
+    "/ar/resources/organise-your-documents",
+    "/ar/resources/prepare-for-your-consultation",
+    "/ar/services",
+    "/ar/services/business-immigration",
+    "/ar/services/citizenship-by-investment",
+    "/ar/services/family-visas",
+    "/ar/services/global-job-search",
+    "/ar/services/ielts-preparation",
+    "/ar/services/permanent-residency",
+    "/ar/services/residency-by-investment",
+    "/ar/services/settlement-support",
+    "/ar/services/skilled-immigration",
+    "/ar/services/study-abroad",
+    "/ar/services/visit-visas",
+    "/ar/services/work-visas",
+    "/en",
+    "/en/about",
+    "/en/consultation",
+    "/en/contact",
+    "/en/destinations",
+    "/en/destinations/australia",
+    "/en/destinations/austria",
+    "/en/destinations/brazil",
+    "/en/destinations/bulgaria",
+    "/en/destinations/canada",
+    "/en/destinations/china",
+    "/en/destinations/cyprus",
+    "/en/destinations/czech-republic",
+    "/en/destinations/estonia",
+    "/en/destinations/finland",
+    "/en/destinations/france",
+    "/en/destinations/germany",
+    "/en/destinations/greece",
+    "/en/destinations/hungary",
+    "/en/destinations/iceland",
+    "/en/destinations/ireland",
+    "/en/destinations/italy",
+    "/en/destinations/japan",
+    "/en/destinations/latvia",
+    "/en/destinations/liechtenstein",
+    "/en/destinations/lithuania",
+    "/en/destinations/luxembourg",
+    "/en/destinations/malaysia",
+    "/en/destinations/monaco",
+    "/en/destinations/netherlands",
+    "/en/destinations/new-zealand",
+    "/en/destinations/norway",
+    "/en/destinations/poland",
+    "/en/destinations/portugal",
+    "/en/destinations/russia",
+    "/en/destinations/san-marino",
+    "/en/destinations/saudi-arabia",
+    "/en/destinations/schengen",
+    "/en/destinations/singapore",
+    "/en/destinations/slovakia",
+    "/en/destinations/slovenia",
+    "/en/destinations/south-korea",
+    "/en/destinations/spain",
+    "/en/destinations/sweden",
+    "/en/destinations/switzerland",
+    "/en/destinations/tanzania",
+    "/en/destinations/thailand",
+    "/en/destinations/turkey",
+    "/en/destinations/united-kingdom",
+    "/en/destinations/united-states",
+    "/en/destinations/vatican-city",
+    "/en/faqs",
+    "/en/privacy",
+    "/en/programmes",
+    "/en/programmes/australia-skilled-migration",
+    "/en/programmes/australia-work-visas",
+    "/en/programmes/canada-c11",
+    "/en/programmes/canada-express-entry",
+    "/en/programmes/citizenship-investment",
+    "/en/programmes/germany-car-mechanics",
+    "/en/programmes/germany-nursing",
+    "/en/programmes/portugal-work-residence",
+    "/en/programmes/study-visas",
+    "/en/programmes/sweden-work-permit",
+    "/en/programmes/usa-e2",
+    "/en/programmes/usa-eb5",
+    "/en/programmes/visit-visas",
+    "/en/resources",
+    "/en/resources/job-search-or-work-visa",
+    "/en/resources/organise-your-documents",
+    "/en/resources/prepare-for-your-consultation",
+    "/en/services",
+    "/en/services/business-immigration",
+    "/en/services/citizenship-by-investment",
+    "/en/services/family-visas",
+    "/en/services/global-job-search",
+    "/en/services/ielts-preparation",
+    "/en/services/permanent-residency",
+    "/en/services/residency-by-investment",
+    "/en/services/settlement-support",
+    "/en/services/skilled-immigration",
+    "/en/services/study-abroad",
+    "/en/services/visit-visas",
+    "/en/services/work-visas"
+  ],
+  "sitemapEntries": 0,
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "failures": [],
+  "live": {
+    "error": "fetch failed",
+    "cause": "EACCES"
+  },
+  "special": [
+    {
+      "route": "/",
+      "status": 308,
+      "location": "/en"
+    },
+    {
+      "route": "/en/",
+      "status": 308,
+      "location": "/en"
+    },
+    {
+      "route": "/en/missing-page",
+      "status": 404,
+      "location": null
+    },
+    {
+      "route": "/fr",
+      "status": 404,
+      "location": null
+    },
+    {
+      "route": "/en/programmes/missing",
+      "status": 404,
+      "location": null
+    },
+    {
+      "route": "/en/contact/extra",
+      "status": 404,
+      "location": null
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "location": null,
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://planbconsultant.com/sitemap.xml\n"
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "location": null,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n</urlset>\n"
+    }
+  ],
+  "linkStatuses": [
+    {
+      "link": "/en",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/study-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/about",
+      "status": 200
+    },
+    {
+      "link": "/en/contact",
+      "status": 200
+    },
+    {
+      "link": "/ar",
+      "status": 200
+    },
+    {
+      "link": "/en/consultation",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/canada",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/australia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/germany",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/sweden",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/portugal",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/united-states",
+      "status": 200
+    },
+    {
+      "link": "/en/services/skilled-immigration",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/canada-express-entry",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/australia-skilled-migration",
+      "status": 200
+    },
+    {
+      "link": "/en/services/work-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/australia-work-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/germany-nursing",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/germany-car-mechanics",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/sweden-work-permit",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/portugal-work-residence",
+      "status": 200
+    },
+    {
+      "link": "/en/services/business-immigration",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/canada-c11",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/usa-eb5",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/usa-e2",
+      "status": 200
+    },
+    {
+      "link": "/en/services/citizenship-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/en/programmes/citizenship-investment",
+      "status": 200
+    },
+    {
+      "link": "/en/services/study-abroad",
+      "status": 200
+    },
+    {
+      "link": "/en/services/visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/services/global-job-search",
+      "status": 200
+    },
+    {
+      "link": "/en/services/family-visas",
+      "status": 200
+    },
+    {
+      "link": "/en/services/permanent-residency",
+      "status": 200
+    },
+    {
+      "link": "/en/services/ielts-preparation",
+      "status": 200
+    },
+    {
+      "link": "/en/services/settlement-support",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations",
+      "status": 200
+    },
+    {
+      "link": "/en/faqs",
+      "status": 200
+    },
+    {
+      "link": "/en/resources",
+      "status": 200
+    },
+    {
+      "link": "/en/resources/prepare-for-your-consultation",
+      "status": 200
+    },
+    {
+      "link": "/en/resources/job-search-or-work-visa",
+      "status": 200
+    },
+    {
+      "link": "/en/resources/organise-your-documents",
+      "status": 200
+    },
+    {
+      "link": "/en/services",
+      "status": 200
+    },
+    {
+      "link": "/en/privacy",
+      "status": 200
+    },
+    {
+      "link": "/en/services/residency-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/about",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes",
+      "status": 200
+    },
+    {
+      "link": "/ar/services",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/united-kingdom",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/new-zealand",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/schengen",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/thailand",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/japan",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/turkey",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/china",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/south-korea",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/saudi-arabia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/malaysia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/singapore",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/ireland",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/cyprus",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/russia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/italy",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/france",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/switzerland",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/greece",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/finland",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/netherlands",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/spain",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/austria",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/iceland",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/poland",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/czech-republic",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/lithuania",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/latvia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/estonia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/monaco",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/san-marino",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/liechtenstein",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/luxembourg",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/vatican-city",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/slovakia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/bulgaria",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/slovenia",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/hungary",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/norway",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/tanzania",
+      "status": 200
+    },
+    {
+      "link": "/en/destinations/brazil",
+      "status": 200
+    },
+    {
+      "link": "/ar/resources",
+      "status": 200
+    },
+    {
+      "link": "/ar/consultation",
+      "status": 200
+    },
+    {
+      "link": "/ar/contact",
+      "status": 200
+    },
+    {
+      "link": "/ar/privacy",
+      "status": 200
+    },
+    {
+      "link": "/ar/faqs",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/canada-express-entry",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/australia-skilled-migration",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/australia-work-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/germany-nursing",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/germany-car-mechanics",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/sweden-work-permit",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/portugal-work-residence",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/canada-c11",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/usa-eb5",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/usa-e2",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/citizenship-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/study-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/programmes/visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/residency-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/citizenship-by-investment",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/skilled-immigration",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/work-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/visit-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/study-abroad",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/global-job-search",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/business-immigration",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/family-visas",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/permanent-residency",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/ielts-preparation",
+      "status": 200
+    },
+    {
+      "link": "/ar/services/settlement-support",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/canada",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/australia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/united-kingdom",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/united-states",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/new-zealand",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/schengen",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/thailand",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/japan",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/turkey",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/china",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/south-korea",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/saudi-arabia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/malaysia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/singapore",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/ireland",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/cyprus",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/russia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/italy",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/france",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/switzerland",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/germany",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/greece",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/finland",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/netherlands",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/spain",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/sweden",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/austria",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/iceland",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/poland",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/czech-republic",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/lithuania",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/latvia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/estonia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/monaco",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/san-marino",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/liechtenstein",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/luxembourg",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/vatican-city",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/slovakia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/bulgaria",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/slovenia",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/hungary",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/portugal",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/norway",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/tanzania",
+      "status": 200
+    },
+    {
+      "link": "/ar/destinations/brazil",
+      "status": 200
+    },
+    {
+      "link": "/ar/resources/prepare-for-your-consultation",
+      "status": 200
+    },
+    {
+      "link": "/ar/resources/job-search-or-work-visa",
+      "status": 200
+    },
+    {
+      "link": "/ar/resources/organise-your-documents",
+      "status": 200
+    }
+  ]
+}

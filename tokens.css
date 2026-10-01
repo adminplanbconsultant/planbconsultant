@@ -1,3 +1,60 @@
+@font-face {
+  font-family: "ZT Talk";
+  src: url("/fonts/ZTTalk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Talk";
+  src: url("/fonts/ZTTalk-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Talk";
+  src: url("/fonts/ZTTalk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Talk";
+  src: url("/fonts/ZTTalk-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Talk";
+  src: url("/fonts/ZTTalk-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Talk";
+  src: url("/fonts/ZTTalk-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Talk";
+  src: url("/fonts/ZTTalk-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Talk";
+  src: url("/fonts/ZTTalk-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --color-paper: oklch(95.8% 0.012 92);
   --color-paper-2: oklch(92.5% 0.018 96);
@@ -20,8 +77,8 @@
   --color-text-muted: var(--color-muted);
   --color-overlay: oklch(20% 0.04 147 / 0.68);
 
-  --font-display: Georgia, "Times New Roman", serif;
-  --font-body: "Manrope", Tahoma, Arial, sans-serif;
+  --font-display: "ZT Talk", Georgia, "Times New Roman", serif;
+  --font-body: "ZT Talk", "Manrope", Tahoma, Arial, sans-serif;
   --font-arabic: Tahoma, Arial, sans-serif;
 
   --space-3xs: 0.125rem;

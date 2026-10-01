@@ -1,0 +1,856 @@
+[
+  {
+    "locale": "en",
+    "width": 360,
+    "overflow": false,
+    "hero": {
+      "x": 17,
+      "y": 152,
+      "width": 326,
+      "height": 1062.5,
+      "right": 343,
+      "bottom": 1214.5
+    },
+    "headline": {
+      "x": 17,
+      "y": 218.296875,
+      "width": 326,
+      "height": 182.75,
+      "right": 343,
+      "bottom": 401.046875
+    },
+    "font": "39.24px",
+    "headerBottom": 152,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Book a Free Consultation",
+        "href": "/en/consultation",
+        "x": 17,
+        "y": 531.71875,
+        "width": 234.453125,
+        "height": 50,
+        "right": 251.453125,
+        "bottom": 581.71875
+      },
+      {
+        "text": "Explore Programmes",
+        "href": "/en/programmes",
+        "x": 17,
+        "y": 590.71875,
+        "width": 164.171875,
+        "height": 46,
+        "right": 181.171875,
+        "bottom": 636.71875
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "overflow": false,
+    "hero": {
+      "x": 17,
+      "y": 152,
+      "width": 356,
+      "height": 1054.1875,
+      "right": 373,
+      "bottom": 1206.1875
+    },
+    "headline": {
+      "x": 17,
+      "y": 218.296875,
+      "width": 356,
+      "height": 197.4375,
+      "right": 373,
+      "bottom": 415.734375
+    },
+    "font": "42.51px",
+    "headerBottom": 152,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Book a Free Consultation",
+        "href": "/en/consultation",
+        "x": 17,
+        "y": 546.40625,
+        "width": 234.453125,
+        "height": 50,
+        "right": 251.453125,
+        "bottom": 596.40625
+      },
+      {
+        "text": "Explore Programmes",
+        "href": "/en/programmes",
+        "x": 17,
+        "y": 605.40625,
+        "width": 164.171875,
+        "height": 46,
+        "right": 181.171875,
+        "bottom": 651.40625
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "overflow": false,
+    "hero": {
+      "x": 36.5,
+      "y": 150,
+      "width": 680,
+      "height": 1064.0625,
+      "right": 716.5,
+      "bottom": 1214.0625
+    },
+    "headline": {
+      "x": 36.5,
+      "y": 236.6875,
+      "width": 680,
+      "height": 136.59375,
+      "right": 716.5,
+      "bottom": 373.28125
+    },
+    "font": "60px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Book a Free Consultation",
+        "href": "/en/consultation",
+        "x": 36.5,
+        "y": 491.28125,
+        "width": 255.03125,
+        "height": 55.59375,
+        "right": 291.53125,
+        "bottom": 546.875
+      },
+      {
+        "text": "Explore Programmes",
+        "href": "/en/programmes",
+        "x": 303.53125,
+        "y": 495.078125,
+        "width": 174.640625,
+        "height": 48,
+        "right": 478.171875,
+        "bottom": 543.078125
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 1024,
+    "overflow": false,
+    "hero": {
+      "x": 32,
+      "y": 150,
+      "width": 945,
+      "height": 669.59375,
+      "right": 977,
+      "bottom": 819.59375
+    },
+    "headline": {
+      "x": 32,
+      "y": 279.171875,
+      "width": 500.171875,
+      "height": 186.15625,
+      "right": 532.171875,
+      "bottom": 465.328125
+    },
+    "font": "55.296px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Book a Free Consultation",
+        "href": "/en/consultation",
+        "x": 32,
+        "y": 583.328125,
+        "width": 255.03125,
+        "height": 55.59375,
+        "right": 287.03125,
+        "bottom": 638.921875
+      },
+      {
+        "text": "Explore Programmes",
+        "href": "/en/programmes",
+        "x": 299.03125,
+        "y": 587.125,
+        "width": 174.640625,
+        "height": 48,
+        "right": 473.671875,
+        "bottom": 635.125
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "overflow": false,
+    "hero": {
+      "x": 48,
+      "y": 150,
+      "width": 1169,
+      "height": 711.984375,
+      "right": 1217,
+      "bottom": 861.984375
+    },
+    "headline": {
+      "x": 48,
+      "y": 325.828125,
+      "width": 609.703125,
+      "height": 145.21875,
+      "right": 657.703125,
+      "bottom": 471.046875
+    },
+    "font": "64px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Book a Free Consultation",
+        "href": "/en/consultation",
+        "x": 48,
+        "y": 589.046875,
+        "width": 255.03125,
+        "height": 55.59375,
+        "right": 303.03125,
+        "bottom": 644.640625
+      },
+      {
+        "text": "Explore Programmes",
+        "href": "/en/programmes",
+        "x": 325.03125,
+        "y": 592.84375,
+        "width": 174.640625,
+        "height": 48,
+        "right": 499.671875,
+        "bottom": 640.84375
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 1440,
+    "overflow": false,
+    "hero": {
+      "x": 92.5,
+      "y": 150,
+      "width": 1240,
+      "height": 755.59375,
+      "right": 1332.5,
+      "bottom": 905.59375
+    },
+    "headline": {
+      "x": 92.5,
+      "y": 346.78125,
+      "width": 644.9375,
+      "height": 146.9375,
+      "right": 737.4375,
+      "bottom": 493.71875
+    },
+    "font": "64.8px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Book a Free Consultation",
+        "href": "/en/consultation",
+        "x": 92.5,
+        "y": 611.71875,
+        "width": 255.03125,
+        "height": 55.59375,
+        "right": 347.53125,
+        "bottom": 667.3125
+      },
+      {
+        "text": "Explore Programmes",
+        "href": "/en/programmes",
+        "x": 369.53125,
+        "y": 615.515625,
+        "width": 174.640625,
+        "height": 48,
+        "right": 544.171875,
+        "bottom": 663.515625
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "en",
+    "width": 1920,
+    "overflow": false,
+    "hero": {
+      "x": 332.5,
+      "y": 150,
+      "width": 1240,
+      "height": 755.59375,
+      "right": 1572.5,
+      "bottom": 905.59375
+    },
+    "headline": {
+      "x": 332.5,
+      "y": 343.3125,
+      "width": 644.71875,
+      "height": 153.875,
+      "right": 977.21875,
+      "bottom": 497.1875
+    },
+    "font": "68px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "Book a Free Consultation",
+        "href": "/en/consultation",
+        "x": 332.5,
+        "y": 615.1875,
+        "width": 255.03125,
+        "height": 55.59375,
+        "right": 587.53125,
+        "bottom": 670.78125
+      },
+      {
+        "text": "Explore Programmes",
+        "href": "/en/programmes",
+        "x": 609.53125,
+        "y": 618.984375,
+        "width": 174.640625,
+        "height": 48,
+        "right": 784.171875,
+        "bottom": 666.984375
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 360,
+    "overflow": false,
+    "hero": {
+      "x": 17,
+      "y": 152,
+      "width": 326,
+      "height": 1007.484375,
+      "right": 343,
+      "bottom": 1159.484375
+    },
+    "headline": {
+      "x": 17,
+      "y": 223.390625,
+      "width": 326,
+      "height": 145.640625,
+      "right": 343,
+      "bottom": 369.03125
+    },
+    "font": "33.48px",
+    "headerBottom": 152,
+    "forms": 0,
+    "links": [
+      {
+        "text": "احجز استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 138.59375,
+        "y": 499.703125,
+        "width": 204.40625,
+        "height": 50,
+        "right": 343,
+        "bottom": 549.703125
+      },
+      {
+        "text": "استكشف البرامج",
+        "href": "/ar/programmes",
+        "x": 209.578125,
+        "y": 558.703125,
+        "width": 133.421875,
+        "height": 46,
+        "right": 343,
+        "bottom": 604.703125
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 390,
+    "overflow": false,
+    "hero": {
+      "x": 17,
+      "y": 152,
+      "width": 356,
+      "height": 943.6875,
+      "right": 373,
+      "bottom": 1095.6875
+    },
+    "headline": {
+      "x": 17,
+      "y": 223.390625,
+      "width": 356,
+      "height": 157.734375,
+      "right": 373,
+      "bottom": 381.125
+    },
+    "font": "36.27px",
+    "headerBottom": 152,
+    "forms": 0,
+    "links": [
+      {
+        "text": "احجز استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 168.59375,
+        "y": 511.796875,
+        "width": 204.40625,
+        "height": 50,
+        "right": 373,
+        "bottom": 561.796875
+      },
+      {
+        "text": "استكشف البرامج",
+        "href": "/ar/programmes",
+        "x": 17.171875,
+        "y": 511.796875,
+        "width": 133.421875,
+        "height": 46,
+        "right": 150.59375,
+        "bottom": 557.796875
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 768,
+    "overflow": false,
+    "hero": {
+      "x": 36.5,
+      "y": 150,
+      "width": 680,
+      "height": 1060.46875,
+      "right": 716.5,
+      "bottom": 1210.46875
+    },
+    "headline": {
+      "x": 36.5,
+      "y": 240.09375,
+      "width": 680,
+      "height": 129.59375,
+      "right": 716.5,
+      "bottom": 369.6875
+    },
+    "font": "48px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "احجز استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 493.828125,
+        "y": 487.6875,
+        "width": 222.671875,
+        "height": 55.59375,
+        "right": 716.5,
+        "bottom": 543.28125
+      },
+      {
+        "text": "استكشف البرامج",
+        "href": "/ar/programmes",
+        "x": 340.296875,
+        "y": 491.484375,
+        "width": 141.53125,
+        "height": 48,
+        "right": 481.828125,
+        "bottom": 539.484375
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 1024,
+    "overflow": false,
+    "hero": {
+      "x": 32,
+      "y": 150,
+      "width": 945,
+      "height": 669.59375,
+      "right": 977,
+      "bottom": 819.59375
+    },
+    "headline": {
+      "x": 476.828125,
+      "y": 314.5625,
+      "width": 500.171875,
+      "height": 118.78125,
+      "right": 977,
+      "bottom": 433.34375
+    },
+    "font": "44px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "احجز استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 754.328125,
+        "y": 551.34375,
+        "width": 222.671875,
+        "height": 55.59375,
+        "right": 977,
+        "bottom": 606.9375
+      },
+      {
+        "text": "استكشف البرامج",
+        "href": "/ar/programmes",
+        "x": 600.796875,
+        "y": 555.140625,
+        "width": 141.53125,
+        "height": 48,
+        "right": 742.328125,
+        "bottom": 603.140625
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 1280,
+    "overflow": false,
+    "hero": {
+      "x": 48,
+      "y": 150,
+      "width": 1169,
+      "height": 711.984375,
+      "right": 1217,
+      "bottom": 861.984375
+    },
+    "headline": {
+      "x": 607.296875,
+      "y": 334.484375,
+      "width": 609.703125,
+      "height": 131.3125,
+      "right": 1217,
+      "bottom": 465.796875
+    },
+    "font": "48.64px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "احجز استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 994.328125,
+        "y": 583.796875,
+        "width": 222.671875,
+        "height": 55.59375,
+        "right": 1217,
+        "bottom": 639.390625
+      },
+      {
+        "text": "استكشف البرامج",
+        "href": "/ar/programmes",
+        "x": 830.796875,
+        "y": 587.59375,
+        "width": 141.53125,
+        "height": 48,
+        "right": 972.328125,
+        "bottom": 635.59375
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 1440,
+    "overflow": false,
+    "hero": {
+      "x": 92.5,
+      "y": 150,
+      "width": 1240,
+      "height": 755.59375,
+      "right": 1332.5,
+      "bottom": 905.59375
+    },
+    "headline": {
+      "x": 687.5625,
+      "y": 348.09375,
+      "width": 644.9375,
+      "height": 147.71875,
+      "right": 1332.5,
+      "bottom": 495.8125
+    },
+    "font": "54.72px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "احجز استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 1109.828125,
+        "y": 613.8125,
+        "width": 222.671875,
+        "height": 55.59375,
+        "right": 1332.5,
+        "bottom": 669.40625
+      },
+      {
+        "text": "استكشف البرامج",
+        "href": "/ar/programmes",
+        "x": 946.296875,
+        "y": 617.609375,
+        "width": 141.53125,
+        "height": 48,
+        "right": 1087.828125,
+        "bottom": 665.609375
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "locale": "ar",
+    "width": 1920,
+    "overflow": false,
+    "hero": {
+      "x": 332.5,
+      "y": 150,
+      "width": 1240,
+      "height": 755.59375,
+      "right": 1572.5,
+      "bottom": 905.59375
+    },
+    "headline": {
+      "x": 927.78125,
+      "y": 346.359375,
+      "width": 644.71875,
+      "height": 151.1875,
+      "right": 1572.5,
+      "bottom": 497.546875
+    },
+    "font": "56px",
+    "headerBottom": 150,
+    "forms": 0,
+    "links": [
+      {
+        "text": "احجز استشارة مجانية",
+        "href": "/ar/consultation",
+        "x": 1349.828125,
+        "y": 615.546875,
+        "width": 222.671875,
+        "height": 55.59375,
+        "right": 1572.5,
+        "bottom": 671.140625
+      },
+      {
+        "text": "استكشف البرامج",
+        "href": "/ar/programmes",
+        "x": 1186.296875,
+        "y": 619.34375,
+        "width": 141.53125,
+        "height": 48,
+        "right": 1327.828125,
+        "bottom": 667.34375
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/hero/toronto.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/sydney.jpg",
+        "loaded": true
+      },
+      {
+        "src": "/images/hero/berlin.jpg",
+        "loaded": true
+      }
+    ],
+    "clipped": []
+  }
+]

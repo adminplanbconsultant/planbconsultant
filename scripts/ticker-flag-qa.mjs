@@ -1,0 +1,36 @@
+import {mkdirSync,writeFileSync} from 'node:fs';
+const target=(await(await fetch('http://127.0.0.1:9228/json')).json()).find(t=>t.type==='page');
+const socket=new WebSocket(target.webSocketDebuggerUrl);let id=0;const pending=new Map();
+await new Promise(r=>socket.addEventListener('open',r,{once:true}));
+socket.addEventListener('message',event=>{const m=JSON.parse(event.data);if(pending.has(m.id)){pending.get(m.id)(m.result);pending.delete(m.id)}});
+const send=(method,params={})=>new Promise(resolve=>{const n=++id;pending.set(n,resolve);socket.send(JSON.stringify({id:n,method,params}))});
+const evaluate=async expression=>(await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true})).result.value;
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+const out='artifacts/ticker-flags';mkdirSync(out,{recursive:true});const results=[];
+await send('Page.enable');await send('Network.enable');await send('Network.setCacheDisabled',{cacheDisabled:true});
+await send('Emulation.setFocusEmulationEnabled',{enabled:true});await send('Emulation.setEmulatedMedia',{features:[]});
+await send('Page.addScriptToEvaluateOnNewDocument',{source:"sessionStorage.setItem('plan-b-assessment-offered-v2','1');window.tickerShifts=[];new PerformanceObserver(list=>{for(const e of list.getEntries())if(!e.hadRecentInput)window.tickerShifts.push(e.value)}).observe({type:'layout-shift',buffered:true})"});
+for(const locale of ['en','ar'])for(const width of [390,1920,3840]){
+ await send('Emulation.setDeviceMetricsOverride',{width,height:900,deviceScaleFactor:1,mobile:width<600});
+ await send('Page.navigate',{url:`http://localhost:3000/${locale}`});await pause(2800);
+ await evaluate("document.querySelector('.destination-ticker').scrollIntoView({block:'center'})");await pause(150);
+ const data=await evaluate(`(()=>{const ticker=document.querySelector('.destination-ticker'),track=ticker.querySelector('.ticker-track'),groups=[...ticker.querySelectorAll('.ticker-group')],windowEl=ticker.querySelector('.ticker-window'),intro=ticker.querySelector('.ticker-intro'),flags=[...groups[0].querySelectorAll('img')];const rect=e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom}};return {locale:document.documentElement.lang,width:innerWidth,overflow:document.documentElement.scrollWidth>innerWidth,ticker:rect(ticker),scroll:scrollY,flags:flags.map(i=>{const r=rect(i),name=rect(i.nextElementSibling);return {src:i.getAttribute('src'),loaded:i.complete&&i.naturalWidth>0,width:r.width,ratio:r.width/r.height,expected:Number(i.getAttribute('width'))/Number(i.getAttribute('height')),centred:Math.abs(r.y+r.height/2-name.y-name.height/2)<1,decorative:i.alt===''&&i.getAttribute('aria-hidden')==='true',radius:getComputedStyle(i).borderRadius,fit:getComputedStyle(i).objectFit}}),noCodes:ticker.querySelectorAll('.ticker-code').length===0,duplicateHidden:groups[1].getAttribute('aria-hidden')==='true'&&[...groups[1].querySelectorAll('a')].every(a=>a.tabIndex===-1),equalGroups:Math.abs(groups[0].getBoundingClientRect().width-groups[1].getBoundingClientRect().width)<.1,clipped:getComputedStyle(windowEl).overflow==='hidden',fade:getComputedStyle(windowEl).maskImage!=='none',separate:document.documentElement.dir==='rtl'?rect(windowEl).right<=rect(intro).x+.1:rect(windowEl).x>=rect(intro).right-.1,gap:getComputedStyle(flags[0].parentElement).gap,animation:getComputedStyle(track).animationName,cls:window.tickerShifts.reduce((a,b)=>a+b,0)}})()`);
+ const animation=await evaluate("(()=>{const a=document.querySelector('.ticker-track').getAnimations()[0];return {running:a.playState==='running',duration:a.effect.getTiming().duration}})()");data.running=animation.running;
+ await evaluate("document.querySelector('.ticker-control').click()");await pause(50);data.explicitPause=await evaluate("getComputedStyle(document.querySelector('.ticker-track')).animationPlayState==='paused'");
+ await evaluate("document.querySelector('.ticker-control').click();document.activeElement.blur()");await evaluate("document.querySelector('.ticker-group a').focus()");await pause(50);data.focusPause=await evaluate("getComputedStyle(document.querySelector('.ticker-track')).animationPlayState==='paused'");await evaluate('document.activeElement.blur()');
+ data.hiddenControl=await evaluate("getComputedStyle(document.querySelector('.ticker-control')).clipPath==='inset(50%)'&&document.querySelector('.ticker-control').getBoundingClientRect().width===1");
+ const loop=await evaluate("(()=>{const a=document.querySelector('.ticker-track').getAnimations()[0],g=document.querySelectorAll('.ticker-group'),duration=a.effect.getTiming().duration;a.pause();a.currentTime=0;const start=g[0].getBoundingClientRect();a.currentTime=duration-1;const end=g[1].getBoundingClientRect();return {difference:Math.abs(start.x-end.x)}})()");data.loopSeam=loop.difference<1;
+ data.noBlankPhases=await evaluate("(()=>{const track=document.querySelector('.ticker-track'),a=track.getAnimations()[0],windowEl=document.querySelector('.ticker-window'),duration=a.effect.getTiming().duration;return [0,.25,.5,.75,.999].every(phase=>{a.currentTime=duration*phase;const w=windowEl.getBoundingClientRect(),groups=[...track.children].map(g=>g.getBoundingClientRect());return Math.min(...groups.map(g=>g.x))<=w.x+.5&&Math.max(...groups.map(g=>g.right))>=w.right-.5})})()");
+ data.allDuplicatesHidden=await evaluate("[...document.querySelectorAll('.ticker-group')].slice(1).every(g=>g.getAttribute('aria-hidden')==='true'&&[...g.querySelectorAll('a')].every(a=>a.tabIndex===-1))");
+ for(const offset of [0,.45]){
+  await evaluate(`document.querySelector('.ticker-track').getAnimations()[0].currentTime=${animation.duration*offset}`);await pause(30);
+  const shot=await send('Page.captureScreenshot',{format:'png',clip:{x:0,y:data.ticker.y+data.scroll-8,width,height:data.ticker.height+16,scale:2}});writeFileSync(`${out}/${locale}-${width}-${offset===0?'start':'later'}.png`,Buffer.from(shot.data,'base64'));
+ }
+ await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await pause(100);
+ data.reduced=await evaluate("getComputedStyle(document.querySelector('.ticker-track')).animationName==='none'&&getComputedStyle(document.querySelectorAll('.ticker-group')[1]).display==='none'&&document.documentElement.scrollWidth<=innerWidth");
+ await send('Emulation.setEmulatedMedia',{features:[]});results.push(data);
+}
+await send('Emulation.clearDeviceMetricsOverride');await send('Emulation.setFocusEmulationEnabled',{enabled:false});await send('Page.navigate',{url:'http://localhost:3000/en'});socket.close();
+writeFileSync(`${out}/results.json`,JSON.stringify(results,null,2));
+const failures=results.filter(r=>r.overflow||!r.noCodes||!r.duplicateHidden||!r.equalGroups||!r.clipped||!r.fade||!r.separate||!r.explicitPause||!r.focusPause||!r.loopSeam||!r.hiddenControl||!r.noBlankPhases||!r.allDuplicatesHidden||!r.reduced||r.cls>.01||r.flags.some(f=>!f.loaded||!f.centred||!f.decorative||Math.abs(f.ratio-f.expected)>.01||f.width!==(r.width<600?24:28)));
+console.log(JSON.stringify({cases:results.length,failures},null,2));if(failures.length)process.exitCode=1;

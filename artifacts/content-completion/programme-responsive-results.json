@@ -1,0 +1,562 @@
+[
+  {
+    "slug": "canada-express-entry",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1407,
+    "primaryBottom": 654
+  },
+  {
+    "slug": "canada-express-entry",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1355.96875,
+    "primaryBottom": 628.96875
+  },
+  {
+    "slug": "canada-express-entry",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1334.59375,
+    "primaryBottom": 607.59375
+  },
+  {
+    "slug": "canada-express-entry",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 875.4375,
+    "primaryBottom": 619.4375
+  },
+  {
+    "slug": "canada-express-entry",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 798.0625,
+    "primaryBottom": 602.0625
+  },
+  {
+    "slug": "australia-skilled-migration",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1375.5,
+    "primaryBottom": 622.5
+  },
+  {
+    "slug": "australia-skilled-migration",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1350.46875,
+    "primaryBottom": 597.46875
+  },
+  {
+    "slug": "australia-skilled-migration",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1303.09375,
+    "primaryBottom": 576.09375
+  },
+  {
+    "slug": "australia-skilled-migration",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 869.9375,
+    "primaryBottom": 587.9375
+  },
+  {
+    "slug": "australia-skilled-migration",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 798.0625,
+    "primaryBottom": 602.0625
+  },
+  {
+    "slug": "australia-work-visas",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1344,
+    "primaryBottom": 591
+  },
+  {
+    "slug": "australia-work-visas",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1318.96875,
+    "primaryBottom": 565.96875
+  },
+  {
+    "slug": "australia-work-visas",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1329.09375,
+    "primaryBottom": 576.09375
+  },
+  {
+    "slug": "australia-work-visas",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 869.9375,
+    "primaryBottom": 587.9375
+  },
+  {
+    "slug": "australia-work-visas",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 789,
+    "primaryBottom": 544.453125
+  },
+  {
+    "slug": "germany-nursing",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1339.5,
+    "primaryBottom": 586.5
+  },
+  {
+    "slug": "germany-nursing",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1318.96875,
+    "primaryBottom": 565.96875
+  },
+  {
+    "slug": "germany-nursing",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1271.59375,
+    "primaryBottom": 544.59375
+  },
+  {
+    "slug": "germany-nursing",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 812.4375,
+    "primaryBottom": 556.4375
+  },
+  {
+    "slug": "germany-nursing",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 789,
+    "primaryBottom": 581.78125
+  },
+  {
+    "slug": "germany-car-mechanics",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1384.859375,
+    "primaryBottom": 631.859375
+  },
+  {
+    "slug": "germany-car-mechanics",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1336.0625,
+    "primaryBottom": 583.0625
+  },
+  {
+    "slug": "germany-car-mechanics",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1325.25,
+    "primaryBottom": 598.25
+  },
+  {
+    "slug": "germany-car-mechanics",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 838.4375,
+    "primaryBottom": 556.4375
+  },
+  {
+    "slug": "germany-car-mechanics",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 789,
+    "primaryBottom": 581.78125
+  },
+  {
+    "slug": "sweden-work-permit",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1318,
+    "primaryBottom": 591
+  },
+  {
+    "slug": "sweden-work-permit",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1292.96875,
+    "primaryBottom": 565.96875
+  },
+  {
+    "slug": "sweden-work-permit",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1303.09375,
+    "primaryBottom": 576.09375
+  },
+  {
+    "slug": "sweden-work-permit",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 843.9375,
+    "primaryBottom": 587.9375
+  },
+  {
+    "slug": "sweden-work-permit",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 789,
+    "primaryBottom": 594.78125
+  },
+  {
+    "slug": "portugal-work-residence",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1344,
+    "primaryBottom": 591
+  },
+  {
+    "slug": "portugal-work-residence",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1292.96875,
+    "primaryBottom": 565.96875
+  },
+  {
+    "slug": "portugal-work-residence",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1303.09375,
+    "primaryBottom": 576.09375
+  },
+  {
+    "slug": "portugal-work-residence",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 843.9375,
+    "primaryBottom": 587.9375
+  },
+  {
+    "slug": "portugal-work-residence",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 789,
+    "primaryBottom": 610.53125
+  },
+  {
+    "slug": "canada-c11",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1339.5,
+    "primaryBottom": 586.5
+  },
+  {
+    "slug": "canada-c11",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1318.96875,
+    "primaryBottom": 565.96875
+  },
+  {
+    "slug": "canada-c11",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1271.59375,
+    "primaryBottom": 544.59375
+  },
+  {
+    "slug": "canada-c11",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 838.4375,
+    "primaryBottom": 556.4375
+  },
+  {
+    "slug": "canada-c11",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 789,
+    "primaryBottom": 581.78125
+  },
+  {
+    "slug": "usa-eb5",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1358.859375,
+    "primaryBottom": 631.859375
+  },
+  {
+    "slug": "usa-eb5",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1261.46875,
+    "primaryBottom": 534.46875
+  },
+  {
+    "slug": "usa-eb5",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1271.59375,
+    "primaryBottom": 544.59375
+  },
+  {
+    "slug": "usa-eb5",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 812.4375,
+    "primaryBottom": 556.4375
+  },
+  {
+    "slug": "usa-eb5",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 789,
+    "primaryBottom": 594.78125
+  },
+  {
+    "slug": "usa-e2",
+    "locale": "en",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1312.5,
+    "primaryBottom": 559.5
+  },
+  {
+    "slug": "usa-e2",
+    "locale": "en",
+    "width": 375,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1261.46875,
+    "primaryBottom": 534.46875
+  },
+  {
+    "slug": "usa-e2",
+    "locale": "en",
+    "width": 414,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1271.59375,
+    "primaryBottom": 544.59375
+  },
+  {
+    "slug": "usa-e2",
+    "locale": "en",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 812.4375,
+    "primaryBottom": 556.4375
+  },
+  {
+    "slug": "usa-e2",
+    "locale": "en",
+    "width": 1280,
+    "height": 800,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 789,
+    "primaryBottom": 594.78125
+  },
+  {
+    "slug": "canada-express-entry",
+    "locale": "ar",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1347.46875,
+    "primaryBottom": 620.46875
+  },
+  {
+    "slug": "canada-express-entry",
+    "locale": "ar",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 819.46875,
+    "primaryBottom": 623.46875
+  },
+  {
+    "slug": "germany-nursing",
+    "locale": "ar",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1284.46875,
+    "primaryBottom": 557.46875
+  },
+  {
+    "slug": "germany-nursing",
+    "locale": "ar",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 699,
+    "primaryBottom": 496.9375
+  },
+  {
+    "slug": "usa-eb5",
+    "locale": "ar",
+    "width": 320,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 1372.359375,
+    "primaryBottom": 645.359375
+  },
+  {
+    "slug": "usa-eb5",
+    "locale": "ar",
+    "width": 768,
+    "height": 844,
+    "overflow": false,
+    "wrapped": [],
+    "heroBottom": 730.46875,
+    "primaryBottom": 560.46875
+  }
+]

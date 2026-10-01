@@ -1,0 +1,58 @@
+[
+  {
+    "check": "Focus pauses autoplay",
+    "pass": true
+  },
+  {
+    "check": "Pause control stops autoplay",
+    "pass": true
+  },
+  {
+    "check": "Manual slide 1",
+    "pass": true
+  },
+  {
+    "check": "Manual slide 2",
+    "pass": true
+  },
+  {
+    "check": "Headline remains stationary",
+    "pass": true
+  },
+  {
+    "check": "Play resumes seven-second rotation",
+    "pass": true
+  },
+  {
+    "check": "Hidden tab pauses rotation",
+    "pass": true
+  },
+  {
+    "check": "Reduced motion disables autoplay and transitions",
+    "pass": true
+  },
+  {
+    "check": "Reduced motion preserves manual selection",
+    "pass": true
+  },
+  {
+    "check": "en primary CTA opens full assessment",
+    "pass": true
+  },
+  {
+    "check": "ar primary CTA opens full assessment",
+    "pass": true
+  },
+  {
+    "check": "No unexpected layout shift",
+    "pass": true
+  },
+  {
+    "check": "Existing scroll assessment popup preserved",
+    "pass": true
+  },
+  {
+    "check": "Assessment Escape dismissal preserved",
+    "pass": true
+  }
+]

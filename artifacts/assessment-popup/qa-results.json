@@ -1,0 +1,311 @@
+{
+  "base": "http://localhost:3107",
+  "noDb": "http://localhost:3000",
+  "results": [
+    {
+      "name": "Programmatic scroll (no user input) does not open",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Anchor-link scrolling does not open",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Small user scroll (<200px) does not open",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "User scroll ≈200px opens popup",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Dialog semantics + modal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Background scroll locked, WhatsApp button hidden",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No second automatic opening after close",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Dismissal survives reload (scroll + timer)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Not open before accumulated time reached",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Timer opens popup after accumulated time",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Time is not counted while tab hidden",
+      "ok": true,
+      "detail": "stored 54093ms"
+    },
+    {
+      "name": "Counting resumes when visible again",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Active time carries across page navigation",
+      "ok": true,
+      "detail": "carried 5195ms before new page counted"
+    },
+    {
+      "name": "Manual event opens popup",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Focus restored to initiating control",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual open suppresses automatic reopening",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "data-open-assessment trigger works after auto suppression",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Visiting the assessment page counts as manual",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Timer elapsed but deferred while mobile navigation open",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Opens after navigation closes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Deferred while a form field has focus",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Opens once the field is left alone",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Deferred while another dialog is open",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Opens after other dialog closes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Never opens automatically on /contact",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Never opens automatically on /consultation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Programme page preselects matching category",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Selected card shows checkmark + aria-checked",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Clicking a card does not auto-advance",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Continue → Step 2 of 2",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Header copy fixed between steps",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Country defaults to Kuwait (+965) with example placeholder",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Validation shows errors and focuses first invalid field",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Kuwait number length validated",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Back returns to step 1 with selection kept",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Entered values preserved across steps",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Invalid optional email and missing consent flagged",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Success shown only after persisted (201)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Success heading uses first name",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Duplicate submissions prevented",
+      "ok": true,
+      "detail": "1 request(s)"
+    },
+    {
+      "name": "Unavailable backend → friendly error, no success",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Error exposes no internals",
+      "ok": true,
+      "detail": "We couldn’t send your enquiry just now. Your details are still here — please try again in a moment or contact us on WhatsApp."
+    },
+    {
+      "name": "All values preserved after failure",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Resubmission allowed after failure",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Tab key stays trapped inside dialog (14 presses)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Shift+Tab stays trapped",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Close button ≥44px target",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Radio keyboard: arrows move selection",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Dialog width 540–600px on desktop",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Corner radius 20–24px",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Reduced motion disables popup animations",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile: dialog fits dynamic viewport",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile: WhatsApp + sticky bar hidden under modal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile: single column, tap targets ≥44px",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile short viewport (keyboard-sized): focused field visible inside dialog",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile short viewport: body scrolls internally",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Arabic: RTL dialog + translated copy",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Arabic: phone and email inputs stay LTR",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Arabic submit succeeds",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Arabic success copy uses first name",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

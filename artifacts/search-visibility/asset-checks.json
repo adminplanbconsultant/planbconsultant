@@ -1,0 +1,196 @@
+{
+  "checked": 38,
+  "checks": [
+    {
+      "url": "/images/plan-b-header-crest-en.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "/images/optimized/toronto-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/flags/ca.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "/images/flags/au.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "/images/flags/de.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "/images/flags/se.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "/images/flags/pt.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "/images/flags/us.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "/images/destination-1.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "/images/destinations/usa.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "/images/destination-2.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "/images/destinations/germany.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "/images/destinations/sweden.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "/images/destinations/portugal.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "/images/optimized/international-workplace-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/business-advisory-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/germany-nursing-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/automotive-workshop-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/canada-c11-operations-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/usa-eb5-investment-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/usa-e2-enterprise-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/destination-0.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "/images/plan-b-header-crest-ar.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "/images/optimized/berlin-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/berlin-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/berlin-1400.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/sydney-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/sydney-960.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/sydney-1400.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/toronto-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/toronto-1400.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/automotive-workshop-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/business-advisory-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/canada-c11-operations-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/germany-nursing-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/international-workplace-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/usa-e2-enterprise-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "url": "/images/optimized/usa-eb5-investment-480.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    }
+  ],
+  "heroResponsivePreload": "pass"
+}

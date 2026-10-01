@@ -1,5 +1,7 @@
 # Client PDF integration — 28 September 2026
 
+Latest audit: see `CLIENT-CONTENT-CHECKLIST.md` and `CONTENT-COMPLETION-HANDOVER.md` for the 1 October remaining-content phase. They supersede older statements below about a homepage hero form, source-PDF availability and notification configuration. The hero remains form-free; the available 19-page `content.pdf` was read, while a separate `About US.pdf` revision is still unavailable. Optional server-only webhook notification support exists.
+
 Source: client-supplied 19-page content.pdf. The existing visual identity and layout are retained. New seven-star hands/globe logo integrated; the supplied edited bitmap is preserved.
 
 ## Coverage

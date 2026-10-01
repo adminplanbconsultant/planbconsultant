@@ -1,0 +1,450 @@
+[
+  {
+    "locale": "en",
+    "width": 320,
+    "overflow": false,
+    "brand": {
+      "x": 12,
+      "y": 76,
+      "width": 163.6875,
+      "height": 66,
+      "right": 175.6875,
+      "bottom": 142
+    },
+    "logo": {
+      "x": 12,
+      "y": 76,
+      "width": 70.546875,
+      "height": 66,
+      "right": 82.546875,
+      "bottom": 142
+    },
+    "header": {
+      "x": 0,
+      "y": 67,
+      "width": 320,
+      "height": 85,
+      "right": 320,
+      "bottom": 152
+    },
+    "nav": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "cta": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-crest-en.png",
+    "loaded": true
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "overflow": false,
+    "brand": {
+      "x": 12,
+      "y": 76,
+      "width": 163.6875,
+      "height": 66,
+      "right": 175.6875,
+      "bottom": 142
+    },
+    "logo": {
+      "x": 12,
+      "y": 76,
+      "width": 70.546875,
+      "height": 66,
+      "right": 82.546875,
+      "bottom": 142
+    },
+    "header": {
+      "x": 0,
+      "y": 67,
+      "width": 390,
+      "height": 85,
+      "right": 390,
+      "bottom": 152
+    },
+    "nav": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "cta": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-crest-en.png",
+    "loaded": true
+  },
+  {
+    "locale": "en",
+    "width": 1200,
+    "overflow": false,
+    "brand": {
+      "x": 20,
+      "y": 53,
+      "width": 218.21875,
+      "height": 88,
+      "right": 238.21875,
+      "bottom": 141
+    },
+    "logo": {
+      "x": 20,
+      "y": 53,
+      "width": 94.0625,
+      "height": 88,
+      "right": 114.0625,
+      "bottom": 141
+    },
+    "header": {
+      "x": 0,
+      "y": 45,
+      "width": 1185,
+      "height": 105,
+      "right": 1185,
+      "bottom": 150
+    },
+    "nav": {
+      "x": 250.21875,
+      "y": 55,
+      "width": 698.859375,
+      "height": 84,
+      "right": 949.078125,
+      "bottom": 139
+    },
+    "cta": {
+      "x": 1002.609375,
+      "y": 75,
+      "width": 162.390625,
+      "height": 44,
+      "right": 1165,
+      "bottom": 119
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-crest-en.png",
+    "loaded": true
+  },
+  {
+    "locale": "en",
+    "width": 1440,
+    "overflow": false,
+    "brand": {
+      "x": 20,
+      "y": 53,
+      "width": 218.21875,
+      "height": 88,
+      "right": 238.21875,
+      "bottom": 141
+    },
+    "logo": {
+      "x": 20,
+      "y": 53,
+      "width": 94.0625,
+      "height": 88,
+      "right": 114.0625,
+      "bottom": 141
+    },
+    "header": {
+      "x": 0,
+      "y": 45,
+      "width": 1425,
+      "height": 105,
+      "right": 1425,
+      "bottom": 150
+    },
+    "nav": {
+      "x": 250.21875,
+      "y": 55,
+      "width": 938.859375,
+      "height": 84,
+      "right": 1189.078125,
+      "bottom": 139
+    },
+    "cta": {
+      "x": 1242.609375,
+      "y": 75,
+      "width": 162.390625,
+      "height": 44,
+      "right": 1405,
+      "bottom": 119
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-crest-en.png",
+    "loaded": true
+  },
+  {
+    "locale": "ar",
+    "width": 320,
+    "overflow": false,
+    "brand": {
+      "x": 153.8125,
+      "y": 76,
+      "width": 154.1875,
+      "height": 66,
+      "right": 308,
+      "bottom": 142
+    },
+    "logo": {
+      "x": 237.375,
+      "y": 76,
+      "width": 70.625,
+      "height": 66,
+      "right": 308,
+      "bottom": 142
+    },
+    "header": {
+      "x": 0,
+      "y": 67,
+      "width": 320,
+      "height": 85,
+      "right": 320,
+      "bottom": 152
+    },
+    "nav": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "cta": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-crest-ar.png",
+    "loaded": true
+  },
+  {
+    "locale": "ar",
+    "width": 390,
+    "overflow": false,
+    "brand": {
+      "x": 223.8125,
+      "y": 76,
+      "width": 154.1875,
+      "height": 66,
+      "right": 378,
+      "bottom": 142
+    },
+    "logo": {
+      "x": 307.375,
+      "y": 76,
+      "width": 70.625,
+      "height": 66,
+      "right": 378,
+      "bottom": 142
+    },
+    "header": {
+      "x": 0,
+      "y": 67,
+      "width": 390,
+      "height": 85,
+      "right": 390,
+      "bottom": 152
+    },
+    "nav": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "cta": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-crest-ar.png",
+    "loaded": true
+  },
+  {
+    "locale": "ar",
+    "width": 1200,
+    "overflow": false,
+    "brand": {
+      "x": 959.4375,
+      "y": 53,
+      "width": 205.5625,
+      "height": 88,
+      "right": 1165,
+      "bottom": 141
+    },
+    "logo": {
+      "x": 1070.828125,
+      "y": 53,
+      "width": 94.171875,
+      "height": 88,
+      "right": 1165,
+      "bottom": 141
+    },
+    "header": {
+      "x": 0,
+      "y": 45,
+      "width": 1185,
+      "height": 105,
+      "right": 1185,
+      "bottom": 150
+    },
+    "nav": {
+      "x": 227.4375,
+      "y": 55,
+      "width": 720,
+      "height": 84,
+      "right": 947.4375,
+      "bottom": 139
+    },
+    "cta": {
+      "x": 20,
+      "y": 75,
+      "width": 147.828125,
+      "height": 44,
+      "right": 167.828125,
+      "bottom": 119
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-crest-ar.png",
+    "loaded": true
+  },
+  {
+    "locale": "ar",
+    "width": 1440,
+    "overflow": false,
+    "brand": {
+      "x": 1199.4375,
+      "y": 53,
+      "width": 205.5625,
+      "height": 88,
+      "right": 1405,
+      "bottom": 141
+    },
+    "logo": {
+      "x": 1310.828125,
+      "y": 53,
+      "width": 94.171875,
+      "height": 88,
+      "right": 1405,
+      "bottom": 141
+    },
+    "header": {
+      "x": 0,
+      "y": 45,
+      "width": 1425,
+      "height": 105,
+      "right": 1425,
+      "bottom": 150
+    },
+    "nav": {
+      "x": 227.4375,
+      "y": 55,
+      "width": 960,
+      "height": 84,
+      "right": 1187.4375,
+      "bottom": 139
+    },
+    "cta": {
+      "x": 20,
+      "y": 75,
+      "width": 147.828125,
+      "height": 44,
+      "right": 167.828125,
+      "bottom": 119
+    },
+    "overlap": false,
+    "clippedCTA": false,
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "shadow": "none",
+      "blend": "normal",
+      "fit": "contain"
+    },
+    "src": "/images/plan-b-header-crest-ar.png",
+    "loaded": true
+  }
+]
