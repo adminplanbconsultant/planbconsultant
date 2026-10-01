@@ -2,15 +2,15 @@
 import {useEffect,useState} from 'react';
 import LogoMark from './logo-mark';
 import type {Locale} from '@/lib/content';
-const storageKey='plan-b-intro-seen-v1';
+const storageKey='plan-b-intro-seen-v2';
 export default function SplashScreen({locale}:{locale:Locale}){
  const [visible,setVisible]=useState(false);
  useEffect(()=>{
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   try{if(sessionStorage.getItem(storageKey))return;sessionStorage.setItem(storageKey,'1')}catch{/* Storage restrictions must never prevent entry. */}
   setVisible(true);
   const dismiss=()=>setVisible(false);
-  const timer=window.setTimeout(dismiss,1800);
+  const timer=window.setTimeout(dismiss,reducedMotion?900:1800);
   // Keyboard and assistive-technology focus always reveal the page immediately.
   window.addEventListener('keydown',dismiss);
   window.addEventListener('focusin',dismiss);

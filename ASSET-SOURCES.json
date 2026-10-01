@@ -10,5 +10,11 @@
     {"name":"sweden","photographer":"Unsplash contributor","description":"Stockholm waterfront architecture","source":"https://unsplash.com/photos/a-body-of-water-with-buildings-around-it-HaAVZg3b-7o","image":"https://images.unsplash.com/photo-1651923234957-b2db37563fe2"},
     {"name":"portugal","photographer":"Vitalijs Barilo","description":"Lisbon yellow tram and historic street","source":"https://unsplash.com/photos/yellow-tram-on-a-narrow-street-with-buildings-YMuJri9Iz_U","image":"https://images.unsplash.com/photo-1682447448492-682010151fc5"},
     {"name":"usa","photographer":"Shai Pal","description":"Lower Manhattan skyline from the water","source":"https://unsplash.com/photos/a-view-of-a-city-skyline-from-the-water-QvoZgwCiMjU","image":"https://images.unsplash.com/photo-1642266119829-724a103be644"}
+  ],
+  "generated_images": [
+    {"name":"germany-nursing","file":"public/images/programmes/germany-nursing.png","creator":"OpenAI image generation","description":"Diverse nursing team in a modern German hospital corridor","usage":"Germany nursing programme"},
+    {"name":"automotive-workshop","file":"public/images/programmes/automotive-workshop.png","creator":"OpenAI image generation","description":"Skilled mechanic diagnosing a vehicle in a modern European workshop","usage":"Germany mechanics programme"},
+    {"name":"international-workplace","file":"public/images/programmes/international-workplace.png","creator":"OpenAI image generation","description":"International professionals collaborating in a contemporary European workplace","usage":"Skilled migration and work programme context"},
+    {"name":"business-advisory","file":"public/images/programmes/business-advisory.png","creator":"OpenAI image generation","description":"Entrepreneur and advisers reviewing an active business plan","usage":"Business and investor programme context"}
   ]
 }

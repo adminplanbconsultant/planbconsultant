@@ -1,0 +1,5 @@
+2026/10/01-09:20:57.735 8958 Creating DB C:\Users\5857\Downloads\planbconsultant\artifacts\hero-redesign\edge-modal2\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/10/01-09:20:57.774 8958 Reusing MANIFEST C:\Users\5857\Downloads\planbconsultant\artifacts\hero-redesign\edge-modal2\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/10/01-09:20:58.514 6a5c Level-0 table #5: started
+2026/10/01-09:20:58.524 6a5c Level-0 table #5: 683273 bytes OK
+2026/10/01-09:20:58.531 6a5c Delete type=0 #3

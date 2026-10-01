@@ -97,6 +97,6 @@ Utility bar and navigation remain together while scrolling. Missing email/phone 
 
 ## October 2026 PDF-led edition
 
-The homepage now includes the client-requested compact free assessment and six programme groupings. Programme detail pages include destination imagery, current-source links, a reviewed date, and a preselected assessment CTA. SEO now includes route-specific descriptions plus breadcrumb and programme Service structured data. The bilingual mega-menu exposes every individual programme on desktop and mobile.
+The homepage uses a focused split hero, six programme groupings, a restored once-per-session splash screen and a once-per-session assessment prompt after the visitor starts scrolling. Programme detail pages use a long-form bilingual editorial template with destination and profession imagery, an early preselected assessment, eligibility, benefits, documents, process, FAQs, official sources and related routes. SEO includes route-specific descriptions plus breadcrumb and programme Service structured data. The bilingual mega-menu exposes every individual programme on desktop and mobile.
 
 Visual design decisions and reusable tokens are documented in `design.md` and `tokens.css`. Image attribution is in `ASSET-SOURCES.json`; client-content decisions and factual corrections are in `CONTENT-REVIEW.md`.

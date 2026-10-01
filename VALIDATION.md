@@ -33,3 +33,12 @@ Verified contact numbers, email, address, hours and notification delivery are no
 - Footer reorganized with consultation link, Home, navigation, contact and social groups. Responsive two-column and stacked layouts; obsolete mobile utility text hiding removed.
 - Sites build and full local runtime route/link checks passed. Vercel production build passed; final CSS-only removal of an obsolete rule copied afterward.
 - No browser visual, scroll, mobile/tablet or keyboard interaction test performed. Responsive and sticky behavior implemented in CSS, not browser-verified.
+
+## October 1 - long-form programme expansion
+
+- `npm run typecheck`: passed.
+- `npm run build`: passed with Next.js 16.3.4 production compilation and static generation.
+- Runtime smoke suite: 164 English/Arabic URLs returned 200; invalid locale/path checks returned 404; logo delivery and enquiry API validation, origin enforcement and request-size limits passed.
+- Ten priority programme pages now share a complete editorial structure: split hero, preselected assessment, overview, eligibility, potential benefits, document checklist, numbered process, Plan B support boundary, four FAQs, official links, closing CTA and related programmes. The three broader citizenship, study and visit routes use the same accessible structure.
+- The homepage assessment remains a one-time scroll-triggered modal and is not embedded in the hero, following the latest client direction. The splash screen remains enabled once per browser session.
+- Computer-control browser rendering was attempted, but no browser surface was available to the QA tool. Responsive and RTL layouts were therefore source-reviewed and production-compiled, not newly screenshot-verified in this pass.

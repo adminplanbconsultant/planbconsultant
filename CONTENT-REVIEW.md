@@ -43,3 +43,12 @@ The PDF provides no actual phone, WhatsApp number, email, street address or hour
 - Added destination banners, preselected assessment links, page-specific descriptions, breadcrumb structured data and Service structured data to programme pages.
 - Reworked the footer as a forest-green contact colophon and added the required Ticode Technologies credit.
 - Current official programme sources were rechecked on 1 October 2026. Rules and thresholds remain framed as time-sensitive guidance, not guarantees.
+
+## October 1 continuation update
+
+- Replaced the compact programme detail layout with a consistent long-form bilingual page system across all programme routes.
+- Added an early, programme-preselected assessment section to each programme page; the homepage hero remains free of form fields and retains the one-time scroll prompt.
+- Added route-type summaries, indicative document checklists, responsibility-labelled processes, Plan B support boundaries, four FAQs, final conversion sections and capped related routes.
+- Added purpose-specific nursing, automotive, professional-workplace and business-advisory imagery generated for this project. Files and descriptions are recorded in `ASSET-SOURCES.json`.
+- Rechecked current official guidance for Express Entry, Australia SkillSelect, German nursing recognition, Sweden's June 2026 work-permit rules, Portugal work residence, Canada C11 and U.S. investor routes. The Swedish threshold remains deliberately described as current rather than hard-coded because it follows the median salary at the application date.
+- The requested DM Consultant screenshots were not present beside the supplied continuation brief. The implementation follows the brief's written organization requirements and the existing approved Plan B design system without copying unavailable reference visuals.
