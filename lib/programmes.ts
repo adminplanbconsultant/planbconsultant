@@ -47,6 +47,10 @@ export const programmes = [
       [
         "IRCC — Express Entry",
         "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
+      ],
+      [
+        "IRCC — Comprehensive Ranking System",
+        "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html"
       ]
     ]
   },
@@ -94,7 +98,11 @@ export const programmes = [
         "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/expression-of-interest"
       ],
       [
-        "Home Affairs — subclass 491",
+        "Home Affairs — skills assessment",
+        "https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment"
+      ],
+      [
+        "Home Affairs — Skilled Work Regional subclass 491",
         "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491"
       ]
     ]
@@ -139,8 +147,12 @@ export const programmes = [
     "noteAr": "لا تتحول تأشيرة العمل المؤقتة تلقائياً إلى إقامة دائمة. لا نعرض وظائف غير موثقة أو نضمن التوظيف.",
     "sources": [
       [
-        "Home Affairs — work visas",
-        "https://immi.homeaffairs.gov.au/visas/working-in-australia"
+        "Home Affairs — sponsored visa comparison",
+        "https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/learn-about-sponsoring/visa-options"
+      ],
+      [
+        "Home Affairs — Skills in Demand subclass 482",
+        "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482"
       ]
     ]
   },
@@ -188,6 +200,10 @@ export const programmes = [
       [
         "German government — nursing",
         "https://www.make-it-in-germany.com/en/working-in-germany/professions-in-demand/nursing"
+      ],
+      [
+        "German government — recognition partnership",
+        "https://www.make-it-in-germany.com/en/service/newsletter/recognition-partnerships"
       ]
     ]
   },
@@ -278,6 +294,10 @@ export const programmes = [
       [
         "Swedish Migration Agency — employees",
         "https://www.migrationsverket.se/en/you-want-to-apply/work/employee-or-self-employed/employees.html"
+      ],
+      [
+        "Swedish Migration Agency — salary requirement",
+        "https://www.migrationsverket.se/en/word-explanations/salary-requirements-for-a-work-permit.html"
       ]
     ]
   },
@@ -325,8 +345,8 @@ export const programmes = [
         "https://www.gov.pt/guias/trabalhar-em-portugal"
       ],
       [
-        "AIMA — immigration authority",
-        "https://aima.gov.pt/"
+        "AIMA — work residence routes",
+        "https://aima.gov.pt/pt/trabalhar"
       ]
     ]
   },
@@ -423,8 +443,8 @@ export const programmes = [
         "https://www.uscis.gov/policy-manual/volume-6-part-g-chapter-2"
       ],
       [
-        "U.S. Department of State — investor visas",
-        "https://travel.state.gov/content/travel/en/us-visas/immigrate/immigrant-investor-visas.html"
+        "USCIS — business and investment visa overview",
+        "https://www.uscis.gov/sites/default/files/document/outreach-engagements/UnderstandingBusinessandInvestmentVisas.pdf"
       ]
     ]
   },

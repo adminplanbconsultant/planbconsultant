@@ -1,0 +1,1496 @@
+[
+  {
+    "name": "canada-express-entry-en-1440",
+    "slug": "canada-express-entry",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "Canada Express Entry | Plan B Consultant",
+    "h1": "Canada Express Entry",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 5,
+      "process": 4,
+      "faqs": 4,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "alt": "Canada destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "canada-express-entry",
+    "assessmentDisplay": "Canada Express Entry",
+    "assessmentAnchorTop": 189.9375,
+    "table": {
+      "insideViewport": true,
+      "rows": 7
+    },
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=canada-express-entry",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "canada-express-entry-en-390",
+    "slug": "canada-express-entry",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "Canada Express Entry | Plan B Consultant",
+    "h1": "Canada Express Entry",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 5,
+      "process": 4,
+      "faqs": 4,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "alt": "Canada destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "canada-express-entry",
+    "assessmentDisplay": "Canada Express Entry",
+    "assessmentAnchorTop": 189.84375,
+    "table": {
+      "insideViewport": true,
+      "rows": 7
+    },
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=canada-express-entry",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "australia-skilled-migration-en-1440",
+    "slug": "australia-skilled-migration",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "Australia skilled migration | Plan B Consultant",
+    "h1": "Australia skilled migration",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 4,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destination-2.jpg",
+        "alt": "Australia destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "australia-skilled-migration",
+    "assessmentDisplay": "Australia skilled migration",
+    "assessmentAnchorTop": 189.9375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=australia-skilled-migration",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "australia-skilled-migration-en-390",
+    "slug": "australia-skilled-migration",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "Australia skilled migration | Plan B Consultant",
+    "h1": "Australia skilled migration",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 4,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destination-2.jpg",
+        "alt": "Australia destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "australia-skilled-migration",
+    "assessmentDisplay": "Australia skilled migration",
+    "assessmentAnchorTop": 190.34375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=australia-skilled-migration",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "australia-work-visas-en-1440",
+    "slug": "australia-work-visas",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "Australia work visas | Plan B Consultant",
+    "h1": "Australia work visas",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 2,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destination-2.jpg",
+        "alt": "Australia destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "australia-work-visas",
+    "assessmentDisplay": "Australia work visas",
+    "assessmentAnchorTop": 190,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=australia-work-visas",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "australia-work-visas-en-390",
+    "slug": "australia-work-visas",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "Australia work visas | Plan B Consultant",
+    "h1": "Australia work visas",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 2,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destination-2.jpg",
+        "alt": "Australia destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "australia-work-visas",
+    "assessmentDisplay": "Australia work visas",
+    "assessmentAnchorTop": 189.84375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=australia-work-visas",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "germany-nursing-en-1440",
+    "slug": "germany-nursing",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "Nursing careers in Germany | Plan B Consultant",
+    "h1": "Nursing careers in Germany",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 4,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/germany.jpg",
+        "alt": "Germany destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/germany-nursing.png",
+        "alt": "Nursing professionals in a clinical workplace",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "germany-nursing",
+    "assessmentDisplay": "Nursing careers in Germany",
+    "assessmentAnchorTop": 190,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=germany-nursing",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "germany-nursing-en-390",
+    "slug": "germany-nursing",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "Nursing careers in Germany | Plan B Consultant",
+    "h1": "Nursing careers in Germany",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 4,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/germany.jpg",
+        "alt": "Germany destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/germany-nursing.png",
+        "alt": "Nursing professionals in a clinical workplace",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "germany-nursing",
+    "assessmentDisplay": "Nursing careers in Germany",
+    "assessmentAnchorTop": 189.84375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=germany-nursing",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "germany-car-mechanics-en-1440",
+    "slug": "germany-car-mechanics",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "Car mechanic careers in Germany | Plan B Consultant",
+    "h1": "Car mechanic careers in Germany",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 2,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/germany.jpg",
+        "alt": "Germany destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/automotive-workshop.png",
+        "alt": "Automotive technicians working in a workshop",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "germany-car-mechanics",
+    "assessmentDisplay": "Car mechanic careers in Germany",
+    "assessmentAnchorTop": 190,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=germany-car-mechanics",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "germany-car-mechanics-en-390",
+    "slug": "germany-car-mechanics",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "Car mechanic careers in Germany | Plan B Consultant",
+    "h1": "Car mechanic careers in Germany",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 2,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/germany.jpg",
+        "alt": "Germany destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/automotive-workshop.png",
+        "alt": "Automotive technicians working in a workshop",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "germany-car-mechanics",
+    "assessmentDisplay": "Car mechanic careers in Germany",
+    "assessmentAnchorTop": 189.875,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=germany-car-mechanics",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "sweden-work-permit-en-1440",
+    "slug": "sweden-work-permit",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "Sweden work permits | Plan B Consultant",
+    "h1": "Sweden work permits",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 2,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 5,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/sweden.jpg",
+        "alt": "Sweden destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "sweden-work-permit",
+    "assessmentDisplay": "Sweden work permits",
+    "assessmentAnchorTop": 190,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=sweden-work-permit",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "sweden-work-permit-en-390",
+    "slug": "sweden-work-permit",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "Sweden work permits | Plan B Consultant",
+    "h1": "Sweden work permits",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 2,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 5,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/sweden.jpg",
+        "alt": "Sweden destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "sweden-work-permit",
+    "assessmentDisplay": "Sweden work permits",
+    "assessmentAnchorTop": 189.84375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=sweden-work-permit",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "portugal-work-residence-en-1440",
+    "slug": "portugal-work-residence",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "Portugal work & residence | Plan B Consultant",
+    "h1": "Portugal work & residence",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 5,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/portugal.jpg",
+        "alt": "Portugal destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "portugal-work-residence",
+    "assessmentDisplay": "Portugal work & residence",
+    "assessmentAnchorTop": 190,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=portugal-work-residence",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "portugal-work-residence-en-390",
+    "slug": "portugal-work-residence",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "Portugal work & residence | Plan B Consultant",
+    "h1": "Portugal work & residence",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 5,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/portugal.jpg",
+        "alt": "Portugal destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Professionals at work",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "portugal-work-residence",
+    "assessmentDisplay": "Portugal work & residence",
+    "assessmentAnchorTop": 189.84375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=portugal-work-residence",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "canada-c11-en-1440",
+    "slug": "canada-c11",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "Canada C11 business owners | Plan B Consultant",
+    "h1": "Canada C11 business owners",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 2,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "alt": "Canada destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/canada-c11-operations.png",
+        "alt": "Entrepreneur actively managing a Canadian small business",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "canada-c11",
+    "assessmentDisplay": "Canada C11 business owners",
+    "assessmentAnchorTop": 190,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=canada-c11",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "canada-c11-en-390",
+    "slug": "canada-c11",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "Canada C11 business owners | Plan B Consultant",
+    "h1": "Canada C11 business owners",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 2,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "alt": "Canada destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/canada-c11-operations.png",
+        "alt": "Entrepreneur actively managing a Canadian small business",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "canada-c11",
+    "assessmentDisplay": "Canada C11 business owners",
+    "assessmentAnchorTop": 189.84375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=canada-c11",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "usa-eb5-en-1440",
+    "slug": "usa-eb5",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "USA EB-5 investor programme | Plan B Consultant",
+    "h1": "USA EB-5 investor programme",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 5,
+      "faqs": 5,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destinations/usa.jpg",
+        "alt": "United States destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/usa-eb5-investment.png",
+        "alt": "Investor and advisers reviewing a United States development project",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "usa-eb5",
+    "assessmentDisplay": "USA EB-5 investor programme",
+    "assessmentAnchorTop": 190,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=usa-eb5",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "usa-eb5-en-390",
+    "slug": "usa-eb5",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "USA EB-5 investor programme | Plan B Consultant",
+    "h1": "USA EB-5 investor programme",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 5,
+      "faqs": 5,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destinations/usa.jpg",
+        "alt": "United States destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/usa-eb5-investment.png",
+        "alt": "Investor and advisers reviewing a United States development project",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "usa-eb5",
+    "assessmentDisplay": "USA EB-5 investor programme",
+    "assessmentAnchorTop": 190.34375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=usa-eb5",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "usa-e2-en-1440",
+    "slug": "usa-e2",
+    "locale": "en",
+    "width": 1440,
+    "height": 900,
+    "title": "USA E-2 treaty investor | Plan B Consultant",
+    "h1": "USA E-2 treaty investor",
+    "dir": "ltr",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 130,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 5,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destinations/usa.jpg",
+        "alt": "United States destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/usa-e2-enterprise.png",
+        "alt": "Owner directing an active United States business",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "usa-e2",
+    "assessmentDisplay": "USA E-2 treaty investor",
+    "assessmentAnchorTop": 190,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=usa-e2",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "usa-e2-en-390",
+    "slug": "usa-e2",
+    "locale": "en",
+    "width": 390,
+    "height": 844,
+    "title": "USA E-2 treaty investor | Plan B Consultant",
+    "h1": "USA E-2 treaty investor",
+    "dir": "ltr",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 3,
+      "faqs": 5,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destinations/usa.jpg",
+        "alt": "United States destination",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/usa-e2-enterprise.png",
+        "alt": "Owner directing an active United States business",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "Planning a move abroad",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "usa-e2",
+    "assessmentDisplay": "USA E-2 treaty investor",
+    "assessmentAnchorTop": 190.34375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/en/contact",
+      "/en/consultation?programme=usa-e2",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "canada-express-entry-ar-1440",
+    "slug": "canada-express-entry",
+    "locale": "ar",
+    "width": 1440,
+    "height": 900,
+    "title": "الدخول السريع إلى كندا | Plan B Consultant",
+    "h1": "الدخول السريع إلى كندا",
+    "dir": "rtl",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 140.28125,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 5,
+      "process": 4,
+      "faqs": 4,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "alt": "كندا — صورة للوجهة",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "مهنيون أثناء العمل",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "التخطيط للانتقال إلى الخارج",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "canada-express-entry",
+    "assessmentDisplay": "الدخول السريع إلى كندا",
+    "assessmentAnchorTop": 190.4375,
+    "table": {
+      "insideViewport": true,
+      "rows": 7
+    },
+    "ctaTargets": [
+      "#assessment",
+      "/ar/contact",
+      "/ar/consultation?programme=canada-express-entry",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "canada-express-entry-ar-390",
+    "slug": "canada-express-entry",
+    "locale": "ar",
+    "width": 390,
+    "height": 844,
+    "title": "الدخول السريع إلى كندا | Plan B Consultant",
+    "h1": "الدخول السريع إلى كندا",
+    "dir": "rtl",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 5,
+      "process": 4,
+      "faqs": 4,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destination-1.jpg",
+        "alt": "كندا — صورة للوجهة",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "مهنيون أثناء العمل",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/business-advisory.png",
+        "alt": "التخطيط للانتقال إلى الخارج",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "canada-express-entry",
+    "assessmentDisplay": "الدخول السريع إلى كندا",
+    "assessmentAnchorTop": 189.875,
+    "table": {
+      "insideViewport": true,
+      "rows": 7
+    },
+    "ctaTargets": [
+      "#assessment",
+      "/ar/contact",
+      "/ar/consultation?programme=canada-express-entry",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "germany-nursing-ar-1440",
+    "slug": "germany-nursing",
+    "locale": "ar",
+    "width": 1440,
+    "height": 900,
+    "title": "التمريض في ألمانيا | Plan B Consultant",
+    "h1": "التمريض في ألمانيا",
+    "dir": "rtl",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 140.28125,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 4,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/germany.jpg",
+        "alt": "ألمانيا — صورة للوجهة",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/germany-nursing.png",
+        "alt": "متخصصو تمريض في بيئة سريرية",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "التخطيط للانتقال إلى الخارج",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "germany-nursing",
+    "assessmentDisplay": "التمريض في ألمانيا",
+    "assessmentAnchorTop": 190.28125,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/ar/contact",
+      "/ar/consultation?programme=germany-nursing",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "germany-nursing-ar-390",
+    "slug": "germany-nursing",
+    "locale": "ar",
+    "width": 390,
+    "height": 844,
+    "title": "التمريض في ألمانيا | Plan B Consultant",
+    "h1": "التمريض في ألمانيا",
+    "dir": "rtl",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 4,
+      "faqs": 4,
+      "related": 3
+    },
+    "images": [
+      {
+        "src": "/images/destinations/germany.jpg",
+        "alt": "ألمانيا — صورة للوجهة",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/germany-nursing.png",
+        "alt": "متخصصو تمريض في بيئة سريرية",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "التخطيط للانتقال إلى الخارج",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "germany-nursing",
+    "assessmentDisplay": "التمريض في ألمانيا",
+    "assessmentAnchorTop": 190.375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/ar/contact",
+      "/ar/consultation?programme=germany-nursing",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "usa-eb5-ar-1440",
+    "slug": "usa-eb5",
+    "locale": "ar",
+    "width": 1440,
+    "height": 900,
+    "title": "برنامج المستثمرين الأمريكي EB-5 | Plan B Consultant",
+    "h1": "برنامج المستثمرين الأمريكي EB-5",
+    "dir": "rtl",
+    "viewport": 1440,
+    "scrollWidth": 1425,
+    "overflow": false,
+    "headerHeight": 140.28125,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 5,
+      "faqs": 5,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destinations/usa.jpg",
+        "alt": "الولايات المتحدة — صورة للوجهة",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/usa-eb5-investment.png",
+        "alt": "مستثمر ومستشارون يراجعون مشروع تطوير في الولايات المتحدة",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "التخطيط للانتقال إلى الخارج",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "usa-eb5",
+    "assessmentDisplay": "برنامج المستثمرين الأمريكي EB-5",
+    "assessmentAnchorTop": 189.9375,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/ar/contact",
+      "/ar/consultation?programme=usa-eb5",
+      "#assessment"
+    ]
+  },
+  {
+    "name": "usa-eb5-ar-390",
+    "slug": "usa-eb5",
+    "locale": "ar",
+    "width": 390,
+    "height": 844,
+    "title": "برنامج المستثمرين الأمريكي EB-5 | Plan B Consultant",
+    "h1": "برنامج المستثمرين الأمريكي EB-5",
+    "dir": "rtl",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "headerHeight": 140,
+    "sections": {
+      "overview": true,
+      "pathways": 3,
+      "eligibility": 3,
+      "benefits": 2,
+      "documents": 6,
+      "process": 5,
+      "faqs": 5,
+      "related": 2
+    },
+    "images": [
+      {
+        "src": "/images/destinations/usa.jpg",
+        "alt": "الولايات المتحدة — صورة للوجهة",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/usa-eb5-investment.png",
+        "alt": "مستثمر ومستشارون يراجعون مشروع تطوير في الولايات المتحدة",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/programmes/international-workplace.png",
+        "alt": "التخطيط للانتقال إلى الخارج",
+        "loaded": true,
+        "visible": true,
+        "objectFit": "cover"
+      }
+    ],
+    "assessmentPreselection": "usa-eb5",
+    "assessmentDisplay": "برنامج المستثمرين الأمريكي EB-5",
+    "assessmentAnchorTop": 189.71875,
+    "table": null,
+    "ctaTargets": [
+      "#assessment",
+      "/ar/contact",
+      "/ar/consultation?programme=usa-eb5",
+      "#assessment"
+    ]
+  }
+]
