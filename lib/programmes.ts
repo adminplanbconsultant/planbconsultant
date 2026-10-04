@@ -590,7 +590,7 @@ export const programmes = [
     "slug": "visit-visas",
     "group": "visit",
     "country": "Multiple destinations",
-    "title": "Visit & travel visas",
+    "title": "Visit visas",
     "ar": "تأشيرات الزيارة والسفر",
     "intro": "Prepare a clear application for tourism, family visits or permitted short business visits.",
     "introAr": "جهّز طلباً واضحاً للسياحة أو زيارة الأسرة أو زيارات الأعمال القصيرة المسموح بها.",

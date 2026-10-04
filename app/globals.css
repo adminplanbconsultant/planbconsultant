@@ -976,3 +976,25 @@ body{font-weight:500}
 @media(prefers-reduced-motion:reduce){.home-hero-services a{transition:none}}
 @media(max-width:68.75rem){.home-hero.wrap{width:calc(100% - 40px)}}
 @media(max-width:40rem){.home-hero.wrap{width:calc(100% - 24px)}}
+
+/* Touch-target and tablet/mobile hardening */
+@media(max-width:1024px),(pointer:coarse){
+ .topline a:not(.social-icon),.breadcrumb a,.footer-main>div:not(.footer-brand)>a,.footer-bottom a,.text-link{display:inline-flex;align-items:center;min-height:44px}
+ .footer-main>div:not(.footer-brand)>a{display:flex;margin-bottom:0}
+ .social-icon,.social-placeholder{width:44px;height:44px}
+ .social-icons{gap:4px}
+ .ticker-control,.home-hero-play{min-width:44px;min-height:44px}
+}
+html,body{max-width:100%;overflow-x:clip}
+img,video,svg{max-width:100%}
+.table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:1024px){h1,h2,h3{overflow-wrap:break-word;hyphens:manual}}
+@media(max-width:650px){.route-summary{grid-template-columns:1fr 1fr;column-gap:var(--space-md)}.route-summary div:nth-child(n+2){border-top:0;padding-top:0}.route-summary div:nth-child(n+3){border-top:1px solid var(--color-line);padding-top:var(--space-sm)}.route-summary div:nth-child(3){grid-column:1/-1}.route-summary div:nth-child(even){border-inline-start:1px solid var(--color-line);padding-inline-start:var(--space-sm)}.route-summary div:nth-child(4){grid-column:1/-1;border-inline-start:0;padding-inline-start:0}}
+
+/* Larger desktop logo (header grows with it; sticky offsets follow) */
+@media(min-width:75rem){
+ .final-masthead .header-brand .header-logo-artwork{height:120px;margin-block:0}
+ .final-masthead .header-inner{min-height:140px}
+ .mega{top:184px}
+ .programme-subnav{top:184px}
+}
