@@ -27,9 +27,9 @@ Open http://localhost:3000. English is `/en`; Arabic is `/ar`.
 1. Extract this ZIP and upload the **contents of plan-b-vercel** to a Git repository. `package.json` must be at the repository root (or select this folder as Vercel's Root Directory).
 2. Import the repository into Vercel. Framework: **Next.js**. Node version: **22.x**. Build: `npm run build`. Leave Output Directory at the Next.js default.
 3. Copy variables from `.env.example` into Vercel Project Settings → Environment Variables. Set `NEXT_PUBLIC_SITE_URL` to your actual HTTPS domain, without a trailing slash. Public variables are compiled at build time: redeploy after changing them.
-4. Add a PostgreSQL database (any provider compatible with Postgres.js). Set `DATABASE_URL` to its TLS-enabled pooled connection string. Create a random `RATE_LIMIT_SECRET` (at least 32 characters). Never put either value in a NEXT_PUBLIC variable.
-5. Run `database/schema.sql` in the provider's SQL editor, or set DATABASE_URL in `.env.local` and run `npm run db:setup` once. This creates the two required tables and indexes and adds the profile column if you used the previous export. It preserves existing enquiry rows. Do not run migrations on every Vercel build.
-6. Deploy. Test a real enquiry and verify the new row in the database. Missing database configuration produces an honest error, never a fake success.
+4. Set up enquiry storage: a private Google Sheet plus a Google Apps Script web app (no database). Follow `GOOGLE-SHEET-SETUP.md`, then set the server-only variables `GOOGLE_APPS_SCRIPT_URL` and `GOOGLE_APPS_SCRIPT_SECRET` (and optionally the Cloudflare Turnstile keys). Never put them in a NEXT_PUBLIC variable.
+5. No database migration is needed. `database/schema.sql` is a legacy record of the old PostgreSQL table shape and is not used.
+6. Deploy, then run the live checks in `GOOGLE-SHEET-SETUP.md` section 7. Missing or failing storage produces an honest error, never a fake success.
 7. Complete the business details and approve services/privacy copy. Set `NEXT_PUBLIC_ALLOW_INDEXING=true` and redeploy when the public launch is approved. Before this, robots/noindex intentionally exclude the site; this is not access control. Use Vercel deployment protection if the preview must be private.
 
 ## Typography: ZT Talk
@@ -57,7 +57,7 @@ Add regular and bold declarations if available. Do not declare a static font as 
 - Six programme categories with 13 detailed English/Arabic programme pages.
 - Client profile, mission, vision, Choice/Clarity/Certainty values.
 - Three-step assessment with age, education, profession, nationality, residence and conditional investment budget.
-- Full submitted profile saved to PostgreSQL, with validation, consent, honeypot, throttling and idempotent insert.
+- Full submitted profile saved to a private Google Sheet (with an email notification), with validation, consent, honeypot, Turnstile, throttling and duplicate prevention.
 - Existing service, destination and guide pages remain available.
 - Relevant destinations link to the new programme pages.
 - Photos bundled locally for reliable asset delivery.
@@ -69,15 +69,11 @@ See CONTENT-REVIEW.md for the complete client PDF coverage and corrections.
 
 Public company variables are in `.env.example`. WhatsApp uses digits only, including Kuwait country code, with no `+` or spaces. No contact details were invented. Add verified company details before presenting it as launch-ready.
 
-Enquiries are stored in PostgreSQL; they are **not emailed automatically**, and there is no admin dashboard. Use your database provider's restricted dashboard to review them. Example query:
+Enquiries (quick popup, full assessment, contact form) are saved to a **private Google Sheet** through a Google Apps Script web app, and each saved enquiry triggers one notification email to the company mailbox (with a manual "contact on WhatsApp" link). There is no database and no admin dashboard: staff work in the sheet. Setup, column mapping, retries and failure modes: `GOOGLE-SHEET-SETUP.md`. Source: `integrations/google-apps-script/Code.gs`.
 
-```sql
-SELECT * FROM enquiries ORDER BY created_at DESC LIMIT 100;
-```
+The form shows success only after Apps Script confirms the row was saved; a reference (`PB-XXXXXXXX`) is returned. No documents or passport uploads are requested. Define your client's data-retention procedure and approved privacy wording before collecting real enquiries.
 
-The database is the only durable submission destination. The form returns a reference after a successful insert. No documents or passport uploads are requested. Define your client's data-retention procedure and approved privacy wording before collecting real enquiries.
-
-The Sites database is separate. This export does not copy existing enquiries or credentials. Arrange an authorised data migration if needed.
+Earlier PostgreSQL rows (if any) are not touched or migrated; `database/schema.sql` documents their shape.
 
 ## Assets and content
 
@@ -87,7 +83,7 @@ Edit bilingual service/country/FAQ content in `lib/content.ts`, page markup in `
 
 ## Validation
 
-See `VALIDATION.md` for the actual checks performed and the checks requiring your deployment credentials. A successful build is not a substitute for a real database submission or mobile browser review.
+See `VALIDATION.md` for the actual checks performed and the checks requiring your deployment credentials. A successful build is not a substitute for a real Google Sheet submission (see `GOOGLE-SHEET-SETUP.md` section 7) or mobile browser review.
 
 
 ## Optional enquiry notifications

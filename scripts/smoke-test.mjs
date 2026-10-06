@@ -15,11 +15,12 @@ for(const locale of ['en','ar']){
 }
 assert.equal((await fetch(base+'/en/missing-page')).status,404);
 assert.equal((await fetch(base+'/fr')).status,404);
-assert.equal((await fetch(base+'/images/logo.jpg')).status,200);
+for(const asset of ['/images/plan-b-header-crest-en.png','/images/social/plan-b-share-v3-en.jpg','/images/social/plan-b-share-v3-ar.jpg','/images/plan-b-crest-512.png','/images/icon-192.png','/favicon.ico','/manifest.webmanifest']){const r=await fetch(base+asset);assert.equal(r.status,200,asset)}
+assert.equal((await fetch(base+'/images/logo.jpg')).status,404,'retired old logo must not be served');
 const post=(body,headers={})=>fetch(base+'/api/enquiries',{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(body)});
 assert.equal((await post({})).status,400);
 assert.equal((await post({},{Origin:'https://untrusted.example'})).status,403);
 assert.equal((await post({message:'x'.repeat(13000)})).status,413);
 assert.equal((await fetch(base+'/api/enquiries',{method:'POST',body:'plain'})).status,415);
-if(!process.env.DATABASE_URL){const r=await post({id:crypto.randomUUID(),name:'Test Person',phone:'+96555555555',email:'',service:'not-sure',destination:'Not sure yet',offer:'not-sure',method:'phone',message:'',website:'',consent:true,locale:'en'});assert.equal(r.status,503,'unconfigured form must not claim success')}
+if(!process.env.GOOGLE_APPS_SCRIPT_URL){const r=await post({id:crypto.randomUUID(),name:'Test Person',phone:'+96555555555',email:'',service:'not-sure',destination:'Not sure yet',offer:'not-sure',method:'phone',message:'',website:'',consent:true,locale:'en'});assert.equal(r.status,503,'unconfigured form must not claim success')}
 console.log(`${pages} bilingual pages passed; 404s, logo, API validation, origin and body limits passed.`);

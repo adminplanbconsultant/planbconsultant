@@ -1,3 +1,19 @@
+# Validation — enquiry storage migration (6 October 2026)
+
+## PostgreSQL → private Google Sheet via Apps Script
+
+**Run and passing (all MOCKED Google services; no live Google call, no email sent):**
+- `npm run build` and `npm run typecheck`.
+- `node scripts/apps-script-tests.mjs` — 19 tests of `Code.gs` in a Node sandbox with in-memory fakes: tabs/headers, field mapping, text-only phone storage, formula-injection neutralisation, validation/consent, wrong secret, duplicates, parallel same-id requests, lock contention, throttling, email content/escaping/Reply-To/WhatsApp link, failed notification + retry, bounded retries, quota, stale-claim handling, trigger setup, allow-list drift check.
+- `node scripts/enquiry-flow-test.mjs` — 23 tests of the real production server against a mock Apps Script that imitates the web-app POST→302→JSON flow: all three forms in EN/AR, validation, origin/size/content-type guards, duplicate and parallel requests, formula injection, failed notification, wrong secret, malformed/invalid/wrong-id/500/hostile-redirect/timeout responses (never reported as success), transient retry, lost-response resolution, throttling, log hygiene, missing configuration, Turnstile token required, no secrets in browser bundles.
+- `node scripts/enquiry-ui-qa.mjs` (40 checks) and `node scripts/assessment-popup-qa.mjs` (61 checks): real Chrome; loading/disabled state, success only after confirmed save, EN/AR thank-you text, values preserved on failure, retry reuses the submission id.
+
+**Pending (needs your Google account — see `GOOGLE-SHEET-SETUP.md` section 7):** real spreadsheet write, real email delivery, WhatsApp link tap, cross-execution locking, real Apps Script redirect behaviour, real retry trigger, live Turnstile verification (a real token's success path was not exercised), deployed-site submissions on mobile.
+
+Everything below describes earlier editions (PostgreSQL / D1) and is historical.
+
+---
+
 # Validation — 28 September 2026
 
 ## Latest content phase - 1 October 2026

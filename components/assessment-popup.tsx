@@ -4,6 +4,8 @@ import {useCallback,useEffect,useId,useRef,useState,type FormEvent,type Keyboard
 import {ArrowLeft,ArrowRight,BriefcaseBusiness,Building2,Check,CheckCircle2,ChevronDown,Globe2,GraduationCap,Plane,ShieldCheck,X} from 'lucide-react';
 import {programmes} from '@/lib/programmes';
 import {popupServices,popupSource} from '@/lib/enquiry-popup';
+import {submitEnquiry,enquiryError,turnstileSiteKey} from '@/lib/enquiry-client';
+import Turnstile from './turnstile';
 import {text,type Locale} from '@/lib/content';
 
 /* ---------- Session behaviour ---------- */
@@ -151,6 +153,7 @@ function PopupDialog({locale:l,initialProgramme,onClose}:{locale:Locale;initialP
  const [v,setV]=useState<Fields>({name:'',phone:'',email:'',consent:false,website:''});
  const [errors,setErrors]=useState<Partial<Record<'service'|'name'|'phone'|'email'|'consent',string>>>({});
  const [status,setStatus]=useState<Status>('idle');
+ const [token,setToken]=useState('');const [tsKey,setTsKey]=useState(0);
  const [failure,setFailure]=useState('');
  const [submittedName,setSubmittedName]=useState('');
  const dial=dials.find(d=>d.code===country)!;
@@ -213,17 +216,11 @@ function PopupDialog({locale:l,initialProgramme,onClose}:{locale:Locale;initialP
   if(!validate())return;
   sendingRef.current=true;setStatus('sending');setFailure('');
   try{
-   const response=await fetch('/api/enquiries',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({source:popupSource,id:idRef.current,name:v.name.trim(),phone:fullPhone(),email:v.email.trim(),service:service||'not-sure',programme:programme||'not-sure',locale:l,consent:v.consent,website:v.website})});
-   const data=await response.json().catch(()=>({})) as {reference?:string};
-   if(response.status!==201||!data.reference){
-    setFailure(response.status===429?t('You have sent several requests recently. Please try again later or contact us on WhatsApp.','أرسلت عدة طلبات مؤخراً. يرجى المحاولة لاحقاً أو التواصل معنا عبر واتساب.')
-     :response.status===400?t('Some details look incorrect. Please check them and try again.','يبدو أن بعض البيانات غير صحيحة. يرجى مراجعتها والمحاولة مجدداً.')
-     :t('We couldn’t send your enquiry just now. Your details are still here — please try again in a moment or contact us on WhatsApp.','تعذر إرسال استفسارك الآن. بياناتك ما زالت محفوظة هنا، يرجى المحاولة بعد قليل أو التواصل معنا عبر واتساب.'));
-    setStatus('error');return;
-   }
+   if(turnstileSiteKey&&!token){setFailure(t('Please complete the security check.','يرجى إكمال التحقق الأمني.'));setStatus('error');return}
+   const result=await submitEnquiry({source:popupSource,id:idRef.current,name:v.name.trim(),phone:fullPhone(),email:v.email.trim(),service:service||'not-sure',programme:programme||'not-sure',locale:l,consent:v.consent,website:v.website,turnstileToken:token});
+   setTsKey(k=>k+1);
+   if(!result.ok){setFailure(enquiryError(result.kind,t));setStatus('error');return}
    setSubmittedName(v.name.trim().split(/\s+/)[0]);emitConversion('assessment_step_completed',{locale:l,step:2});emitConversion('assessment_submission_success',{locale:l});setStatus('success');
-  }catch{
-   setFailure(t('We couldn’t reach the server. Check your connection — your details are still here.','تعذر الاتصال بالخادم. تحقق من اتصالك، فبياناتك ما زالت محفوظة هنا.'));setStatus('error');
   }finally{sendingRef.current=false}
  }
  const sending=status==='sending';
@@ -244,7 +241,7 @@ function PopupDialog({locale:l,initialProgramme,onClose}:{locale:Locale;initialP
     {status==='success'?<div className="ap-step ap-success" role="status">
      <CheckCircle2 size={44} strokeWidth={1.4} aria-hidden="true"/>
      <h3 ref={stepHeadingRef} tabIndex={-1}>{t(`Thank you, ${submittedName}.`,`شكراً لك، ${submittedName}.`)}</h3>
-     <p>{t('We’ve received your enquiry. Our team will contact you using the details you provided.','لقد استلمنا استفسارك. سيتواصل معك فريقنا عبر البيانات التي قدّمتها.')}</p>
+     <p>{t('We’ve received your enquiry. Our team will contact you.','لقد استلمنا استفسارك وسيتواصل معك فريقنا.')}</p>
      <button type="button" className="ap-primary" onClick={onClose}>{t('Close','إغلاق')}</button>
     </div>
     :step===1?<div className="ap-step" key="step1">
@@ -266,7 +263,8 @@ function PopupDialog({locale:l,initialProgramme,onClose}:{locale:Locale;initialP
      <label className="ap-honey" aria-hidden="true">Website<input tabIndex={-1} autoComplete="off" value={v.website} onChange={e=>set('website',e.target.value)}/></label>
      <div className="ap-consent"><label><input type="checkbox" data-field="consent" checked={v.consent} onChange={e=>set('consent',e.target.checked)} aria-invalid={errors.consent?true:undefined} aria-describedby={errors.consent?`${uid}-consent-error`:undefined}/><span>{t('I agree to my details being used to respond to my enquiry.','أوافق على استخدام بياناتي للرد على استفساري.')} <a href={'/'+l+'/privacy'} target="_blank" rel="noopener noreferrer">{t('Privacy Policy','سياسة الخصوصية')}</a></span></label>{fieldError('consent')}</div>
      {status==='error'&&failure&&<p className="ap-error ap-failure" role="alert">{failure}</p>}
-     <div className="ap-actions ap-actions-split"><button type="button" className="ap-back" onClick={()=>{setStep(1);setStatus('idle');setFailure('')}} disabled={sending}><ArrowLeft size={16} aria-hidden="true" className="ap-arrow"/>{t('Back','رجوع')}</button><button type="submit" className="ap-primary" disabled={sending} aria-busy={sending}>{sending?t('Sending…','جارٍ الإرسال…'):t('Request My Free Assessment','اطلب تقييمي المجاني')}{!sending&&<ArrowRight size={17} aria-hidden="true" className="ap-arrow"/>}</button></div>
+     <Turnstile locale={l} onToken={setToken} resetKey={tsKey}/>
+     <div className="ap-actions ap-actions-split"><button type="button" className="ap-back" onClick={()=>{setStep(1);setStatus('idle');setFailure('')}} disabled={sending}><ArrowLeft size={16} aria-hidden="true" className="ap-arrow"/>{t('Back','رجوع')}</button><button type="submit" className="ap-primary" disabled={sending||(!!turnstileSiteKey&&!token)} aria-busy={sending}>{sending?t('Sending…','جارٍ الإرسال…'):t('Request My Free Assessment','اطلب تقييمي المجاني')}{!sending&&<ArrowRight size={17} aria-hidden="true" className="ap-arrow"/>}</button></div>
      <p className="ap-note">{t('Your details will be used to respond to your enquiry.','ستُستخدم بياناتك للرد على استفسارك.')}</p>
     </form>}
    </div>

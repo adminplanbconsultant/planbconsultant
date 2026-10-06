@@ -1,3 +1,5 @@
+-- LEGACY: the website no longer reads or writes PostgreSQL (enquiries now go to a private Google Sheet via Apps Script).
+-- Kept only as a record of the old table shape so any existing rows can be exported or migrated. Nothing here runs automatically.
 CREATE TABLE IF NOT EXISTS enquiries (
  id uuid PRIMARY KEY,name text NOT NULL,phone text NOT NULL,email text NOT NULL DEFAULT '',
  service text NOT NULL,destination text NOT NULL,offer text NOT NULL,method text NOT NULL,

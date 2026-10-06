@@ -1,0 +1,112 @@
+{
+ "note": "Lab data: headless Chrome, 412x823 @2x, CPU 4x slowdown, 1.6 Mbps / 150 ms RTT, cold cache, local production build over loopback. Not field data.",
+ "results": [
+  {
+   "path": "/en",
+   "fcpMs": 2496,
+   "lcpMs": 2496,
+   "lcpElement": "P.home-hero-description",
+   "cls": 0.064,
+   "longTaskBlockingMs": 382,
+   "requests": 24,
+   "totalKB": 804,
+   "jsKB": 209,
+   "imageKB": 392,
+   "cssKB": 54,
+   "fontKB": 125,
+   "heavyImages": [
+    {
+     "url": "/images/optimized/sydney-960.webp",
+     "KB": 212
+    }
+   ],
+   "brokenRequests": [],
+   "failedRequests": 0
+  },
+  {
+   "path": "/ar",
+   "fcpMs": 2448,
+   "lcpMs": 2448,
+   "lcpElement": "P.home-hero-description",
+   "cls": 0,
+   "longTaskBlockingMs": 0,
+   "requests": 24,
+   "totalKB": 516,
+   "jsKB": 209,
+   "imageKB": 103,
+   "cssKB": 54,
+   "fontKB": 125,
+   "heavyImages": [],
+   "brokenRequests": [],
+   "failedRequests": 0
+  },
+  {
+   "path": "/en/programmes/canada-express-entry",
+   "fcpMs": 2588,
+   "lcpMs": 2588,
+   "lcpElement": "P.lead",
+   "cls": 0.047,
+   "longTaskBlockingMs": 133,
+   "requests": 16,
+   "totalKB": 557,
+   "jsKB": 209,
+   "imageKB": 145,
+   "cssKB": 54,
+   "fontKB": 125,
+   "heavyImages": [],
+   "brokenRequests": [],
+   "failedRequests": 0
+  },
+  {
+   "path": "/ar/programmes/canada-express-entry",
+   "fcpMs": 2304,
+   "lcpMs": 2304,
+   "lcpElement": "H1.",
+   "cls": 0,
+   "longTaskBlockingMs": 86,
+   "requests": 15,
+   "totalKB": 528,
+   "jsKB": 209,
+   "imageKB": 145,
+   "cssKB": 54,
+   "fontKB": 94,
+   "heavyImages": [],
+   "brokenRequests": [],
+   "failedRequests": 0
+  },
+  {
+   "path": "/en/consultation",
+   "fcpMs": 1992,
+   "lcpMs": 1992,
+   "lcpElement": "H1.",
+   "cls": 0.011,
+   "longTaskBlockingMs": 72,
+   "requests": 15,
+   "totalKB": 400,
+   "jsKB": 209,
+   "imageKB": 0,
+   "cssKB": 54,
+   "fontKB": 125,
+   "heavyImages": [],
+   "brokenRequests": [],
+   "failedRequests": 0
+  },
+  {
+   "path": "/en/contact",
+   "fcpMs": 1896,
+   "lcpMs": 1896,
+   "lcpElement": "P.",
+   "cls": 0.048,
+   "longTaskBlockingMs": 22,
+   "requests": 15,
+   "totalKB": 399,
+   "jsKB": 209,
+   "imageKB": 0,
+   "cssKB": 54,
+   "fontKB": 125,
+   "heavyImages": [],
+   "brokenRequests": [],
+   "failedRequests": 0
+  }
+ ]
+}

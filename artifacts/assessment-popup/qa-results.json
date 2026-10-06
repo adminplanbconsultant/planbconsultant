@@ -60,7 +60,7 @@
     {
       "name": "Time is not counted while tab hidden",
       "ok": true,
-      "detail": "stored 54093ms"
+      "detail": "stored 29019ms"
     },
     {
       "name": "Counting resumes when visible again",
@@ -70,7 +70,7 @@
     {
       "name": "Active time carries across page navigation",
       "ok": true,
-      "detail": "carried 5195ms before new page counted"
+      "detail": "carried 5027ms before new page counted"
     },
     {
       "name": "Manual event opens popup",

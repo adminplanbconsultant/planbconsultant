@@ -1,6 +1,6 @@
 // End-to-end QA for the automatic free-assessment popup. Drives a real Chrome over CDP.
-//   TEST_BASE_URL   server with a configured database (persistence tests)      default http://localhost:3107
-//   NODB_BASE_URL   server WITHOUT DATABASE_URL (honest-failure tests)         default http://localhost:3000
+//   TEST_BASE_URL   server wired to a mock Apps Script (see scripts/mock-enquiry-stack.mjs)      default http://localhost:3107
+//   NODB_BASE_URL   server WITHOUT enquiry configuration (honest-failure tests)         default http://localhost:3000
 //   CHROME_PATH     Chrome/Edge executable
 //   QA_SHORT=1      skip the real 60-second timer test
 // Screenshots land in artifacts/assessment-popup/.
@@ -154,14 +154,14 @@ check('Success heading uses first name',await ev(`document.querySelector('.ap-su
 check('Duplicate submissions prevented',(await ev(`window.__calls.length`))===1,`${await ev(`window.__calls.length`)} request(s)`);
 await shot('desktop-success');
 
-/* 7. Honest failure with no database configured */
+/* 7. Honest failure with enquiry storage unconfigured */
 await fresh(`${noDb}/en`);
 await ev(`window.dispatchEvent(new CustomEvent('planb:open-assessment'))`);await waitFor(`!!document.querySelector('.ap-dialog')`,2000);
 await ev(`document.querySelector('[data-choice="visit-visas"]').click()`);await sleep(150);await ev(`document.querySelector('.ap-primary').click()`);await sleep(400);
 await type('[data-field=name]','Omar Ali');await type('[data-field=phone]','5000 4321');await ev(`document.querySelector('[data-field=consent]').click()`);await sleep(150);await ev(`document.querySelector('form.ap-step button[type=submit]').click()`);
 check('Unavailable backend → friendly error, no success',await waitFor(`!!document.querySelector('.ap-failure')&&!document.querySelector('.ap-success')`,8000));
 const errText=await ev(`document.querySelector('.ap-failure').textContent`);
-check('Error exposes no internals',!/database|DATABASE_URL|503|configured|stack|postgres/i.test(errText),errText);
+check('Error exposes no internals',!/database|DATABASE_URL|GOOGLE|Apps Script|spreadsheet|503|configured|stack|postgres/i.test(errText),errText);
 check('All values preserved after failure',await ev(`document.querySelector('[data-field=name]').value==='Omar Ali'&&document.querySelector('[data-field=phone]').value==='5000 4321'&&document.querySelector('[data-field=consent]').checked`));
 await shot('desktop-failure');
 check('Resubmission allowed after failure',await ev(`!document.querySelector('form.ap-step button[type=submit]').disabled`));
