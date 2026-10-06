@@ -5,6 +5,9 @@ import {programmeMeta,serviceMeta} from './seo-copy';
 export const routePaths=[...new Set(['','about','programmes','services','destinations','resources','consultation','contact','privacy','faqs',...programmes.map(p=>'programmes/'+p.slug),...services.map(s=>'services/'+s.slug),...countries.map(c=>'destinations/'+slugify(c[0])),...guides.map(g=>'resources/'+g.slug)])];
 /** Bump together with VERSION in scripts/prepare-social-images.mjs whenever the sharing image changes, so WhatsApp/Facebook fetch a new URL. */
 export const shareVersion='v3';
+/** Bing Webmaster Tools HTML-tag verification. Keep this tag permanently: removing it can un-verify the site. BING_SITE_VERIFICATION may override it. */
+export const bingVerification=process.env.BING_SITE_VERIFICATION||'0A07D2B0509FC9810B1DFE00ACE1F311';
+export const siteVerification={google:process.env.GOOGLE_SITE_VERIFICATION||undefined,other:{'msvalidate.01':bingVerification}};
 export const supportedCountries=['canada','australia','germany','sweden','portugal','united-states'];
 export const indexingEnabled=process.env.NEXT_PUBLIC_ALLOW_INDEXING==='true'&&process.env.VERCEL_ENV!=='preview';
 export function eligiblePath(path:string){return !(path.startsWith('destinations/')&&!supportedCountries.includes(path.split('/')[1]))&&path!=='programmes/citizenship-investment';}
@@ -37,7 +40,7 @@ export function pageMetadata(locale:Locale,path:string):Metadata{
 function httpsUrl(value?:string){try{const u=new URL(value||'');return u.protocol==='https:'?u.href:undefined}catch{return undefined}}
 export function entityGraph(locale:Locale,path:string){
  const url=origin+'/'+locale+(path?'/'+path:''),copy=pageCopy(locale,path),organization=origin+'/#organization',website=origin+'/#website';
- const sameAs=[process.env.NEXT_PUBLIC_LINKEDIN_URL,process.env.NEXT_PUBLIC_FACEBOOK_URL,process.env.NEXT_PUBLIC_INSTAGRAM_URL,process.env.NEXT_PUBLIC_TIKTOK_URL||'https://www.tiktok.com/@planbconsultant'].map(httpsUrl).filter(Boolean);
+ const sameAs=[process.env.NEXT_PUBLIC_LINKEDIN_URL,process.env.NEXT_PUBLIC_FACEBOOK_URL||'https://www.facebook.com/profile.php?id=61592427068993',process.env.NEXT_PUBLIC_INSTAGRAM_URL,process.env.NEXT_PUBLIC_TIKTOK_URL||'https://www.tiktok.com/@planbconsultant'].map(httpsUrl).filter(Boolean);
  const graph:Record<string,unknown>[]=[{'@type':'Organization','@id':organization,name:'Plan B Consultant',url:origin,logo:{'@type':'ImageObject',url:origin+'/images/plan-b-crest-512.png',width:512,height:512},areaServed:{'@type':'Country',name:'Kuwait'},telephone:business.phone,email:business.email,...(sameAs.length?{sameAs}:{})},{'@type':'WebSite','@id':website,url:origin,name:'Plan B Consultant',publisher:{'@id':organization},inLanguage:['en','ar']},{'@type':'WebPage','@id':url+'#page',url,name:copy.title,description:copy.description,inLanguage:locale,isPartOf:{'@id':website},breadcrumb:{'@id':url+'#breadcrumb'}},{'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:locale==='ar'?'الرئيسية':'Home',item:origin+'/'+locale},...(path?path.split('/').map((_,i,parts)=>{const p=parts.slice(0,i+1).join('/');return {'@type':'ListItem',position:i+2,name:pageCopy(locale,p).label,item:origin+'/'+locale+'/'+p}}):[])]}];
  if(path.startsWith('programmes/')||path.startsWith('services/'))graph.push({'@type':'Service','@id':url+'#service',name:copy.label,description:copy.description,url,provider:{'@id':organization},areaServed:{'@type':'Country',name:'Kuwait'}});
  if(path.startsWith('resources/'))graph.push({'@type':'Article','@id':url+'#article',headline:copy.title,description:copy.description,inLanguage:locale,mainEntityOfPage:{'@id':url+'#page'},publisher:{'@id':organization}});
