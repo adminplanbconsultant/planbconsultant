@@ -12,7 +12,6 @@ import Assessment,{GeneralEnquiry} from './assessment';
 import AssessmentPopup from './assessment-popup';
 import SiteHeader from './site-header';
 import LogoMark from './logo-mark';
-import SplashScreen from './splash-screen';
 import {ContactLinks,SocialLinks} from './contact-links';
 import {programmes,programmeGroups} from '@/lib/programmes';
 import {ArrowUpRight,ArrowRight,ArrowLeft,MapPin,Globe2,BriefcaseBusiness,Plane,GraduationCap,Search,Building2,Users,Compass,Check,Menu,ChevronDown,ShieldCheck,MessageCircle,Phone,Mail,MoveUpRight,BookOpen,CheckCircle2,Pause,Play,X} from 'lucide-react';
@@ -32,7 +31,7 @@ export default function Site({locale:l,path}:{locale:Locale,path:string[]}){
  const steps=()=> <div className="steps">{[["Tell us your plans","Share your goals, preferred destination and where you are starting from.","أخبرنا بخططك","شارك أهدافك ووجهتك المفضلة ونقطة البداية."],["Explore your options","Discuss the support and possible pathways relevant to your circumstances.","استكشف خياراتك","ناقش الدعم والمسارات المحتملة المناسبة لظروفك."],["Prepare with clarity","Understand your checklist, responsibilities and agreed next steps.","استعد بوضوح","تعرّف على قائمة المستندات والمسؤوليات والخطوات المتفق عليها."],["Move forward","Receive guidance through the stages included in your service.","تقدّم نحو هدفك","احصل على إرشادات خلال المراحل المشمولة في خدمتك."]].map((s,i)=><div key={i} className="step"><span className="step-number">0{i+1}</span><h3>{t(s[0],s[2])}</h3><p>{t(s[1],s[3])}</p></div>)}</div>;
  const bread=(title:string)=><div className="breadcrumb"><a href={href()}>{t('Home','الرئيسية')}</a><span>/</span>{path.length>1&&<><a href={href(page)}>{t(page==='services'?'Services':page==='destinations'?'Destinations':'Resources',page==='services'?'الخدمات':page==='destinations'?'الوجهات':'الموارد')}</a><span>/</span></>}<span>{title}</span></div>;
  const titleBlock=(tag:string,tagAr:string,title:string,titleAr:string,desc:string,descAr:string,extra?:React.ReactNode)=><section className="inner-hero wrap">{bread(t(title,titleAr))}{eyebrow(tag,tagAr)}<h1>{t(title,titleAr)}</h1><p className="lead">{t(desc,descAr)}</p>{extra}</section>;
- return <div className="site-shell" dir={l==='ar'?'rtl':'ltr'}><ConversionObserver locale={l}/><Analytics/><SplashScreen locale={l}/><AssessmentPopup locale={l} path={path}/><a href="#main" className="skip-link">{t('Skip to content','انتقل إلى المحتوى')}</a><SiteHeader locale={l} path={path}/>
+ return <div className="site-shell" dir={l==='ar'?'rtl':'ltr'}><ConversionObserver locale={l}/><Analytics/><AssessmentPopup locale={l} path={path}/><a href="#main" className="skip-link">{t('Skip to content','انتقل إلى المحتوى')}</a><SiteHeader locale={l} path={path}/>
  <main id="main">
  {page==='programmes'&&(path[1]?<ProgrammePage locale={l} slug={path[1]}/>:<ProgrammeDirectory locale={l}/>)}
  {page==='home'&&<>

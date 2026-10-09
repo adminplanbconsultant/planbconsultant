@@ -998,3 +998,7 @@ img,video,svg{max-width:100%}
  .mega{top:184px}
  .programme-subnav{top:184px}
 }
+
+/* Splash: timing is owned by lib/splash.ts (data-splash states); neutralise the earlier CSS-timer rules */
+.brand-splash{animation:none}
+@media(prefers-reduced-motion:reduce){.brand-splash{display:grid}.splash-lockup,.splash-orbit,.splash-lockup .splash-tagline,.splash-signature{animation:none}}

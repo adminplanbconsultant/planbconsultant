@@ -1,0 +1,258 @@
+{
+ "results": [
+  {
+   "firstRealFrameMs": 1853,
+   "logoVisibleMs": 1992,
+   "websiteRevealedMs": 3840,
+   "case": "en-desktop-throttled",
+   "frames": 292,
+   "firstFrame": "splash",
+   "firstFrameAt": 12,
+   "sequence": "splash ×+logo,splash+logo ×,other ×,site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": true,
+   "splashRevealedOnce": true,
+   "states": "active>leaving>done",
+   "final": {
+    "splashInDom": false,
+    "splashVisible": false,
+    "state": "done",
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 263,
+   "logoVisibleMs": 263,
+   "websiteRevealedMs": 761,
+   "case": "en-desktop-reduced-motion",
+   "frames": 7,
+   "firstFrame": "splash+logo",
+   "firstFrameAt": 19,
+   "sequence": "splash+logo ×,site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": true,
+   "splashRevealedOnce": true,
+   "states": "active>leaving>done",
+   "final": {
+    "splashInDom": false,
+    "splashVisible": false,
+    "state": "done",
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 256,
+   "websiteRevealedMs": 256,
+   "case": "en-desktop-no-js",
+   "frames": 259,
+   "firstFrame": "site",
+   "firstFrameAt": 10,
+   "sequence": "site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": false,
+   "splashRevealedOnce": null,
+   "states": "(no JS)",
+   "final": {
+    "splashInDom": true,
+    "splashVisible": false,
+    "state": null,
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 1927,
+   "logoVisibleMs": 2161,
+   "websiteRevealedMs": 3779,
+   "case": "en-mobile-throttled",
+   "frames": 213,
+   "firstFrame": "splash",
+   "firstFrameAt": 7,
+   "sequence": "splash ×+logo,splash+logo ×,other ×,site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": true,
+   "splashRevealedOnce": true,
+   "states": "active>leaving>done",
+   "final": {
+    "splashInDom": false,
+    "splashVisible": false,
+    "state": "done",
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 221,
+   "logoVisibleMs": 221,
+   "websiteRevealedMs": 755,
+   "case": "en-mobile-reduced-motion",
+   "frames": 25,
+   "firstFrame": "splash+logo",
+   "firstFrameAt": 20,
+   "sequence": "splash+logo ×,site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": true,
+   "splashRevealedOnce": true,
+   "states": "active>leaving>done",
+   "final": {
+    "splashInDom": false,
+    "splashVisible": false,
+    "state": "done",
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 224,
+   "websiteRevealedMs": 224,
+   "case": "en-mobile-no-js",
+   "frames": 261,
+   "firstFrame": "site",
+   "firstFrameAt": 7,
+   "sequence": "site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": false,
+   "splashRevealedOnce": null,
+   "states": "(no JS)",
+   "final": {
+    "splashInDom": true,
+    "splashVisible": false,
+    "state": null,
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 1646,
+   "logoVisibleMs": 1795,
+   "websiteRevealedMs": 3834,
+   "case": "ar-desktop-throttled",
+   "frames": 303,
+   "firstFrame": "splash",
+   "firstFrameAt": 22,
+   "sequence": "splash ×+logo,splash+logo ×,other ×,site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": true,
+   "splashRevealedOnce": true,
+   "states": "active>leaving>done",
+   "final": {
+    "splashInDom": false,
+    "splashVisible": false,
+    "state": "done",
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 2994,
+   "logoVisibleMs": 3143,
+   "websiteRevealedMs": 4913,
+   "case": "ar-mobile-throttled",
+   "frames": 223,
+   "firstFrame": "splash",
+   "firstFrameAt": 8,
+   "sequence": "splash ×+logo,splash+logo ×,other ×,site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": true,
+   "splashRevealedOnce": true,
+   "states": "active>leaving>done",
+   "final": {
+    "splashInDom": true,
+    "splashVisible": false,
+    "state": "done",
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 250,
+   "logoVisibleMs": 250,
+   "websiteRevealedMs": 777,
+   "case": "ar-mobile-reduced-motion",
+   "frames": 26,
+   "firstFrame": "splash+logo",
+   "firstFrameAt": 11,
+   "sequence": "splash+logo ×,site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": true,
+   "splashRevealedOnce": true,
+   "states": "active>leaving>done",
+   "final": {
+    "splashInDom": false,
+    "splashVisible": false,
+    "state": "done",
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  },
+  {
+   "firstRealFrameMs": 240,
+   "websiteRevealedMs": 240,
+   "case": "ar-mobile-no-js",
+   "frames": 260,
+   "firstFrame": "site",
+   "firstFrameAt": 22,
+   "sequence": "site ×",
+   "noWebsiteBeforeSplash": true,
+   "firstFrameIsNotSite": false,
+   "splashRevealedOnce": null,
+   "states": "(no JS)",
+   "final": {
+    "splashInDom": true,
+    "splashVisible": false,
+    "state": null,
+    "scrollLocked": "clip visible",
+    "inert": false,
+    "header": true,
+    "h1": 1
+   }
+  }
+ ],
+ "checks": {
+  "duringSplash": {
+   "state": "active",
+   "scrollY": 0,
+   "elementAtCentreInsideSplash": true,
+   "inert": true,
+   "focusInApp": false,
+   "topmostAtHeader": true
+  },
+  "tabFocusInAppDuringSplash": false,
+  "afterSplash": {
+   "state": "done",
+   "splashInDom": false,
+   "inert": false,
+   "scrollY": 300,
+   "overflow": "clip visible"
+  },
+  "clickToSkip": {
+   "state": "done",
+   "splashInDom": false
+  },
+  "staysGone": {
+   "state": "done",
+   "splashInDom": false
+  }
+ },
+ "fail": []
+}

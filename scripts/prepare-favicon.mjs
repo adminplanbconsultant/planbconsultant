@@ -25,3 +25,11 @@ for(const [i,{size,png}] of frames.entries()){
 }
 writeFileSync('public/favicon.ico',Buffer.concat([header,...frames.map(f=>f.png)]));
 console.log('Generated favicon.ico (6 sizes), favicon-32, icon-192, favicon-512, plan-b-crest-512 and apple-touch-icon from the approved crest.');
+
+// Splash emblem: the same approved crest (trailing 13px strip cropped), resized to WebP so the first-paint logo is ~40 KB instead of ~930 KB.
+for(const locale of ['en','ar']){
+ const src=`public/images/plan-b-header-crest-${locale}.png`;const m=await sharp(src).metadata();
+ const base=sharp(src).extract({left:0,top:0,width:m.width,height:756});
+ for(const w of [480,960])await base.clone().resize({width:w}).webp({quality:82,effort:5}).toFile(`public/images/optimized/crest-${locale}-${w}.webp`);
+}
+console.log('Generated splash crest WebP (480w, 960w) for en and ar.');
