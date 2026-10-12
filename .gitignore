@@ -5,3 +5,7 @@ node_modules/
 *.tsbuildinfo
 .vercel/
 /tmp/
+
+# Backups, editable artwork and QA output are not source
+*.zip
+/source-assets/node_modules/

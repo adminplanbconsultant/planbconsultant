@@ -77,7 +77,7 @@ Earlier PostgreSQL rows (if any) are not touched or migrated; `database/schema.s
 
 ## Assets and content
 
-The revised seven-star hands/globe logo is bundled as public/images/plan-b-logo.png. It has an opaque white background; CSS blends it into the ceramic surface and crops the header presentation to the crest. The full logo is shown on About. Three destination photos are bundled locally; attribution is in ASSET-SOURCES.json. Review crop and mobile appearance in your deployed preview.
+The revised seven-star hands/globe logo is published as `public/images/optimized/plan-b-logo-{en,ar}.webp` (masters in `source-assets/`, not deployed). It has an opaque white background; CSS blends it into the ceramic surface and crops the header presentation to the crest. The full logo is shown on About. Three destination photos are bundled locally; attribution is in ASSET-SOURCES.json. Review crop and mobile appearance in your deployed preview.
 
 Edit bilingual service/country/FAQ content in `lib/content.ts`, page markup in `components/site.tsx`, and styling in `app/globals.css`. Company claims, available services and all immigration information need client approval. No invented testimonials, approval rates or professional accreditations are included.
 

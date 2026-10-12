@@ -45,9 +45,9 @@ Rules and figures remain subject to government change. The pages link readers to
 
 Existing destination, clinical and workshop imagery was retained after load/crop/alt-text checks. Three previously duplicated generic business images were replaced with original, program-specific generated assets:
 
-- `public/images/programmes/canada-c11-operations.png`
-- `public/images/programmes/usa-eb5-investment.png`
-- `public/images/programmes/usa-e2-enterprise.png`
+- `source-assets/originals/programmes/canada-c11-operations.png`
+- `source-assets/originals/programmes/usa-eb5-investment.png`
+- `source-assets/originals/programmes/usa-e2-enterprise.png`
 
 The prompts requested realistic editorial business photography without logos, passport imagery, text overlays or approval symbolism. All three are local project assets rather than copied competitor media.
 

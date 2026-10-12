@@ -1,3 +1,4 @@
+/** Hero/programme sources are logical ids only: the full-size originals live in source-assets/ (not deployed); the site serves the generated /images/optimized/*.webp files. */
 export function imageSources(src:string){
  if(!src.startsWith('/images/hero/')&&!src.startsWith('/images/programmes/'))return {src};
  const name=src.split('/').at(-1)!.replace(/\.[^.]+$/,'');

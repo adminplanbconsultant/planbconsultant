@@ -15,7 +15,6 @@ for(const size of sizes){
 }
 await icon(180).toFile('public/images/apple-touch-icon.png');
 await icon(192).toFile('public/images/icon-192.png');
-await icon(512).toFile('public/images/favicon-512.png');
 await icon(512).toFile('public/images/plan-b-crest-512.png');
 const header=Buffer.alloc(6+16*frames.length);header.writeUInt16LE(1,2);header.writeUInt16LE(frames.length,4);
 let offset=header.length;
@@ -24,7 +23,7 @@ for(const [i,{size,png}] of frames.entries()){
  header.writeUInt16LE(1,at+4);header.writeUInt16LE(32,at+6);header.writeUInt32LE(png.length,at+8);header.writeUInt32LE(offset,at+12);offset+=png.length;
 }
 writeFileSync('public/favicon.ico',Buffer.concat([header,...frames.map(f=>f.png)]));
-console.log('Generated favicon.ico (6 sizes), favicon-32, icon-192, favicon-512, plan-b-crest-512 and apple-touch-icon from the approved crest.');
+console.log('Generated favicon.ico (6 sizes), favicon-32, icon-192, plan-b-crest-512 and apple-touch-icon from the approved crest.');
 
 // Splash emblem: the same approved crest (trailing 13px strip cropped), resized to WebP so the first-paint logo is ~40 KB instead of ~930 KB.
 for(const locale of ['en','ar']){

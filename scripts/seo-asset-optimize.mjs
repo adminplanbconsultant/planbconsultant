@@ -2,7 +2,7 @@ import sharp from 'sharp';
 import {readdirSync,mkdirSync,statSync,writeFileSync} from 'node:fs';
 const output='public/images/optimized';mkdirSync(output,{recursive:true});
 const rows=[];
-for(const dir of ['public/images/hero','public/images/programmes'])for(const file of readdirSync(dir)){
+for(const dir of ['source-assets/originals/hero','source-assets/originals/programmes'])for(const file of readdirSync(dir)){
  if(!/\.(jpg|png)$/.test(file))continue;
  const input=dir+'/'+file,name=file.replace(/\.[^.]+$/,'');
  const metadata=await sharp(input).metadata();const widths=dir.endsWith('hero')?[480,960,1400]:[480,960];

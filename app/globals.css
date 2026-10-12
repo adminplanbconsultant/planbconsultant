@@ -1002,3 +1002,11 @@ img,video,svg{max-width:100%}
 /* Splash: timing is owned by lib/splash.ts (data-splash states); neutralise the earlier CSS-timer rules */
 .brand-splash{animation:none}
 @media(prefers-reduced-motion:reduce){.brand-splash{display:grid}.splash-lockup,.splash-orbit,.splash-lockup .splash-tagline,.splash-signature{animation:none}}
+
+/* Asset-copy deterrents (see components/asset-guard.tsx and ASSET-PROTECTION.md). Deliberately limited to artwork: body text, contact details,
+   references, forms and links stay fully selectable/copyable. */
+img,svg.brand-mark{-webkit-user-drag:none;user-drag:none}
+.brand-mark,.footer-crest,.header-logo-artwork,.splash-emblem,.splash-orbit,.brand-splash,.programme-hero-media img,.programme-story-media img,.programme-benefit-image img,.home-hero-slide img,.about-destination-photo img,.destination-picker-grid img{-webkit-user-select:none;user-select:none}
+.brand-mark,.footer-crest,.splash-emblem,.programme-hero-media img,.programme-story-media img,.programme-benefit-image img,.home-hero-slide img,.about-destination-photo img{-webkit-touch-callout:none}
+.header-wordmark,.splash-tagline{-webkit-user-select:none;user-select:none}
+.enquiry-reference,.contact-link-list a,.footer a[href^="mailto:"],.footer a[href^="tel:"]{-webkit-user-select:text;user-select:text}

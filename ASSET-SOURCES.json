@@ -56,49 +56,49 @@
   "generated_images": [
     {
       "name": "germany-nursing",
-      "file": "public/images/programmes/germany-nursing.png",
+      "file": "source-assets/originals/programmes/germany-nursing.png",
       "creator": "OpenAI image generation",
       "description": "Diverse nursing team in a modern German hospital corridor",
       "usage": "Germany nursing programme"
     },
     {
       "name": "automotive-workshop",
-      "file": "public/images/programmes/automotive-workshop.png",
+      "file": "source-assets/originals/programmes/automotive-workshop.png",
       "creator": "OpenAI image generation",
       "description": "Skilled mechanic diagnosing a vehicle in a modern European workshop",
       "usage": "Germany mechanics programme"
     },
     {
       "name": "international-workplace",
-      "file": "public/images/programmes/international-workplace.png",
+      "file": "source-assets/originals/programmes/international-workplace.png",
       "creator": "OpenAI image generation",
       "description": "International professionals collaborating in a contemporary European workplace",
       "usage": "Skilled migration and work programme context"
     },
     {
       "name": "business-advisory",
-      "file": "public/images/programmes/business-advisory.png",
+      "file": "source-assets/originals/programmes/business-advisory.png",
       "creator": "OpenAI image generation",
       "description": "Entrepreneur and advisers reviewing an active business plan",
       "usage": "Business and investor programme context"
     },
     {
       "name": "canada-c11-operations",
-      "file": "public/images/programmes/canada-c11-operations.png",
+      "file": "source-assets/originals/programmes/canada-c11-operations.png",
       "creator": "OpenAI image generation",
       "description": "Illustrative business scene; not actual Plan B staff, clients, premises, investment projects or completed transactions",
       "usage": "Programme context with visible bilingual AI disclosure"
     },
     {
       "name": "usa-eb5-investment",
-      "file": "public/images/programmes/usa-eb5-investment.png",
+      "file": "source-assets/originals/programmes/usa-eb5-investment.png",
       "creator": "OpenAI image generation",
       "description": "Illustrative business scene; not actual Plan B staff, clients, premises, investment projects or completed transactions",
       "usage": "Programme context with visible bilingual AI disclosure"
     },
     {
       "name": "usa-e2-enterprise",
-      "file": "public/images/programmes/usa-e2-enterprise.png",
+      "file": "source-assets/originals/programmes/usa-e2-enterprise.png",
       "creator": "OpenAI image generation",
       "description": "Illustrative business scene; not actual Plan B staff, clients, premises, investment projects or completed transactions",
       "usage": "Programme context with visible bilingual AI disclosure"

@@ -1,0 +1,8 @@
+# Files that must not be uploaded by 'vercel deploy' (Git-based deploys only publish public/ and the build output)
+source-assets/
+artifacts/
+tmp/
+*.zip
+*.log
+.env*
+!.env.example

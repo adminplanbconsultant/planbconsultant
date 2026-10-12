@@ -29,6 +29,7 @@ Immigration claims are legally sensitive. `CONTENT-REVIEW.md` and `PROGRAMME-PAG
 
 ## Repo notes
 
+- `public/` serves only optimised assets. Full-size masters and unused files live in `source-assets/` (not served; `.vercelignore`d). Hotlink rule is in `next.config.ts`; copy deterrents in `components/asset-guard.tsx`; details and limits in `ASSET-PROTECTION.md`. Do not put originals back under `public/`.
 - `artifacts/` holds QA screenshots (some include browser profile dirs), `tmp/` is untracked scratch, and a dated `.zip` export sits at the root — none are source.
 - `.env*` is gitignored except `.env.example`.
 
