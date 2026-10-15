@@ -38,7 +38,7 @@ for(const locale of ['en','ar'])for(const path of unique){
   htmlLang:(html.match(/<html[^>]*\blang="([^"]*)"/)||[])[1],htmlDir:(html.match(/<html[^>]*\bdir="([^"]*)"/)||[])[1],
   og:Object.fromEntries(m.map(t=>[attr(t,'property'),attr(t,'content')]).filter(x=>x[0]&&x[0].startsWith('og:'))),ogImages:meta('og:image','property').length,
   twitter:Object.fromEntries(m.map(t=>[attr(t,'name'),attr(t,'content')]).filter(x=>x[0]&&x[0].startsWith('twitter:'))),
-  ldCount:ldRaw.length,ldTypes:graph.map(x=>x['@type']),ldIds:graph.map(x=>x['@id']),
+  ldCount:ldRaw.length,ldTypes:graph.flatMap(x=>[].concat(x['@type'])),ldIds:graph.map(x=>x['@id']),
   h1:[...body.matchAll(/<h1[\s>][\s\S]*?<\/h1>/g)].map(x=>stripTags(x[0])),textLength:stripTags(body.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g,'')).length,
   internal:[...new Set([...body.matchAll(/<a [^>]*href="(\/(?:en|ar)(?:\/[^"#?]*)?)(?:[?#][^"]*)?"/g)].map(x=>x[1].replace(/\/$/,'')))],
   imgsMissingDims:[...body.matchAll(/<img\s[^>]*>/g)].filter(x=>!/\bwidth="/.test(x[0])||!/\bheight="/.test(x[0])).length};

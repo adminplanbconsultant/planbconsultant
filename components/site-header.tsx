@@ -1,9 +1,9 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {ArrowUpRight,ChevronDown,Globe,Menu,X} from 'lucide-react';
+import {ArrowUpRight,ChevronDown,Globe,MapPin,Menu,X} from 'lucide-react';
 import {ContactLinks,SocialLinks} from './contact-links';
 import NavCountryHeading from './nav-country-heading';
-import {text,type Locale} from '@/lib/content';
+import {text,office,type Locale} from '@/lib/content';
 
 type NavLink={slug:string;en:string;ar:string};
 type NavGroup={id:string;en:string;ar:string;countries:{en:string;ar:string;code?:string;links:NavLink[]}[]};
@@ -40,7 +40,7 @@ export default function SiteHeader({locale,path}:{locale:Locale;path:string[]}){
   {href:`${base}/contact`,en:'Contact Us',ar:'تواصل معنا',isActive:page==='contact'}
  ];
  return <div className="site-masthead final-masthead" ref={shellRef}>
-  <div className="topline"><div className="header-wide utility-inner"><div className="utility-contact"><ContactLinks locale={locale}/></div><SocialLinks locale={locale}/></div></div>
+  <div className="topline"><div className="header-wide utility-inner"><div className="utility-contact"><ContactLinks locale={locale}/><a className="utility-location" href={office.mapsUrl} target="_blank" rel="noopener noreferrer" aria-label={t('Get directions to Plan B Consultant, Reem Complex, Salmiya — opens in a new tab.','احصل على الاتجاهات إلى بلان بي للاستشارات، مجمع الريم، السالمية — يُفتح في علامة تبويب جديدة.')}><MapPin size={16} aria-hidden="true"/><span className="loc-full">{t('Reem Complex, Salmiya','مجمع الريم، السالمية')}</span><span className="loc-short">{t('Salmiya','السالمية')}</span></a></div><SocialLinks locale={locale}/></div></div>
   <header className="header"><div className="header-wide header-inner">
    <a className="brand header-brand" href={base} aria-label={t('Plan B Consultant home','بلان بي للاستشارات — الرئيسية')}><img className="header-logo-artwork" src={'/images/plan-b-header-crest-'+locale+'.png'} alt="" width="822" height="769" fetchPriority="high"/><span className="header-wordmark"><strong>{t('PLAN B','بلان بي')}</strong><small>{t('CONSULTANT','للاستشارات')}</small></span></a>
    <nav className="desktop-nav final-desktop-nav" aria-label={t('Main navigation','التنقل الرئيسي')}>

@@ -32,8 +32,8 @@ Copy `.env.example` to `.env.local` for local operation, or set equivalent varia
 | `NEXT_PUBLIC_PHONE` | Verified public phone in international format, including country code. Activates `tel:` links. |
 | `NEXT_PUBLIC_WHATSAPP` | Verified WhatsApp number: country code plus number, digits only, no `+`, spaces or URL. Activates `https://wa.me/` actions. |
 | `NEXT_PUBLIC_EMAIL` | Monitored public business mailbox. Activates `mailto:` links; it does **not** itself enable enquiry notifications. |
-| `NEXT_PUBLIC_ADDRESS` | Confirmed public office address; omit until confirmed. No fabricated map is embedded. |
-| `NEXT_PUBLIC_HOURS` | Confirmed public opening-hours wording; omit until confirmed. |
+| ~~`NEXT_PUBLIC_ADDRESS`~~ | Superseded 16 Oct 2026: the client-approved address, map link and hours now live in `lib/content.ts` (`office`). No map is embedded. |
+| ~~`NEXT_PUBLIC_HOURS`~~ | Superseded 16 Oct 2026 (see `office.hours`). |
 | `NEXT_PUBLIC_LINKEDIN_URL` | Verified complete HTTPS company-profile URL; blank shows a non-actionable placeholder. |
 | `NEXT_PUBLIC_INSTAGRAM_URL` | Verified complete HTTPS company-profile URL; blank shows a non-actionable placeholder. |
 | `NEXT_PUBLIC_FACEBOOK_URL` | Verified complete HTTPS company-profile URL; blank shows a non-actionable placeholder. |

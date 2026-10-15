@@ -80,7 +80,7 @@ Verified contact numbers, email, address, hours and notification delivery are no
 ### Remaining launch configuration
 
 - `NEXT_PUBLIC_EMAIL`, `NEXT_PUBLIC_PHONE` and `NEXT_PUBLIC_WHATSAPP` have not been supplied. The current email and phone are visibly marked demo values and are not actionable; WhatsApp remains hidden.
-- `NEXT_PUBLIC_ADDRESS` and `NEXT_PUBLIC_HOURS` have not been supplied. Address, hours and map remain omitted as required.
+- (Historical) Address and hours were later supplied by the client on 16 Oct 2026 and are now in `lib/content.ts` (`office`).
 - Social profile URLs are still unconfigured and retain their accessible “Coming soon” state.
 - `DATABASE_URL` and `RATE_LIMIT_SECRET` are required for saved production submissions. Until configured, both forms return an honest service-configuration error rather than a false success.
 

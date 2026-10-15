@@ -1,6 +1,6 @@
 {
  "summary": {
-  "base": "http://localhost:3411",
+  "base": "http://localhost:3412",
   "routePaths": 84,
   "pagesFetched": 168,
   "indexablePages": 86,
@@ -191,9 +191,9 @@
   {
    "locale": "en",
    "path": "",
-   "url": "http://localhost:3411/en",
+   "url": "http://localhost:3412/en",
    "status": 200,
-   "title": "Immigration consultancy in Kuwait | Plan B Consultant",
+   "title": "Immigration Consultant in Kuwait | Plan B Consultant",
    "description": "Plan B Consultant helps individuals, families and businesses in Kuwait explore immigration, overseas work, study, visit and investment pathways.",
    "robots": "index, follow",
    "indexable": true,
@@ -207,7 +207,7 @@
    "htmlLang": "en",
    "htmlDir": "ltr",
    "og": {
-    "og:title": "Immigration consultancy in Kuwait | Plan B Consultant",
+    "og:title": "Immigration Consultant in Kuwait | Plan B Consultant",
     "og:description": "Plan B Consultant helps individuals, families and businesses in Kuwait explore immigration, overseas work, study, visit and investment pathways.",
     "og:url": "https://planbconsultant.com/en",
     "og:site_name": "Plan B Consultant",
@@ -223,7 +223,7 @@
    "ogImages": 1,
    "twitter": {
     "twitter:card": "summary_large_image",
-    "twitter:title": "Immigration consultancy in Kuwait | Plan B Consultant",
+    "twitter:title": "Immigration Consultant in Kuwait | Plan B Consultant",
     "twitter:description": "Plan B Consultant helps individuals, families and businesses in Kuwait explore immigration, overseas work, study, visit and investment pathways.",
     "twitter:image": "https://planbconsultant.com/images/social/plan-b-share-v3-en.jpg",
     "twitter:image:alt": "Plan B Consultant — Strategic Global Solutions from Kuwait"
@@ -231,6 +231,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -244,14 +245,14 @@
    "h1": [
     "A world of opportunity.A clear plan forward."
    ],
-   "textLength": 5675,
+   "textLength": 5910,
    "imgsMissingDims": 0,
    "internalLinks": 45
   },
   {
    "locale": "en",
    "path": "about",
-   "url": "http://localhost:3411/en/about",
+   "url": "http://localhost:3412/en/about",
    "status": 200,
    "title": "About our Kuwait immigration consultancy | Plan B Consultant",
    "description": "Meet Plan B Consultant’s approach to global mobility: a review of your goals, clear preparation steps and defined responsibilities from Kuwait.",
@@ -291,6 +292,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -304,14 +306,14 @@
    "h1": [
     "Your ambition. Our starting point."
    ],
-   "textLength": 3110,
+   "textLength": 3345,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "programmes",
-   "url": "http://localhost:3411/en/programmes",
+   "url": "http://localhost:3412/en/programmes",
    "status": 200,
    "title": "Immigration, work and investment programmes | Plan B Consultant",
    "description": "Compare the immigration, work, study, visit and business routes explained by Plan B Consultant, with eligibility and status distinctions.",
@@ -351,6 +353,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -364,14 +367,14 @@
    "h1": [
     "Find a programme.Plan your next chapter."
    ],
-   "textLength": 3049,
+   "textLength": 3284,
    "imgsMissingDims": 0,
    "internalLinks": 23
   },
   {
    "locale": "en",
    "path": "services",
-   "url": "http://localhost:3411/en/services",
+   "url": "http://localhost:3412/en/services",
    "status": 200,
    "title": "Visa and global mobility assistance from Kuwait | Plan B Consultant",
    "description": "Find support for visa preparation, skilled immigration, family applications, job search, language preparation and settlement planning.",
@@ -411,6 +414,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -424,14 +428,14 @@
    "h1": [
     "A path for every ambition."
    ],
-   "textLength": 2877,
+   "textLength": 3112,
    "imgsMissingDims": 0,
    "internalLinks": 23
   },
   {
    "locale": "en",
    "path": "destinations",
-   "url": "http://localhost:3411/en/destinations",
+   "url": "http://localhost:3412/en/destinations",
    "status": 200,
    "title": "Compare overseas destinations and pathways | Plan B Consultant",
    "description": "Explore destination overviews and follow the documented Canada, Australia, Germany, Sweden, Portugal and United States programmes.",
@@ -471,6 +475,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -484,14 +489,14 @@
    "h1": [
     "A world of next chapters."
    ],
-   "textLength": 2567,
+   "textLength": 2802,
    "imgsMissingDims": 0,
    "internalLinks": 58
   },
   {
    "locale": "en",
    "path": "resources",
-   "url": "http://localhost:3411/en/resources",
+   "url": "http://localhost:3412/en/resources",
    "status": 200,
    "title": "Immigration consultation and document guides | Plan B Consultant",
    "description": "Read practical guides to preparing for a consultation, separating job search from work permission and organising documents securely.",
@@ -531,6 +536,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -544,14 +550,14 @@
    "h1": [
     "A more informed beginning."
    ],
-   "textLength": 1836,
+   "textLength": 2071,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "consultation",
-   "url": "http://localhost:3411/en/consultation",
+   "url": "http://localhost:3412/en/consultation",
    "status": 200,
    "title": "Request an immigration consultation from Kuwait | Plan B Consultant",
    "description": "Share your plans with Plan B Consultant for an initial review. Understand the next steps; an enquiry does not confirm eligibility or an appointment.",
@@ -591,6 +597,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -604,14 +611,14 @@
    "h1": [
     "Your next chapter starts here."
    ],
-   "textLength": 2089,
+   "textLength": 2502,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "contact",
-   "url": "http://localhost:3411/en/contact",
+   "url": "http://localhost:3412/en/contact",
    "status": 200,
    "title": "Contact Plan B Consultant in Kuwait | Plan B Consultant",
    "description": "Contact our Kuwait-based team by phone, email or WhatsApp to discuss your immigration, work, study or investment enquiry.",
@@ -651,6 +658,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -664,14 +672,14 @@
    "h1": [
     "Let’s discuss your next step."
    ],
-   "textLength": 1957,
+   "textLength": 2318,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "privacy",
-   "url": "http://localhost:3411/en/privacy",
+   "url": "http://localhost:3412/en/privacy",
    "status": 200,
    "title": "Enquiry privacy and personal information | Plan B Consultant",
    "description": "Understand the information requested by Plan B Consultant’s enquiry forms, its purpose and precautions when sharing personal documents.",
@@ -711,6 +719,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -724,14 +733,14 @@
    "h1": [
     "Enquiry privacy notice"
    ],
-   "textLength": 2968,
+   "textLength": 3203,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "faqs",
-   "url": "http://localhost:3411/en/faqs",
+   "url": "http://localhost:3412/en/faqs",
    "status": 200,
    "title": "Immigration and visa consultation questions | Plan B Consultant",
    "description": "Answers about Plan B Consultant’s initial assessments, service scope, visa decisions and preparing for your first conversation.",
@@ -771,6 +780,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -784,14 +794,14 @@
    "h1": [
     "Clarity before you begin."
    ],
-   "textLength": 1488,
+   "textLength": 1723,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "programmes/canada-express-entry",
-   "url": "http://localhost:3411/en/programmes/canada-express-entry",
+   "url": "http://localhost:3412/en/programmes/canada-express-entry",
    "status": 200,
    "title": "Canada Express Entry from Kuwait | Plan B Consultant",
    "description": "Understand Express Entry, Federal Skilled Worker points versus CRS, documents and process, then request a free initial assessment from Plan B in Kuwait.",
@@ -831,6 +841,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -846,14 +857,14 @@
    "h1": [
     "Canada Express Entry"
    ],
-   "textLength": 7330,
+   "textLength": 7565,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "en",
    "path": "programmes/australia-skilled-migration",
-   "url": "http://localhost:3411/en/programmes/australia-skilled-migration",
+   "url": "http://localhost:3412/en/programmes/australia-skilled-migration",
    "status": 200,
    "title": "Australia skilled migration: 189, 190, 491 | Plan B Consultant",
    "description": "Compare the Australian skilled visa subclasses 189, 190 and 491, see why occupation and nomination matter, and request a free initial assessment.",
@@ -893,6 +904,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -908,14 +920,14 @@
    "h1": [
     "Australia skilled migration"
    ],
-   "textLength": 6684,
+   "textLength": 6919,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "en",
    "path": "programmes/australia-work-visas",
-   "url": "http://localhost:3411/en/programmes/australia-work-visas",
+   "url": "http://localhost:3412/en/programmes/australia-work-visas",
    "status": 200,
    "title": "Australia employer-sponsored work visas | Plan B Consultant",
    "description": "Learn how the Skills in Demand 482 visa and Employer Nomination Scheme 186 work, what sponsorship involves, and request a free initial assessment.",
@@ -955,6 +967,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -970,14 +983,14 @@
    "h1": [
     "Australia work visas"
    ],
-   "textLength": 6313,
+   "textLength": 6548,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "programmes/germany-nursing",
-   "url": "http://localhost:3411/en/programmes/germany-nursing",
+   "url": "http://localhost:3412/en/programmes/germany-nursing",
    "status": 200,
    "title": "Nursing in Germany: recognition and language | Plan B Consultant",
    "description": "Plan a nursing career in Germany: professional recognition, German-language preparation and job offers. Request a free initial assessment from Kuwait.",
@@ -1017,6 +1030,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1032,14 +1046,14 @@
    "h1": [
     "Nursing careers in Germany"
    ],
-   "textLength": 7031,
+   "textLength": 7266,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "programmes/germany-car-mechanics",
-   "url": "http://localhost:3411/en/programmes/germany-car-mechanics",
+   "url": "http://localhost:3412/en/programmes/germany-car-mechanics",
    "status": 200,
    "title": "Car mechanic careers in Germany | Plan B Consultant",
    "description": "Explore skilled automotive work in Germany: qualification recognition, a verified job offer and the documents to prepare. Free initial assessment.",
@@ -1079,6 +1093,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1094,14 +1109,14 @@
    "h1": [
     "Car mechanic careers in Germany"
    ],
-   "textLength": 6532,
+   "textLength": 6767,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "programmes/sweden-work-permit",
-   "url": "http://localhost:3411/en/programmes/sweden-work-permit",
+   "url": "http://localhost:3412/en/programmes/sweden-work-permit",
    "status": 200,
    "title": "Sweden work permit requirements | Plan B Consultant",
    "description": "How an employer-based Swedish work permit works: job offer, salary and insurance conditions, documents and process. Request a free initial assessment.",
@@ -1141,6 +1156,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1156,14 +1172,14 @@
    "h1": [
     "Sweden work permits"
    ],
-   "textLength": 6476,
+   "textLength": 6711,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "programmes/portugal-work-residence",
-   "url": "http://localhost:3411/en/programmes/portugal-work-residence",
+   "url": "http://localhost:3412/en/programmes/portugal-work-residence",
    "status": 200,
    "title": "Portugal work visa and residence routes | Plan B Consultant",
    "description": "Identify the right Portuguese work visa or residence category before applying, and see the documents and steps involved. Free initial assessment.",
@@ -1203,6 +1219,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1218,14 +1235,14 @@
    "h1": [
     "Portugal work &amp; residence"
    ],
-   "textLength": 6725,
+   "textLength": 6960,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "programmes/canada-c11",
-   "url": "http://localhost:3411/en/programmes/canada-c11",
+   "url": "http://localhost:3412/en/programmes/canada-c11",
    "status": 200,
    "title": "Canada C11 business owner work permit | Plan B Consultant",
    "description": "Understand Canada’s LMIA-exempt C11 work permit for business owners: the significant-benefit test, documents and limits. Free initial assessment.",
@@ -1265,6 +1282,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1280,14 +1298,14 @@
    "h1": [
     "Canada C11 business owners"
    ],
-   "textLength": 6900,
+   "textLength": 7135,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "programmes/usa-eb5",
-   "url": "http://localhost:3411/en/programmes/usa-eb5",
+   "url": "http://localhost:3412/en/programmes/usa-eb5",
    "status": 200,
    "title": "USA EB-5 immigrant investor route | Plan B Consultant",
    "description": "How the EB-5 immigrant investor route to U.S. permanent residence works, what it requires and where legal advice is needed. Free initial assessment.",
@@ -1327,6 +1345,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1342,14 +1361,14 @@
    "h1": [
     "USA EB-5 investor programme"
    ],
-   "textLength": 7296,
+   "textLength": 7531,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "en",
    "path": "programmes/usa-e2",
-   "url": "http://localhost:3411/en/programmes/usa-e2",
+   "url": "http://localhost:3412/en/programmes/usa-e2",
    "status": 200,
    "title": "USA E-2 treaty investor visa | Plan B Consultant",
    "description": "E-2 is temporary treaty-investor status, not a green card. See the eligibility points, documents and process, then request a free initial assessment.",
@@ -1389,6 +1408,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1404,14 +1424,14 @@
    "h1": [
     "USA E-2 treaty investor"
    ],
-   "textLength": 6953,
+   "textLength": 7188,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "en",
    "path": "programmes/citizenship-investment",
-   "url": "http://localhost:3411/en/programmes/citizenship-investment",
+   "url": "http://localhost:3412/en/programmes/citizenship-investment",
    "status": 200,
    "title": "Citizenship by investment overview | Plan B Consultant",
    "description": "Compare your mobility, family and investment objectives before considering a specific citizenship programme.",
@@ -1451,6 +1471,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1466,14 +1487,14 @@
    "h1": [
     "Citizenship by investment"
    ],
-   "textLength": 5367,
+   "textLength": 5602,
    "imgsMissingDims": 0,
    "internalLinks": 18
   },
   {
    "locale": "en",
    "path": "programmes/study-visas",
-   "url": "http://localhost:3411/en/programmes/study-visas",
+   "url": "http://localhost:3412/en/programmes/study-visas",
    "status": 200,
    "title": "Study abroad and student visa support | Plan B Consultant",
    "description": "Prepare for a student visa: admission status, documents and process. Request a free initial assessment from Plan B Consultant in Kuwait.",
@@ -1513,6 +1534,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1528,14 +1550,14 @@
    "h1": [
     "Study abroad &amp; student visas"
    ],
-   "textLength": 5853,
+   "textLength": 6088,
    "imgsMissingDims": 0,
    "internalLinks": 19
   },
   {
    "locale": "en",
    "path": "programmes/visit-visas",
-   "url": "http://localhost:3411/en/programmes/visit-visas",
+   "url": "http://localhost:3412/en/programmes/visit-visas",
    "status": 200,
    "title": "Visit visa support for tourism and family | Plan B Consultant",
    "description": "Prepare a clear visit-visa application for tourism, family visits or permitted short business trips. Request a free initial assessment from Kuwait.",
@@ -1575,6 +1597,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1590,14 +1613,14 @@
    "h1": [
     "Visit visas"
    ],
-   "textLength": 5816,
+   "textLength": 6051,
    "imgsMissingDims": 0,
    "internalLinks": 19
   },
   {
    "locale": "en",
    "path": "services/residency-by-investment",
-   "url": "http://localhost:3411/en/services/residency-by-investment",
+   "url": "http://localhost:3412/en/services/residency-by-investment",
    "status": 200,
    "title": "Residency through investment guidance | Plan B Consultant",
    "description": "Explore whether an investment-related residence route fits your family plans, starting with the documented U.S. EB-5 programme. Initial enquiry is free.",
@@ -1637,6 +1660,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1652,14 +1676,14 @@
    "h1": [
     "Residency through investment"
    ],
-   "textLength": 2507,
+   "textLength": 2742,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "services/citizenship-by-investment",
-   "url": "http://localhost:3411/en/services/citizenship-by-investment",
+   "url": "http://localhost:3412/en/services/citizenship-by-investment",
    "status": 200,
    "title": "Citizenship by investment: first enquiry | Plan B Consultant",
    "description": "Discuss your citizenship and mobility goals before choosing a programme. This overview is an enquiry service and offers no specific country or package.",
@@ -1699,6 +1723,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1714,14 +1739,14 @@
    "h1": [
     "Citizenship by investment"
    ],
-   "textLength": 2564,
+   "textLength": 2799,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "services/skilled-immigration",
-   "url": "http://localhost:3411/en/services/skilled-immigration",
+   "url": "http://localhost:3412/en/services/skilled-immigration",
    "status": 200,
    "title": "Skilled immigration assistance from Kuwait | Plan B Consultant",
    "description": "Explore skilled migration pathways around your qualifications and experience: destination discussion, profile review, preparation guidance and family relocation.",
@@ -1761,6 +1786,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1776,14 +1802,14 @@
    "h1": [
     "Skilled immigration"
    ],
-   "textLength": 2616,
+   "textLength": 2851,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "en",
    "path": "services/work-visas",
-   "url": "http://localhost:3411/en/services/work-visas",
+   "url": "http://localhost:3412/en/services/work-visas",
    "status": 200,
    "title": "Work visa and permit assistance | Plan B Consultant",
    "description": "Understand the preparation steps for working abroad: offer status review, destination-specific document guidance and application preparation support.",
@@ -1823,6 +1849,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1838,14 +1865,14 @@
    "h1": [
     "Work visas &amp; permits"
    ],
-   "textLength": 3057,
+   "textLength": 3292,
    "imgsMissingDims": 0,
    "internalLinks": 17
   },
   {
    "locale": "en",
    "path": "services/visit-visas",
-   "url": "http://localhost:3411/en/services/visit-visas",
+   "url": "http://localhost:3412/en/services/visit-visas",
    "status": 200,
    "title": "Visit visa assistance from Kuwait | Plan B Consultant",
    "description": "Prepare for a holiday or family visit with a travel-purpose discussion, document checklist guidance and help preparing your application.",
@@ -1885,6 +1912,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1900,14 +1928,14 @@
    "h1": [
     "Visit visas"
    ],
-   "textLength": 2305,
+   "textLength": 2540,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "services/study-abroad",
-   "url": "http://localhost:3411/en/services/study-abroad",
+   "url": "http://localhost:3412/en/services/study-abroad",
    "status": 200,
    "title": "Student visa assistance from Kuwait | Plan B Consultant",
    "description": "Discuss study plans, admission status and student-visa preparation. Scope, responsibilities and next steps are explained before you commit.",
@@ -1947,6 +1975,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -1962,14 +1991,14 @@
    "h1": [
     "Study visas"
    ],
-   "textLength": 2420,
+   "textLength": 2655,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "services/global-job-search",
-   "url": "http://localhost:3411/en/services/global-job-search",
+   "url": "http://localhost:3412/en/services/global-job-search",
    "status": 200,
    "title": "Global job search support: CVs and LinkedIn | Plan B Consultant",
    "description": "Career planning, professional CVs, cover letters and LinkedIn profiles for an international job search. A job search does not itself grant work permission.",
@@ -2009,6 +2038,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -2024,14 +2054,14 @@
    "h1": [
     "Global job search"
    ],
-   "textLength": 2625,
+   "textLength": 2860,
    "imgsMissingDims": 0,
    "internalLinks": 17
   },
   {
    "locale": "en",
    "path": "services/business-immigration",
-   "url": "http://localhost:3411/en/services/business-immigration",
+   "url": "http://localhost:3412/en/services/business-immigration",
    "status": 200,
    "title": "Business immigration assistance | Plan B Consultant",
    "description": "Explore international business and residency options around your entrepreneurial goals: destination review, requirements overview and agreed application support.",
@@ -2071,6 +2101,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -2086,14 +2117,14 @@
    "h1": [
     "Business immigration"
    ],
-   "textLength": 2706,
+   "textLength": 2941,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "services/family-visas",
-   "url": "http://localhost:3411/en/services/family-visas",
+   "url": "http://localhost:3412/en/services/family-visas",
    "status": 200,
    "title": "Family and dependent visa assistance | Plan B Consultant",
    "description": "Understand how to join or accompany family abroad: relationship document preparation, destination-specific checklists and application preparation.",
@@ -2133,6 +2164,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -2148,14 +2180,14 @@
    "h1": [
     "Family &amp; dependent visas"
    ],
-   "textLength": 2534,
+   "textLength": 2769,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "services/permanent-residency",
-   "url": "http://localhost:3411/en/services/permanent-residency",
+   "url": "http://localhost:3412/en/services/permanent-residency",
    "status": 200,
    "title": "Permanent residency application support | Plan B Consultant",
    "description": "Discuss residency applications, document guidance and PR-card renewal preparation where applicable, with clear next steps.",
@@ -2195,6 +2227,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -2210,14 +2243,14 @@
    "h1": [
     "Permanent residency support"
    ],
-   "textLength": 2531,
+   "textLength": 2766,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "en",
    "path": "services/ielts-preparation",
-   "url": "http://localhost:3411/en/services/ielts-preparation",
+   "url": "http://localhost:3412/en/services/ielts-preparation",
    "status": 200,
    "title": "IELTS preparation for study, work or migration | Plan B Consultant",
    "description": "Plan IELTS preparation around your education, career or migration goals, with guidance on listening, reading, writing and speaking practice.",
@@ -2257,6 +2290,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -2272,14 +2306,14 @@
    "h1": [
     "IELTS preparation"
    ],
-   "textLength": 2459,
+   "textLength": 2694,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "services/settlement-support",
-   "url": "http://localhost:3411/en/services/settlement-support",
+   "url": "http://localhost:3412/en/services/settlement-support",
    "status": 200,
    "title": "Pre-departure and settlement support | Plan B Consultant",
    "description": "Organise practical questions before you leave and discuss agreed support after arrival: checklists, arrival planning and local-system information.",
@@ -2319,6 +2353,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -2334,14 +2369,14 @@
    "h1": [
     "Pre-departure &amp; settlement"
    ],
-   "textLength": 2491,
+   "textLength": 2726,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "en",
    "path": "destinations/canada",
-   "url": "http://localhost:3411/en/destinations/canada",
+   "url": "http://localhost:3412/en/destinations/canada",
    "status": 200,
    "title": "Canada: destination and mobility overview | Plan B Consultant",
    "description": "Consider Canada as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2381,6 +2416,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2394,14 +2430,14 @@
    "h1": [
     "Canada"
    ],
-   "textLength": 2219,
+   "textLength": 2454,
    "imgsMissingDims": 0,
    "internalLinks": 19
   },
   {
    "locale": "en",
    "path": "destinations/australia",
-   "url": "http://localhost:3411/en/destinations/australia",
+   "url": "http://localhost:3412/en/destinations/australia",
    "status": 200,
    "title": "Australia: destination and mobility overview | Plan B Consultant",
    "description": "Consider Australia as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2441,6 +2477,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2454,14 +2491,14 @@
    "h1": [
     "Australia"
    ],
-   "textLength": 2243,
+   "textLength": 2478,
    "imgsMissingDims": 0,
    "internalLinks": 20
   },
   {
    "locale": "en",
    "path": "destinations/united-kingdom",
-   "url": "http://localhost:3411/en/destinations/united-kingdom",
+   "url": "http://localhost:3412/en/destinations/united-kingdom",
    "status": 200,
    "title": "United Kingdom: destination and mobility overview | Plan B Consultant",
    "description": "Consider United Kingdom as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2501,6 +2538,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2514,14 +2552,14 @@
    "h1": [
     "United Kingdom"
    ],
-   "textLength": 1926,
+   "textLength": 2161,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "destinations/united-states",
-   "url": "http://localhost:3411/en/destinations/united-states",
+   "url": "http://localhost:3412/en/destinations/united-states",
    "status": 200,
    "title": "United States: destination and mobility overview | Plan B Consultant",
    "description": "Consider United States as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2561,6 +2599,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2574,14 +2613,14 @@
    "h1": [
     "United States"
    ],
-   "textLength": 2190,
+   "textLength": 2425,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "destinations/new-zealand",
-   "url": "http://localhost:3411/en/destinations/new-zealand",
+   "url": "http://localhost:3412/en/destinations/new-zealand",
    "status": 200,
    "title": "New Zealand: destination and mobility overview | Plan B Consultant",
    "description": "Consider New Zealand as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2621,6 +2660,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2634,14 +2674,14 @@
    "h1": [
     "New Zealand"
    ],
-   "textLength": 1872,
+   "textLength": 2107,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/schengen",
-   "url": "http://localhost:3411/en/destinations/schengen",
+   "url": "http://localhost:3412/en/destinations/schengen",
    "status": 200,
    "title": "Schengen: destination and mobility overview | Plan B Consultant",
    "description": "Consider Schengen as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2681,6 +2721,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2694,14 +2735,14 @@
    "h1": [
     "Schengen"
    ],
-   "textLength": 1863,
+   "textLength": 2098,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/thailand",
-   "url": "http://localhost:3411/en/destinations/thailand",
+   "url": "http://localhost:3412/en/destinations/thailand",
    "status": 200,
    "title": "Thailand: destination and mobility overview | Plan B Consultant",
    "description": "Consider Thailand as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2741,6 +2782,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2754,14 +2796,14 @@
    "h1": [
     "Thailand"
    ],
-   "textLength": 1863,
+   "textLength": 2098,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/japan",
-   "url": "http://localhost:3411/en/destinations/japan",
+   "url": "http://localhost:3412/en/destinations/japan",
    "status": 200,
    "title": "Japan: destination and mobility overview | Plan B Consultant",
    "description": "Consider Japan as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2801,6 +2843,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2814,14 +2857,14 @@
    "h1": [
     "Japan"
    ],
-   "textLength": 1854,
+   "textLength": 2089,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/turkey",
-   "url": "http://localhost:3411/en/destinations/turkey",
+   "url": "http://localhost:3412/en/destinations/turkey",
    "status": 200,
    "title": "Turkey: destination and mobility overview | Plan B Consultant",
    "description": "Consider Turkey as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2861,6 +2904,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2874,14 +2918,14 @@
    "h1": [
     "Turkey"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/china",
-   "url": "http://localhost:3411/en/destinations/china",
+   "url": "http://localhost:3412/en/destinations/china",
    "status": 200,
    "title": "China: destination and mobility overview | Plan B Consultant",
    "description": "Consider China as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2921,6 +2965,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2934,14 +2979,14 @@
    "h1": [
     "China"
    ],
-   "textLength": 1854,
+   "textLength": 2089,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/south-korea",
-   "url": "http://localhost:3411/en/destinations/south-korea",
+   "url": "http://localhost:3412/en/destinations/south-korea",
    "status": 200,
    "title": "South Korea: destination and mobility overview | Plan B Consultant",
    "description": "Consider South Korea as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -2981,6 +3026,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -2994,14 +3040,14 @@
    "h1": [
     "South Korea"
    ],
-   "textLength": 1872,
+   "textLength": 2107,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/saudi-arabia",
-   "url": "http://localhost:3411/en/destinations/saudi-arabia",
+   "url": "http://localhost:3412/en/destinations/saudi-arabia",
    "status": 200,
    "title": "Saudi Arabia: destination and mobility overview | Plan B Consultant",
    "description": "Consider Saudi Arabia as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3041,6 +3087,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3054,14 +3101,14 @@
    "h1": [
     "Saudi Arabia"
    ],
-   "textLength": 1875,
+   "textLength": 2110,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/malaysia",
-   "url": "http://localhost:3411/en/destinations/malaysia",
+   "url": "http://localhost:3412/en/destinations/malaysia",
    "status": 200,
    "title": "Malaysia: destination and mobility overview | Plan B Consultant",
    "description": "Consider Malaysia as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3101,6 +3148,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3114,14 +3162,14 @@
    "h1": [
     "Malaysia"
    ],
-   "textLength": 1880,
+   "textLength": 2115,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "en",
    "path": "destinations/singapore",
-   "url": "http://localhost:3411/en/destinations/singapore",
+   "url": "http://localhost:3412/en/destinations/singapore",
    "status": 200,
    "title": "Singapore: destination and mobility overview | Plan B Consultant",
    "description": "Consider Singapore as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3161,6 +3209,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3174,14 +3223,14 @@
    "h1": [
     "Singapore"
    ],
-   "textLength": 1872,
+   "textLength": 2107,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/ireland",
-   "url": "http://localhost:3411/en/destinations/ireland",
+   "url": "http://localhost:3412/en/destinations/ireland",
    "status": 200,
    "title": "Ireland: destination and mobility overview | Plan B Consultant",
    "description": "Consider Ireland as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3221,6 +3270,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3234,14 +3284,14 @@
    "h1": [
     "Ireland"
    ],
-   "textLength": 1860,
+   "textLength": 2095,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/cyprus",
-   "url": "http://localhost:3411/en/destinations/cyprus",
+   "url": "http://localhost:3412/en/destinations/cyprus",
    "status": 200,
    "title": "Cyprus: destination and mobility overview | Plan B Consultant",
    "description": "Consider Cyprus as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3281,6 +3331,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3294,14 +3345,14 @@
    "h1": [
     "Cyprus"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/russia",
-   "url": "http://localhost:3411/en/destinations/russia",
+   "url": "http://localhost:3412/en/destinations/russia",
    "status": 200,
    "title": "Russia: destination and mobility overview | Plan B Consultant",
    "description": "Consider Russia as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3341,6 +3392,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3354,14 +3406,14 @@
    "h1": [
     "Russia"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/italy",
-   "url": "http://localhost:3411/en/destinations/italy",
+   "url": "http://localhost:3412/en/destinations/italy",
    "status": 200,
    "title": "Italy: destination and mobility overview | Plan B Consultant",
    "description": "Consider Italy as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3401,6 +3453,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3414,14 +3467,14 @@
    "h1": [
     "Italy"
    ],
-   "textLength": 1854,
+   "textLength": 2089,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/france",
-   "url": "http://localhost:3411/en/destinations/france",
+   "url": "http://localhost:3412/en/destinations/france",
    "status": 200,
    "title": "France: destination and mobility overview | Plan B Consultant",
    "description": "Consider France as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3461,6 +3514,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3474,14 +3528,14 @@
    "h1": [
     "France"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/switzerland",
-   "url": "http://localhost:3411/en/destinations/switzerland",
+   "url": "http://localhost:3412/en/destinations/switzerland",
    "status": 200,
    "title": "Switzerland: destination and mobility overview | Plan B Consultant",
    "description": "Consider Switzerland as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3521,6 +3575,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3534,14 +3589,14 @@
    "h1": [
     "Switzerland"
    ],
-   "textLength": 1872,
+   "textLength": 2107,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/germany",
-   "url": "http://localhost:3411/en/destinations/germany",
+   "url": "http://localhost:3412/en/destinations/germany",
    "status": 200,
    "title": "Germany: destination and mobility overview | Plan B Consultant",
    "description": "Consider Germany as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3581,6 +3636,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3594,14 +3650,14 @@
    "h1": [
     "Germany"
    ],
-   "textLength": 2168,
+   "textLength": 2403,
    "imgsMissingDims": 0,
    "internalLinks": 16
   },
   {
    "locale": "en",
    "path": "destinations/greece",
-   "url": "http://localhost:3411/en/destinations/greece",
+   "url": "http://localhost:3412/en/destinations/greece",
    "status": 200,
    "title": "Greece: destination and mobility overview | Plan B Consultant",
    "description": "Consider Greece as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3641,6 +3697,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3654,14 +3711,14 @@
    "h1": [
     "Greece"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/finland",
-   "url": "http://localhost:3411/en/destinations/finland",
+   "url": "http://localhost:3412/en/destinations/finland",
    "status": 200,
    "title": "Finland: destination and mobility overview | Plan B Consultant",
    "description": "Consider Finland as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3701,6 +3758,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3714,14 +3772,14 @@
    "h1": [
     "Finland"
    ],
-   "textLength": 1860,
+   "textLength": 2095,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/netherlands",
-   "url": "http://localhost:3411/en/destinations/netherlands",
+   "url": "http://localhost:3412/en/destinations/netherlands",
    "status": 200,
    "title": "Netherlands: destination and mobility overview | Plan B Consultant",
    "description": "Consider Netherlands as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3761,6 +3819,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3774,14 +3833,14 @@
    "h1": [
     "Netherlands"
    ],
-   "textLength": 1872,
+   "textLength": 2107,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/spain",
-   "url": "http://localhost:3411/en/destinations/spain",
+   "url": "http://localhost:3412/en/destinations/spain",
    "status": 200,
    "title": "Spain: destination and mobility overview | Plan B Consultant",
    "description": "Consider Spain as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3821,6 +3880,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3834,14 +3894,14 @@
    "h1": [
     "Spain"
    ],
-   "textLength": 1854,
+   "textLength": 2089,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/sweden",
-   "url": "http://localhost:3411/en/destinations/sweden",
+   "url": "http://localhost:3412/en/destinations/sweden",
    "status": 200,
    "title": "Sweden: destination and mobility overview | Plan B Consultant",
    "description": "Consider Sweden as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3881,6 +3941,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3894,14 +3955,14 @@
    "h1": [
     "Sweden"
    ],
-   "textLength": 2014,
+   "textLength": 2249,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "destinations/austria",
-   "url": "http://localhost:3411/en/destinations/austria",
+   "url": "http://localhost:3412/en/destinations/austria",
    "status": 200,
    "title": "Austria: destination and mobility overview | Plan B Consultant",
    "description": "Consider Austria as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -3941,6 +4002,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -3954,14 +4016,14 @@
    "h1": [
     "Austria"
    ],
-   "textLength": 1860,
+   "textLength": 2095,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/iceland",
-   "url": "http://localhost:3411/en/destinations/iceland",
+   "url": "http://localhost:3412/en/destinations/iceland",
    "status": 200,
    "title": "Iceland: destination and mobility overview | Plan B Consultant",
    "description": "Consider Iceland as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4001,6 +4063,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4014,14 +4077,14 @@
    "h1": [
     "Iceland"
    ],
-   "textLength": 1860,
+   "textLength": 2095,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/poland",
-   "url": "http://localhost:3411/en/destinations/poland",
+   "url": "http://localhost:3412/en/destinations/poland",
    "status": 200,
    "title": "Poland: destination and mobility overview | Plan B Consultant",
    "description": "Consider Poland as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4061,6 +4124,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4074,14 +4138,14 @@
    "h1": [
     "Poland"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/czech-republic",
-   "url": "http://localhost:3411/en/destinations/czech-republic",
+   "url": "http://localhost:3412/en/destinations/czech-republic",
    "status": 200,
    "title": "Czech Republic: destination and mobility overview | Plan B Consultant",
    "description": "Consider Czech Republic as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4121,6 +4185,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4134,14 +4199,14 @@
    "h1": [
     "Czech Republic"
    ],
-   "textLength": 1881,
+   "textLength": 2116,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/lithuania",
-   "url": "http://localhost:3411/en/destinations/lithuania",
+   "url": "http://localhost:3412/en/destinations/lithuania",
    "status": 200,
    "title": "Lithuania: destination and mobility overview | Plan B Consultant",
    "description": "Consider Lithuania as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4181,6 +4246,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4194,14 +4260,14 @@
    "h1": [
     "Lithuania"
    ],
-   "textLength": 1866,
+   "textLength": 2101,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/latvia",
-   "url": "http://localhost:3411/en/destinations/latvia",
+   "url": "http://localhost:3412/en/destinations/latvia",
    "status": 200,
    "title": "Latvia: destination and mobility overview | Plan B Consultant",
    "description": "Consider Latvia as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4241,6 +4307,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4254,14 +4321,14 @@
    "h1": [
     "Latvia"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/estonia",
-   "url": "http://localhost:3411/en/destinations/estonia",
+   "url": "http://localhost:3412/en/destinations/estonia",
    "status": 200,
    "title": "Estonia: destination and mobility overview | Plan B Consultant",
    "description": "Consider Estonia as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4301,6 +4368,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4314,14 +4382,14 @@
    "h1": [
     "Estonia"
    ],
-   "textLength": 1860,
+   "textLength": 2095,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/monaco",
-   "url": "http://localhost:3411/en/destinations/monaco",
+   "url": "http://localhost:3412/en/destinations/monaco",
    "status": 200,
    "title": "Monaco: destination and mobility overview | Plan B Consultant",
    "description": "Consider Monaco as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4361,6 +4429,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4374,14 +4443,14 @@
    "h1": [
     "Monaco"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/san-marino",
-   "url": "http://localhost:3411/en/destinations/san-marino",
+   "url": "http://localhost:3412/en/destinations/san-marino",
    "status": 200,
    "title": "San Marino: destination and mobility overview | Plan B Consultant",
    "description": "Consider San Marino as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4421,6 +4490,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4434,14 +4504,14 @@
    "h1": [
     "San Marino"
    ],
-   "textLength": 1869,
+   "textLength": 2104,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/liechtenstein",
-   "url": "http://localhost:3411/en/destinations/liechtenstein",
+   "url": "http://localhost:3412/en/destinations/liechtenstein",
    "status": 200,
    "title": "Liechtenstein: destination and mobility overview | Plan B Consultant",
    "description": "Consider Liechtenstein as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4481,6 +4551,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4494,14 +4565,14 @@
    "h1": [
     "Liechtenstein"
    ],
-   "textLength": 1878,
+   "textLength": 2113,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/luxembourg",
-   "url": "http://localhost:3411/en/destinations/luxembourg",
+   "url": "http://localhost:3412/en/destinations/luxembourg",
    "status": 200,
    "title": "Luxembourg: destination and mobility overview | Plan B Consultant",
    "description": "Consider Luxembourg as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4541,6 +4612,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4554,14 +4626,14 @@
    "h1": [
     "Luxembourg"
    ],
-   "textLength": 1869,
+   "textLength": 2104,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/vatican-city",
-   "url": "http://localhost:3411/en/destinations/vatican-city",
+   "url": "http://localhost:3412/en/destinations/vatican-city",
    "status": 200,
    "title": "Vatican City: destination and mobility overview | Plan B Consultant",
    "description": "Consider Vatican City as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4601,6 +4673,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4614,14 +4687,14 @@
    "h1": [
     "Vatican City"
    ],
-   "textLength": 1875,
+   "textLength": 2110,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/slovakia",
-   "url": "http://localhost:3411/en/destinations/slovakia",
+   "url": "http://localhost:3412/en/destinations/slovakia",
    "status": 200,
    "title": "Slovakia: destination and mobility overview | Plan B Consultant",
    "description": "Consider Slovakia as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4661,6 +4734,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4674,14 +4748,14 @@
    "h1": [
     "Slovakia"
    ],
-   "textLength": 1863,
+   "textLength": 2098,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/bulgaria",
-   "url": "http://localhost:3411/en/destinations/bulgaria",
+   "url": "http://localhost:3412/en/destinations/bulgaria",
    "status": 200,
    "title": "Bulgaria: destination and mobility overview | Plan B Consultant",
    "description": "Consider Bulgaria as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4721,6 +4795,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4734,14 +4809,14 @@
    "h1": [
     "Bulgaria"
    ],
-   "textLength": 1863,
+   "textLength": 2098,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/slovenia",
-   "url": "http://localhost:3411/en/destinations/slovenia",
+   "url": "http://localhost:3412/en/destinations/slovenia",
    "status": 200,
    "title": "Slovenia: destination and mobility overview | Plan B Consultant",
    "description": "Consider Slovenia as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4781,6 +4856,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4794,14 +4870,14 @@
    "h1": [
     "Slovenia"
    ],
-   "textLength": 1863,
+   "textLength": 2098,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/hungary",
-   "url": "http://localhost:3411/en/destinations/hungary",
+   "url": "http://localhost:3412/en/destinations/hungary",
    "status": 200,
    "title": "Hungary: destination and mobility overview | Plan B Consultant",
    "description": "Consider Hungary as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4841,6 +4917,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4854,14 +4931,14 @@
    "h1": [
     "Hungary"
    ],
-   "textLength": 1860,
+   "textLength": 2095,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/portugal",
-   "url": "http://localhost:3411/en/destinations/portugal",
+   "url": "http://localhost:3412/en/destinations/portugal",
    "status": 200,
    "title": "Portugal: destination and mobility overview | Plan B Consultant",
    "description": "Consider Portugal as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4901,6 +4978,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4914,14 +4992,14 @@
    "h1": [
     "Portugal"
    ],
-   "textLength": 2034,
+   "textLength": 2269,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "en",
    "path": "destinations/norway",
-   "url": "http://localhost:3411/en/destinations/norway",
+   "url": "http://localhost:3412/en/destinations/norway",
    "status": 200,
    "title": "Norway: destination and mobility overview | Plan B Consultant",
    "description": "Consider Norway as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -4961,6 +5039,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -4974,14 +5053,14 @@
    "h1": [
     "Norway"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/tanzania",
-   "url": "http://localhost:3411/en/destinations/tanzania",
+   "url": "http://localhost:3412/en/destinations/tanzania",
    "status": 200,
    "title": "Tanzania: destination and mobility overview | Plan B Consultant",
    "description": "Consider Tanzania as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -5021,6 +5100,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5034,14 +5114,14 @@
    "h1": [
     "Tanzania"
    ],
-   "textLength": 1863,
+   "textLength": 2098,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "destinations/brazil",
-   "url": "http://localhost:3411/en/destinations/brazil",
+   "url": "http://localhost:3412/en/destinations/brazil",
    "status": 200,
    "title": "Brazil: destination and mobility overview | Plan B Consultant",
    "description": "Consider Brazil as a destination, distinguish visits, study, work and residence, and discuss your plans with Plan B Consultant.",
@@ -5081,6 +5161,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5094,14 +5175,14 @@
    "h1": [
     "Brazil"
    ],
-   "textLength": 1857,
+   "textLength": 2092,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "resources/prepare-for-your-consultation",
-   "url": "http://localhost:3411/en/resources/prepare-for-your-consultation",
+   "url": "http://localhost:3412/en/resources/prepare-for-your-consultation",
    "status": 200,
    "title": "Your first consultation: what to prepare | Plan B Consultant",
    "description": "A useful first conversation starts with a clear picture of your plans. You do not need to have every answer before you get in touch.",
@@ -5141,6 +5222,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -5156,14 +5238,14 @@
    "h1": [
     "Your first consultation: what to prepare"
    ],
-   "textLength": 2028,
+   "textLength": 2263,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "resources/job-search-or-work-visa",
-   "url": "http://localhost:3411/en/resources/job-search-or-work-visa",
+   "url": "http://localhost:3412/en/resources/job-search-or-work-visa",
    "status": 200,
    "title": "Job search or work visa: where to begin? | Plan B Consultant",
    "description": "These services address different stages of an overseas career. Knowing your starting point makes the next conversation more useful.",
@@ -5203,6 +5285,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -5218,14 +5301,14 @@
    "h1": [
     "Job search or work visa: where to begin?"
    ],
-   "textLength": 1972,
+   "textLength": 2207,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "en",
    "path": "resources/organise-your-documents",
-   "url": "http://localhost:3411/en/resources/organise-your-documents",
+   "url": "http://localhost:3412/en/resources/organise-your-documents",
    "status": 200,
    "title": "A calmer way to organise your documents | Plan B Consultant",
    "description": "A tidy document folder helps you discuss your plans clearly and respond to requests without unnecessary confusion.",
@@ -5265,6 +5348,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -5280,16 +5364,16 @@
    "h1": [
     "A calmer way to organise your documents"
    ],
-   "textLength": 1927,
+   "textLength": 2162,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "",
-   "url": "http://localhost:3411/ar",
+   "url": "http://localhost:3412/ar",
    "status": 200,
-   "title": "استشارات الهجرة في الكويت | Plan B Consultant",
+   "title": "مكتب استشارات الهجرة في الكويت | Plan B Consultant",
    "description": "تساعدك بلان بي كونسلتنت في الكويت على فهم خيارات الهجرة والعمل والدراسة والزيارة والاستثمار في الخارج والتحضير لخطوتك القادمة.",
    "robots": "index, follow",
    "indexable": true,
@@ -5303,7 +5387,7 @@
    "htmlLang": "ar",
    "htmlDir": "rtl",
    "og": {
-    "og:title": "استشارات الهجرة في الكويت | Plan B Consultant",
+    "og:title": "مكتب استشارات الهجرة في الكويت | Plan B Consultant",
     "og:description": "تساعدك بلان بي كونسلتنت في الكويت على فهم خيارات الهجرة والعمل والدراسة والزيارة والاستثمار في الخارج والتحضير لخطوتك القادمة.",
     "og:url": "https://planbconsultant.com/ar",
     "og:site_name": "Plan B Consultant",
@@ -5319,7 +5403,7 @@
    "ogImages": 1,
    "twitter": {
     "twitter:card": "summary_large_image",
-    "twitter:title": "استشارات الهجرة في الكويت | Plan B Consultant",
+    "twitter:title": "مكتب استشارات الهجرة في الكويت | Plan B Consultant",
     "twitter:description": "تساعدك بلان بي كونسلتنت في الكويت على فهم خيارات الهجرة والعمل والدراسة والزيارة والاستثمار في الخارج والتحضير لخطوتك القادمة.",
     "twitter:image": "https://planbconsultant.com/images/social/plan-b-share-v3-ar.jpg",
     "twitter:image:alt": "بلان بي كونسلتنت — حلول عالمية استراتيجية من الكويت"
@@ -5327,6 +5411,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5340,14 +5425,14 @@
    "h1": [
     "عالم من الفرص.وخطة واضحة للمضي قدماً."
    ],
-   "textLength": 4613,
+   "textLength": 4801,
    "imgsMissingDims": 0,
    "internalLinks": 45
   },
   {
    "locale": "ar",
    "path": "about",
-   "url": "http://localhost:3411/ar/about",
+   "url": "http://localhost:3412/ar/about",
    "status": 200,
    "title": "عن بلان بي للاستشارات في الكويت | Plan B Consultant",
    "description": "تعرّف على نهج بلان بي كونسلتنت في الكويت: فهم أهدافك وتوضيح خطوات التحضير والمسؤوليات لخطط الانتقال إلى الخارج.",
@@ -5387,6 +5472,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5400,14 +5486,14 @@
    "h1": [
     "طموحك. نقطة انطلاقنا."
    ],
-   "textLength": 2367,
+   "textLength": 2555,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "programmes",
-   "url": "http://localhost:3411/ar/programmes",
+   "url": "http://localhost:3412/ar/programmes",
    "status": 200,
    "title": "برامج الهجرة والعمل والاستثمار | Plan B Consultant",
    "description": "استكشف برامج بلان بي للهجرة والعمل والدراسة والزيارة والأعمال، وتعرّف على شروط كل مسار ونوع الإقامة التي قد يوفرها.",
@@ -5447,6 +5533,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5460,14 +5547,14 @@
    "h1": [
     "اعثر على برنامج.خطط لفصلك القادم."
    ],
-   "textLength": 2727,
+   "textLength": 2915,
    "imgsMissingDims": 0,
    "internalLinks": 23
   },
   {
    "locale": "ar",
    "path": "services",
-   "url": "http://localhost:3411/ar/services",
+   "url": "http://localhost:3412/ar/services",
    "status": 200,
    "title": "خدمات التأشيرات والانتقال من الكويت | Plan B Consultant",
    "description": "استكشف خدمات إعداد طلبات التأشيرة وهجرة الكفاءات ولمّ الشمل والبحث عن عمل والتحضير اللغوي والتخطيط للاستقرار.",
@@ -5507,6 +5594,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5520,14 +5608,14 @@
    "h1": [
     "مسار لكل طموح."
    ],
-   "textLength": 2255,
+   "textLength": 2443,
    "imgsMissingDims": 0,
    "internalLinks": 23
   },
   {
    "locale": "ar",
    "path": "destinations",
-   "url": "http://localhost:3411/ar/destinations",
+   "url": "http://localhost:3412/ar/destinations",
    "status": 200,
    "title": "اختيار وجهة الهجرة والعمل بالخارج | Plan B Consultant",
    "description": "استعرض الوجهات وتابع البرامج الموضحة لكندا وأستراليا وألمانيا والسويد والبرتغال والولايات المتحدة بحسب هدفك.",
@@ -5567,6 +5655,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5580,14 +5669,14 @@
    "h1": [
     "عالم من البدايات الجديدة."
    ],
-   "textLength": 2083,
+   "textLength": 2271,
    "imgsMissingDims": 0,
    "internalLinks": 58
   },
   {
    "locale": "ar",
    "path": "resources",
-   "url": "http://localhost:3411/ar/resources",
+   "url": "http://localhost:3412/ar/resources",
    "status": 200,
    "title": "أدلة الاستشارة وتجهيز المستندات | Plan B Consultant",
    "description": "اقرأ إرشادات عملية للاستعداد للاستشارة والتمييز بين البحث عن وظيفة وتصريح العمل وتنظيم المستندات ومشاركتها بأمان.",
@@ -5627,6 +5716,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5640,14 +5730,14 @@
    "h1": [
     "بداية أكثر وعياً."
    ],
-   "textLength": 1494,
+   "textLength": 1682,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "consultation",
-   "url": "http://localhost:3411/ar/consultation",
+   "url": "http://localhost:3412/ar/consultation",
    "status": 200,
    "title": "طلب استشارة هجرة من الكويت | Plan B Consultant",
    "description": "شارك خططك مع بلان بي للمراجعة الأولية وتوضيح الخطوات التالية. الاستفسار لا يعني تأكيد الأهلية أو حجز موعد.",
@@ -5687,6 +5777,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5700,14 +5791,14 @@
    "h1": [
     "فصلك القادم يبدأ هنا."
    ],
-   "textLength": 1719,
+   "textLength": 2103,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "contact",
-   "url": "http://localhost:3411/ar/contact",
+   "url": "http://localhost:3412/ar/contact",
    "status": 200,
    "title": "التواصل مع بلان بي كونسلتنت في الكويت | Plan B Consultant",
    "description": "تواصل مع فريق بلان بي في الكويت عبر الهاتف أو البريد الإلكتروني أو واتساب لمناقشة استفسارك حول الهجرة أو العمل أو الدراسة أو الاستثمار.",
@@ -5747,6 +5838,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5760,14 +5852,14 @@
    "h1": [
     "لنناقش خطوتك التالية."
    ],
-   "textLength": 1765,
+   "textLength": 2103,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "privacy",
-   "url": "http://localhost:3411/ar/privacy",
+   "url": "http://localhost:3412/ar/privacy",
    "status": 200,
    "title": "خصوصية الاستفسارات والبيانات الشخصية | Plan B Consultant",
    "description": "تعرّف على البيانات المطلوبة في نماذج بلان بي والغرض منها واحتياطات مشاركة المستندات الشخصية.",
@@ -5807,6 +5899,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5820,14 +5913,14 @@
    "h1": [
     "خصوصية الاستفسارات"
    ],
-   "textLength": 2379,
+   "textLength": 2567,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "faqs",
-   "url": "http://localhost:3411/ar/faqs",
+   "url": "http://localhost:3412/ar/faqs",
    "status": 200,
    "title": "أسئلة حول استشارات الهجرة والتأشيرات | Plan B Consultant",
    "description": "إجابات حول التقييم الأولي ونطاق خدمات بلان بي وقرارات التأشيرة والاستعداد للمحادثة الأولى.",
@@ -5867,6 +5960,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -5880,14 +5974,14 @@
    "h1": [
     "وضوح قبل البداية."
    ],
-   "textLength": 1247,
+   "textLength": 1435,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "programmes/canada-express-entry",
-   "url": "http://localhost:3411/ar/programmes/canada-express-entry",
+   "url": "http://localhost:3412/ar/programmes/canada-express-entry",
    "status": 200,
    "title": "الهجرة إلى كندا عبر الدخول السريع من الكويت | Plan B Consultant",
    "description": "تعرّف على الدخول السريع الكندي ونقاط العمال المهرة مقابل CRS والمستندات والخطوات، ثم اطلب تقييماً أولياً مجانياً من بلان بي في الكويت.",
@@ -5927,6 +6021,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -5942,14 +6037,14 @@
    "h1": [
     "الدخول السريع إلى كندا"
    ],
-   "textLength": 5855,
+   "textLength": 6043,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "ar",
    "path": "programmes/australia-skilled-migration",
-   "url": "http://localhost:3411/ar/programmes/australia-skilled-migration",
+   "url": "http://localhost:3412/ar/programmes/australia-skilled-migration",
    "status": 200,
    "title": "الهجرة المهارية إلى أستراليا: 189 و190 و491 | Plan B Consultant",
    "description": "قارن بين فئات التأشيرة المهارية الأسترالية 189 و190 و491 وأثر المهنة والترشيح، ثم اطلب تقييماً أولياً مجانياً.",
@@ -5989,6 +6084,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6004,14 +6100,14 @@
    "h1": [
     "هجرة الكفاءات إلى أستراليا"
    ],
-   "textLength": 5247,
+   "textLength": 5435,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "ar",
    "path": "programmes/australia-work-visas",
-   "url": "http://localhost:3411/ar/programmes/australia-work-visas",
+   "url": "http://localhost:3412/ar/programmes/australia-work-visas",
    "status": 200,
    "title": "تأشيرات العمل في أستراليا برعاية صاحب العمل | Plan B Consultant",
    "description": "تعرّف على تأشيرة المهارات المطلوبة 482 ونظام ترشيح صاحب العمل 186 وما تتطلبه الرعاية، ثم اطلب تقييماً أولياً مجانياً.",
@@ -6051,6 +6147,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6066,14 +6163,14 @@
    "h1": [
     "تأشيرات العمل في أستراليا"
    ],
-   "textLength": 5014,
+   "textLength": 5202,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "programmes/germany-nursing",
-   "url": "http://localhost:3411/ar/programmes/germany-nursing",
+   "url": "http://localhost:3412/ar/programmes/germany-nursing",
    "status": 200,
    "title": "التمريض في ألمانيا: الاعتراف المهني واللغة | Plan B Consultant",
    "description": "خطط لمسار التمريض في ألمانيا: الاعتراف المهني والاستعداد للغة الألمانية وعروض العمل، ثم اطلب تقييماً أولياً مجانياً من الكويت.",
@@ -6113,6 +6210,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6128,14 +6226,14 @@
    "h1": [
     "التمريض في ألمانيا"
    ],
-   "textLength": 5458,
+   "textLength": 5646,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "programmes/germany-car-mechanics",
-   "url": "http://localhost:3411/ar/programmes/germany-car-mechanics",
+   "url": "http://localhost:3412/ar/programmes/germany-car-mechanics",
    "status": 200,
    "title": "العمل كميكانيكي سيارات في ألمانيا | Plan B Consultant",
    "description": "استكشف العمل الماهر في قطاع السيارات بألمانيا: الاعتراف بالمؤهل وعرض العمل الموثّق والمستندات المطلوبة، مع تقييم أولي مجاني.",
@@ -6175,6 +6273,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6190,14 +6289,14 @@
    "h1": [
     "ميكانيكا السيارات في ألمانيا"
    ],
-   "textLength": 5118,
+   "textLength": 5306,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "programmes/sweden-work-permit",
-   "url": "http://localhost:3411/ar/programmes/sweden-work-permit",
+   "url": "http://localhost:3412/ar/programmes/sweden-work-permit",
    "status": 200,
    "title": "شروط تصريح العمل في السويد | Plan B Consultant",
    "description": "كيف يعمل تصريح العمل السويدي المرتبط بصاحب العمل: عرض الوظيفة والراتب والتأمين والمستندات والخطوات، مع تقييم أولي مجاني.",
@@ -6237,6 +6336,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6252,14 +6352,14 @@
    "h1": [
     "تصاريح العمل في السويد"
    ],
-   "textLength": 5215,
+   "textLength": 5403,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "programmes/portugal-work-residence",
-   "url": "http://localhost:3411/ar/programmes/portugal-work-residence",
+   "url": "http://localhost:3412/ar/programmes/portugal-work-residence",
    "status": 200,
    "title": "تأشيرة العمل والإقامة في البرتغال | Plan B Consultant",
    "description": "حدّد فئة التأشيرة أو الإقامة البرتغالية المناسبة قبل التقديم، وتعرّف على المستندات والخطوات، مع تقييم أولي مجاني.",
@@ -6299,6 +6399,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6314,14 +6415,14 @@
    "h1": [
     "العمل والإقامة في البرتغال"
    ],
-   "textLength": 5243,
+   "textLength": 5431,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "programmes/canada-c11",
-   "url": "http://localhost:3411/ar/programmes/canada-c11",
+   "url": "http://localhost:3412/ar/programmes/canada-c11",
    "status": 200,
    "title": "تصريح عمل كندا C11 لأصحاب الأعمال | Plan B Consultant",
    "description": "تعرّف على تصريح العمل الكندي C11 المعفى من تقييم أثر سوق العمل: اختبار المنفعة المهمة والمستندات والحدود، مع تقييم أولي مجاني.",
@@ -6361,6 +6462,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6376,14 +6478,14 @@
    "h1": [
     "كندا C11 لأصحاب الأعمال"
    ],
-   "textLength": 5553,
+   "textLength": 5741,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "programmes/usa-eb5",
-   "url": "http://localhost:3411/ar/programmes/usa-eb5",
+   "url": "http://localhost:3412/ar/programmes/usa-eb5",
    "status": 200,
    "title": "مسار المستثمر المهاجر الأمريكي EB-5 | Plan B Consultant",
    "description": "كيف يعمل مسار EB-5 للإقامة الدائمة الأمريكية عبر الاستثمار وما يتطلبه ومتى تلزم المشورة القانونية، مع تقييم أولي مجاني.",
@@ -6423,6 +6525,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6438,14 +6541,14 @@
    "h1": [
     "برنامج المستثمرين الأمريكي EB-5"
    ],
-   "textLength": 6036,
+   "textLength": 6224,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "ar",
    "path": "programmes/usa-e2",
-   "url": "http://localhost:3411/ar/programmes/usa-e2",
+   "url": "http://localhost:3412/ar/programmes/usa-e2",
    "status": 200,
    "title": "تأشيرة المستثمر الأمريكية E-2 | Plan B Consultant",
    "description": "E-2 وضع مؤقت للمستثمر بموجب معاهدة وليس إقامة دائمة. تعرّف على الأهلية والمستندات والخطوات، ثم اطلب تقييماً أولياً مجانياً.",
@@ -6485,6 +6588,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6500,14 +6604,14 @@
    "h1": [
     "المستثمر بموجب المعاهدة الأمريكية E-2"
    ],
-   "textLength": 5718,
+   "textLength": 5906,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "ar",
    "path": "programmes/citizenship-investment",
-   "url": "http://localhost:3411/ar/programmes/citizenship-investment",
+   "url": "http://localhost:3412/ar/programmes/citizenship-investment",
    "status": 200,
    "title": "نظرة عامة على الجنسية عن طريق الاستثمار | Plan B Consultant",
    "description": "قارن بين أهداف التنقل والأسرة والاستثمار قبل دراسة برنامج جنسية محدد، واطلب استفساراً أولياً من بلان بي في الكويت.",
@@ -6547,6 +6651,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6562,14 +6667,14 @@
    "h1": [
     "الجنسية عن طريق الاستثمار"
    ],
-   "textLength": 4208,
+   "textLength": 4396,
    "imgsMissingDims": 0,
    "internalLinks": 18
   },
   {
    "locale": "ar",
    "path": "programmes/study-visas",
-   "url": "http://localhost:3411/ar/programmes/study-visas",
+   "url": "http://localhost:3412/ar/programmes/study-visas",
    "status": 200,
    "title": "الدراسة بالخارج وتأشيرات الطلاب | Plan B Consultant",
    "description": "استعد لتأشيرة الطالب: حالة القبول والمستندات والخطوات، ثم اطلب تقييماً أولياً مجانياً من بلان بي في الكويت.",
@@ -6609,6 +6714,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6624,14 +6730,14 @@
    "h1": [
     "الدراسة وتأشيرات الطلاب"
    ],
-   "textLength": 4616,
+   "textLength": 4804,
    "imgsMissingDims": 0,
    "internalLinks": 19
   },
   {
    "locale": "ar",
    "path": "programmes/visit-visas",
-   "url": "http://localhost:3411/ar/programmes/visit-visas",
+   "url": "http://localhost:3412/ar/programmes/visit-visas",
    "status": 200,
    "title": "المساعدة في تأشيرات الزيارة والسياحة | Plan B Consultant",
    "description": "جهّز طلب تأشيرة زيارة واضحاً للسياحة أو زيارة الأسرة أو رحلات الأعمال القصيرة المسموح بها، واطلب تقييماً أولياً مجانياً.",
@@ -6671,6 +6777,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6686,14 +6793,14 @@
    "h1": [
     "تأشيرات الزيارة والسفر"
    ],
-   "textLength": 4572,
+   "textLength": 4760,
    "imgsMissingDims": 0,
    "internalLinks": 19
   },
   {
    "locale": "ar",
    "path": "services/residency-by-investment",
-   "url": "http://localhost:3411/ar/services/residency-by-investment",
+   "url": "http://localhost:3412/ar/services/residency-by-investment",
    "status": 200,
    "title": "إرشاد الإقامة عن طريق الاستثمار | Plan B Consultant",
    "description": "استكشف مدى ملاءمة مسار إقامة مرتبط بالاستثمار لخطط أسرتك، بدءاً ببرنامج EB-5 الأمريكي الموضح. الاستفسار الأولي مجاني.",
@@ -6733,6 +6840,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6748,14 +6856,14 @@
    "h1": [
     "الإقامة عن طريق الاستثمار"
    ],
-   "textLength": 2044,
+   "textLength": 2232,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "services/citizenship-by-investment",
-   "url": "http://localhost:3411/ar/services/citizenship-by-investment",
+   "url": "http://localhost:3412/ar/services/citizenship-by-investment",
    "status": 200,
    "title": "الجنسية عن طريق الاستثمار: استفسار أولي | Plan B Consultant",
    "description": "ناقش أهداف الجنسية والتنقل قبل اختيار البرنامج. هذه الصفحة خدمة استفسار أولي ولا تعرض دولة محددة أو حزمة استثمارية.",
@@ -6795,6 +6903,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6810,14 +6919,14 @@
    "h1": [
     "الجنسية عن طريق الاستثمار"
    ],
-   "textLength": 1987,
+   "textLength": 2175,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "services/skilled-immigration",
-   "url": "http://localhost:3411/ar/services/skilled-immigration",
+   "url": "http://localhost:3412/ar/services/skilled-immigration",
    "status": 200,
    "title": "المساعدة في هجرة الكفاءات من الكويت | Plan B Consultant",
    "description": "استكشف مسارات هجرة الكفاءات وفق مؤهلاتك وخبراتك: مناقشة الوجهة ومراجعة الملف وإرشاد التحضير واعتبارات انتقال الأسرة.",
@@ -6857,6 +6966,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6872,14 +6982,14 @@
    "h1": [
     "هجرة الكفاءات"
    ],
-   "textLength": 2053,
+   "textLength": 2241,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "ar",
    "path": "services/work-visas",
-   "url": "http://localhost:3411/ar/services/work-visas",
+   "url": "http://localhost:3412/ar/services/work-visas",
    "status": 200,
    "title": "المساعدة في تأشيرات وتصاريح العمل | Plan B Consultant",
    "description": "تعرّف على خطوات التحضير للعمل في الخارج: مراجعة حالة العرض الوظيفي وإرشاد المستندات حسب الوجهة ودعم تجهيز الطلب.",
@@ -6919,6 +7029,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6934,14 +7045,14 @@
    "h1": [
     "تأشيرات وتصاريح العمل"
    ],
-   "textLength": 2415,
+   "textLength": 2603,
    "imgsMissingDims": 0,
    "internalLinks": 17
   },
   {
    "locale": "ar",
    "path": "services/visit-visas",
-   "url": "http://localhost:3411/ar/services/visit-visas",
+   "url": "http://localhost:3412/ar/services/visit-visas",
    "status": 200,
    "title": "المساعدة في تأشيرات الزيارة من الكويت | Plan B Consultant",
    "description": "استعد لإجازتك أو زيارة عائلتك بمناقشة غرض السفر وإرشاد قائمة المستندات والمساعدة في تجهيز الطلب.",
@@ -6981,6 +7092,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -6996,14 +7108,14 @@
    "h1": [
     "تأشيرات الزيارة"
    ],
-   "textLength": 1854,
+   "textLength": 2042,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "services/study-abroad",
-   "url": "http://localhost:3411/ar/services/study-abroad",
+   "url": "http://localhost:3412/ar/services/study-abroad",
    "status": 200,
    "title": "المساعدة في تأشيرات الدراسة من الكويت | Plan B Consultant",
    "description": "ناقش خطط الدراسة وحالة القبول والتحضير لتأشيرة الطالب. يُوضح النطاق والمسؤوليات والخطوات التالية قبل أي التزام.",
@@ -7043,6 +7155,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -7058,14 +7171,14 @@
    "h1": [
     "تأشيرات الدراسة"
    ],
-   "textLength": 1898,
+   "textLength": 2086,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "services/global-job-search",
-   "url": "http://localhost:3411/ar/services/global-job-search",
+   "url": "http://localhost:3412/ar/services/global-job-search",
    "status": 200,
    "title": "دعم البحث عن عمل عالمي: السيرة ولينكدإن | Plan B Consultant",
    "description": "تخطيط مهني وسير ذاتية احترافية وخطابات تغطية وملفات لينكدإن للبحث عن عمل دولي. البحث عن وظيفة لا يمنح بحد ذاته تصريح عمل.",
@@ -7105,6 +7218,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -7120,14 +7234,14 @@
    "h1": [
     "البحث عن عمل عالمي"
    ],
-   "textLength": 2035,
+   "textLength": 2223,
    "imgsMissingDims": 0,
    "internalLinks": 17
   },
   {
    "locale": "ar",
    "path": "services/business-immigration",
-   "url": "http://localhost:3411/ar/services/business-immigration",
+   "url": "http://localhost:3412/ar/services/business-immigration",
    "status": 200,
    "title": "الاستشارة في هجرة الأعمال | Plan B Consultant",
    "description": "استكشف خيارات الأعمال والإقامة الدولية وفق أهدافك الريادية: مراجعة الوجهات ونظرة على المتطلبات ودعم الطلب المتفق عليه.",
@@ -7167,6 +7281,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -7182,14 +7297,14 @@
    "h1": [
     "هجرة الأعمال"
    ],
-   "textLength": 2177,
+   "textLength": 2365,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "services/family-visas",
-   "url": "http://localhost:3411/ar/services/family-visas",
+   "url": "http://localhost:3412/ar/services/family-visas",
    "status": 200,
    "title": "المساعدة في تأشيرات الأسرة والمعالين | Plan B Consultant",
    "description": "تعرّف على خطوات الانضمام إلى عائلتك أو مرافقتها في الخارج: تجهيز مستندات القرابة وقوائم المستندات حسب الوجهة وتجهيز الطلب.",
@@ -7229,6 +7344,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -7244,14 +7360,14 @@
    "h1": [
     "تأشيرات الأسرة والمعالين"
    ],
-   "textLength": 1951,
+   "textLength": 2139,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "services/permanent-residency",
-   "url": "http://localhost:3411/ar/services/permanent-residency",
+   "url": "http://localhost:3412/ar/services/permanent-residency",
    "status": 200,
    "title": "دعم طلبات الإقامة الدائمة | Plan B Consultant",
    "description": "ناقش طلبات الإقامة وإرشاد المستندات والتحضير لتجديد بطاقة الإقامة الدائمة عند انطباقه، مع خطوات تالية واضحة.",
@@ -7291,6 +7407,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -7306,14 +7423,14 @@
    "h1": [
     "دعم الإقامة الدائمة"
    ],
-   "textLength": 1977,
+   "textLength": 2165,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "ar",
    "path": "services/ielts-preparation",
-   "url": "http://localhost:3411/ar/services/ielts-preparation",
+   "url": "http://localhost:3412/ar/services/ielts-preparation",
    "status": 200,
    "title": "الاستعداد لاختبار آيلتس للدراسة والعمل والهجرة | Plan B Consultant",
    "description": "خطط للاستعداد لاختبار آيلتس وفق أهدافك الدراسية أو المهنية أو للهجرة، مع إرشاد للتدريب على الاستماع والقراءة والكتابة والمحادثة.",
@@ -7353,6 +7470,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -7368,14 +7486,14 @@
    "h1": [
     "الاستعداد لاختبار آيلتس"
    ],
-   "textLength": 1921,
+   "textLength": 2109,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "services/settlement-support",
-   "url": "http://localhost:3411/ar/services/settlement-support",
+   "url": "http://localhost:3412/ar/services/settlement-support",
    "status": 200,
    "title": "الدعم قبل السفر وبعد الاستقرار | Plan B Consultant",
    "description": "نظّم أسئلتك العملية قبل السفر وناقش الدعم المتفق عليه بعد الوصول: قوائم التحضير وتخطيط الوصول ومعلومات عن الأنظمة المحلية.",
@@ -7415,6 +7533,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -7430,14 +7549,14 @@
    "h1": [
     "ما قبل السفر والاستقرار"
    ],
-   "textLength": 1923,
+   "textLength": 2111,
    "imgsMissingDims": 0,
    "internalLinks": 12
   },
   {
    "locale": "ar",
    "path": "destinations/canada",
-   "url": "http://localhost:3411/ar/destinations/canada",
+   "url": "http://localhost:3412/ar/destinations/canada",
    "status": 200,
    "title": "كندا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على كندا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7477,6 +7596,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7490,14 +7610,14 @@
    "h1": [
     "كندا"
    ],
-   "textLength": 1798,
+   "textLength": 1986,
    "imgsMissingDims": 0,
    "internalLinks": 19
   },
   {
    "locale": "ar",
    "path": "destinations/australia",
-   "url": "http://localhost:3411/ar/destinations/australia",
+   "url": "http://localhost:3412/ar/destinations/australia",
    "status": 200,
    "title": "أستراليا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على أستراليا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7537,6 +7657,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7550,14 +7671,14 @@
    "h1": [
     "أستراليا"
    ],
-   "textLength": 1826,
+   "textLength": 2014,
    "imgsMissingDims": 0,
    "internalLinks": 20
   },
   {
    "locale": "ar",
    "path": "destinations/united-kingdom",
-   "url": "http://localhost:3411/ar/destinations/united-kingdom",
+   "url": "http://localhost:3412/ar/destinations/united-kingdom",
    "status": 200,
    "title": "المملكة المتحدة: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على المملكة المتحدة كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7597,6 +7718,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7610,14 +7732,14 @@
    "h1": [
     "المملكة المتحدة"
    ],
-   "textLength": 1559,
+   "textLength": 1747,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "destinations/united-states",
-   "url": "http://localhost:3411/ar/destinations/united-states",
+   "url": "http://localhost:3412/ar/destinations/united-states",
    "status": 200,
    "title": "الولايات المتحدة: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على الولايات المتحدة كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7657,6 +7779,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7670,14 +7793,14 @@
    "h1": [
     "الولايات المتحدة"
    ],
-   "textLength": 1843,
+   "textLength": 2031,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "destinations/new-zealand",
-   "url": "http://localhost:3411/ar/destinations/new-zealand",
+   "url": "http://localhost:3412/ar/destinations/new-zealand",
    "status": 200,
    "title": "نيوزيلندا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على نيوزيلندا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7717,6 +7840,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7730,14 +7854,14 @@
    "h1": [
     "نيوزيلندا"
    ],
-   "textLength": 1499,
+   "textLength": 1687,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/schengen",
-   "url": "http://localhost:3411/ar/destinations/schengen",
+   "url": "http://localhost:3412/ar/destinations/schengen",
    "status": 200,
    "title": "شنغن: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على شنغن كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7777,6 +7901,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7790,14 +7915,14 @@
    "h1": [
     "شنغن"
    ],
-   "textLength": 1484,
+   "textLength": 1672,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/thailand",
-   "url": "http://localhost:3411/ar/destinations/thailand",
+   "url": "http://localhost:3412/ar/destinations/thailand",
    "status": 200,
    "title": "تايلاند: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على تايلاند كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7837,6 +7962,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7850,14 +7976,14 @@
    "h1": [
     "تايلاند"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/japan",
-   "url": "http://localhost:3411/ar/destinations/japan",
+   "url": "http://localhost:3412/ar/destinations/japan",
    "status": 200,
    "title": "اليابان: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على اليابان كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7897,6 +8023,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7910,14 +8037,14 @@
    "h1": [
     "اليابان"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/turkey",
-   "url": "http://localhost:3411/ar/destinations/turkey",
+   "url": "http://localhost:3412/ar/destinations/turkey",
    "status": 200,
    "title": "تركيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على تركيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -7957,6 +8084,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -7970,14 +8098,14 @@
    "h1": [
     "تركيا"
    ],
-   "textLength": 1487,
+   "textLength": 1675,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/china",
-   "url": "http://localhost:3411/ar/destinations/china",
+   "url": "http://localhost:3412/ar/destinations/china",
    "status": 200,
    "title": "الصين: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على الصين كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8017,6 +8145,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8030,14 +8159,14 @@
    "h1": [
     "الصين"
    ],
-   "textLength": 1487,
+   "textLength": 1675,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/south-korea",
-   "url": "http://localhost:3411/ar/destinations/south-korea",
+   "url": "http://localhost:3412/ar/destinations/south-korea",
    "status": 200,
    "title": "كوريا الجنوبية: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على كوريا الجنوبية كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8077,6 +8206,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8090,14 +8220,14 @@
    "h1": [
     "كوريا الجنوبية"
    ],
-   "textLength": 1514,
+   "textLength": 1702,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/saudi-arabia",
-   "url": "http://localhost:3411/ar/destinations/saudi-arabia",
+   "url": "http://localhost:3412/ar/destinations/saudi-arabia",
    "status": 200,
    "title": "السعودية: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على السعودية كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8137,6 +8267,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8150,14 +8281,14 @@
    "h1": [
     "السعودية"
    ],
-   "textLength": 1496,
+   "textLength": 1684,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/malaysia",
-   "url": "http://localhost:3411/ar/destinations/malaysia",
+   "url": "http://localhost:3412/ar/destinations/malaysia",
    "status": 200,
    "title": "ماليزيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على ماليزيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8197,6 +8328,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8210,14 +8342,14 @@
    "h1": [
     "ماليزيا"
    ],
-   "textLength": 1511,
+   "textLength": 1699,
    "imgsMissingDims": 0,
    "internalLinks": 14
   },
   {
    "locale": "ar",
    "path": "destinations/singapore",
-   "url": "http://localhost:3411/ar/destinations/singapore",
+   "url": "http://localhost:3412/ar/destinations/singapore",
    "status": 200,
    "title": "سنغافورة: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على سنغافورة كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8257,6 +8389,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8270,14 +8403,14 @@
    "h1": [
     "سنغافورة"
    ],
-   "textLength": 1499,
+   "textLength": 1687,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/ireland",
-   "url": "http://localhost:3411/ar/destinations/ireland",
+   "url": "http://localhost:3412/ar/destinations/ireland",
    "status": 200,
    "title": "أيرلندا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على أيرلندا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8317,6 +8450,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8330,14 +8464,14 @@
    "h1": [
     "أيرلندا"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/cyprus",
-   "url": "http://localhost:3411/ar/destinations/cyprus",
+   "url": "http://localhost:3412/ar/destinations/cyprus",
    "status": 200,
    "title": "قبرص: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على قبرص كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8377,6 +8511,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8390,14 +8525,14 @@
    "h1": [
     "قبرص"
    ],
-   "textLength": 1484,
+   "textLength": 1672,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/russia",
-   "url": "http://localhost:3411/ar/destinations/russia",
+   "url": "http://localhost:3412/ar/destinations/russia",
    "status": 200,
    "title": "روسيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على روسيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8437,6 +8572,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8450,14 +8586,14 @@
    "h1": [
     "روسيا"
    ],
-   "textLength": 1487,
+   "textLength": 1675,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/italy",
-   "url": "http://localhost:3411/ar/destinations/italy",
+   "url": "http://localhost:3412/ar/destinations/italy",
    "status": 200,
    "title": "إيطاليا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على إيطاليا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8497,6 +8633,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8510,14 +8647,14 @@
    "h1": [
     "إيطاليا"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/france",
-   "url": "http://localhost:3411/ar/destinations/france",
+   "url": "http://localhost:3412/ar/destinations/france",
    "status": 200,
    "title": "فرنسا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على فرنسا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8557,6 +8694,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8570,14 +8708,14 @@
    "h1": [
     "فرنسا"
    ],
-   "textLength": 1487,
+   "textLength": 1675,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/switzerland",
-   "url": "http://localhost:3411/ar/destinations/switzerland",
+   "url": "http://localhost:3412/ar/destinations/switzerland",
    "status": 200,
    "title": "سويسرا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على سويسرا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8617,6 +8755,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8630,14 +8769,14 @@
    "h1": [
     "سويسرا"
    ],
-   "textLength": 1490,
+   "textLength": 1678,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/germany",
-   "url": "http://localhost:3411/ar/destinations/germany",
+   "url": "http://localhost:3412/ar/destinations/germany",
    "status": 200,
    "title": "ألمانيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على ألمانيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8677,6 +8816,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8690,14 +8830,14 @@
    "h1": [
     "ألمانيا"
    ],
-   "textLength": 1773,
+   "textLength": 1961,
    "imgsMissingDims": 0,
    "internalLinks": 16
   },
   {
    "locale": "ar",
    "path": "destinations/greece",
-   "url": "http://localhost:3411/ar/destinations/greece",
+   "url": "http://localhost:3412/ar/destinations/greece",
    "status": 200,
    "title": "اليونان: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على اليونان كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8737,6 +8877,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8750,14 +8891,14 @@
    "h1": [
     "اليونان"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/finland",
-   "url": "http://localhost:3411/ar/destinations/finland",
+   "url": "http://localhost:3412/ar/destinations/finland",
    "status": 200,
    "title": "فنلندا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على فنلندا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8797,6 +8938,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8810,14 +8952,14 @@
    "h1": [
     "فنلندا"
    ],
-   "textLength": 1490,
+   "textLength": 1678,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/netherlands",
-   "url": "http://localhost:3411/ar/destinations/netherlands",
+   "url": "http://localhost:3412/ar/destinations/netherlands",
    "status": 200,
    "title": "هولندا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على هولندا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8857,6 +8999,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8870,14 +9013,14 @@
    "h1": [
     "هولندا"
    ],
-   "textLength": 1490,
+   "textLength": 1678,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/spain",
-   "url": "http://localhost:3411/ar/destinations/spain",
+   "url": "http://localhost:3412/ar/destinations/spain",
    "status": 200,
    "title": "إسبانيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على إسبانيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8917,6 +9060,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8930,14 +9074,14 @@
    "h1": [
     "إسبانيا"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/sweden",
-   "url": "http://localhost:3411/ar/destinations/sweden",
+   "url": "http://localhost:3412/ar/destinations/sweden",
    "status": 200,
    "title": "السويد: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على السويد كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -8977,6 +9121,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -8990,14 +9135,14 @@
    "h1": [
     "السويد"
    ],
-   "textLength": 1619,
+   "textLength": 1807,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "destinations/austria",
-   "url": "http://localhost:3411/ar/destinations/austria",
+   "url": "http://localhost:3412/ar/destinations/austria",
    "status": 200,
    "title": "النمسا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على النمسا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9037,6 +9182,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9050,14 +9196,14 @@
    "h1": [
     "النمسا"
    ],
-   "textLength": 1490,
+   "textLength": 1678,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/iceland",
-   "url": "http://localhost:3411/ar/destinations/iceland",
+   "url": "http://localhost:3412/ar/destinations/iceland",
    "status": 200,
    "title": "آيسلندا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على آيسلندا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9097,6 +9243,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9110,14 +9257,14 @@
    "h1": [
     "آيسلندا"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/poland",
-   "url": "http://localhost:3411/ar/destinations/poland",
+   "url": "http://localhost:3412/ar/destinations/poland",
    "status": 200,
    "title": "بولندا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على بولندا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9157,6 +9304,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9170,14 +9318,14 @@
    "h1": [
     "بولندا"
    ],
-   "textLength": 1490,
+   "textLength": 1678,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/czech-republic",
-   "url": "http://localhost:3411/ar/destinations/czech-republic",
+   "url": "http://localhost:3412/ar/destinations/czech-republic",
    "status": 200,
    "title": "التشيك: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على التشيك كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9217,6 +9365,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9230,14 +9379,14 @@
    "h1": [
     "التشيك"
    ],
-   "textLength": 1490,
+   "textLength": 1678,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/lithuania",
-   "url": "http://localhost:3411/ar/destinations/lithuania",
+   "url": "http://localhost:3412/ar/destinations/lithuania",
    "status": 200,
    "title": "ليتوانيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على ليتوانيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9277,6 +9426,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9290,14 +9440,14 @@
    "h1": [
     "ليتوانيا"
    ],
-   "textLength": 1496,
+   "textLength": 1684,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/latvia",
-   "url": "http://localhost:3411/ar/destinations/latvia",
+   "url": "http://localhost:3412/ar/destinations/latvia",
    "status": 200,
    "title": "لاتفيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على لاتفيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9337,6 +9487,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9350,14 +9501,14 @@
    "h1": [
     "لاتفيا"
    ],
-   "textLength": 1490,
+   "textLength": 1678,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/estonia",
-   "url": "http://localhost:3411/ar/destinations/estonia",
+   "url": "http://localhost:3412/ar/destinations/estonia",
    "status": 200,
    "title": "إستونيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على إستونيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9397,6 +9548,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9410,14 +9562,14 @@
    "h1": [
     "إستونيا"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/monaco",
-   "url": "http://localhost:3411/ar/destinations/monaco",
+   "url": "http://localhost:3412/ar/destinations/monaco",
    "status": 200,
    "title": "موناكو: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على موناكو كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9457,6 +9609,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9470,14 +9623,14 @@
    "h1": [
     "موناكو"
    ],
-   "textLength": 1490,
+   "textLength": 1678,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/san-marino",
-   "url": "http://localhost:3411/ar/destinations/san-marino",
+   "url": "http://localhost:3412/ar/destinations/san-marino",
    "status": 200,
    "title": "سان مارينو: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على سان مارينو كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9517,6 +9670,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9530,14 +9684,14 @@
    "h1": [
     "سان مارينو"
    ],
-   "textLength": 1502,
+   "textLength": 1690,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/liechtenstein",
-   "url": "http://localhost:3411/ar/destinations/liechtenstein",
+   "url": "http://localhost:3412/ar/destinations/liechtenstein",
    "status": 200,
    "title": "ليختنشتاين: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على ليختنشتاين كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9577,6 +9731,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9590,14 +9745,14 @@
    "h1": [
     "ليختنشتاين"
    ],
-   "textLength": 1502,
+   "textLength": 1690,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/luxembourg",
-   "url": "http://localhost:3411/ar/destinations/luxembourg",
+   "url": "http://localhost:3412/ar/destinations/luxembourg",
    "status": 200,
    "title": "لوكسمبورغ: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على لوكسمبورغ كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9637,6 +9792,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9650,14 +9806,14 @@
    "h1": [
     "لوكسمبورغ"
    ],
-   "textLength": 1499,
+   "textLength": 1687,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/vatican-city",
-   "url": "http://localhost:3411/ar/destinations/vatican-city",
+   "url": "http://localhost:3412/ar/destinations/vatican-city",
    "status": 200,
    "title": "الفاتيكان: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على الفاتيكان كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9697,6 +9853,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9710,14 +9867,14 @@
    "h1": [
     "الفاتيكان"
    ],
-   "textLength": 1499,
+   "textLength": 1687,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/slovakia",
-   "url": "http://localhost:3411/ar/destinations/slovakia",
+   "url": "http://localhost:3412/ar/destinations/slovakia",
    "status": 200,
    "title": "سلوفاكيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على سلوفاكيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9757,6 +9914,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9770,14 +9928,14 @@
    "h1": [
     "سلوفاكيا"
    ],
-   "textLength": 1496,
+   "textLength": 1684,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/bulgaria",
-   "url": "http://localhost:3411/ar/destinations/bulgaria",
+   "url": "http://localhost:3412/ar/destinations/bulgaria",
    "status": 200,
    "title": "بلغاريا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على بلغاريا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9817,6 +9975,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9830,14 +9989,14 @@
    "h1": [
     "بلغاريا"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/slovenia",
-   "url": "http://localhost:3411/ar/destinations/slovenia",
+   "url": "http://localhost:3412/ar/destinations/slovenia",
    "status": 200,
    "title": "سلوفينيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على سلوفينيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9877,6 +10036,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9890,14 +10050,14 @@
    "h1": [
     "سلوفينيا"
    ],
-   "textLength": 1496,
+   "textLength": 1684,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/hungary",
-   "url": "http://localhost:3411/ar/destinations/hungary",
+   "url": "http://localhost:3412/ar/destinations/hungary",
    "status": 200,
    "title": "المجر: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على المجر كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9937,6 +10097,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -9950,14 +10111,14 @@
    "h1": [
     "المجر"
    ],
-   "textLength": 1487,
+   "textLength": 1675,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/portugal",
-   "url": "http://localhost:3411/ar/destinations/portugal",
+   "url": "http://localhost:3412/ar/destinations/portugal",
    "status": 200,
    "title": "البرتغال: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على البرتغال كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -9997,6 +10158,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -10010,14 +10172,14 @@
    "h1": [
     "البرتغال"
    ],
-   "textLength": 1639,
+   "textLength": 1827,
    "imgsMissingDims": 0,
    "internalLinks": 15
   },
   {
    "locale": "ar",
    "path": "destinations/norway",
-   "url": "http://localhost:3411/ar/destinations/norway",
+   "url": "http://localhost:3412/ar/destinations/norway",
    "status": 200,
    "title": "النرويج: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على النرويج كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -10057,6 +10219,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -10070,14 +10233,14 @@
    "h1": [
     "النرويج"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/tanzania",
-   "url": "http://localhost:3411/ar/destinations/tanzania",
+   "url": "http://localhost:3412/ar/destinations/tanzania",
    "status": 200,
    "title": "تنزانيا: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على تنزانيا كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -10117,6 +10280,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -10130,14 +10294,14 @@
    "h1": [
     "تنزانيا"
    ],
-   "textLength": 1493,
+   "textLength": 1681,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "destinations/brazil",
-   "url": "http://localhost:3411/ar/destinations/brazil",
+   "url": "http://localhost:3412/ar/destinations/brazil",
    "status": 200,
    "title": "البرازيل: نظرة على خيارات السفر والانتقال | Plan B Consultant",
    "description": "تعرّف على البرازيل كوجهة محتملة، وميّز بين الزيارة والدراسة والعمل والإقامة قبل مناقشة خطتك مع بلان بي.",
@@ -10177,6 +10341,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList"
@@ -10190,14 +10355,14 @@
    "h1": [
     "البرازيل"
    ],
-   "textLength": 1496,
+   "textLength": 1684,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "resources/prepare-for-your-consultation",
-   "url": "http://localhost:3411/ar/resources/prepare-for-your-consultation",
+   "url": "http://localhost:3412/ar/resources/prepare-for-your-consultation",
    "status": 200,
    "title": "استشارتك الأولى: كيف تستعد | Plan B Consultant",
    "description": "تبدأ المحادثة المفيدة بصورة واضحة عن خططك. لا تحتاج إلى معرفة كل الإجابات قبل التواصل.",
@@ -10237,6 +10402,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -10252,14 +10418,14 @@
    "h1": [
     "استشارتك الأولى: كيف تستعد"
    ],
-   "textLength": 1549,
+   "textLength": 1737,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "resources/job-search-or-work-visa",
-   "url": "http://localhost:3411/ar/resources/job-search-or-work-visa",
+   "url": "http://localhost:3412/ar/resources/job-search-or-work-visa",
    "status": 200,
    "title": "بحث عن عمل أم تأشيرة عمل؟ | Plan B Consultant",
    "description": "تغطي هذه الخدمات مراحل مختلفة من العمل بالخارج. تحديد نقطة البداية يجعل الاستشارة أكثر فائدة.",
@@ -10299,6 +10465,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -10314,14 +10481,14 @@
    "h1": [
     "بحث عن عمل أم تأشيرة عمل؟"
    ],
-   "textLength": 1582,
+   "textLength": 1770,
    "imgsMissingDims": 0,
    "internalLinks": 13
   },
   {
    "locale": "ar",
    "path": "resources/organise-your-documents",
-   "url": "http://localhost:3411/ar/resources/organise-your-documents",
+   "url": "http://localhost:3412/ar/resources/organise-your-documents",
    "status": 200,
    "title": "طريقة أبسط لتنظيم مستنداتك | Plan B Consultant",
    "description": "يساعدك تنظيم مستنداتك على مناقشة خططك بوضوح والاستجابة للطلبات بسهولة.",
@@ -10361,6 +10528,7 @@
    "ldCount": 1,
    "ldTypes": [
     "Organization",
+    "ProfessionalService",
     "WebSite",
     "WebPage",
     "BreadcrumbList",
@@ -10376,7 +10544,7 @@
    "h1": [
     "طريقة أبسط لتنظيم مستنداتك"
    ],
-   "textLength": 1511,
+   "textLength": 1699,
    "imgsMissingDims": 0,
    "internalLinks": 13
   }

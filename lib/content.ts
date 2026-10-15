@@ -2,7 +2,19 @@ import {newServices} from './service-overviews';
 export type Locale = 'en' | 'ar';
 export const text = (locale: Locale, en: string, ar: string) => locale === 'ar' ? ar : en;
 export const origin = 'https://planbconsultant.com';
-export const business = { phone: process.env.NEXT_PUBLIC_PHONE || '+965 6614 9059', whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '96566149059', email: process.env.NEXT_PUBLIC_EMAIL || 'info@planbconsultant.com', address: process.env.NEXT_PUBLIC_ADDRESS || '', hours: process.env.NEXT_PUBLIC_HOURS || '' };
+export const business = { phone: process.env.NEXT_PUBLIC_PHONE || '+965 6614 9059', whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '96566149059', email: process.env.NEXT_PUBLIC_EMAIL || 'info@planbconsultant.com' };
+/** Client-approved office details (16 Oct 2026). Used by the contact page, footer and JSON-LD. Do not guess coordinates; the map link below is the client's own. */
+export const office = {
+ addressLines: [['Reem Complex, Office No 22, 6th Floor','Salem Al Mubarak Street','Salmiya, Kuwait'],['مجمع ريم، مكتب رقم 22، الدور السادس','شارع سالم المبارك','السالمية، الكويت']] as [string[],string[]],
+ street: 'Reem Complex, Office No 22, 6th Floor, Salem Al Mubarak Street', locality: 'Salmiya', country: 'KW',
+ mapsUrl: 'https://maps.app.goo.gl/Rh5cdVD6uzogRJtHA?g_st=awb',
+ hours: [
+  {days:['Monday–Thursday','الاثنين – الخميس'],time:['10:00 AM–6:00 PM','10:00 صباحاً – 6:00 مساءً'],schema:{dayOfWeek:['Monday','Tuesday','Wednesday','Thursday'],opens:'10:00',closes:'18:00'}},
+  {days:['Friday','الجمعة'],time:['12:30 PM–6:00 PM','12:30 ظهراً – 6:00 مساءً'],schema:{dayOfWeek:['Friday'],opens:'12:30',closes:'18:00'}},
+  {days:['Saturday','السبت'],time:['10:00 AM–6:00 PM','10:00 صباحاً – 6:00 مساءً'],schema:{dayOfWeek:['Saturday'],opens:'10:00',closes:'18:00'}},
+  {days:['Sunday','الأحد'],time:['Closed','مغلق'],schema:null}
+ ]
+};
 export const services = [
  ...newServices,
  {slug:'skilled-immigration',title:'Skilled immigration',ar:'هجرة الكفاءات',short:'A new country. A new beginning.',shortAr:'بلد جديد. بداية جديدة.',description:'Explore migration pathways around your qualifications, experience and long-term ambitions.',descriptionAr:'استكشف مسارات الهجرة المناسبة لمؤهلاتك وخبراتك وطموحاتك.',icon:'globe',items:['Destination and pathway discussion','Profile and qualification review','Application preparation guidance','Family relocation considerations'],itemsAr:['مناقشة الوجهة والمسار','مراجعة المؤهلات والخبرات','إرشادات إعداد الطلب','اعتبارات انتقال الأسرة'],countries:['Canada','Australia']},

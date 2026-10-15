@@ -1010,3 +1010,45 @@ img,svg.brand-mark{-webkit-user-drag:none;user-drag:none}
 .brand-mark,.footer-crest,.splash-emblem,.programme-hero-media img,.programme-story-media img,.programme-benefit-image img,.home-hero-slide img,.about-destination-photo img{-webkit-touch-callout:none}
 .header-wordmark,.splash-tagline{-webkit-user-select:none;user-select:none}
 .enquiry-reference,.contact-link-list a,.footer a[href^="mailto:"],.footer a[href^="tel:"]{-webkit-user-select:text;user-select:text}
+
+/* Office address, directions and hours (contact page + footer) */
+.office-address{font-style:normal;display:flex;flex-direction:column;gap:2px;margin-top:6px;line-height:1.55;overflow-wrap:anywhere}
+.consultation-grid .office-point .office-address{font-size:15px;color:#3a5340}
+.office-directions{margin-top:10px;font-weight:600}
+.office-hours{display:grid;gap:6px;margin:8px 0 0;font-size:15px;color:#3a5340}
+.office-hours>div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 16px;padding-bottom:6px;border-bottom:1px solid #e3e8da}
+.office-hours>div:last-child{border-bottom:0;padding-bottom:0}
+.office-hours dt{font-weight:600;color:var(--color-ink)}
+.office-hours dd{margin:0;font-variant-numeric:tabular-nums}
+.office-hours .is-closed dd{color:#8a5a2b;font-weight:600}
+.footer .footer-location{align-items:flex-start}
+.footer .footer-location .office-address{margin-top:0;font-size:15px;color:#e3e9dc}
+.footer-directions{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-size:14px;font-weight:600;color:#e0c46b;text-decoration:underline;text-underline-offset:3px}
+.footer-directions:hover,.footer-directions:focus-visible{color:#f4f2eb}
+
+/* Footer disclaimer: full-width readable block replacing the old narrow pill */
+.footer-bottom{grid-template-columns:1fr auto}
+.footer-bottom>.footer-disclaimer{grid-column:1/-1;grid-row:1;margin:0;max-width:none;padding:14px 18px;border:1px solid rgba(224,196,107,.32);border-radius:12px;background:rgba(244,242,235,.05);color:#e9eee4;font-size:14px;line-height:1.7;text-align:start;overflow-wrap:break-word}
+.footer-bottom>span:first-child{grid-row:2}
+.footer-bottom>span:last-child{grid-row:2}
+@media(max-width:40.625rem){.footer-bottom{grid-template-columns:1fr}.footer-bottom>.footer-disclaimer{font-size:13.5px;padding:12px 14px}.footer-bottom>span:last-child{grid-row:3;text-align:start}}
+.talk-office{grid-column:1/-1;margin-top:12px;padding-top:12px;border-top:1px solid #d9e0cd;font-size:14px}
+.talk-office .office-address,.talk-office .office-hours{font-size:14px;color:#3a5340}
+.footer .footer-location .footer-directions svg{width:14px;height:14px;padding:0;background:none;border-radius:0;color:currentColor}
+.consultation-grid .contact-details .talk-office{flex:1 1 100%;order:10;margin-top:4px}
+.consultation-grid .contact-details .talk-office a.office-directions{display:inline-flex;align-items:center;gap:6px;flex:none;margin-top:8px;padding:0;border:0;border-radius:0;background:none;font-size:14.5px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.consultation-grid .contact-details .talk-office a.office-directions:hover,.consultation-grid .contact-details .talk-office a.office-directions:focus-visible{background:none;color:#8b7128}
+.consultation-grid .contact-details .talk-office a.office-directions>svg{width:15px;height:15px;padding:0;background:none}
+.talk-office .office-hours{margin-top:10px}
+
+/* Utility bar: office location (after email and phone; socials stay on the opposite side) */
+.utility-contact{display:flex;align-items:center;column-gap:24px;min-width:0}
+.utility-contact .contact-link-list{flex:0 1 auto;min-width:0}
+.topline .utility-location{display:inline-flex;align-items:center;gap:8px;flex:none;color:#f4f2eb;font-size:13px;font-weight:500;line-height:1.2;white-space:nowrap;text-decoration:none;border-radius:4px;transition:color .15s}
+.topline .utility-location svg{flex:none;width:16px;height:16px;color:#d4af37}
+.topline .utility-location:hover{color:#e0c46b;text-decoration:underline;text-underline-offset:3px}
+.topline .utility-location:focus-visible{outline:2px solid #d4af37;outline-offset:3px}
+.topline .utility-location .loc-short{display:none}
+@media(max-width:68.75rem){.topline .utility-location .loc-full{display:none}.topline .utility-location .loc-short{display:inline}}
+@media(max-width:650px){.utility-contact{justify-content:center;column-gap:12px}.topline .utility-location{font-size:11px;gap:5px;min-height:26px}.topline .utility-location svg{width:13px;height:13px}}
+@media(prefers-reduced-motion:reduce){.topline .utility-location{transition:none}}
