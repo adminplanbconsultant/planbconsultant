@@ -180,4 +180,62 @@ await test('retry trigger can be installed idempotently',()=>{
  s.run('setup');assert.equal(s.state.sheets.size,3);
 });
 
+// ---- contact-first full assessment + update action
+const contactFirst=(o={})=>base({formType:'full',source:'full-assessment',service:'',programme:'',destination:'',offer:'',method:'',...o});
+const upd=(id,o={})=>({action:'update',formType:'full',id,secret:SECRET,...o});
+const rowOf=(s,id)=>{const h=s.headers('Full Assessments');const r=s.rows('Full Assessments').find(x=>x[0]===id);return r&&Object.fromEntries(h.map((n,i)=>[n,r[i]]))};
+
+await test('contact-only full assessment creates one row with blank plan/profile fields and one notification',()=>{
+ const s=fresh();const p=contactFirst();const r=s.post(p);
+ assert.deepEqual([r.ok,r.saved,r.duplicate,r.sameContact],[true,true,false,true]);
+ const row=rowOf(s,p.id);
+ for(const k of ['Category','Programme','Destination','Job offer','Preferred contact method','Age range','Highest education','Job designation','Nationality','Country of residence','Investment budget (USD)','Additional information','Details updated (UTC)'])assert.equal(row[k],'',k+' must stay blank (nothing invented)');
+ assert.equal(row['Full name'],'Test Person');assert.equal(row.Phone,'+96550001234');assert.equal(row.Email,'test@example.com');
+ assert.equal(s.state.sent.length,1);assert.match(s.state.sent[0].subject,/^New Full Assessment — Plan B Consultant — PB-/);
+});
+
+await test('update adds details to the SAME row, sends no extra email, and leaves omitted fields unchanged',()=>{
+ const s=fresh();const p=contactFirst();s.post(p);
+ const a=s.post(upd(p.id,{programme:'canada-express-entry',destination:'Canada'}));
+ assert.deepEqual(a,{ok:true,updated:true,id:p.id,reference:ref(p.id)});
+ const b=s.post(upd(p.id,{age:'33–39',education:"Master’s degree",profession:'=Nurse',method:'whatsapp',message:'Hello'}));
+ assert.equal(b.updated,true);
+ assert.equal(s.rows('Full Assessments').length,1,'still one row');assert.equal(s.state.sent.length,1,'no second notification');
+ const row=rowOf(s,p.id);
+ assert.equal(row.Programme,'Canada Express Entry');assert.equal(row.Destination,'Canada','kept from first update');
+ assert.equal(row['Age range'],'33–39');assert.equal(row['Job designation'],"'=Nurse",'formula injection neutralised on update');
+ assert.equal(row['Preferred contact method'],'whatsapp');assert.equal(row['Additional information'],'Hello');
+ assert.match(row['Details updated (UTC)'],/^\d{4}-\d\d-\d\d \d\d:\d\d:\d\d$/);
+ assert.equal(row['Full name'],'Test Person','contact fields untouched');
+ const c=s.post(upd(p.id,{programme:'',destination:''}));assert.equal(c.code,'invalid','an update with nothing to change is rejected');
+ assert.equal(rowOf(s,p.id).Programme,'Canada Express Entry','empty values never erase saved ones');
+ s.post(upd(p.id,{programme:'canada-express-entry',destination:'Canada'}));assert.equal(s.rows('Full Assessments').length,1,'retried update is idempotent');
+});
+
+await test('update is rejected for bad input, other forms, unknown ids and a wrong secret',()=>{
+ const s=fresh();const p=contactFirst();s.post(p);
+ for(const bad of [upd(p.id,{programme:'made-up'}),upd(p.id,{destination:'Atlantis'}),upd(p.id,{offer:'maybe'}),upd(p.id,{method:'pigeon'}),upd(p.id,{message:'x'.repeat(2001)}),upd('not-a-uuid',{age:'33–39'}),{...upd(p.id,{age:'33–39'}),formType:'quick'}])assert.equal(s.post(bad).code,'invalid',JSON.stringify(bad).slice(0,90));
+ assert.equal(s.post(upd(randomUUID(),{age:'33–39'})).code,'not_found','never creates a row');
+ assert.equal(s.post({...upd(p.id,{age:'33–39'}),secret:'w'.repeat(40)}).code,'unauthorized');
+ const q=quick();s.post(q);assert.equal(s.post(upd(q.id,{age:'33–39'})).code,'not_found','quick-assessment rows cannot be updated');
+ assert.equal(s.rows('Full Assessments').length,1);assert.equal(rowOf(s,p.id)['Age range'],'');
+});
+
+await test('repeated create: sameContact only when phone and email match the stored row',()=>{
+ const s=fresh();const p=contactFirst();s.post(p);
+ assert.equal(s.post(p).sameContact,true);
+ assert.equal(s.post({...p,phone:'+96559999999'}).sameContact,false);
+ assert.equal(s.post({...p,email:'other@example.com'}).sameContact,false);
+ assert.equal(s.rows('Full Assessments').length,1);assert.equal(s.state.sent.length,1);
+});
+
+await test('existing sheets are upgraded in place: the new last column is added, data untouched',()=>{
+ const s=fresh();const p=contactFirst();s.post(p);
+ const sheet=s.state.sheets.get('Full Assessments');const h=s.headers('Full Assessments');
+ sheet.rows[0]=sheet.rows[0].slice(0,h.length-1);sheet.rows[1]=sheet.rows[1].slice(0,h.length-1); // simulate a sheet created by the previous version
+ assert.equal(s.post(upd(p.id,{age:'40–45'})).updated,true);
+ assert.equal(sheet.rows[0][h.length-1],'Details updated (UTC)');assert.equal(rowOf(s,p.id)['Age range'],'40–45');assert.equal(rowOf(s,p.id)['Full name'],'Test Person');
+ sheet.rows[0][3]='Something else';assert.equal(s.post(upd(p.id,{age:'40–45'})).code,'server','a mismatched header row is never rewritten');
+});
+
 console.log(`\n${passed} Apps Script tests passed (mocked Google services).`);

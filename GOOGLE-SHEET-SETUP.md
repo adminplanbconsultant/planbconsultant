@@ -11,6 +11,17 @@ Nothing in this repository has been deployed or tested against live Google servi
 
 ---
 
+## 0. Contact-first Free Initial Assessment (19 Oct 2026) — Apps Script update required
+
+The full assessment now saves the visitor's **contact details first** and lets them add plans and profile afterwards:
+
+1. **Contact** (name, international phone, email, consent) → "Send enquiry & continue" creates **one** row in *Full Assessments* and sends the usual **one** notification email. The form only advances after the script confirms the save.
+2. **Your plans · optional** and 3. **Profile · optional** → "Save…" writes only the fields the visitor filled in **into that same row** (new column *Details updated (UTC)* records when). Updates never send another email, never create a row, and never blank out a saved value. "Skip" / "Finish now" send nothing. If the visitor leaves after step 1, the enquiry is already saved.
+
+Security: after the step-1 save the website issues a short-lived (2 h) update token bound to that enquiry id, signed with a key derived from `GOOGLE_APPS_SCRIPT_SECRET`. Updates are forwarded to the script only when that token verifies; a guessed enquiry id alone cannot edit a row, and a repeated step-1 request only receives a token if its phone and email match the stored row. Contact fields can never be changed through an update. Nothing new is needed in Vercel.
+
+**What you must do (the website change depends on it):** paste the updated `integrations/google-apps-script/Code.gs` into the Apps Script editor, save, then **Deploy → Manage deployments → Edit → Version: New version → Deploy** (same URL). Do this **before** deploying the website: the previous script version rejects contact-only assessments (it required a contact method) and has no `update` action, so the new form would show "couldn't send" until the script is redeployed. No sheet changes are needed: the first save after redeploying adds the *Details updated (UTC)* header at the end of *Full Assessments* automatically; existing rows and columns are untouched (a sheet whose header row was edited is never rewritten). Then run the live check at the end of section 7.
+
 ## 1. Create the private spreadsheet
 
 1. Sign in to the Google account that should own the leads (the account that will also *send* the notification emails — Apps Script sends from the account that authorises it; the site never spoofs `info@planbconsultant.com` as sender).
@@ -88,7 +99,7 @@ Every tab starts with the same identity columns and ends with the same tracking 
 Form-specific columns (only what each form actually collects; blanks mean "not provided", nothing is invented):
 
 * **Quick Assessments** (popup): Category, Programme, Destination (derived from the chosen programme, blank if "not sure")
-* **Full Assessments**: Category, Programme, Destination, Job offer, Preferred contact method, Age range, Highest education, Job designation, Nationality, Country of residence, Investment budget (USD, blank when not applicable), Additional information
+* **Full Assessments**: Category, Programme, Destination, Job offer, Preferred contact method, Age range, Highest education, Job designation, Nationality, Country of residence, Investment budget (USD, blank when not applicable), Additional information — all blank until the visitor adds them in the optional steps — plus *Details updated (UTC)* as the last column
 * **Contact Enquiries**: Category, Message
 
 Website field → column: `service`→Category, `programme`→Programme (title), `destination`→Destination, `offer`→Job offer, `method`→Preferred contact method, `age`→Age range, `education`→Highest education, `profession`→Job designation, `nationality`→Nationality, `residence`→Country of residence, `budget`→Investment budget (USD), `message`→Additional information / Message.
@@ -119,6 +130,8 @@ Use obviously fake test data and delete the test rows afterwards. These will sen
 5. Submit `=1+1` as the name: the cell shows `'=1+1` (text), not `2`.
 6. Failure path: temporarily set `NOTIFY_EMAIL` to something invalid or remove the `MailApp` permission → the enquiry is still saved, notification shows `Failed`; fix it and run `retryPendingNotifications` from the editor → `Sent`.
 7. If Turnstile is enabled, confirm the widget appears and submissions succeed on desktop and mobile.
+
+8. **Contact-first assessment** (after redeploying the script): on `/en/consultation`, submit only the contact step → one new *Full Assessments* row and one email. Choose a programme → "Save & continue" → the same row gains *Programme*, *Destination* and *Details updated (UTC)*, no second email. Fill one profile field → "Save details & finish" → same row updated. Repeat with "Skip this step" / "Finish now": the row keeps only the contact details.
 
 ## 8. Notification retries and failure modes
 

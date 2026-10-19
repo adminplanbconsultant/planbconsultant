@@ -1,6 +1,6 @@
 // Browser QA (real Chrome over CDP) for the full-assessment and contact forms, English + Arabic.
 // Needs the mock stack:  node scripts/mock-enquiry-stack.mjs   (:3107 wired to a MOCK sheet, :3000 unconfigured)
-// The popup has its own suite: scripts/assessment-popup-qa.mjs.
+// The popup has its own suite: scripts/assessment-popup-qa.mjs; the contact-first full assessment: scripts/assessment-flow-qa.mjs.
 import {spawn} from 'node:child_process';
 import {mkdtempSync} from 'node:fs';
 import {tmpdir} from 'node:os';
@@ -27,11 +27,10 @@ async function open(base,locale,path){
  await ev(`window.__reqs=[];const f=window.fetch;window.fetch=async(...a)=>{if(String(a[0]).includes('/api/enquiries')){window.__reqs.push(JSON.parse(a[1].body));await new Promise(r=>setTimeout(r,700))}return f(...a)}`);
 }
 const fillContact=async()=>{await fill('.general-enquiry-form input[id$="-name"]','سارة Test');await fill('.general-enquiry-form input[type=email]','qa@example.com');await fill('.general-enquiry-form input[type=tel]','+965 5000 1234');await fill('.general-enquiry-form textarea','Hello, please contact me.');await click('.general-enquiry-form input[type=checkbox]')};
-const fillFull=async()=>{await click('.assessment-form button[type=submit]');await sleep(200);await click('.skip-profile');await sleep(200);await fill('.assessment-form input[name=name]','Sara Test');await fill('.assessment-form input[name=phone]','+965 5000 1234');await fill('.assessment-form input[name=email]','qa@example.com');await click('.assessment-form input[type=checkbox]')};
 
 for(const locale of ['en','ar']){
  const ar=locale==='ar';
- for(const [label,path,root,filler] of [['contact form','contact','.general-enquiry-form',fillContact],['full assessment','consultation','.assessment-form',fillFull]]){
+ for(const [label,path,root,filler] of [['contact form','contact','.general-enquiry-form',fillContact]]){
   await open(ok,locale,path);await filler();
   await ev(`const b=document.querySelector('${root} button[type=submit]');b.click();b.click();b.click()`);
   await sleep(250);

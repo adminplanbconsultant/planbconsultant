@@ -1,10 +1,10 @@
 import {createHmac} from 'node:crypto';
 import {z} from 'zod';
-import {consentVersion,type EnquiryRecord} from './enquiry-schema';
+import {consentVersion,type EnquiryRecord,type EnquiryUpdate} from './enquiry-schema';
 
 /** Server-only client for the Google Apps Script web app that owns the private spreadsheet. */
 export type GatewayResult=
- |{status:'saved';reference:string;duplicate:boolean;notification:string}
+ |{status:'saved';reference:string;duplicate:boolean;sameContact:boolean;notification:string}
  |{status:'rejected';code:'invalid'|'throttled'|'config'}
  |{status:'unavailable';reason:'not-configured'|'uncertain'|'busy'};
 
@@ -13,8 +13,9 @@ const BUDGET_MS=20000;
 const MAX_ATTEMPTS=2;
 const MAX_RESPONSE_BYTES=4000;
 
-const success=z.object({ok:z.literal(true),saved:z.literal(true),id:z.string(),reference:z.string().regex(/^PB-[0-9A-F]{8}$/),duplicate:z.boolean(),notification:z.string().max(20)}).strict();
-const failure=z.object({ok:z.literal(false),code:z.enum(['invalid','unauthorized','throttled','busy','server'])}).strict();
+const success=z.object({ok:z.literal(true),saved:z.literal(true),id:z.string(),reference:z.string().regex(/^PB-[0-9A-F]{8}$/),duplicate:z.boolean(),sameContact:z.boolean().optional(),notification:z.string().max(20)}).strict();
+const updated=z.object({ok:z.literal(true),updated:z.literal(true),id:z.string(),reference:z.string().regex(/^PB-[0-9A-F]{8}$/)}).strict();
+const failure=z.object({ok:z.literal(false),code:z.enum(['invalid','unauthorized','throttled','busy','server','not_found'])}).strict();
 
 export function gatewayConfig(env:Record<string,string|undefined>=process.env){
  const url=env.GOOGLE_APPS_SCRIPT_URL?.trim();const secret=env.GOOGLE_APPS_SCRIPT_SECRET;
@@ -74,12 +75,37 @@ export async function saveEnquiry(record:EnquiryRecord,ip:string,config=gatewayC
   const ok=success.safeParse(result.value);
   if(ok.success){
    if(ok.data.id!==record.id||ok.data.reference!==reference(record.id))continue; // not the answer to our request
-   return {status:'saved',reference:ok.data.reference,duplicate:ok.data.duplicate,notification:ok.data.notification};
+   return {status:'saved',reference:ok.data.reference,duplicate:ok.data.duplicate,sameContact:ok.data.sameContact===true,notification:ok.data.notification};
   }
   const bad=failure.safeParse(result.value);
   if(!bad.success)continue; // malformed: treat as uncertain
   if(bad.data.code==='invalid')return {status:'rejected',code:'invalid'};
   if(bad.data.code==='throttled')return {status:'rejected',code:'throttled'};
+  if(bad.data.code==='unauthorized')return {status:'rejected',code:'config'};
+  busy=bad.data.code==='busy';
+ }
+ return {status:'unavailable',reason:busy?'busy':'uncertain'};
+}
+
+export type UpdateResult={status:'updated';reference:string}|{status:'rejected';code:'invalid'|'not-found'|'config'}|{status:'unavailable';reason:'not-configured'|'uncertain'|'busy'};
+/**
+ * Adds optional plan/profile details to an existing Full Assessment row. Only call after verifying the visitor's update token.
+ * Idempotent: repeating it writes the same values to the same row, never a new row, never a new notification.
+ */
+export async function updateEnquiry(update:EnquiryUpdate,config=gatewayConfig(),send:typeof fetch=fetch):Promise<UpdateResult>{
+ if(!config)return {status:'unavailable',reason:'not-configured'};
+ const body=JSON.stringify({action:'update',formType:'full',id:update.id,...update.fields,secret:config.secret});
+ const deadline=Date.now()+BUDGET_MS;let busy=false;
+ for(let n=0;n<MAX_ATTEMPTS&&Date.now()<deadline-1500;n++){
+  if(n>0)await new Promise(r=>setTimeout(r,600));
+  const result=await attempt(config,body,send,deadline);
+  if(result.kind==='uncertain')continue;
+  const ok=updated.safeParse(result.value);
+  if(ok.success){if(ok.data.id!==update.id||ok.data.reference!==reference(update.id))continue;return {status:'updated',reference:ok.data.reference}}
+  const bad=failure.safeParse(result.value);
+  if(!bad.success)continue;
+  if(bad.data.code==='invalid')return {status:'rejected',code:'invalid'};
+  if(bad.data.code==='not_found')return {status:'rejected',code:'not-found'};
   if(bad.data.code==='unauthorized')return {status:'rejected',code:'config'};
   busy=bad.data.code==='busy';
  }

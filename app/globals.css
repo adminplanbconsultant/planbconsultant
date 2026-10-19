@@ -1052,3 +1052,14 @@ img,svg.brand-mark{-webkit-user-drag:none;user-drag:none}
 @media(max-width:68.75rem){.topline .utility-location .loc-full{display:none}.topline .utility-location .loc-short{display:inline}}
 @media(max-width:650px){.utility-contact{justify-content:center;column-gap:12px}.topline .utility-location{font-size:11px;gap:5px;min-height:26px}.topline .utility-location svg{width:13px;height:13px}}
 @media(prefers-reduced-motion:reduce){.topline .utility-location{transition:none}}
+
+/* Free initial assessment: contact-first flow */
+.assessment-form .assessment-lead{margin:4px 0 18px;font-size:15px;line-height:1.65;color:#3a5340}
+.assessment-form .assessment-received{display:flex;align-items:flex-start;gap:10px;margin:4px 0 18px;padding:12px 14px;border:1px solid #cfdcc4;border-radius:12px;background:#eef4e8;color:var(--color-ink);font-size:15px;line-height:1.6}
+.assessment-form .assessment-received svg{flex:none;margin-top:3px;color:#2f6b3f}
+.assessment-form .assessment-ref{font-weight:700;white-space:nowrap}
+.assessment-form h3:focus,.form-success h2:focus{outline:none}
+.assessment-form .assessment-buttons{flex-wrap:wrap;align-items:center}
+.assessment-form .assessment-buttons .skip-profile{margin:0;padding:10px 4px;min-height:44px;background:none;border:0;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:40.625rem){.assessment-form .assessment-buttons .button{flex:1 1 100%;justify-content:center}.assessment-form .assessment-buttons .skip-profile{flex:1 1 100%;justify-content:center}}
+.assessment-form .assessment-ref-line{display:block;margin-top:4px;font-size:14px;color:#3a5340}

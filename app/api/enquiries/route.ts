@@ -1,5 +1,6 @@
-import {normalizeEnquiry} from '@/lib/enquiry-schema';
-import {gatewayConfig,saveEnquiry,verifyTurnstile} from '@/lib/sheets-gateway';
+import {normalizeEnquiry,normalizeUpdate} from '@/lib/enquiry-schema';
+import {gatewayConfig,saveEnquiry,updateEnquiry,verifyTurnstile} from '@/lib/sheets-gateway';
+import {issueUpdateToken,verifyUpdateToken} from '@/lib/update-token';
 export const runtime='nodejs';
 export const maxDuration=30;
 const MAX_BODY=12000;
@@ -25,6 +26,23 @@ export async function POST(request:Request){
   let length=0;const chunks:Uint8Array[]=[];
   while(true){const {done,value}=await reader.read();if(done)break;length+=value.length;if(length>MAX_BODY){await reader.cancel();return fail('too-large',413)}chunks.push(value)}
   let json;try{json=JSON.parse(Buffer.concat(chunks).toString('utf8'))}catch{return fail('invalid',400)}
+  if(json&&typeof json==='object'&&(json as {action?:unknown}).action==='update'){
+   // Optional details for an enquiry created earlier: authorised only by the server-issued token for that enquiry id.
+   const update=normalizeUpdate(json);if(!update)return fail('invalid',400);
+   const config=gatewayConfig();
+   if(!config)return fail('not-configured',503);
+   if(!verifyUpdateToken(update.token,update.id,config.secret))return fail('forbidden',403);
+   const result=await updateEnquiry(update,config);
+   if(result.status==='updated')return Response.json({saved:true,updated:true,reference:result.reference},{status:200,headers});
+   if(result.status==='rejected'){
+    if(result.code==='invalid')return fail('invalid',400);
+    if(result.code==='not-found')return fail('forbidden',403);
+    console.error('enquiry-storage: apps script rejected the shared secret');
+    return fail('not-configured',503);
+   }
+   console.error('enquiry-storage: update not confirmed ('+result.reason+')');
+   return fail('unavailable',503);
+  }
   const record=normalizeEnquiry(json);if(!record)return fail('invalid',400);
   const config=gatewayConfig();
   if(!config)return fail('not-configured',503);
@@ -34,7 +52,12 @@ export async function POST(request:Request){
   if(human==='failed')return fail('verification',400);
   if(human==='unavailable')return fail('unavailable',503);
   const result=await saveEnquiry(record,ip,config);
-  if(result.status==='saved')return Response.json({saved:true,reference:result.reference,duplicate:result.duplicate},{status:201,headers});
+  if(result.status==='saved'){
+   // Contact-first full assessment: hand back a short-lived token for adding optional details to THIS enquiry. A repeated
+   // request only receives one when the stored phone and email match, so a guessed id cannot be used to edit someone else's row.
+   const updateToken=record.formType==='full'&&(!result.duplicate||result.sameContact)?issueUpdateToken(record.id,config.secret):undefined;
+   return Response.json({saved:true,reference:result.reference,duplicate:result.duplicate,...(updateToken?{updateToken}:{})},{status:201,headers});
+  }
   if(result.status==='rejected'){
    if(result.code==='invalid')return fail('invalid',400);
    if(result.code==='throttled')return fail('throttled',429,{'Retry-After':'3600'});

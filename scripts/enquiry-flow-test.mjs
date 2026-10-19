@@ -53,7 +53,8 @@ async function startSite(port,env){
 }
 const post=(site,body,headers={})=>fetch(site.base+'/api/enquiries',{method:'POST',headers:{'Content-Type':'application/json',...headers},body:typeof body==='string'?body:JSON.stringify(body)});
 const quick=(o={})=>({source:'popup-short-assessment',id:uuid(),name:'Test Person',phone:'+96550001234',email:'',service:'skilled-immigration',programme:'canada-express-entry',locale:'en',consent:true,website:'',pagePath:'/en',...o});
-const full=(o={})=>({source:'full-assessment',id:uuid(),programme:'canada-express-entry',service:'not-sure',destination:'Canada',age:'33–39',education:"Master’s degree",profession:'Nurse',nationality:'Kuwaiti',residence:'Kuwait',budget:'Not applicable',name:'Test Person',phone:'+965 5000 1234',email:'t@example.com',message:'Hello',website:'',consent:true,method:'whatsapp',offer:'not-sure',locale:'en',pagePath:'/en/consultation',...o});
+const full=(o={})=>({source:'full-assessment',stage:'contact',id:uuid(),name:'Test Person',phone:'+965 5000 1234',email:'t@example.com',service:'',website:'',consent:true,locale:'en',pagePath:'/en/consultation',...o});
+const details=(id,updateToken,o={})=>({action:'update',id,updateToken,locale:'en',...o});
 const contact=(o={})=>({source:'contact-form',id:uuid(),name:'Test Person',email:'t@example.com',phone:'+965 5000 1234',service:'not-sure',message:'Please call me',consent:true,website:'',locale:'en',pagePath:'/en/contact',...o});
 const rows=tab=>script.rows(tab);const total=()=>rows('Quick Assessments').length+rows('Full Assessments').length+rows('Contact Enquiries').length;
 const resetThrottle=()=>script.state.cache.clear();
@@ -75,16 +76,17 @@ try{
  });
 
  await test('field mapping is accurate and nothing is fabricated for fields a form does not collect',async()=>{
-  resetThrottle();const f=full({budget:'USD 70,000–149,999',programme:'usa-eb5',destination:'United States'});await post(site,f);
+  resetThrottle();const f=full();const created=await (await post(site,f)).json();
+  await post(site,details(f.id,created.updateToken,{programme:'usa-eb5',destination:'United States',budget:'USD 70,000–149,999'}));
   const r=find('Full Assessments',f.id);assert.equal(r.Phone,'+96550001234','spaces removed, + kept');assert.equal(r.Programme,'USA EB-5 investor programme');assert.equal(r['Investment budget (USD)'],'USD 70,000–149,999');assert.equal(r['Form source'],'full-assessment');assert.equal(r['Page path'],'/en/consultation');
-  const g=full();await post(site,g);assert.equal(find('Full Assessments',g.id)['Investment budget (USD)'],'','"Not applicable" is stored as blank');
+  const g=full();await post(site,g);const gr=find('Full Assessments',g.id);for(const k of ['Programme','Destination','Investment budget (USD)','Preferred contact method','Age range'])assert.equal(gr[k],'',k+' blank when never supplied');
   const q=quick({programme:'not-sure'});await post(site,q);assert.equal(find('Quick Assessments',q.id).Destination,'');
   const c=contact();await post(site,c);assert.equal(find('Contact Enquiries',c.id).Message,'Please call me');
  });
 
  await test('missing/invalid fields and consent are rejected (400) and nothing is saved',async()=>{
   const before=total();
-  const bad=[quick({consent:false}),{...quick(),consent:undefined},quick({name:'A'}),quick({phone:'12345'}),quick({phone:'96550001234'}),quick({phone:'+9655000123456789012'}),quick({email:'nope'}),quick({service:'made-up'}),quick({programme:'made-up'}),{...quick(),id:'x'},{...quick(),locale:'fr'},quick({website:'http://spam.example'}),full({consent:false}),full({method:'email',email:''}),full({destination:'Atlantis'}),contact({message:'x'.repeat(2001)}),contact({service:'made-up'}),contact({consent:false}),{source:'popup-short-assessment'},{}];
+  const bad=[quick({consent:false}),{...quick(),consent:undefined},quick({name:'A'}),quick({phone:'12345'}),quick({phone:'96550001234'}),quick({phone:'+9655000123456789012'}),quick({email:'nope'}),quick({service:'made-up'}),quick({programme:'made-up'}),{...quick(),id:'x'},{...quick(),locale:'fr'},quick({website:'http://spam.example'}),full({consent:false}),full({email:''}),full({email:'nope'}),full({stage:undefined}),full({service:'made-up'}),full({phone:'5000 1234'}),contact({message:'x'.repeat(2001)}),contact({service:'made-up'}),contact({consent:false}),{source:'popup-short-assessment'},{}];
   for(const p of bad){const r=await post(site,p);assert.equal(r.status,400,JSON.stringify(p).slice(0,100));assert.equal((await r.json()).code,'invalid')}
   assert.equal(total(),before);
   assert.equal((await post(site,'not json')).status,400);
@@ -160,6 +162,59 @@ try{
  await test('throttling: the 9th new enquiry from one visitor in an hour gets 429',async()=>{
   resetThrottle();let last;for(let i=0;i<9;i++)last=await post(site,quick({phone:'+9655100'+String(1000+i)}));
   assert.equal(last.status,429);assert.equal(last.headers.get('retry-after'),'3600');assert.equal((await last.json()).code,'throttled');
+ });
+
+  await test('contact-first: step 1 saves ONE enquiry + ONE notification and returns an update token',async()=>{
+  resetThrottle();const emails=script.state.sent.length;const p=full();const r=await post(site,p);const j=await r.json();
+  assert.equal(r.status,201);assert.equal(j.saved,true);assert.match(j.updateToken,/^v1\.[0-9a-z]+\.[A-Za-z0-9_-]{43}$/);
+  assert.equal(rows('Full Assessments').filter(x=>x[0]===p.id).length,1);assert.equal(script.state.sent.length,emails+1);
+  assert.match(script.state.sent.at(-1).subject,/^New Full Assessment — Plan B Consultant — PB-/);
+  const q=await (await post(site,quick())).json();assert.equal(q.updateToken,undefined,'only the full assessment gets update tokens');
+ });
+
+ await test('contact-first: optional details update the SAME row; skipped steps leave fields blank; no extra email',async()=>{
+  resetThrottle();const p=full();const {updateToken}=await (await post(site,p)).json();const emails=script.state.sent.length;
+  const a=await post(site,details(p.id,updateToken,{programme:'canada-express-entry',destination:'Canada'}));assert.equal(a.status,200);assert.deepEqual(await a.json(),{saved:true,updated:true,reference:'PB-'+p.id.slice(0,8).toUpperCase()});
+  const b=await post(site,details(p.id,updateToken,{age:'33–39',education:'Diploma',method:'whatsapp',message:'=1+1'}));assert.equal(b.status,200);
+  const r=find('Full Assessments',p.id);
+  assert.equal(r.Programme,'Canada Express Entry');assert.equal(r.Destination,'Canada');assert.equal(r['Age range'],'33–39');assert.equal(r['Preferred contact method'],'whatsapp');assert.equal(r['Additional information'],"'=1+1");
+  assert.equal(r['Job designation'],'','profile field not supplied stays blank');assert.equal(r['Full name'],'Test Person');
+  assert.equal(rows('Full Assessments').filter(x=>x[0]===p.id).length,1);assert.equal(script.state.sent.length,emails,'updates never send another notification');
+  const again=await post(site,details(p.id,updateToken,{programme:'canada-express-entry'}));assert.equal(again.status,200,'retried update is fine');
+  assert.equal(rows('Full Assessments').filter(x=>x[0]===p.id).length,1);
+  const empty=await post(site,details(p.id,updateToken,{programme:''}));assert.equal(empty.status,400,'nothing to update');
+  assert.equal(find('Full Assessments',p.id).Programme,'Canada Express Entry','omitted/empty fields never erase saved ones');
+ });
+
+ await test('update authorisation: no token, forged token, token for another enquiry and expired token are refused (403/400)',async()=>{
+  resetThrottle();const p=full(),o=full();const pt=(await (await post(site,p)).json()).updateToken;const ot=(await (await post(site,o)).json()).updateToken;
+  assert.equal((await post(site,{...details(p.id,undefined,{age:'40–45'})})).status,400,'token is required');
+  assert.equal((await post(site,details(p.id,'v1.zzzzzzzz.'+'A'.repeat(43),{age:'40–45'}))).status,403,'forged');
+  assert.equal((await post(site,details(p.id,ot,{age:'40–45'}))).status,403,'token of a different enquiry');
+  const parts=pt.split('.');assert.equal((await post(site,details(p.id,'v1.'+(Date.now()-1000).toString(36)+'.'+parts[2],{age:'40–45'}))).status,403,'tampered/expired expiry');
+  assert.equal((await post(site,details(p.id,pt,{age:'40–45',name:'Hacker'}))).status,400,'contact fields cannot be changed through updates');
+  assert.equal(find('Full Assessments',p.id)['Age range'],'');assert.equal(find('Full Assessments',p.id)['Full name'],'Test Person');
+  assert.equal((await post(site,details(p.id,pt,{age:'40–45'}),{Origin:'https://evil.example'})).status,403,'foreign origin');
+ });
+
+ await test('contact-first retries and double clicks: one row, one email; a guessed id with other contact details gets no token',async()=>{
+  resetThrottle();const p=full();const emails=script.state.sent.length;
+  const out=await Promise.all(Array.from({length:5},()=>post(site,p).then(r=>r.json())));
+  assert.ok(out.every(o=>o.saved===true&&typeof o.updateToken==='string'));assert.equal(out.filter(o=>!o.duplicate).length,1);
+  assert.equal(rows('Full Assessments').filter(x=>x[0]===p.id).length,1);assert.equal(script.state.sent.length,emails+1);
+  const thief=await (await post(site,{...p,phone:'+96559998888',email:'thief@example.com'})).json();
+  assert.equal(thief.saved,true);assert.equal(thief.updateToken,undefined,'no update token when contact details do not match the saved enquiry');
+  assert.equal(find('Full Assessments',p.id).Phone,'+96550001234','stored contact unchanged');
+ });
+
+ await test('contact-first: lost response on step 1 is retried with the same id and still yields a token, no duplicate',async()=>{
+  resetThrottle();const p=full();const emails=script.state.sent.length;mode.lostFirst=true;const r=await post(site,p);const j=await r.json();
+  assert.equal(r.status,201);assert.equal(j.duplicate,true);assert.ok(j.updateToken);assert.equal(rows('Full Assessments').filter(x=>x[0]===p.id).length,1);assert.equal(script.state.sent.length,emails+1);
+ });
+
+ await test('update failure modes are never reported as success',async()=>{
+  resetThrottle();const p=full();const {updateToken}=await (await post(site,p)).json();
+  for(const name of ['malformed','http500','evil-redirect','wrong-id']){mode.name=name;const r=await post(site,details(p.id,updateToken,{age:'46–55'}));mode.name='normal';assert.equal(r.status,503,name);assert.equal((await r.json()).updated,undefined)}
  });
 
  await test('server logs contain no personal data or secrets',async()=>{

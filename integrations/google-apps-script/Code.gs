@@ -7,6 +7,10 @@
  *   SPREADSHEET_ID  id of the private spreadsheet (the long string in its URL)
  *   NOTIFY_EMAIL    recipient(s), comma-separated, e.g. info@planbconsultant.com
  *
+ * Actions: (default) create one enquiry row + one notification; "update" adds optional plan/profile details to an
+ * existing Full Assessment row. Updates carry no notification. The website only forwards an update after verifying a
+ * short-lived update token it issued for that enquiry, and this script additionally requires the shared secret.
+ *
  * The web app must be deployed "Execute as: Me" and "Who has access: Anyone".
  * That only means the URL can be called; every call without the shared secret is rejected
  * and nothing in this script ever returns lead data.
@@ -32,6 +36,10 @@ var EXTRA = {
   full: ['Category', 'Programme', 'Destination', 'Job offer', 'Preferred contact method', 'Age range', 'Highest education', 'Job designation', 'Nationality', 'Country of residence', 'Investment budget (USD)', 'Additional information'],
   contact: ['Category', 'Message']
 };
+// Columns added after the first release go LAST so existing sheets can be upgraded in place (see ensureSheet_).
+var LATE = { quick: [], full: ['Details updated (UTC)'], contact: [] };
+// Optional details a Full Assessment row may receive after creation: request field -> sheet column.
+var UPDATE_FIELDS = { programme: 'Programme', destination: 'Destination', offer: 'Job offer', budget: 'Investment budget (USD)', age: 'Age range', education: 'Highest education', profession: 'Job designation', nationality: 'Nationality', residence: 'Country of residence', method: 'Preferred contact method', message: 'Additional information' };
 
 // <generated:lists> (run `node scripts/sync-apps-script-lists.mjs` after changing services, programmes or countries)
 var SERVICES = {
@@ -82,6 +90,12 @@ function doPost(e) {
     try { data = JSON.parse(raw); } catch (parseError) { return json_({ ok: false, code: 'invalid' }); }
     if (!data || typeof data !== 'object' || Array.isArray(data)) return json_({ ok: false, code: 'invalid' });
     if (typeof data.secret !== 'string' || !safeEqual_(data.secret, secret)) return json_({ ok: false, code: 'unauthorized' });
+    if (data.action === 'update') {
+      var upd = validateUpdate_(data);
+      if (!upd) return json_({ ok: false, code: 'invalid' });
+      var result = update_(upd);
+      return json_(result.ok ? { ok: true, updated: true, id: upd.id, reference: result.reference } : { ok: false, code: result.code });
+    }
     var rec = validate_(data);
     if (!rec) return json_({ ok: false, code: 'invalid' });
 
@@ -89,7 +103,7 @@ function doPost(e) {
     if (!saved.ok) return json_({ ok: false, code: saved.code });
     var notification = 'Pending';
     try { notification = notify_(saved.tab, rec.id) || 'Pending'; } catch (notifyError) { notification = 'Pending'; }
-    return json_({ ok: true, saved: true, id: rec.id, reference: saved.reference, duplicate: saved.duplicate, notification: notification });
+    return json_({ ok: true, saved: true, id: rec.id, reference: saved.reference, duplicate: saved.duplicate, sameContact: saved.sameContact, notification: notification });
   } catch (error) {
     return json_({ ok: false, code: 'server' }); // never echo error text: it can contain request data
   }
@@ -134,23 +148,45 @@ function validate_(d) {
   if (rec.email && !/^[A-Za-z0-9_][^\s@<>,;]*@[^\s@<>,;]+\.[^\s@<>,;]{2,}$/.test(rec.email)) return null;
   if (rec.pagePath && !/^\/[A-Za-z0-9\/_\-.%]*$/.test(rec.pagePath)) return null;
   if (rec.clientKey && !/^[0-9a-f]{64}$/.test(rec.clientKey)) return null;
-  if (rec.service !== 'not-sure' && !SERVICES.hasOwnProperty(rec.service)) return null;
+  if (!(form === 'full' && rec.service === '') && rec.service !== 'not-sure' && !SERVICES.hasOwnProperty(rec.service)) return null;
   if (form === 'contact') {
     rec.programme = ''; rec.destination = ''; rec.offer = ''; rec.method = '';
     rec.age = ''; rec.education = ''; rec.profession = ''; rec.nationality = ''; rec.residence = ''; rec.budget = '';
   } else {
-    if (rec.programme !== 'not-sure' && !PROGRAMMES.hasOwnProperty(rec.programme)) return null;
+    if (rec.programme && rec.programme !== 'not-sure' && !PROGRAMMES.hasOwnProperty(rec.programme)) return null;
     if (rec.destination && rec.destination !== 'Not sure yet' && DESTINATIONS.indexOf(rec.destination) < 0) return null;
     if (form === 'quick') {
       rec.offer = ''; rec.method = ''; rec.age = ''; rec.education = ''; rec.profession = ''; rec.nationality = ''; rec.residence = ''; rec.budget = ''; rec.message = '';
     } else {
       if (['', 'yes', 'no', 'not-sure'].indexOf(rec.offer) < 0) return null;
-      if (['phone', 'whatsapp', 'email'].indexOf(rec.method) < 0) return null;
+      if (['', 'phone', 'whatsapp', 'email'].indexOf(rec.method) < 0) return null; // optional: a contact-first enquiry has none yet
       if (rec.method === 'email' && !rec.email) return null;
     }
   }
   rec.reference = 'PB-' + rec.id.slice(0, 8).toUpperCase(); // recomputed, never trusted from the request
   return rec;
+}
+
+/** Validates an "update" request: Full Assessment only, known fields only, same rules as creation. Empty values mean "leave unchanged". */
+function validateUpdate_(d) {
+  if (d.formType !== 'full') return null;
+  var id = clean_(d.id, 40);
+  if (!id || !/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/.test(id)) return null;
+  var limits = { programme: 60, destination: 60, offer: 20, budget: 100, age: 30, education: 100, profession: 100, nationality: 100, residence: 100, method: 20, message: 2000 };
+  var changes = {}, count = 0;
+  for (var key in limits) {
+    var value = clean_(d[key], limits[key]);
+    if (value === null) return null;
+    if (!value) continue;
+    if (key === 'programme' && value !== 'not-sure' && !PROGRAMMES.hasOwnProperty(value)) return null;
+    if (key === 'destination' && value !== 'Not sure yet' && DESTINATIONS.indexOf(value) < 0) return null;
+    if (key === 'offer' && ['yes', 'no', 'not-sure'].indexOf(value) < 0) return null;
+    if (key === 'method' && ['phone', 'whatsapp', 'email'].indexOf(value) < 0) return null;
+    var cell = key === 'programme' ? (value === 'not-sure' ? 'Not sure' : PROGRAMMES[value]) : (key === 'destination' || key === 'offer' || key === 'method' ? value : neutralize_(value));
+    changes[UPDATE_FIELDS[key]] = cell;
+    count++;
+  }
+  return count ? { id: id, changes: changes } : null;
 }
 
 /** Spreadsheet formula-injection defence: a leading = + - @ tab CR (or our own apostrophe) gets a visible ' prefix. Reversible by unneutralize_. */
@@ -166,7 +202,7 @@ function unneutralize_(text) {
 /* ------------------------------------------------------------------ sheets */
 
 function headersFor_(form) {
-  return COMMON_HEAD.concat(EXTRA[form], TAIL);
+  return COMMON_HEAD.concat(EXTRA[form], TAIL, LATE[form]);
 }
 
 function spreadsheet_() {
@@ -190,8 +226,18 @@ function ensureSheet_(form) {
         sheet.getRange(2, statusCol, 1000, 1).setDataValidation(SpreadsheetApp.newDataValidation().requireValueInList(LEAD_STATUSES, true).setAllowInvalid(true).build());
       }
     } catch (cosmetic2) { /* cosmetic only */ }
-  } else if (String(sheet.getRange(1, 1, 1, 1).getValue()) !== headers[0]) {
-    throw new Error('schema'); // never overwrite a sheet that already holds something else
+  } else {
+    var current = sheet.getRange(1, 1, 1, headers.length).getValues()[0].map(String);
+    if (current[0] !== headers[0]) throw new Error('schema'); // never overwrite a sheet that already holds something else
+    // Upgrade in place: an older header row must be an exact prefix of today's headers; only the missing LAST columns are added.
+    var filled = 0;
+    while (filled < current.length && current[filled] !== '') filled++;
+    for (var i = 0; i < filled; i++) if (current[i] !== headers[i]) throw new Error('schema');
+    if (filled < headers.length) {
+      var add = sheet.getRange(1, filled + 1, 1, headers.length - filled);
+      add.setNumberFormat('@');
+      add.setValues([headers.slice(filled)]);
+    }
   }
   return sheet;
 }
@@ -234,7 +280,7 @@ function rowValues_(rec, now) {
     'Received (UTC)': stamp_(now, 'UTC'), 'Received (Kuwait)': stamp_(now, TZ),
     'Form source': rec.source, 'Page path': neutralize_(rec.pagePath), 'Language': rec.locale === 'ar' ? 'Arabic' : 'English',
     'Full name': neutralize_(rec.name), 'Phone': rec.phone, 'Email': neutralize_(rec.email),
-    'Category': rec.service === 'not-sure' ? 'Not sure' : SERVICES[rec.service],
+    'Category': rec.service === 'not-sure' ? 'Not sure' : (rec.service ? SERVICES[rec.service] : ''),
     'Programme': rec.programme === 'not-sure' ? 'Not sure' : (rec.programme ? PROGRAMMES[rec.programme] : ''),
     'Destination': rec.destination, 'Job offer': rec.offer, 'Preferred contact method': rec.method,
     'Age range': neutralize_(rec.age), 'Highest education': neutralize_(rec.education), 'Job designation': neutralize_(rec.profession),
@@ -275,7 +321,7 @@ function save_(rec) {
   if (!lock.tryLock(LOCK_WAIT_MS)) return { ok: false, code: 'busy' };
   try {
     var existing = findExisting_(rec.id);
-    if (existing) return { ok: true, duplicate: true, tab: existing.form, reference: existing.reference };
+    if (existing) return { ok: true, duplicate: true, tab: existing.form, reference: existing.reference, sameContact: sameContact_(existing, rec) };
     if (isThrottled_(rec)) return { ok: false, code: 'throttled' };
     var sheet = ensureSheet_(rec.formType);
     var values = rowValues_(rec, new Date());
@@ -283,7 +329,33 @@ function save_(rec) {
     range.setNumberFormat('@'); // plain text: "+" and leading zeros survive and nothing is evaluated
     range.setValues([values]);
     countThrottle_(rec);
-    return { ok: true, duplicate: false, tab: rec.formType, reference: rec.reference };
+    return { ok: true, duplicate: false, tab: rec.formType, reference: rec.reference, sameContact: true };
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+/** True when a repeated create request carries the same phone and email as the stored row (a genuine retry, not a guessed id). */
+function sameContact_(existing, rec) {
+  var sheet = spreadsheet_().getSheetByName(TABS[existing.form]);
+  var headers = headersFor_(existing.form);
+  var values = sheet.getRange(existing.row, 1, 1, headers.length).getValues()[0].map(String);
+  return values[colIndex_(headers, 'Phone')] === rec.phone && unneutralize_(values[colIndex_(headers, 'Email')]) === rec.email;
+}
+
+/** Adds optional details to an existing Full Assessment row under the script lock. Never creates rows, never notifies. */
+function update_(upd) {
+  var lock = LockService.getScriptLock();
+  if (!lock.tryLock(LOCK_WAIT_MS)) return { ok: false, code: 'busy' };
+  try {
+    var sheet = ensureSheet_('full');
+    var row = findRow_(sheet, upd.id);
+    if (!row) return { ok: false, code: 'not_found' };
+    var headers = headersFor_('full');
+    var changes = upd.changes;
+    changes['Details updated (UTC)'] = stamp_(new Date(), 'UTC');
+    setCells_(sheet, row, headers, changes);
+    return { ok: true, reference: String(sheet.getRange(row, colIndex_(headers, 'Reference') + 1, 1, 1).getValue()) };
   } finally {
     lock.releaseLock();
   }
@@ -370,7 +442,7 @@ function buildEmail_(claim) {
                     : 'Hello ' + get('Full name') + ', this is Plan B Consultant about your enquiry ' + reference + '.';
   var whatsapp = 'https://wa.me/' + digits + '?text=' + encodeURIComponent(greeting);
   var sheetLink = claim.spreadsheetUrl + '#gid=' + claim.gid;
-  var skip = { 'Submission ID': 1, 'Reference': 1, 'Received (UTC)': 1, 'Received (Kuwait)': 1, 'Lead status': 1, 'Notification status': 1, 'Notification attempts': 1, 'Last attempt (UTC)': 1, 'Sent (UTC)': 1, 'Last notification error': 1, 'Consent': 1, 'Consent timestamp (UTC)': 1, 'Consent text version': 1 };
+  var skip = { 'Details updated (UTC)': 1, 'Submission ID': 1, 'Reference': 1, 'Received (UTC)': 1, 'Received (Kuwait)': 1, 'Lead status': 1, 'Notification status': 1, 'Notification attempts': 1, 'Last attempt (UTC)': 1, 'Sent (UTC)': 1, 'Last notification error': 1, 'Consent': 1, 'Consent timestamp (UTC)': 1, 'Consent text version': 1 };
   var rows = [['Reference', reference], ['Received (Kuwait)', get('Received (Kuwait)')], ['Form', FORM_LABELS[form]]];
   h.forEach(function (name) { var value = get(name); if (!skip[name] && value) rows.push([name, value]); });
   rows.push(['Consent', 'Given (' + get('Consent timestamp (UTC)') + ' UTC, text version ' + get('Consent text version') + ')']);

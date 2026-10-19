@@ -22,5 +22,5 @@ assert.equal((await post({})).status,400);
 assert.equal((await post({},{Origin:'https://untrusted.example'})).status,403);
 assert.equal((await post({message:'x'.repeat(13000)})).status,413);
 assert.equal((await fetch(base+'/api/enquiries',{method:'POST',body:'plain'})).status,415);
-if(!process.env.GOOGLE_APPS_SCRIPT_URL){const r=await post({id:crypto.randomUUID(),name:'Test Person',phone:'+96555555555',email:'',service:'not-sure',destination:'Not sure yet',offer:'not-sure',method:'phone',message:'',website:'',consent:true,locale:'en'});assert.equal(r.status,503,'unconfigured form must not claim success')}
+if(!process.env.GOOGLE_APPS_SCRIPT_URL){const r=await post({source:'full-assessment',stage:'contact',id:crypto.randomUUID(),name:'Test Person',phone:'+96555555555',email:'test@example.com',service:'',website:'',consent:true,locale:'en'});assert.equal(r.status,503,'unconfigured form must not claim success');const u=await post({action:'update',id:crypto.randomUUID(),updateToken:'v1.zzzzzzzz.'+'A'.repeat(43),locale:'en',age:'33–39'});assert.equal(u.status,503,'unconfigured update must not claim success')}
 console.log(`${pages} bilingual pages passed; 404s, logo, API validation, origin and body limits passed.`);

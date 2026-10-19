@@ -8,6 +8,7 @@ const SECRET='q'.repeat(48);const script=createScript({secret:SECRET});const ech
 http.createServer((req,res)=>{
  if(req.method==='GET'&&req.url.startsWith('/echo/')){res.writeHead(200,{'Content-Type':'application/json'});return res.end(echoes.get(req.url.slice(6))||'')}
  if(req.method==='GET'&&req.url==='/__state'){res.writeHead(200,{'Content-Type':'application/json'});return res.end(JSON.stringify({quick:script.rows('Quick Assessments').length,full:script.rows('Full Assessments').length,contact:script.rows('Contact Enquiries').length,emails:script.state.sent.length}))}
+ if(req.method==='GET'&&req.url.startsWith('/__row/')){const id=req.url.slice(7);const h=script.headers('Full Assessments');const row=script.rows('Full Assessments').filter(r=>r[0]===id);res.writeHead(200,{'Content-Type':'application/json'});return res.end(JSON.stringify({count:row.length,row:row[0]?Object.fromEntries(h.map((n,i)=>[n,row[0][i]])):null,emails:script.state.sent.filter(m=>m.subject.endsWith('PB-'+id.slice(0,8).toUpperCase())).length}))}
  let raw='';req.on('data',c=>raw+=c);req.on('end',()=>{const t=String(++n);echoes.set(t,JSON.stringify(script.post(raw)));res.writeHead(302,{Location:'http://127.0.0.1:3301/echo/'+t});res.end()});
 }).listen(3301,'127.0.0.1');
 const start=(port,env)=>spawn(process.execPath,['node_modules/next/dist/bin/next','start','-p',String(port)],{stdio:'inherit',env:{...process.env,GOOGLE_APPS_SCRIPT_URL:'',GOOGLE_APPS_SCRIPT_SECRET:'',...env}});
