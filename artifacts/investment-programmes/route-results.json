@@ -1,0 +1,257 @@
+{
+ "checks": 1630,
+ "rows": [
+  {
+   "locale": "en",
+   "programme": "Antigua & Barbuda",
+   "path": "services/citizenship-by-investment/antigua-and-barbuda",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Dominica",
+   "path": "services/citizenship-by-investment/dominica",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Grenada",
+   "path": "services/citizenship-by-investment/grenada",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "St. Kitts & Nevis",
+   "path": "services/citizenship-by-investment/st-kitts-and-nevis",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "St. Lucia",
+   "path": "services/citizenship-by-investment/st-lucia",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Naoero (Nauru)",
+   "path": "services/citizenship-by-investment/nauru",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Egypt",
+   "path": "services/citizenship-by-investment/egypt",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Sao Tome & Principe",
+   "path": "services/citizenship-by-investment/sao-tome-and-principe",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Turkey",
+   "path": "services/citizenship-by-investment/turkey",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Vanuatu",
+   "path": "services/citizenship-by-investment/vanuatu",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Cyprus",
+   "path": "services/residency-by-investment/cyprus",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Greece",
+   "path": "services/residency-by-investment/greece",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Italy",
+   "path": "services/residency-by-investment/italy",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Malta",
+   "path": "services/residency-by-investment/malta",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Portugal",
+   "path": "services/residency-by-investment/portugal",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Switzerland",
+   "path": "services/residency-by-investment/switzerland",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "Panama",
+   "path": "services/residency-by-investment/panama",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "en",
+   "programme": "UAE",
+   "path": "services/residency-by-investment/uae",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Antigua & Barbuda",
+   "path": "services/citizenship-by-investment/antigua-and-barbuda",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Dominica",
+   "path": "services/citizenship-by-investment/dominica",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Grenada",
+   "path": "services/citizenship-by-investment/grenada",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "St. Kitts & Nevis",
+   "path": "services/citizenship-by-investment/st-kitts-and-nevis",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "St. Lucia",
+   "path": "services/citizenship-by-investment/st-lucia",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Naoero (Nauru)",
+   "path": "services/citizenship-by-investment/nauru",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Egypt",
+   "path": "services/citizenship-by-investment/egypt",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Sao Tome & Principe",
+   "path": "services/citizenship-by-investment/sao-tome-and-principe",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Turkey",
+   "path": "services/citizenship-by-investment/turkey",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Vanuatu",
+   "path": "services/citizenship-by-investment/vanuatu",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Cyprus",
+   "path": "services/residency-by-investment/cyprus",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Greece",
+   "path": "services/residency-by-investment/greece",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Italy",
+   "path": "services/residency-by-investment/italy",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Malta",
+   "path": "services/residency-by-investment/malta",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Portugal",
+   "path": "services/residency-by-investment/portugal",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Switzerland",
+   "path": "services/residency-by-investment/switzerland",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "Panama",
+   "path": "services/residency-by-investment/panama",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "locale": "ar",
+   "programme": "UAE",
+   "path": "services/residency-by-investment/uae",
+   "status": 200,
+   "noindex": true
+  }
+ ]
+}

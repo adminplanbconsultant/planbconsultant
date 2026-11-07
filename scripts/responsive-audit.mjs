@@ -11,7 +11,10 @@ const stub=f=>ts.transpileModule(readFileSync(f,'utf8'),{compilerOptions:{module
 const overviewUrl='data:text/javascript;base64,'+Buffer.from(stub('lib/service-overviews.ts')).toString('base64');
 const {services,countries,guides,slugify}=await import('data:text/javascript;base64,'+Buffer.from(stub('lib/content.ts').replace("'./service-overviews'",JSON.stringify(overviewUrl))).toString('base64'));
 const {programmes}=await import('data:text/javascript;base64,'+Buffer.from(stub('lib/programmes.ts')).toString('base64'));
-const paths=['','programmes',...programmes.map(p=>'programmes/'+p.slug),'about','services','destinations','resources','consultation','contact','privacy','faqs',...services.map(s=>'services/'+s.slug),...countries.map(c=>'destinations/'+slugify(c[0])),...guides.map(g=>'resources/'+g.slug)];
+const {investmentProgrammes,investmentPath}=await import('data:text/javascript;base64,'+Buffer.from(stub('lib/investment-programmes.ts')).toString('base64'));
+const onlyInvestment=process.env.ONLY_INVESTMENT==='1';
+const allPaths=['','programmes',...programmes.map(p=>'programmes/'+p.slug),'about','services','destinations','resources','consultation','contact','privacy','faqs',...services.map(s=>'services/'+s.slug),...countries.map(c=>'destinations/'+slugify(c[0])),...guides.map(g=>'resources/'+g.slug),...investmentProgrammes.map(investmentPath)];
+const paths=onlyInvestment?['services/citizenship-by-investment','services/residency-by-investment',...investmentProgrammes.map(investmentPath)]:allPaths;
 const widths=(process.env.WIDTHS||'320,375,414,600,768,834,1024').split(',').map(Number);
 const locales=(process.env.LOCALES||'en,ar').split(',');
 const only=process.env.ONLY;

@@ -43,7 +43,7 @@ var UPDATE_FIELDS = { programme: 'Programme', destination: 'Destination', offer:
 
 // <generated:lists> (run `node scripts/sync-apps-script-lists.mjs` after changing services, programmes or countries)
 var SERVICES = {
-  "residency-by-investment": "Residency through investment",
+  "residency-by-investment": "Residency by investment",
   "citizenship-by-investment": "Citizenship by investment",
   "skilled-immigration": "Skilled immigration",
   "work-visas": "Work visas & permits",
@@ -69,7 +69,25 @@ var PROGRAMMES = {
   "usa-e2": "USA E-2 treaty investor",
   "citizenship-investment": "Citizenship by investment",
   "study-visas": "Study abroad & student visas",
-  "visit-visas": "Visit visas"
+  "visit-visas": "Visit visas",
+  "cbi-antigua-barbuda": "Citizenship by Investment: Antigua & Barbuda",
+  "cbi-dominica": "Citizenship by Investment: Dominica",
+  "cbi-grenada": "Citizenship by Investment: Grenada",
+  "cbi-st-kitts-nevis": "Citizenship by Investment: St. Kitts & Nevis",
+  "cbi-st-lucia": "Citizenship by Investment: St. Lucia",
+  "cbi-nauru": "Citizenship by Investment: Naoero (Nauru)",
+  "cbi-egypt": "Citizenship by Investment: Egypt",
+  "cbi-sao-tome-principe": "Citizenship by Investment: Sao Tome & Principe",
+  "cbi-turkey": "Citizenship by Investment: Turkey",
+  "cbi-vanuatu": "Citizenship by Investment: Vanuatu",
+  "rbi-cyprus": "Residency by Investment: Cyprus",
+  "rbi-greece": "Residency by Investment: Greece",
+  "rbi-italy": "Residency by Investment: Italy",
+  "rbi-malta": "Residency by Investment: Malta",
+  "rbi-portugal": "Residency by Investment: Portugal",
+  "rbi-switzerland": "Residency by Investment: Switzerland",
+  "rbi-panama": "Residency by Investment: Panama",
+  "rbi-uae": "Residency by Investment: UAE"
 };
 var DESTINATIONS = ["Canada","Australia","United Kingdom","United States","New Zealand","Schengen","Thailand","Japan","Turkey","China","South Korea","Saudi Arabia","Malaysia","Singapore","Ireland","Cyprus","Russia","Italy","France","Switzerland","Germany","Greece","Finland","Netherlands","Spain","Sweden","Austria","Iceland","Poland","Czech Republic","Lithuania","Latvia","Estonia","Monaco","San Marino","Liechtenstein","Luxembourg","Vatican City","Slovakia","Bulgaria","Slovenia","Hungary","Portugal","Norway","Tanzania","Brazil"];
 // </generated:lists>

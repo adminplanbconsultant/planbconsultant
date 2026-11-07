@@ -1,0 +1,140 @@
+[
+ {
+  "name": "overview-citizenship-en-1440",
+  "url": "/en/services/citizenship-by-investment",
+  "width": 1440,
+  "scroll": 1440,
+  "w": 1440,
+  "h": 3104,
+  "overflow": false
+ },
+ {
+  "name": "overview-residency-ar-390",
+  "url": "/ar/services/residency-by-investment",
+  "width": 390,
+  "scroll": 390,
+  "w": 390,
+  "h": 5082,
+  "overflow": false
+ },
+ {
+  "name": "antigua-en-1440",
+  "url": "/en/services/citizenship-by-investment/antigua-and-barbuda",
+  "width": 1440,
+  "scroll": 1440,
+  "w": 1440,
+  "h": 7041,
+  "overflow": false
+ },
+ {
+  "name": "antigua-ar-390",
+  "url": "/ar/services/citizenship-by-investment/antigua-and-barbuda",
+  "width": 390,
+  "scroll": 390,
+  "w": 390,
+  "h": 10674,
+  "overflow": false
+ },
+ {
+  "name": "uae-multiple-amounts-en-390",
+  "url": "/en/services/residency-by-investment/uae",
+  "width": 390,
+  "scroll": 390,
+  "w": 390,
+  "h": 10659,
+  "overflow": false
+ },
+ {
+  "name": "uae-multiple-amounts-ar-1440",
+  "url": "/ar/services/residency-by-investment/uae",
+  "width": 1440,
+  "scroll": 1440,
+  "w": 1440,
+  "h": 7124,
+  "overflow": false
+ },
+ {
+  "name": "italy-long-requirements-ar-390",
+  "url": "/ar/services/residency-by-investment/italy",
+  "width": 390,
+  "scroll": 390,
+  "w": 390,
+  "h": 10062,
+  "overflow": false
+ },
+ {
+  "name": "switzerland-en-1440",
+  "url": "/en/services/residency-by-investment/switzerland",
+  "width": 1440,
+  "scroll": 1440,
+  "w": 1440,
+  "h": 6745,
+  "overflow": false
+ },
+ {
+  "name": "portugal-image-hero-en-1440",
+  "url": "/en/services/residency-by-investment/portugal",
+  "width": 1440,
+  "scroll": 1440,
+  "w": 1440,
+  "h": 6745,
+  "overflow": false
+ },
+ {
+  "name": "dominica-unlisted-amount-en-390",
+  "url": "/en/services/citizenship-by-investment/dominica",
+  "width": 390,
+  "scroll": 390,
+  "w": 390,
+  "h": 10988,
+  "overflow": false
+ },
+ {
+  "name": "nav-investment-en-1440",
+  "url": "/en/services/citizenship-by-investment/grenada",
+  "width": 1440,
+  "scroll": 1440,
+  "w": 1440,
+  "h": 7281,
+  "overflow": false
+ },
+ {
+  "name": "nav-investment-ar-1440",
+  "url": "/ar/services/residency-by-investment/cyprus",
+  "width": 1440,
+  "scroll": 1440,
+  "w": 1440,
+  "h": 6610,
+  "overflow": false
+ },
+ {
+  "name": "nav-mobile-en-390",
+  "url": "/en/services/citizenship-by-investment",
+  "width": 390,
+  "scroll": 390,
+  "w": 390,
+  "h": 844,
+  "overflow": false
+ },
+ {
+  "name": "anchor-offset-malta",
+  "headingTop": 305,
+  "mastheadBottom": 186,
+  "subnavBottom": 246,
+  "clear": true
+ },
+ {
+  "name": "topbar-fit-en",
+  "navScroll": 886,
+  "navWidth": 886,
+  "rows": 1,
+  "pageScroll": 1440
+ },
+ {
+  "name": "topbar-fit-ar",
+  "navScroll": 895,
+  "navWidth": 877,
+  "rows": 1,
+  "pageScroll": 1440
+ }
+]

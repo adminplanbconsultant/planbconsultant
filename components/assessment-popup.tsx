@@ -2,7 +2,9 @@
 import {emitConversion} from '@/lib/conversion-events';
 import {useCallback,useEffect,useId,useRef,useState,type FormEvent,type KeyboardEvent as ReactKeyboardEvent} from 'react';
 import {ArrowLeft,ArrowRight,BriefcaseBusiness,Building2,Check,CheckCircle2,ChevronDown,Globe2,GraduationCap,Plane,ShieldCheck,X} from 'lucide-react';
-import {programmes} from '@/lib/programmes';
+import {enquiryProgrammes as programmes} from '@/lib/enquiry-programmes';
+import {findInvestmentProgramme} from '@/lib/investment-programmes';
+const popupGroup=(g?:string)=>g==='residency-investment'?'business':g;
 import {popupServices,popupSource} from '@/lib/enquiry-popup';
 import {submitEnquiry,enquiryError,turnstileSiteKey} from '@/lib/enquiry-client';
 import Turnstile from './turnstile';
@@ -70,7 +72,7 @@ export default function AssessmentPopup({locale,path}:{locale:Locale;path:string
  const restoreRef=useRef<HTMLElement|null>(null);
  const openRef=useRef(false);
  const page=path[0]||'home';
- const routeProgramme=page==='programmes'&&path[1]&&programmes.some(p=>p.slug===path[1])?path[1]:undefined;
+ const routeProgramme=page==='programmes'&&path[1]&&programmes.some(p=>p.slug===path[1])?path[1]:findInvestmentProgramme(path)?.id;
  const routeProgrammeRef=useRef(routeProgramme);routeProgrammeRef.current=routeProgramme;
  const suppressed=page==='contact'||page==='consultation';
 
@@ -146,7 +148,7 @@ function PopupDialog({locale:l,initialProgramme,onClose}:{locale:Locale;initialP
  const t=(en:string,ar:string)=>text(l,en,ar);
  const uid=useId();const dialogRef=useRef<HTMLDivElement>(null);const stepHeadingRef=useRef<HTMLHeadingElement>(null);const sendingRef=useRef(false);const idRef=useRef('');
  const initial=programmes.find(p=>p.slug===initialProgramme);
- const [service,setService]=useState<string>(()=>options.find(o=>o.group===initial?.group)?.slug||'');
+ const [service,setService]=useState<string>(()=>options.find(o=>o.group===popupGroup(initial?.group))?.slug||'');
  const [programme,setProgramme]=useState(initial?.slug||'');
  const [step,setStep]=useState<1|2>(1);
  const [country,setCountry]=useState('KW');
@@ -183,7 +185,7 @@ function PopupDialog({locale:l,initialProgramme,onClose}:{locale:Locale;initialP
  useEffect(()=>{if(step===2||status==='success')stepHeadingRef.current?.focus()},[step,status]);
 
  const set=<K extends keyof Fields>(key:K,value:Fields[K])=>{setV(prev=>({...prev,[key]:value}));if(key in errors)setErrors(prev=>({...prev,[key]:undefined}))};
- const pick=(slug:string)=>{setService(slug);setErrors(prev=>({...prev,service:undefined}));if(initial&&options.find(o=>o.slug===slug)?.group!==initial.group)setProgramme('');else if(initial)setProgramme(initial.slug)};
+ const pick=(slug:string)=>{setService(slug);setErrors(prev=>({...prev,service:undefined}));if(initial&&options.find(o=>o.slug===slug)?.group!==popupGroup(initial.group))setProgramme('');else if(initial)setProgramme(initial.slug)};
  const onRadioKey=(event:ReactKeyboardEvent<HTMLDivElement>)=>{
   const keys=['ArrowRight','ArrowLeft','ArrowDown','ArrowUp'];if(!keys.includes(event.key))return;
   event.preventDefault();const all=[...options.map(o=>o.slug),'not-sure'];const index=all.indexOf(service);

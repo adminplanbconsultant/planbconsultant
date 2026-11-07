@@ -5,7 +5,7 @@ import Turnstile from './turnstile';
 import {useState,useEffect,useId,useRef,type FormEvent} from 'react';
 import {ArrowRight,CheckCircle2} from 'lucide-react';
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from '@/components/ui/select';
-import {programmes} from '@/lib/programmes';
+import {enquiryProgrammes as programmes,investmentGroups} from '@/lib/enquiry-programmes';
 import {countries,services,text,type Locale} from '@/lib/content';
 const ages=['21–32','33–39','40–45','46–55','56+'];
 const budgets=['Not sure yet','Below USD 70,000','USD 70,000–149,999','USD 150,000–249,999','USD 250,000–349,999','USD 350,000–449,999','USD 450,000–549,999','USD 550,000–649,999','USD 650,000–749,999','USD 750,000–849,999','USD 850,000–1,049,999','USD 1,050,000 and above'];
@@ -30,7 +30,7 @@ export default function Assessment({locale:l,initialProgramme}:{locale:Locale;in
  const set=(k:keyof typeof v,value:string|boolean)=>setV(prev=>({...prev,[k]:value}));
  useEffect(()=>{const q=new URLSearchParams(location.search);const p=programmes.find(x=>x.slug===(q.get('programme')||initialProgramme));const s=services.find(x=>x.slug===q.get('service'));const d=countries.find(x=>x[0]===q.get('destination'));setV(prev=>({...prev,id:crypto.randomUUID(),programme:p?.slug||'',service:s?.slug||'',destination:p&&countries.some(c=>c[0]===p.country)?p.country:d?.[0]||''}))},[initialProgramme]);
  useEffect(()=>{if(step!==0)heading.current?.focus()},[step]);
- const selected=programmes.find(p=>p.slug===v.programme);const investing=selected?.group==='business'||selected?.group==='citizenship';const working=selected?.group==='work';
+ const selected=programmes.find(p=>p.slug===v.programme);const investing=Boolean(selected&&investmentGroups.includes(selected.group));const working=selected?.group==='work';
  function picker(k:keyof typeof v,label:string,options:{value:string,label:string}[]){const value=String(v[k]);return <div className="form-label"><label htmlFor={'assessment-'+k}>{label}</label><Select value={value} onValueChange={next=>{set(k,String(next));if(k==='programme'){const p=programmes.find(p=>p.slug===next);if(p&&countries.some(c=>c[0]===p.country))set('destination',p.country)}}}><SelectTrigger className="picker" id={'assessment-'+k} aria-label={label}><SelectValue placeholder={t('Select an option','اختر خياراً')}>{options.find(option=>option.value===value)?.label}</SelectValue></SelectTrigger><SelectContent position="popper">{options.map(o=><SelectItem key={o.value} value={o.value}>{o.label}</SelectItem>)}</SelectContent></Select></div>}
  function field(k:'profession'|'nationality'|'residence',label:string,placeholder=''){return <label>{label}<input name={k} value={v[k]} onChange={e=>set(k,e.target.value)} maxLength={100} autoComplete={k==='residence'?'country-name':'off'} placeholder={placeholder}/></label>}
  const detailsError=(kind:Parameters<typeof enquiryError>[0])=>kind==='expired'||kind==='invalid'?enquiryError(kind,t):t('Your enquiry is saved. These extra details could not be added just now — please try again, or finish and share them during your consultation.','تم حفظ استفسارك. تعذّرت إضافة هذه التفاصيل الآن — يرجى المحاولة مجدداً، أو الإنهاء ومشاركتها أثناء الاستشارة.');
