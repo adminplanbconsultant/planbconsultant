@@ -1,5 +1,6 @@
 'use client';
 import {useEffect} from 'react';
+import {hasAnalyticsConsent} from '@/lib/meta-pixel';
 
 /**
  * Optional GA4 bridge. Inert unless NEXT_PUBLIC_GA_MEASUREMENT_ID is set AND indexing is enabled (so previews never pollute data).
@@ -18,7 +19,9 @@ const map:Record<string,{name:string;lead?:boolean}>={
 declare global{interface Window{dataLayer?:unknown[];gtag?:(...args:unknown[])=>void}}
 export default function Analytics(){
  useEffect(()=>{
-  if(!enabled)return;
+  // Fail-safe: GA also needs an analytics consent choice. The banner does not offer one yet (GA is not configured in
+  // production), so GA cannot load even if a measurement ID is added later, until an Analytics option is added to the banner.
+  if(!enabled||!hasAnalyticsConsent())return;
   window.dataLayer=window.dataLayer||[];
   window.gtag=function(){window.dataLayer!.push(arguments)};
   window.gtag('js',new Date());

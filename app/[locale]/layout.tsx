@@ -4,6 +4,8 @@ import {siteVerification} from '@/lib/seo';
 import {splashCss,splashHeadScript,splashStartScript,splashLockScript} from '@/lib/splash';
 import SplashScreen from '@/components/splash-screen';
 import AssetGuard from '@/components/asset-guard';
+import MetaPixel from '@/components/meta-pixel';
+import CookieConsent from '@/components/cookie-consent';
 import '../globals.css';
 export const metadata:Metadata={icons:siteIcons,verification:siteVerification,robots:{index:false,follow:true}};
 export default async function LocaleLayout({children,params}:{children:React.ReactNode;params:Promise<{locale:string}>}){
@@ -20,6 +22,7 @@ export default async function LocaleLayout({children,params}:{children:React.Rea
    <script dangerouslySetInnerHTML={{__html:splashStartScript}}/>
    <div id="app-root">{children}</div>
    <script dangerouslySetInnerHTML={{__html:splashLockScript}}/>
+   <MetaPixel/><CookieConsent locale={l}/>
   </body>
  </html>;
 }

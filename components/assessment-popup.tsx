@@ -6,7 +6,7 @@ import {enquiryProgrammes as programmes} from '@/lib/enquiry-programmes';
 import {findInvestmentProgramme} from '@/lib/investment-programmes';
 const popupGroup=(g?:string)=>g==='residency-investment'?'business':g;
 import {popupServices,popupSource} from '@/lib/enquiry-popup';
-import {submitEnquiry,enquiryError,turnstileSiteKey} from '@/lib/enquiry-client';
+import {submitEnquiry,enquiryError,turnstileSiteKey,noScriptAction} from '@/lib/enquiry-client';
 import Turnstile from './turnstile';
 import {text,type Locale} from '@/lib/content';
 
@@ -255,7 +255,7 @@ function PopupDialog({locale:l,initialProgramme,onClose}:{locale:Locale;initialP
      {errors.service&&<p className="ap-error" id={`${uid}-service-error`} role="alert">{errors.service}</p>}
      <div className="ap-actions"><button type="button" className="ap-primary" onClick={next}>{t('Continue','متابعة')}<ArrowRight size={17} aria-hidden="true" className="ap-arrow"/></button></div>
     </div>
-    :<form className="ap-step" key="step2" onSubmit={submit} noValidate>
+    :<form className="ap-step" key="step2" method="post" action={noScriptAction(l)} onSubmit={submit} noValidate>
      <h3 ref={stepHeadingRef} tabIndex={-1}>{t('How can we reach you?','كيف يمكننا التواصل معك؟')}</h3>
      <div className="ap-field"><label htmlFor={`${uid}-name`}>{t('Full Name','الاسم الكامل')} <span className="ap-req" aria-hidden="true">*</span></label><input {...fieldProps('name')} value={v.name} onChange={e=>set('name',e.target.value)} autoComplete="name" maxLength={100} required aria-required="true"/>{fieldError('name')}</div>
      <div className="ap-field"><label htmlFor={`${uid}-phone`}>{t('WhatsApp / Phone Number','واتساب / رقم الهاتف')} <span className="ap-req" aria-hidden="true">*</span></label>

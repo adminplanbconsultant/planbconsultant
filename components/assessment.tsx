@@ -1,12 +1,12 @@
 'use client';
 import {emitConversion} from '@/lib/conversion-events';
-import {submitEnquiry,submitDetails,enquiryError,turnstileSiteKey} from '@/lib/enquiry-client';
+import {submitEnquiry,submitDetails,enquiryError,turnstileSiteKey,noScriptAction} from '@/lib/enquiry-client';
 import Turnstile from './turnstile';
 import {useState,useEffect,useId,useRef,type FormEvent} from 'react';
 import {ArrowRight,CheckCircle2} from 'lucide-react';
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from '@/components/ui/select';
 import {enquiryProgrammes as programmes,investmentGroups} from '@/lib/enquiry-programmes';
-import {countries,services,text,type Locale} from '@/lib/content';
+import {countries,services,text,business,type Locale} from '@/lib/content';
 const ages=['21–32','33–39','40–45','46–55','56+'];
 const budgets=['Not sure yet','Below USD 70,000','USD 70,000–149,999','USD 150,000–249,999','USD 250,000–349,999','USD 350,000–449,999','USD 450,000–549,999','USD 550,000–649,999','USD 650,000–749,999','USD 750,000–849,999','USD 850,000–1,049,999','USD 1,050,000 and above'];
 const educationOptions=[['PhD','دكتوراه'],["Master’s degree",'ماجستير'],["Bachelor’s degree",'بكالوريوس'],['Diploma','دبلوم'],['High school','ثانوي'],['Other','غير ذلك']];
@@ -71,7 +71,7 @@ export default function Assessment({locale:l,initialProgramme}:{locale:Locale;in
  const steps:[string,string][]=[['Contact','التواصل'],['Your plans · optional','خططك · اختياري'],['Profile · optional','ملفك · اختياري']];
  const current=step as number;
  const onSubmit=(e:FormEvent<HTMLFormElement>)=>{if(step===0)return sendContact(e);e.preventDefault();return step===1?saveDetails(PLAN_FIELDS,2):saveDetails(PROFILE_FIELDS,'done')};
- return <form className="enquiry-form assessment-form" data-selected-programme={v.programme} data-step={current+1} onSubmit={onSubmit} noValidate>
+ return <form className="enquiry-form assessment-form" method="post" action={noScriptAction(l)} data-selected-programme={v.programme} data-step={current+1} onSubmit={onSubmit} noValidate><FormNoScript locale={l}/>
   <div className="eyebrow">{t('FREE INITIAL ASSESSMENT','تقييم أولي مجاني')}</div>
   <h3 ref={heading} tabIndex={-1}>{step===0?t('Start with your next step.','ابدأ بخطوتك القادمة.'):step===1?t('Your plans','خططك'):t('Your profile','ملفك')}</h3>
   <ol className="assessment-progress" aria-label={t('Assessment steps','خطوات التقييم')}>{steps.map((s,i)=><li key={s[0]} aria-current={current===i?'step':undefined} className={current>=i?'current':''}><span>{i+1}</span>{t(s[0],s[1])}</li>)}</ol>
@@ -122,7 +122,7 @@ export function GeneralEnquiry({locale:l}:{locale:Locale}){
  async function submit(e:FormEvent<HTMLFormElement>){e.preventDefault();if(status==='sending'||inFlight.current)return;if(turnstileSiteKey&&!token){setError(t('Please complete the security check.','يرجى إكمال التحقق الأمني.'));return}inFlight.current=true;setStatus('sending');setError('');const result=await submitEnquiry({...v,source:'contact-form',locale:l,turnstileToken:token});inFlight.current=false;setTsKey(k=>k+1);if(!result.ok){setStatus('error');setError(enquiryError(result.kind,t));return}setReference(result.reference);emitConversion('contact_submission_success',{locale:l});setStatus('success')}
  if(status==='success')return <div className="form-success general-enquiry-success" role="status"><CheckCircle2 size={44}/><h2>{t('Thank you.','شكراً لك.')}</h2><p>{t('We’ve received your enquiry. Our team will contact you.','لقد استلمنا استفسارك وسيتواصل معك فريقنا.')}</p><p>{t('Keep this reference for follow-up. Submission does not confirm an appointment or an outcome.','احتفظ بهذا الرقم للمتابعة. لا يعني الإرسال تأكيد موعد أو نتيجة.')}</p><strong className="enquiry-reference">{reference}</strong></div>;
  const id=(name:string)=>`${uid}-${name}`;
- return <form className="enquiry-form general-enquiry-form" onSubmit={submit} aria-label={t('General enquiry','استفسار عام')}>
+ return <form className="enquiry-form general-enquiry-form" method="post" action={noScriptAction(l)} onSubmit={submit} aria-label={t('General enquiry','استفسار عام')}><FormNoScript locale={l}/>
   <div className="eyebrow">{t('GENERAL ENQUIRY','استفسار عام')}</div><h3>{t('Tell us how we can help.','أخبرنا كيف يمكننا مساعدتك.')}</h3>
   <div className="form-grid">
    <label htmlFor={id('name')}>{t('Name','الاسم')}<input id={id('name')} value={v.name} onChange={e=>set('name',e.target.value)} autoComplete="name" minLength={2} maxLength={100} required/></label>
@@ -138,4 +138,10 @@ export function GeneralEnquiry({locale:l}:{locale:Locale}){
   <button className="button" type="submit" disabled={status==='sending'||!v.id||(!!turnstileSiteKey&&!token)}>{status==='sending'?t('Sending…','جارٍ الإرسال…'):t('Send Enquiry','إرسال الاستفسار')}<ArrowRight size={16}/></button>
   <p className="small-note">{t('Do not include passport numbers, banking details or medical records.','لا ترسل أرقام جوازات السفر أو البيانات المصرفية أو السجلات الطبية.')}</p>
  </form>;
+}
+
+/** Shown only when JavaScript is off: the forms cannot submit without it, so offer the direct contact routes instead. */
+export function FormNoScript({locale:l}:{locale:Locale}){
+ const t=(a:string,b:string)=>text(l,a,b);
+ return <noscript><p className="form-noscript full" role="note">{t('This form needs JavaScript to send your enquiry. Please enable JavaScript, or contact us directly: ','يحتاج هذا النموذج إلى JavaScript لإرسال استفسارك. يُرجى تفعيل JavaScript أو التواصل معنا مباشرة: ')}<a href={'tel:'+business.phone.replace(/s/g,'')} dir="ltr">{business.phone}</a>{business.whatsapp&&<> · <a href={'https://wa.me/'+business.whatsapp}>WhatsApp</a></>} · <a href={'mailto:'+business.email} dir="ltr">{business.email}</a></p></noscript>;
 }

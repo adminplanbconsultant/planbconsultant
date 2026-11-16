@@ -41,3 +41,6 @@ export function enquiryError(kind:Exclude<SubmitResult,{ok:true}>['kind'],t:(en:
   default:return t('We couldn’t send your enquiry just now. Your details are still here — please try again in a moment or contact us on WhatsApp.','تعذر إرسال استفسارك الآن. بياناتك ما زالت محفوظة هنا، يرجى المحاولة بعد قليل أو التواصل معنا عبر واتساب.');
  }
 }
+
+/** Native-submission safety net: forms POST here if their JavaScript handler is not running, so fields never enter the URL. */
+export const noScriptAction=(locale:string)=>'/api/enquiries/no-script?locale='+(locale==='ar'?'ar':'en');

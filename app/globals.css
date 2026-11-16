@@ -1169,3 +1169,25 @@ img,svg.brand-mark{-webkit-user-drag:none;user-drag:none}
 }
 @media(max-width:30rem){.inv-related ul{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.inv-card{transition:none}}
+
+/* ---------- Marketing-cookie consent (Meta Pixel) ---------- */
+.cookie-consent{position:fixed;z-index:120;inset-inline:var(--space-md);bottom:calc(var(--space-md) + env(safe-area-inset-bottom));max-width:34rem;margin-inline-start:auto;padding:var(--space-lg);border:1px solid var(--color-line-strong);border-top:3px solid var(--color-gold);border-radius:var(--radius-card);background:var(--color-paper);color:var(--color-ink);box-shadow:var(--shadow-modal)}
+.cookie-consent:focus{outline:none}
+.cookie-consent:focus-visible{outline:3px solid var(--color-focus);outline-offset:2px}
+.cookie-consent h2{margin:0 0 var(--space-xs);font-family:var(--font-display);font-size:var(--text-lg);font-weight:500}
+.cookie-consent p{margin:0 0 var(--space-sm);font-size:var(--text-sm);line-height:1.6}
+.cookie-consent a{text-decoration:underline;text-underline-offset:3px}
+.cookie-consent-status{color:var(--color-text-muted)}
+.cookie-consent-actions{display:flex;flex-wrap:wrap;gap:var(--space-sm)}
+.cookie-consent-actions .button{flex:1 1 9rem;min-height:44px;padding:var(--space-xs) var(--space-md);gap:0}
+.cookie-consent a:focus-visible,.cookie-consent .button:focus-visible,.cookie-settings-link:focus-visible{outline:3px solid var(--color-focus);outline-offset:2px}
+.cookie-settings-link{display:inline;margin-inline-start:var(--space-md);padding:0;border:0;background:none;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.cookie-settings-link.inline{margin-inline-start:0;font-weight:600}
+[dir=rtl] .cookie-consent,.cookie-consent[dir=rtl]{font-family:var(--font-arabic)}
+@media(max-width:47.5rem){.cookie-consent{inset-inline:var(--space-sm);bottom:calc(var(--space-sm) + env(safe-area-inset-bottom));max-width:none;padding:var(--space-md)}}
+
+/* ---------- Form safety net (no JavaScript) ---------- */
+.form-noscript{grid-column:1/-1;margin:0 0 var(--space-md);padding:var(--space-sm) var(--space-md);border:1px solid var(--color-gold);border-radius:var(--radius-input);background:var(--color-mist);font-size:var(--text-sm);line-height:1.6;color:var(--color-ink)}
+.form-noscript a{text-decoration:underline;text-underline-offset:3px}
+.target-notice{display:none}
+.target-notice:target{display:block;margin:0 0 var(--space-lg);padding:var(--space-md);border:1px solid var(--color-gold);border-inline-start:4px solid var(--color-gold);border-radius:var(--radius-input);background:var(--color-mist);color:var(--color-ink);line-height:1.6;scroll-margin-top:220px}
