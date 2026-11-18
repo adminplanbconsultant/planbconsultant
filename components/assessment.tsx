@@ -1,5 +1,6 @@
 'use client';
 import {emitConversion} from '@/lib/conversion-events';
+import {completeEnquiry} from '@/lib/enquiry-completion';
 import {submitEnquiry,submitDetails,enquiryError,turnstileSiteKey,noScriptAction} from '@/lib/enquiry-client';
 import Turnstile from './turnstile';
 import {useState,useEffect,useId,useRef,type FormEvent} from 'react';
@@ -50,21 +51,24 @@ export default function Assessment({locale:l,initialProgramme}:{locale:Locale;in
   if(!result.ok){setError(enquiryError(result.kind,t));return}
   setReference(result.reference);setUpdateToken(result.updateToken||'');
   emitConversion('assessment_step_completed',{locale:l,step:1});emitConversion('assessment_submission_success',{locale:l});
-  setStep(result.updateToken?1:'done');
+  // Contact details are saved at this point. Without an update token the flow is complete now; otherwise the optional steps follow.
+  if(result.updateToken)setStep(1);else if(!completeEnquiry({id:v.id,reference:result.reference,form:'full-assessment',locale:l}))setStep('done');
  }
  /** Steps 2-3: save only what the visitor filled in, into the same enquiry. Nothing filled in = nothing sent. */
  async function saveDetails(fields:readonly string[],next:Step){
   if(busy||inFlight.current)return;setError('');
   const values:Record<string,string>={};
   for(const k of fields){const value=String(v[k as keyof typeof v]).trim();if(!value)continue;if(k==='budget'&&!investing)continue;if(k==='offer'&&!working)continue;values[k]=value}
-  if(!Object.keys(values).length){emitConversion('assessment_step_completed',{locale:l,step:step===1?2:3});setStep(next);return}
+  if(!Object.keys(values).length){emitConversion('assessment_step_completed',{locale:l,step:step===1?2:3});if(next==='done')complete();else setStep(next);return}
   inFlight.current=true;setBusy(true);
   const result=await submitDetails({id:v.id,updateToken,locale:l,...values});
   inFlight.current=false;setBusy(false);
   if(!result.ok){setError(detailsError(result.kind));return}
-  emitConversion('assessment_step_completed',{locale:l,step:step===1?2:3});setStep(next);
+  emitConversion('assessment_step_completed',{locale:l,step:step===1?2:3});if(next==='done')complete();else setStep(next);
  }
- const finish=()=>{setError('');setStep('done')};
+ /** Final completion of the full assessment (Finish now, Skip & finish, or saving the last step): go to the thank-you page. */
+ const complete=()=>{if(!completeEnquiry({id:v.id,reference,form:'full-assessment',locale:l}))setStep('done')};
+ const finish=()=>{setError('');complete()};
 
  if(step==='done')return <div className="form-success" role="status"><CheckCircle2 size={48}/><h2 ref={heading} tabIndex={-1}>{t('Thank you.','شكراً لك.')}</h2><p>{t('Thank you. Your enquiry has been received. Our team will contact you using the details provided.','شكراً لك. تم استلام استفسارك، وسيتواصل معك فريقنا عبر البيانات التي قدّمتها.')}</p><strong className="enquiry-reference">{reference}</strong><p>{t('Keep your reference for follow-up. This is an enquiry, not an eligibility decision or a confirmed appointment; any appointment and next steps will be agreed separately.','احتفظ بالمرجع للمتابعة. هذا استفسار وليس قرار أهلية أو موعداً مؤكداً، ويُتفق بشكل منفصل على أي موعد والخطوات التالية.')}</p><a className="button" href={'/'+l}>{t('Back to home','العودة للرئيسية')}</a></div>;
 
@@ -119,7 +123,7 @@ export function GeneralEnquiry({locale:l}:{locale:Locale}){
  const [v,setV]=useState({id:'',name:'',email:'',phone:'+965 ',service:'not-sure',message:'',consent:false,website:''});
  useEffect(()=>setV(prev=>({...prev,id:crypto.randomUUID()})),[]);
  const set=(key:keyof typeof v,value:string|boolean)=>setV(prev=>({...prev,[key]:value}));
- async function submit(e:FormEvent<HTMLFormElement>){e.preventDefault();if(status==='sending'||inFlight.current)return;if(turnstileSiteKey&&!token){setError(t('Please complete the security check.','يرجى إكمال التحقق الأمني.'));return}inFlight.current=true;setStatus('sending');setError('');const result=await submitEnquiry({...v,source:'contact-form',locale:l,turnstileToken:token});inFlight.current=false;setTsKey(k=>k+1);if(!result.ok){setStatus('error');setError(enquiryError(result.kind,t));return}setReference(result.reference);emitConversion('contact_submission_success',{locale:l});setStatus('success')}
+ async function submit(e:FormEvent<HTMLFormElement>){e.preventDefault();if(status==='sending'||inFlight.current)return;if(turnstileSiteKey&&!token){setError(t('Please complete the security check.','يرجى إكمال التحقق الأمني.'));return}inFlight.current=true;setStatus('sending');setError('');const result=await submitEnquiry({...v,source:'contact-form',locale:l,turnstileToken:token});inFlight.current=false;setTsKey(k=>k+1);if(!result.ok){setStatus('error');setError(enquiryError(result.kind,t));return}setReference(result.reference);emitConversion('contact_submission_success',{locale:l});if(!completeEnquiry({id:v.id,reference:result.reference,form:'contact-form',locale:l}))setStatus('success')}
  if(status==='success')return <div className="form-success general-enquiry-success" role="status"><CheckCircle2 size={44}/><h2>{t('Thank you.','شكراً لك.')}</h2><p>{t('We’ve received your enquiry. Our team will contact you.','لقد استلمنا استفسارك وسيتواصل معك فريقنا.')}</p><p>{t('Keep this reference for follow-up. Submission does not confirm an appointment or an outcome.','احتفظ بهذا الرقم للمتابعة. لا يعني الإرسال تأكيد موعد أو نتيجة.')}</p><strong className="enquiry-reference">{reference}</strong></div>;
  const id=(name:string)=>`${uid}-${name}`;
  return <form className="enquiry-form general-enquiry-form" method="post" action={noScriptAction(l)} onSubmit={submit} aria-label={t('General enquiry','استفسار عام')}><FormNoScript locale={l}/>

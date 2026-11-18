@@ -3,7 +3,7 @@ import {services,countries,guides,slugify,origin,business,office,type Locale} fr
 import {programmes} from './programmes';
 import {programmeMeta,serviceMeta} from './seo-copy';
 import {investmentProgrammes,investmentPath,investmentCategories,findInvestmentProgramme} from './investment-programmes';
-export const routePaths=[...new Set(['','about','programmes','services','destinations','resources','consultation','contact','privacy','faqs',...programmes.map(p=>'programmes/'+p.slug),...services.map(s=>'services/'+s.slug),...countries.map(c=>'destinations/'+slugify(c[0])),...guides.map(g=>'resources/'+g.slug),...investmentProgrammes.map(investmentPath)])];
+export const routePaths=[...new Set(['','about','programmes','services','destinations','resources','consultation','consultation/thank-you','contact','privacy','faqs',...programmes.map(p=>'programmes/'+p.slug),...services.map(s=>'services/'+s.slug),...countries.map(c=>'destinations/'+slugify(c[0])),...guides.map(g=>'resources/'+g.slug),...investmentProgrammes.map(investmentPath)])];
 /** Bump together with VERSION in scripts/prepare-social-images.mjs whenever the sharing image changes, so WhatsApp/Facebook fetch a new URL. */
 export const shareVersion='v3';
 /** Bing Webmaster Tools HTML-tag verification. Keep this tag permanently: removing it can un-verify the site. BING_SITE_VERIFICATION may override it. */
@@ -11,7 +11,7 @@ export const bingVerification=process.env.BING_SITE_VERIFICATION||'0A07D2B0509FC
 export const siteVerification={google:process.env.GOOGLE_SITE_VERIFICATION||undefined,other:{'msvalidate.01':bingVerification}};
 export const supportedCountries=['canada','australia','germany','sweden','portugal','united-states'];
 export const indexingEnabled=process.env.NEXT_PUBLIC_ALLOW_INDEXING==='true'&&process.env.VERCEL_ENV!=='preview';
-export function eligiblePath(path:string){return !(path.startsWith('destinations/')&&!supportedCountries.includes(path.split('/')[1]))&&path!=='programmes/citizenship-investment'&&findInvestmentProgramme(path.split('/'))?.publishReady!==false;}
+export function eligiblePath(path:string){return !(path.startsWith('destinations/')&&!supportedCountries.includes(path.split('/')[1]))&&path!=='programmes/citizenship-investment'&&path!=='consultation/thank-you'&&findInvestmentProgramme(path.split('/'))?.publishReady!==false;}
 export const indexablePaths=routePaths.filter(eligiblePath);
 const sections:Record<string,[string,string,string,string]>={
  '':['Immigration Consultant in Kuwait','مكتب استشارات الهجرة في الكويت','Plan B Consultant helps individuals, families and businesses in Kuwait explore immigration, overseas work, study, visit and investment pathways.','تساعدك بلان بي كونسلتنت في الكويت على فهم خيارات الهجرة والعمل والدراسة والزيارة والاستثمار في الخارج والتحضير لخطوتك القادمة.'],
@@ -20,6 +20,7 @@ const sections:Record<string,[string,string,string,string]>={
  services:['Visa and global mobility assistance from Kuwait','خدمات التأشيرات والانتقال من الكويت','Find support for visa preparation, skilled immigration, family applications, job search, language preparation and settlement planning.','استكشف خدمات إعداد طلبات التأشيرة وهجرة الكفاءات ولمّ الشمل والبحث عن عمل والتحضير اللغوي والتخطيط للاستقرار.'],
  destinations:['Compare overseas destinations and pathways','اختيار وجهة الهجرة والعمل بالخارج','Explore destination overviews and follow the documented Canada, Australia, Germany, Sweden, Portugal and United States programmes.','استعرض الوجهات وتابع البرامج الموضحة لكندا وأستراليا وألمانيا والسويد والبرتغال والولايات المتحدة بحسب هدفك.'],
  resources:['Immigration consultation and document guides','أدلة الاستشارة وتجهيز المستندات','Read practical guides to preparing for a consultation, separating job search from work permission and organising documents securely.','اقرأ إرشادات عملية للاستعداد للاستشارة والتمييز بين البحث عن وظيفة وتصريح العمل وتنظيم المستندات ومشاركتها بأمان.'],
+ 'consultation/thank-you':['Enquiry confirmation','تأكيد الاستفسار','Confirmation page for enquiries sent to Plan B Consultant.','صفحة تأكيد الاستفسارات المرسلة إلى بلان بي للاستشارات.'],
  consultation:['Request an immigration consultation from Kuwait','طلب استشارة هجرة من الكويت','Share your plans with Plan B Consultant for an initial review. Understand the next steps; an enquiry does not confirm eligibility or an appointment.','شارك خططك مع بلان بي للمراجعة الأولية وتوضيح الخطوات التالية. الاستفسار لا يعني تأكيد الأهلية أو حجز موعد.'],
  contact:['Contact Plan B Consultant in Kuwait','التواصل مع بلان بي كونسلتنت في الكويت','Contact our Kuwait-based team by phone, email or WhatsApp to discuss your immigration, work, study or investment enquiry.','تواصل مع فريق بلان بي في الكويت عبر الهاتف أو البريد الإلكتروني أو واتساب لمناقشة استفسارك حول الهجرة أو العمل أو الدراسة أو الاستثمار.'],
  privacy:['Enquiry privacy and personal information','خصوصية الاستفسارات والبيانات الشخصية','Understand the information requested by Plan B Consultant’s enquiry forms, its purpose and precautions when sharing personal documents.','تعرّف على البيانات المطلوبة في نماذج بلان بي والغرض منها واحتياطات مشاركة المستندات الشخصية.'],

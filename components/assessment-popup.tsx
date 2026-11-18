@@ -1,5 +1,6 @@
 'use client';
 import {emitConversion} from '@/lib/conversion-events';
+import {completeEnquiry} from '@/lib/enquiry-completion';
 import {useCallback,useEffect,useId,useRef,useState,type FormEvent,type KeyboardEvent as ReactKeyboardEvent} from 'react';
 import {ArrowLeft,ArrowRight,BriefcaseBusiness,Building2,Check,CheckCircle2,ChevronDown,Globe2,GraduationCap,Plane,ShieldCheck,X} from 'lucide-react';
 import {enquiryProgrammes as programmes} from '@/lib/enquiry-programmes';
@@ -222,7 +223,7 @@ function PopupDialog({locale:l,initialProgramme,onClose}:{locale:Locale;initialP
    const result=await submitEnquiry({source:popupSource,id:idRef.current,name:v.name.trim(),phone:fullPhone(),email:v.email.trim(),service:service||'not-sure',programme:programme||'not-sure',locale:l,consent:v.consent,website:v.website,turnstileToken:token});
    setTsKey(k=>k+1);
    if(!result.ok){setFailure(enquiryError(result.kind,t));setStatus('error');return}
-   setSubmittedName(v.name.trim().split(/\s+/)[0]);emitConversion('assessment_step_completed',{locale:l,step:2});emitConversion('assessment_submission_success',{locale:l});setStatus('success');
+   setSubmittedName(v.name.trim().split(/\s+/)[0]);emitConversion('assessment_step_completed',{locale:l,step:2});emitConversion('assessment_submission_success',{locale:l});if(!completeEnquiry({id:idRef.current,reference:result.reference,form:'popup',locale:l}))setStatus('success');
   }finally{sendingRef.current=false}
  }
  const sending=status==='sending';

@@ -10,7 +10,7 @@ const programmeCode=ts.transpileModule(readFileSync('lib/programmes.ts','utf8'),
 const {programmes}=await import('data:text/javascript;base64,'+Buffer.from(programmeCode).toString('base64'));
 const investmentCode=ts.transpileModule(readFileSync('lib/investment-programmes.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext}}).outputText;
 const {investmentProgrammes,investmentPath}=await import('data:text/javascript;base64,'+Buffer.from(investmentCode).toString('base64'));
-const paths=['programmes',...programmes.map(p=>'programmes/'+p.slug),'','about','services','destinations','resources','consultation','contact','privacy','faqs',...services.map(s=>'services/'+s.slug),...countries.map(c=>'destinations/'+slugify(c[0])),...guides.map(g=>'resources/'+g.slug),...investmentProgrammes.map(investmentPath)];
+const paths=['programmes',...programmes.map(p=>'programmes/'+p.slug),'','about','services','destinations','resources','consultation','consultation/thank-you','contact','privacy','faqs',...services.map(s=>'services/'+s.slug),...countries.map(c=>'destinations/'+slugify(c[0])),...guides.map(g=>'resources/'+g.slug),...investmentProgrammes.map(investmentPath)];
 let pages=0;
 for(const locale of ['en','ar']){
  for(const path of paths){const r=await fetch(base+'/'+locale+(path?'/'+path:''));assert.equal(r.status,200,locale+'/'+path);const html=await r.text();assert(html.includes('Plan B'));pages++}

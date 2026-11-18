@@ -42,7 +42,7 @@ async function open(base,locale,device){
  await send('Page.navigate',{url:`${base}/${locale}/consultation`});await sleep(700);
  await ev(`sessionStorage.setItem('plan-b-assessment-popup-v3','1')`);await waitFor(`document.documentElement.dataset.splash==='done'`,7000);await sleep(300);
  // records every enquiry request; window.__failUpdates makes the next N update calls fail like a network error
- await ev(`window.__reqs=[];window.__failUpdates=0;const f=window.fetch;window.fetch=async(...a)=>{if(String(a[0]).includes('/api/enquiries')){const b=JSON.parse(a[1].body);window.__reqs.push(b);await new Promise(r=>setTimeout(r,500));if(b.action==='update'&&window.__failUpdates>0){window.__failUpdates--;throw new TypeError('Failed to fetch')}}return f(...a)}`);
+ await ev(`sessionStorage.setItem("qa-reqs","[]");window.__failUpdates=0;const f=window.fetch;window.fetch=async(...a)=>{if(String(a[0]).includes('/api/enquiries')){const b=JSON.parse(a[1].body);{const q=JSON.parse(sessionStorage.getItem("qa-reqs")||"[]");q.push(b);sessionStorage.setItem("qa-reqs",JSON.stringify(q))}await new Promise(r=>setTimeout(r,500));if(b.action==='update'&&window.__failUpdates>0){window.__failUpdates--;throw new TypeError('Failed to fetch')}}return f(...a)}`);
  await ev(`document.querySelector('.assessment-form').scrollIntoView({block:'start',behavior:'instant'})`);
 }
 const stepOf=()=>ev(`document.querySelector('.assessment-form')?.dataset.step||(document.querySelector('.form-success')?'done':'none')`);
@@ -79,15 +79,15 @@ for(const s of scenarios){
  {const sh=await send('Page.captureScreenshot',{format:'png'});writeFileSync(`${out}/${s.locale}-${s.device.n}-step1-contact.png`,Buffer.from(sh.data,'base64'))}
  // validation: nothing is sent while typing or when invalid
  await fill('.assessment-form input[name=name]','Sara');await sleep(400);
- check(`${tag} nothing is sent while typing`,(await ev('window.__reqs.length'))===0);
+ check(`${tag} nothing is sent while typing`,(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length'))===0);
  await clickText(c('send',L));await sleep(300);
- check(`${tag} invalid contact details show an error and send nothing`,(await ev('window.__reqs.length'))===0&&await ev(`!!document.querySelector('.assessment-form .form-error')`));
+ check(`${tag} invalid contact details show an error and send nothing`,(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length'))===0&&await ev(`!!document.querySelector('.assessment-form .form-error')`));
  await contactStep(L,ar(L)?'سارة Test':'Sara Test',`qa+${s.path}@example.com`);
  await ev(`(()=>{const b=[...document.querySelectorAll('.assessment-form button')].find(b=>b.type==='submit');b.click();b.click();b.click()})()`);await sleep(200);
  check(`${tag} sending: button disabled with loading label`,await ev(`(()=>{const b=document.querySelector('.assessment-form button[type=submit]');return b.disabled&&/Sending|جارٍ/.test(b.textContent)})()`));
  check(`${tag} advances to Your plans only after the save is confirmed`,await waitFor(`document.querySelector('.assessment-form')?.dataset.step==='2'`,10000));
- const first=await ev('window.__reqs[0]');const id=first.id;
- check(`${tag} triple click sent ONE request`,(await ev('window.__reqs.length'))===1);
+ const first=await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]")[0]');const id=first.id;
+ check(`${tag} triple click sent ONE request`,(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length'))===1);
  check(`${tag} step-1 payload: contact only, no placeholder answers`,first.stage==='contact'&&first.source==='full-assessment'&&first.consent===true&&!('programme' in first)&&!('destination' in first)&&!('method' in first)&&!('budget' in first));
  let r=await row(id);
  check(`${tag} ONE saved row + ONE notification right after step 1`,r.count===1&&r.emails===1&&r.row['Full name']&&r.row.Phone==='+96550001234'&&r.row.Programme===''&&r.row['Preferred contact method']==='',JSON.stringify(r).slice(0,200));
@@ -102,23 +102,23 @@ for(const s of scenarios){
   r=await row(id);check(`${tag} plans saved into the SAME row (destination follows programme)`,r.count===1&&r.row.Programme==='Canada Express Entry'&&r.row.Destination==='Canada'&&r.emails===1,JSON.stringify(r.row||{}).slice(0,200));
   await choose('#assessment-age','33–39');await fill('.assessment-form input[name=profession]','Engineer');
   await clickText(c('saveFinish',L));
-  check(`${tag} Save details & finish shows the confirmation`,await waitFor(`!!document.querySelector('.form-success')`,10000));
+  check(`${tag} Save details & finish shows the confirmation`,await waitFor(`location.pathname.endsWith('/consultation/thank-you')&&!!document.querySelector('.form-success')`,15000));
   r=await row(id);check(`${tag} profile saved into the same row; plans kept; still one email`,r.count===1&&r.row['Age range']==='33–39'&&r.row['Job designation']==='Engineer'&&r.row.Programme==='Canada Express Entry'&&r.row.Nationality===''&&r.emails===1&&!!r.row['Details updated (UTC)'],JSON.stringify(r.row||{}).slice(0,240));
-  const upd=await ev(`window.__reqs.filter(b=>b.action==='update')`);check(`${tag} updates carry the token and only filled fields`,upd.length===2&&upd.every(b=>b.id===id&&typeof b.updateToken==='string'&&b.updateToken.length>20)&&!('nationality' in upd[1])&&!('destination' in upd[1]));
+  const upd=await ev(`JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").filter(b=>b.action==='update')`);check(`${tag} updates carry the token and only filled fields`,upd.length===2&&upd.every(b=>b.id===id&&typeof b.updateToken==='string'&&b.updateToken.length>20)&&!('nationality' in upd[1])&&!('destination' in upd[1]));
  }
  if(s.path==='skip-both'){
-  await clickText(c('skip',L));check(`${tag} Skip this step opens Profile without saving`,(await stepOf())==='3'&&(await ev('window.__reqs.length'))===1);
-  await clickText(c('skipFinish',L));check(`${tag} Skip & finish shows the confirmation`,await waitFor(`!!document.querySelector('.form-success')`,3000));
+  await clickText(c('skip',L));check(`${tag} Skip this step opens Profile without saving`,(await stepOf())==='3'&&(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length'))===1);
+  await clickText(c('skipFinish',L));check(`${tag} Skip & finish shows the confirmation`,await waitFor(`location.pathname.endsWith('/consultation/thank-you')&&!!document.querySelector('.form-success')`,15000));
   r=await row(id);check(`${tag} skipped steps leave the saved enquiry intact and blank`,r.count===1&&r.emails===1&&r.row.Programme===''&&r.row['Age range']==='');
  }
  if(s.path==='finish-now'){
-  await clickText(c('finishNow',L));check(`${tag} Finish now shows the confirmation immediately`,await waitFor(`!!document.querySelector('.form-success')`,3000)&&(await ev('window.__reqs.length'))===1);
+  await clickText(c('finishNow',L));check(`${tag} Finish now shows the confirmation immediately`,await waitFor(`location.pathname.endsWith('/consultation/thank-you')&&!!document.querySelector('.form-success')`,15000)&&(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length'))===1);
  }
  if(s.path==='empty-save-then-profile'){
-  await clickText(c('save',L));check(`${tag} Save & continue with nothing chosen sends nothing and continues`,await waitFor(`document.querySelector('.assessment-form')?.dataset.step==='3'`,3000)&&(await ev('window.__reqs.length'))===1);
+  await clickText(c('save',L));check(`${tag} Save & continue with nothing chosen sends nothing and continues`,await waitFor(`document.querySelector('.assessment-form')?.dataset.step==='3'`,3000)&&(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length'))===1);
   check(`${tag} step 3 layout fits`,await layoutOk());
   await fill('.assessment-form input[name=nationality]','Egyptian');await clickText(c('saveFinish',L));
-  check(`${tag} confirmation after saving one profile field`,await waitFor(`!!document.querySelector('.form-success')`,10000));
+  check(`${tag} confirmation after saving one profile field`,await waitFor(`location.pathname.endsWith('/consultation/thank-you')&&!!document.querySelector('.form-success')`,15000));
   r=await row(id);check(`${tag} only the supplied field was written`,r.count===1&&r.row.Nationality==='Egyptian'&&r.row['Country of residence']===''&&r.row['Age range']===''&&r.emails===1);
  }
  if(s.path==='update-fails-then-retries'){
@@ -143,8 +143,8 @@ for(const L of ['en','ar']){
  await open(down,L,{w:390,h:844,m:true});await contactStep(L,'Omar Ali','omar@example.com');await clickText(c('send',L));
  check(`${tag} error shown, still on Contact`,await waitFor(`!!document.querySelector('.assessment-form .form-error')`,10000)&&(await stepOf())==='1');
  check(`${tag} entered details preserved, button enabled`,await ev(`(()=>{const q=n=>document.querySelector('.assessment-form input[name='+n+']').value;return q('name')==='Omar Ali'&&q('email')==='omar@example.com'&&q('phone').includes('5000 1234')&&document.querySelector('.assessment-form .consent input').checked&&!document.querySelector('.assessment-form button[type=submit]').disabled})()`));
- const id0=await ev('window.__reqs[0].id');await clickText(c('send',L));await sleep(1500);
- check(`${tag} retry reuses the same enquiry id`,(await ev('window.__reqs.length'))===2&&(await ev('window.__reqs[1].id'))===id0);
+ const id0=await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]")[0].id');await clickText(c('send',L));await sleep(1500);
+ check(`${tag} retry reuses the same enquiry id`,(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length'))===2&&(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]")[1].id'))===id0);
 }
 socket.close();chrome.kill();
 const failed=results.filter(r=>!r).length;console.log(`\n${results.length-failed}/${results.length} assessment-flow checks passed (mock Google Sheet).`);process.exit(failed?1:0);

@@ -24,7 +24,7 @@ await send('Page.enable');await send('Runtime.enable');await send('Emulation.set
 async function open(base,locale,path){
  await send('Page.navigate',{url:`${base}/${locale}/${path}`});await sleep(800);
  await ev(`sessionStorage.setItem('plan-b-assessment-popup-v3','1');`);await waitFor(`document.documentElement.dataset.splash==='done'`,6000);await sleep(300);
- await ev(`window.__reqs=[];const f=window.fetch;window.fetch=async(...a)=>{if(String(a[0]).includes('/api/enquiries')){window.__reqs.push(JSON.parse(a[1].body));await new Promise(r=>setTimeout(r,700))}return f(...a)}`);
+ await ev(`sessionStorage.setItem("qa-reqs","[]");const f=window.fetch;window.fetch=async(...a)=>{if(String(a[0]).includes('/api/enquiries')){const q=JSON.parse(sessionStorage.getItem("qa-reqs")||"[]");q.push(JSON.parse(a[1].body));sessionStorage.setItem("qa-reqs",JSON.stringify(q));await new Promise(r=>setTimeout(r,700))}return f(...a)}`);
 }
 const fillContact=async()=>{await fill('.general-enquiry-form input[id$="-name"]','سارة Test');await fill('.general-enquiry-form input[type=email]','qa@example.com');await fill('.general-enquiry-form input[type=tel]','+965 5000 1234');await fill('.general-enquiry-form textarea','Hello, please contact me.');await click('.general-enquiry-form input[type=checkbox]')};
 
@@ -35,12 +35,13 @@ for(const locale of ['en','ar']){
   await ev(`const b=document.querySelector('${root} button[type=submit]');b.click();b.click();b.click()`);
   await sleep(250);
   check(`[${locale}] ${label}: submit disabled with loading label while sending`,await ev(`(()=>{const b=document.querySelector('${root} button[type=submit]');return b.disabled&&/Sending|جارٍ/.test(b.textContent)})()`));
-  check(`[${locale}] ${label}: success only after confirmed save`,await waitFor(`!!document.querySelector('.form-success')`,10000));
+  // Success now navigates to the confirmation page (/{locale}/consultation/thank-you), which keeps the form's wording.
+  check(`[${locale}] ${label}: success only after confirmed save`,await waitFor(`location.pathname==='/${locale}/consultation/thank-you'&&!!document.querySelector('.form-success')`,10000));
   const text=await ev(`document.querySelector('.form-success').textContent`);
   check(`[${locale}] ${label}: required thank-you message`,ar?text.includes('شكراً لك.')&&text.includes('لقد استلمنا استفسارك وسيتواصل معك فريقنا.'):text.includes('Thank you.')&&text.includes('We’ve received your enquiry. Our team will contact you.'),text.slice(0,80));
   check(`[${locale}] ${label}: reference shown`,await ev(`/^PB-[0-9A-F]{8}$/.test(document.querySelector('.enquiry-reference')?.textContent||'')`));
-  {const n=await ev('window.__reqs.length');check(`[${locale}] ${label}: triple click sent one request`,n===1,'requests='+n)}
-  const body=await ev('window.__reqs[0]');
+  {const n=await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length');check(`[${locale}] ${label}: triple click sent one request`,n===1,'requests='+n)}
+  const body=await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]")[0]');
   check(`[${locale}] ${label}: payload carries source, page path and consent`,body.source===(label==='contact form'?'contact-form':'full-assessment')&&body.pagePath===`/${locale}/${path}`&&body.consent===true&&!('turnstileToken' in body&&body.turnstileToken));
   await open(down,locale,path);await filler();
   await click(`${root} button[type=submit]`);
@@ -48,8 +49,8 @@ for(const locale of ['en','ar']){
   const err=await ev(`document.querySelector('${root} .form-error').textContent`);
   check(`[${locale}] ${label}: error text is friendly and exposes nothing technical`,err.length>20&&!/google|script|sheet|503|configur|secret|stack/i.test(err),err.slice(0,90));
   check(`[${locale}] ${label}: entered values preserved and retry enabled`,await ev(`(()=>{const f=document.querySelector('${root}');const b=f.querySelector('button[type=submit]');const vals=[...f.querySelectorAll('input:not([type=checkbox]):not([tabindex="-1"]),textarea')].map(e=>e.value).join('|');return !b.disabled&&vals.includes('qa@example.com')&&vals.includes('5000 1234')&&f.querySelector('input[type=checkbox]').checked})()`));
-  const same=await ev(`window.__reqs[0].id`);await click(`${root} button[type=submit]`);await sleep(1800);
-  check(`[${locale}] ${label}: retry reuses the same submission id`,(await ev('window.__reqs.length'))===2&&(await ev('window.__reqs[1].id'))===same);
+  const same=await ev(`JSON.parse(sessionStorage.getItem("qa-reqs")||"[]")[0].id`);await click(`${root} button[type=submit]`);await sleep(1800);
+  check(`[${locale}] ${label}: retry reuses the same submission id`,(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]").length'))===2&&(await ev('JSON.parse(sessionStorage.getItem("qa-reqs")||"[]")[1].id'))===same);
  }
 }
 socket.close();chrome.kill();

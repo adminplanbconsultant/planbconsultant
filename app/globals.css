@@ -1191,3 +1191,13 @@ img,svg.brand-mark{-webkit-user-drag:none;user-drag:none}
 .form-noscript a{text-decoration:underline;text-underline-offset:3px}
 .target-notice{display:none}
 .target-notice:target{display:block;margin:0 0 var(--space-lg);padding:var(--space-md);border:1px solid var(--color-gold);border-inline-start:4px solid var(--color-gold);border-radius:var(--radius-input);background:var(--color-mist);color:var(--color-ink);line-height:1.6;scroll-margin-top:220px}
+
+/* ---------- Enquiry thank-you page ---------- */
+.thank-you-page{padding-block:var(--space-2xl) var(--space-3xl)}
+.thank-you-card{max-width:44rem;margin-inline:auto}
+.thank-you-card h1{margin:var(--space-sm) 0;font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1.1;color:var(--color-ink)}
+.thank-you-card h1:focus{outline:none}
+.thank-you-card h1:focus-visible{outline:3px solid var(--color-focus);outline-offset:4px}
+.thank-you-neutral{padding:var(--space-xl);border:1px solid var(--color-line-strong);border-top:3px solid var(--color-gold);border-radius:var(--radius-card);background:var(--color-paper)}
+.thank-you-neutral p{max-width:60ch;line-height:1.7}
+.thank-you-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:var(--space-md);margin-top:var(--space-md)}

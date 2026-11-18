@@ -1,5 +1,5 @@
 /**
- * Meta Pixel (base pixel + PageView only) and the marketing-cookie consent it depends on.
+ * Meta Pixel: base pixel, PageView, and one standard Lead per confirmed enquiry (see lib/enquiry-completion.ts) and the marketing-cookie consent it depends on.
  *
  * Nothing loads unless ALL of these hold:
  *  1. a valid Pixel ID is configured (META_PIXEL_ID below);
@@ -7,7 +7,7 @@
  *  3. the page is served from an approved production hostname (so localhost and *.vercel.app previews never track);
  *  4. the visitor has accepted marketing cookies on this device.
  *
- * Deliberately NOT implemented: Lead or other events, automatic events/form tracking (autoConfig is disabled),
+ * Deliberately NOT implemented: other events, Lead parameters, automatic events/form tracking (autoConfig is disabled),
  * advanced matching (init is called without user data), Conversions API and the <noscript> image fallback
  * (a static page cannot know a no-JavaScript visitor's consent, so a fallback would track without consent).
  */
@@ -97,6 +97,30 @@ export function trackPageView(){
  initialise();
  window.fbq!('track','PageView');
  lastTrackedPage=key;
+}
+
+/* ---------- Lead (standard event, no parameters) ---------- */
+/** Submission ids already counted as a Lead on this device (localStorage, last 20, 30 days). Never sent anywhere. */
+const LEAD_SENT_KEY='planb-lead-sent-v1';
+const LEAD_SENT_TTL_MS=30*24*60*60*1000;
+function sentLeads():{id:string;at:number}[]{
+ try{const v=JSON.parse(localStorage.getItem(LEAD_SENT_KEY)||'[]');return Array.isArray(v)?v.filter(x=>x&&typeof x.id==='string'&&typeof x.at==='number'&&Date.now()-x.at<LEAD_SENT_TTL_MS):[]}catch{return []}
+}
+/**
+ * Sends fbq('track','Lead') once for one confirmed enquiry. Requires the same conditions as PageView (production host and
+ * build, accepted marketing consent, safe URL) and initialises the pixel (with this page's PageView) before queuing the Lead.
+ * The id is recorded BEFORE the event is queued, so a re-render, refresh or second tab cannot count it again.
+ * No parameters, custom data or user data are passed. Returns true only when the Lead was queued.
+ */
+export function trackLead(submissionId:string){
+ try{
+  if(!submissionId||!pixelAvailable()||!hasMarketingConsent()||!urlIsSafeToTrack(window.location.search))return false;
+  const sent=sentLeads();if(sent.some(s=>s.id===submissionId))return false;
+  trackPageView();if(!initialised||!window.fbq)return false;
+  try{localStorage.setItem(LEAD_SENT_KEY,JSON.stringify([...sent,{id:submissionId,at:Date.now()}].slice(-20)))}catch{/* sessionStorage consumption still prevents repeats in this tab */}
+  window.fbq('track','Lead');
+  return true;
+ }catch{return false}
 }
 
 /** Consent withdrawn: stop the pixel sending anything further and remove Meta's first-party cookies. */

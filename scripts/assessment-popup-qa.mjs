@@ -148,10 +148,11 @@ await ev(`document.querySelector('form.ap-step button[type=submit]').click()`);a
 check('Invalid optional email and missing consent flagged',await ev(`!!document.querySelector('[id$=email-error]')&&!!document.querySelector('[id$=consent-error]')`));
 await type('[data-field=email]','');await ev(`document.querySelector('[data-field=consent]').click()`);
 await shot('desktop-step2-filled');
-await ev(`window.__calls=[];const f=window.fetch;window.fetch=(...a)=>{if(String(a[0]).includes('/api/enquiries'))window.__calls.push(String(a[0]));return f(...a)};const b=document.querySelector('form.ap-step button[type=submit]');b.click();b.click();b.click()`);
-check('Success shown only after persisted (201)',await waitFor(`!!document.querySelector('.ap-success h3')`,10000));
-check('Success heading uses first name',await ev(`document.querySelector('.ap-success h3').textContent==='Thank you, Sara.'`));
-check('Duplicate submissions prevented',(await ev(`window.__calls.length`))===1,`${await ev(`window.__calls.length`)} request(s)`);
+await ev(`sessionStorage.setItem("qa-calls","[]");const f=window.fetch;window.fetch=(...a)=>{if(String(a[0]).includes('/api/enquiries')){const q=JSON.parse(sessionStorage.getItem("qa-calls")||"[]");q.push(String(a[0]));sessionStorage.setItem("qa-calls",JSON.stringify(q))}return f(...a)};const b=document.querySelector('form.ap-step button[type=submit]');b.click();b.click();b.click()`);
+// Success now navigates to /en/consultation/thank-you. The name is not carried to that page (no personal data in storage or URL).
+check('Success shown only after persisted (201) — on the thank-you page',await waitFor(`location.pathname==='/en/consultation/thank-you'&&!!document.querySelector('.form-success h1')`,15000));
+check('Thank-you heading and popup wording, no personal data',await ev(`(()=>{const c=document.querySelector('.form-success');return c.querySelector('h1').textContent==='Thank you.'&&c.textContent.includes('We’ve received your enquiry. Our team will contact you.')&&!/Sara/.test(c.textContent+location.href)})()`));
+check('Duplicate submissions prevented',(await ev(`JSON.parse(sessionStorage.getItem("qa-calls")||"[]").length`))===1,`${await ev(`JSON.parse(sessionStorage.getItem("qa-calls")||"[]").length`)} request(s)`);
 await shot('desktop-success');
 
 /* 7. Honest failure with enquiry storage unconfigured */
@@ -208,8 +209,8 @@ check('Arabic: phone and email inputs stay LTR',await ev(`document.querySelector
 await shot('desktop-step2-ar');
 await viewport(390,844,true);await sleep(300);await shot('mobile-step2-ar');
 await type('[data-field=name]','سارة المطيري');await type('[data-field=phone]','5000 7777');await ev(`document.querySelector('[data-field=consent]').click()`);await sleep(150);await ev(`document.querySelector('form.ap-step button[type=submit]').click()`);
-await waitFor(`!!document.querySelector('.ap-success')`,10000).then(ok=>check('Arabic submit succeeds',ok));
-check('Arabic success copy uses first name',await ev(`document.querySelector('.ap-success h3').textContent==='شكراً لك، سارة.'`));
+await waitFor(`location.pathname==='/ar/consultation/thank-you'&&!!document.querySelector('.form-success h1')`,15000).then(ok=>check('Arabic submit succeeds → /ar/consultation/thank-you',ok));
+check('Arabic thank-you copy, no personal data',await ev(`(()=>{const c=document.querySelector('.form-success');return c.querySelector('h1').textContent==='شكراً لك.'&&c.textContent.includes('لقد استلمنا استفسارك وسيتواصل معك فريقنا.')&&!/سارة/.test(c.textContent+decodeURIComponent(location.href))})()`));
 await shot('mobile-success-ar');
 
 socket.close();chrome.kill();
